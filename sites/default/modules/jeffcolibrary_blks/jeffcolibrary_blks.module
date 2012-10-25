@@ -63,14 +63,61 @@ function jeffcolibrary_blks_block_view($block_name = '') {
   
     if ($block_name == 'sign_in') {
   
-    $content = '<form name="patform" target="_self" method="post" action="http://sable.jefferson.lib.co.us/patroninfo" id="patform">
-<fieldset style="border-style:none;"><br /><legend>
-<div>
-<label for="name">First and Last Name:</label><input name="name" id="name" value="" size="30" maxlength="40" /></div>
-<div>
-<label for="code">Library Card Number:</label><input name="code" id="code" type="password" value="" size="30" maxlength="40" /></div>
-<div style="height:0px;"><input type="hidden" name="pat_submit" value="xxx" /><br /><input type="submit" value="Log In" /></div>
-<p><legend></legend></p></legend></fieldset></form>';
+    $content = '<form id="fm1" class="fm-v clearfix" method="post" action="http://encore.jefferson.lib.co.us/iii/cas/login?service=http%3A%2F%2Fencore.jefferson.lib.co.us%3A80%2Fiii%2Fencore%2Fj_acegi_cas_security_check&amp;lang=eng">
+
+	<!-- Message from client webapp to be displayed on the CAS login screen -->
+  	<div id="clientmessage">
+	<!--display any errors-->
+	
+		
+  	</div> <!-- end clientmessage -->
+
+	<!--display ldap if avail-->
+	
+	<!--display login form-->
+	<div id="login">
+	  <fieldset>
+	    <legend>Login Form</legend>
+	      <!-- Congratulations on bringing the Login Application online!  The default authentication handler authenticates where usernames equal passwords: go ahead, try it out.   -->
+	      <!--<h2>Enter your credentials</h2> -->
+	      
+	        <div class="name">
+	          <label for="name">Name:</label>
+	          
+	          <input id="name" name="name" class="required" tabindex="3" accesskey="n" type="text" value="" size="20" maxlength="40"/>
+	        </div><!-- end name -->
+	      
+	      
+		      <div class="code">
+		        <label for="code">Barcode:</label>
+		        
+		        
+		        
+		        	
+		        		<input id="code" name="code" class="required" tabindex="4" accesskey="b" type="password" value="" size="20" maxlength="40"/>
+		        	
+		        	
+		        
+		      </div> <!-- end code -->
+		  
+	      
+	      <!--display pin if required-->
+	      
+	  	  
+		  <!-- Spring Web Flow requirements -->
+	      <input type="hidden" name="lt" value="_c3886ABD1-7A7B-B655-57D4-112FB29384F6_k2D8C6128-DB96-CB9A-58C1-FFD9DCA0ECF5" />
+	      <input type="hidden" name="_eventId" value="submit" />
+	  </fieldset>
+	</div>  <!-- end login -->
+    <div class="submit">
+    	
+      		
+      		
+      			<input class="btn-submit" accesskey="l" value="LOGIN" tabindex="9" type="submit" />
+      		
+	    
+  	</div>
+</form>';
 
     $block = array(
       'subject' => t('Sign In'),
