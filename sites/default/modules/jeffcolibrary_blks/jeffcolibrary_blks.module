@@ -16,8 +16,14 @@ function jeffcolibrary_blks_block_info() {
     'info' => t('Homepage Sign In for the ILS.'),
     'status' => 1,
     'region' => 'sidebar_second',
-
   );
+  
+    $blocks['locations'] = array(
+    'info' => t('Homepage Locations. Links to location pages.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+  );
+
 
   return $blocks;
 
@@ -51,9 +57,6 @@ function jeffcolibrary_blks_block_view($block_name = '') {
       'subject' => t('Encore Search'),
       'content' => $content,
     );
-	
-	
-	
 
     return $block;
   }
@@ -66,8 +69,8 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 <label for="name">First and Last Name:</label><input name="name" id="name" value="" size="30" maxlength="40" /></div>
 <div>
 <label for="code">Library Card Number:</label><input name="code" id="code" type="password" value="" size="30" maxlength="40" /></div>
-<div><input type="hidden" name="pat_submit" value="xxx" /><br /><input type="submit" value="Log In" /></div>
-<p><legend><br /></legend></p></legend></fieldset><br /></form>';
+<div style="height:0px;"><input type="hidden" name="pat_submit" value="xxx" /><br /><input type="submit" value="Log In" /></div>
+<p><legend></legend></p></legend></fieldset></form>';
 
     $block = array(
       'subject' => t('Sign In'),
@@ -77,5 +80,17 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     return $block;
   }
 
+    if ($block_name == 'locations') {
+  
+    $content = '<div style="width:100px; float:left;">Arvada<br />Belmar<br />Columbine<br />Conifer<br />Edgewater</div>
+	  <div style="width: 100px; float:right;">Evergreen<br />Golden<br />Lakewood<br />Standley Lake<br />Wheat Ridge</div>';
+
+    $block = array(
+      'subject' => t('Locations'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
 
 }
