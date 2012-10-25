@@ -11,6 +11,15 @@
 	width:960px;
 }
 
-#region-branding, #region-search {
+#region-branding {
+	margin-top:180px;
+}
+
+#region-search {
 	margin-top:200px;
+}
+
+#logo {
+	width: 170px;
+	margin-left: 15px
 }
