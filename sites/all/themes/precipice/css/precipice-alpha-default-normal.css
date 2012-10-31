@@ -4,19 +4,24 @@
  
 .front #zone-branding-wrapper {
 	background-image:url(../../../../default/files/header.png);
-	background-size:960px;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	height:300px;
-	width:960px;
+	height: 300px;
 }
 
 #region-branding {
-	margin-top:180px;
+	margin-top:175px;
 }
 
 #region-search {
 	margin-top:200px;
+}
+
+#quicktabs-container-tabbed_header_searchbox {
+	background-color: #FFF;
+	padding: 10px;
+	margin-top: -10px;
+	height: 45px;
 }
 
 #logo {
