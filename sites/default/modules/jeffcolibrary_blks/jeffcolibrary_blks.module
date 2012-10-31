@@ -33,7 +33,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
       <input name="submitname" value="" type="hidden">
       </div>
       <div id="encore_searchform">
-      <input name="target" value="" id="target" size="40" type="text"> 
+      <input name="target" value="" id="target" size="36" type="text"> 
       <input type="submit" value="Search"/>
       </div>
       <a href="http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=cobalt&advancedSearch=true&searchString=">Advanced Search</a>
