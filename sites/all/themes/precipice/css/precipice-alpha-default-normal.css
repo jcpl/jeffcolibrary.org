@@ -31,4 +31,11 @@
 #logo {
 	width: 170px;
 	margin-left: 15px
-}s
+}
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	height:250px;
+	width:720px;
+}
