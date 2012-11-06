@@ -3,18 +3,33 @@
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
  
 .front #zone-branding-wrapper {
-	background-image:url(../../../../default/files/header.png);
+	background-image:url(../../../../default/files/head_foot/header.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	height: 300px;
 }
 
-#region-branding {
+.front #region-branding {
 	margin-top:175px;
 }
 
-#region-search {
+.front #region-search {
 	margin-top:200px;
+}
+
+#zone-branding-wrapper {
+	background-image:url(../../../../default/files/head_foot/sm-header.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 220px;
+}
+
+#region-branding {
+	margin-top:95px;
+}
+
+#region-search {
+	margin-top:120px;
 }
 
 #quicktabs-container-tabbed_header_searchbox {
