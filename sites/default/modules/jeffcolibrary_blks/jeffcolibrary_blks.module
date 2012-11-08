@@ -8,12 +8,49 @@ function jeffcolibrary_blks_block_info() {
   $blocks = array();
 
     $blocks['encore_search'] = array(
-    'info' => t('Encore Search for header Quicktabs.'),
-    'status' => 1,
-  );
+      'info' => t('Encore Search for header Quicktabs.'),
+      'status' => 1,
+    );
+  
+    $blocks['foot_about_us'] = array(
+      'info' => t('Footer: About Us.'),
+      'status' => 1,
+	  'region' => 'footer_first',
+    );
+	
+    $blocks['foot_services'] = array(
+      'info' => t('Footer: Services.'),
+      'status' => 1,
+	  'region' => 'footer_second',
+    );
+	
+	$blocks['foot_support'] = array(
+      'info' => t('Footer: Support the Library.'),
+      'status' => 1,
+	  'region' => 'footer_third',
+    );
+
+    $blocks['foot_connect'] = array(
+      'info' => t('Footer: Connect with Us.'),
+      'status' => 1,
+	  'region' => 'footer_fourth',
+    );
+	
+    $blocks['foot_copyright'] = array(
+      'info' => t('Footer: Copyright.'),
+      'status' => 1,
+	  'region' => 'footer_fifth',
+    );
+	
+    $blocks['foot_address_phone'] = array(
+      'info' => t('Footer: Address, phone number, contatct us.'),
+      'status' => 1,
+	  'region' => 'footer_fifth',
+    );
 
   return $blocks;
 }
+
 
 
 /**
@@ -21,7 +58,7 @@ function jeffcolibrary_blks_block_info() {
  */
 function jeffcolibrary_blks_block_view($block_name = '') {
 
-    if ($block_name == 'encore_search') {
+  if ($block_name == 'encore_search') {
   
     $content = '<form method="get" action="http://encore.jefferson.lib.co.us/iii/encore/Home,$Search.form.sdirect" name="form" id="form">	
       <div style="height:0px;">
@@ -41,6 +78,106 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
     $block = array(
       'subject' => t('Encore Search'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_about_us') {
+  
+    $content = '<ul>
+        <li>Leadership &amp; Mission</li>
+        <li>Board of Trustees</li>
+        <li>Planning &amp; Budget</li>
+        <li>Press Room</li>
+        <li>Policies</li>
+        <li>Jobs</li>
+      </ul>';
+
+    $block = array(
+      'subject' => t('About Us'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'foot_services') {
+  
+    $content = '<ul>
+        <li>Ask Us</li>
+        <li>Get a Library Card</li>
+        <li>Reserve a Computer</li>
+        <li>Wireless</li>
+        <li>Culture Pass</li>
+        <li>Outreach Services</li>
+        <li>Recursos en Espa&ntilde;ol</li>
+      </ul>';
+
+    $block = array(
+      'subject' => t('Services'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_support') {
+  
+    $content = '<ul>
+        <li>Advocate for JCPL</li>
+        <li>Donate</li>
+        <li>Volunteer</li>
+        <li>Request a Speaker</li>
+        <li>Foundation &amp; Friends</li>
+        <li>Community Partners</li>
+      </ul>';
+
+    $block = array(
+      'subject' => t('Support the Library'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_connect') {
+  
+    $content = '<div id="social_media_icons"><img src="sites/default/files/head_foot/facebook.png" width="40" height="40" alt="Facebook" /><img src="sites/default/files/head_foot/twitter.png" width="40" height="40" alt="Twitter" /><img src="sites/default/files/head_foot/vimeo.png" width="40" height="40" alt="Vimeo" /><img src="sites/default/files/head_foot/youtube.png" width="40" height="40" alt="You Tube" /></div>
+      <form id="form1" name="form1" method="post" action="">
+        Signup for our newsletter<br />
+      <input type="text" name="textfield" id="textfield" />
+      </form>';
+
+    $block = array(
+      'subject' => t('Connect with Us'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_copyright') {
+  
+    $content = '<p>&copy; Jefferson County Public Library</p>';
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_address_phone') {
+  
+    $content = '10200 W. 20th Ave, Lakewood, CO 80215<br />
+      303-235-JCPL (5275)<br />
+      <a href="contact">Contact Us</a>';
+
+    $block = array(
+      'subject' => t(''),
       'content' => $content,
     );
 

@@ -2,47 +2,7 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
  
-.front #zone-branding-wrapper {
-	background-image:url(../../../../default/files/header.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	height: 300px;
-}
-
-#region-branding {
-	margin-top:175px;
-}
-
-#region-search {
-	margin-top:200px;
-}
-
-#quicktabs-container-tabbed_header_searchbox {
-	background-color: #FFF;
-	padding: 10px;
-	margin-top: -10px;
-	height: 45px;
-}
-
-#encore_searchform {
-	margin-bottom: 3px;
-}
-
-#logo {
-	width: 170px;
-	margin-left: 15px
-}
-
-/* The Nivo Slider styles */
-.nivoSlider {
-	position:relative;
-	height:250px;
-	width:700px;
-}
-=======
-/* This file will hold styles that are loaded using the same media query as the normal grid. */
-/* If you are using the default media queries provided by Omega, these styles will also
- *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+/* Front Page Header */
  
 .front #zone-branding-wrapper {
 	background-image:url(../../../../default/files/head_foot/header.png);
@@ -59,6 +19,8 @@
 	margin-top:200px;
 }
 
+/* Secondary Pages Header */
+
 #zone-branding-wrapper {
 	background-image:url(../../../../default/files/head_foot/sm-header.png);
 	background-repeat: no-repeat;
@@ -74,6 +36,8 @@
 	margin-top:120px;
 }
 
+/* Omnipresent Searchbox */
+
 #quicktabs-container-tabbed_header_searchbox {
 	background-color: #FFF;
 	padding: 10px;
@@ -85,7 +49,82 @@
 	margin-bottom: 3px;
 }
 
+/* Branding */
+
 #logo {
 	width: 170px;
 	margin-left: 15px
 }
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	height:250px;
+	width:700px;
+}
+
+/* Footer */
+
+#zone-footer-wrapper li {
+	list-style-type: none;	
+}
+
+#region-footer-first, #region-footer-second, #region-footer-third, #region-footer-fourth {
+	background: #65679c;
+	color: #F0F0F0;
+	height: 185px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+#region-footer-first {
+	padding-left: 20px;
+	padding-right: 0px;
+}
+
+#region-footer-fifth {
+	height: 70px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	background: #CCC;
+}
+
+#block-jeffcolibrary-blks-foot-copyright {
+	float: left;
+	margin-top: 16px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 10px;
+}
+
+#block-jeffcolibrary-blks-foot-address-phone {
+	float: right;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#block-jeffcolibrary-blks-foot-connect #social_media_icons img {
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 9px;
+}
+
+#block-jeffcolibrary-blks-foot-connect #textfield {
+	margin-top: 7px;
+}
+
+
+
+
+
+
+
