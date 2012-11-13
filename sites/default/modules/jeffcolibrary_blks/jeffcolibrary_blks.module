@@ -207,8 +207,8 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 <input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
 <input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt" /></div>
 <div id="search_box">
-<input type="text" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
-<input type="image" src="/screens/submit.gif" width="22" height="22" id="go" onclick="gosearch();"/>
+<input type="text" name="target" size="17" value="search all ebooks" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="submit" value="Search" id="go" onclick="gosearch();"/>
 </div>
 </fieldset>';
 
@@ -227,8 +227,8 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 <input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
 <input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt" /></div>
 <div id="search_box">
-<input type="text" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
-<input type="image" src="/screens/submit.gif" width="22" height="22" id="go" onclick="gosearch();"/>
+<input type="text" name="target" size="17" value="search all audiobooks" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="submit" value="Search" id="go" onclick="gosearch();"/>
 </div>
 </fieldset>';
 
