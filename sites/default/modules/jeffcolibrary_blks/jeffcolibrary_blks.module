@@ -47,6 +47,15 @@ function jeffcolibrary_blks_block_info() {
       'status' => 1,
 	  'region' => 'footer_fifth',
     );
+	
+    $blocks['downloads_search_ebooks'] = array(
+      'info' => t('Downloads: Ebook Search.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'downloads',
+    );
+
 
   return $blocks;
 }
@@ -178,6 +187,20 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
     $block = array(
       'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'downloads_search_ebooks') {
+  
+    $content = '<form action="http://jefferson.lib.overdrive.com/BANGSearch.dll" method="POST">
+      <input type="text" name="Title" size="36" maxlength="100">
+      </form>';
+
+    $block = array(
+      'subject' => t('Ebooks'),
       'content' => $content,
     );
 
