@@ -47,7 +47,23 @@ function jeffcolibrary_blks_block_info() {
       'status' => 1,
 	  'region' => 'footer_fifth',
     );
+	
+    $blocks['downloads_search_ebooks'] = array(
+      'info' => t('Downloads: Ebook Search.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'downloads',
+    );
 
+    $blocks['downloads_search_audiobooks'] = array(
+      'info' => t('Downloads: Audiobooks Search.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'downloads',
+    );
+	
   return $blocks;
 }
 
@@ -178,6 +194,46 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
     $block = array(
       'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'downloads_search_ebooks') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt" /></div>
+<div id="search_box">
+<input type="text" name="target" size="17" value="search all ebooks" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="submit" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Ebooks'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'downloads_search_audiobooks') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt" /></div>
+<div id="search_box">
+<input type="text" name="target" size="17" value="search all audiobooks" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="submit" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Audiobooks'),
       'content' => $content,
     );
 

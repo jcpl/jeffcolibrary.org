@@ -4,6 +4,7 @@ core = '7.x'
 engine = 'phptemplate'
 screenshot = 'screenshot.png'
 base theme = 'omega'
+scripts[] = encorelocationfacet.js
 regions[emergency] = 'Emergency Message'
 regions[globalnav] = 'Global Nav'
 regions[branding] = 'Branding'
