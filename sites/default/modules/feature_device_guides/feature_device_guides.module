@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_device_guides feature.
+ */
+
+include_once 'feature_device_guides.features.inc';
