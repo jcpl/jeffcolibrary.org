@@ -64,6 +64,14 @@ function jeffcolibrary_blks_block_info() {
 	  'pages' => 'downloads',
     );
 	
+    $blocks['research_search_mags'] = array(
+      'info' => t('Research: Magazine & Newspaper Search.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'research',
+    );	
+	
   return $blocks;
 }
 
@@ -239,5 +247,26 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
     return $block;
   }
+  
+    if ($block_name == 'research_search_mags') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def" /></div>
+<div id="search_box">
+<input type="text" size="40" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="button" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Online Magazines & Newspapers'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
 
 }
