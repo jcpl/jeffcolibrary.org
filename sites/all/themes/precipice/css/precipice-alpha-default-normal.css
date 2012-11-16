@@ -122,8 +122,17 @@
 	margin-top: 7px;
 }
 
+/* Research */
 
+.field-name-field-guide-image {
+	float: left;
+}
 
+.field-name-field-guide-teaser {
+	float: right;
+	width: 380px;
+	margin-right: 100px;
+}
 
 
 
