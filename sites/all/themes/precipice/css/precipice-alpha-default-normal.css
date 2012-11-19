@@ -122,9 +122,12 @@
 	margin-top: 7px;
 }
 
+/* Downloads */
 
-
-
-
-
-
+.views-view-grid td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+td.col-first {
+	padding-left: 0px;
+}
