@@ -126,13 +126,13 @@
 
 .field-name-field-guide-image {
 	float: left;
+	padding-right: 20px;
 }
 
 .field-name-field-guide-teaser {
 	float: right;
 	width: 380px;
-	margin-left: 20px;
-	margin-right: 100px;
+	margin-right: 80px;
 }
 
 /* Downloads */
@@ -141,6 +141,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
 td.col-first {
 	padding-left: 0px;
 }
