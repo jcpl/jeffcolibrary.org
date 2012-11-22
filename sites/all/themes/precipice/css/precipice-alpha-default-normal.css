@@ -132,7 +132,11 @@
 .field-name-field-guide-teaser {
 	float: right;
 	width: 380px;
-	margin-right: 80px;
+	padding-right: 40px;
+	margin-right: 40px;
+	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-position: right;
+	background-repeat: no-repeat;
 }
 
 /* Downloads */
