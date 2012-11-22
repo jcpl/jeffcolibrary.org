@@ -255,7 +255,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 <input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
 <input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def" /></div>
 <div id="search_box">
-<input type="text" size="17" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="text" size="26" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
 <input type="button" value="Search" id="go" onclick="gosearch();"/>
 </div>
 </fieldset>';
