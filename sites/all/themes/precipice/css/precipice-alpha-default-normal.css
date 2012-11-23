@@ -122,12 +122,35 @@
 	margin-top: 7px;
 }
 
+/* Research */
+
+.field-name-field-guide-image {
+	float: left;
+	padding-right: 20px;
+}
+
+.field-name-field-guide-teaser {
+	float: right;
+	width: 380px;
+	height: 90px;
+	padding-right: 50px;
+	margin-right: 30px;
+	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.view-seasonal-guides .views-row {
+	padding-bottom: 25px;
+}
+
 /* Downloads */
 
 .views-view-grid td {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
 td.col-first {
 	padding-left: 0px;
 }
