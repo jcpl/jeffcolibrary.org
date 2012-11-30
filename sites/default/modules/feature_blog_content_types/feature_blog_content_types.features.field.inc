@@ -1082,7 +1082,7 @@ function feature_blog_content_types_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'jcpl_teens',
+            'vocabulary' => 'events_teens',
             'parent' => '0',
           ),
         ),
