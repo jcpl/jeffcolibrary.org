@@ -47,7 +47,6 @@ function feature_blog_content_types_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
-  $handler->display->display_options['fields']['field_blog_post']['element_type'] = 'h3';
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
   /* Field: Content: Library news blog image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
@@ -73,6 +72,18 @@ function feature_blog_content_types_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'advocacy' => 'advocacy',
+    'booksandbeyond' => 'booksandbeyond',
+    'jcpl_kids' => 'jcpl_kids',
+    'jcpl_teens' => 'jcpl_teens',
+    'library_news' => 'library_news',
+    'blog' => 'blog',
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
@@ -132,6 +143,17 @@ function feature_blog_content_types_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'advocacy' => 'advocacy',
+    'booksandbeyond' => 'booksandbeyond',
+    'jcpl_kids' => 'jcpl_kids',
+    'jcpl_teens' => 'jcpl_teens',
+    'library_news' => 'library_news',
+  );
   $handler->display->display_options['block_description'] = 'Latest from the blogs';
   $export['latest_from_the_blogs'] = $view;
 
