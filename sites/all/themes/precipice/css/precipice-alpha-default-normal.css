@@ -147,10 +147,19 @@
 /* Downloads */
 
 .views-view-grid td {
-	padding-left: 10px;
+	vertical-align: top;
 	padding-right: 10px;
+	padding-left: 10px;
 }
 
 td.col-first {
 	padding-left: 0px;
+}
+
+/* Blog posts */
+.field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {
+display:inline;
+float:left;
+font-weight:normal;
+padding-right:10px;
 }
