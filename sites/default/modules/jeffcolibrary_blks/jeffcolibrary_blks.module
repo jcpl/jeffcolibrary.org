@@ -1,6 +1,7 @@
 <?php
 // $Id$
 
+
 /**
  * Implements hook_block_info().
  */
@@ -70,6 +71,14 @@ function jeffcolibrary_blks_block_info() {
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'research',
+    );	
+	
+    $blocks['ask_us'] = array(
+      'info' => t('Ask Us.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'research/*',
     );	
 	
   return $blocks;
@@ -168,11 +177,13 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
   if ($block_name == 'foot_connect') {
   
-    $content = '<div id="social_media_icons"><img src="sites/default/files/head_foot/facebook.png" width="40" height="40" alt="Facebook" /><img src="sites/default/files/head_foot/twitter.png" width="40" height="40" alt="Twitter" /><img src="sites/default/files/head_foot/vimeo.png" width="40" height="40" alt="Vimeo" /><img src="sites/default/files/head_foot/youtube.png" width="40" height="40" alt="You Tube" /></div>
-      <form id="form1" name="form1" method="post" action="">
+    global $base_url ;
+	
+    $content = "<div id=\"social_media_icons\"><img src=\"$base_url/sites/default/files/head_foot/facebook.png\" width=\"40\" height=\"40\" alt=\"Facebook\" /><img src=\"$base_url/sites/default/files/head_foot/twitter.png\" width=\"40\" height=\"40\" alt=\"Twitter\" /><img src=\"$base_url/sites/default/files/head_foot/vimeo.png\" width=\"40\" height=\"40\" alt=\"Vimeo\" /><img src=\"$base_url/sites/default/files/head_foot/youtube.png\" width=\"40\" height=\"40\" alt=\"You Tube\" /></div>
+      <form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">
         Sign up for our newsletter<br />
-      <input type="text" name="textfield" id="textfield" />
-      </form>';
+      <input type=\"text\" name=\"textfield\" id=\"textfield\" />
+      </form>";
 
     $block = array(
       'subject' => t('Connect with Us'),
@@ -268,5 +279,17 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     return $block;
   }
 
+    if ($block_name == 'ask_us') {
+  
+    $content = '<img src="sites/default/files/icons/email.gif" />Email <img src="sites/default/files/icons/phone.gif" /> 303-235-JCPL (5275)
+';
+
+    $block = array(
+      'subject' => t('Ask Us'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
 
 }
