@@ -183,17 +183,11 @@
 	float: left;
 	margin-right: 20px;
 }
-/*
-.field-name-field-getstart1-titlelink, .field-name-field-getstart2-titlelink, .field-name-field-getstart3-titlelink, .field-name-field-getstart4-titlelink {
-	float: right;
-	width: 180px;
+
+.icon_with_text {
+	padding-top: 10px;
+	padding-right: 4px;
 }
-
-.field-name-field-getstart1-desc, .field-name-field-getstart2-desc, .field-name-field-getstart3-desc, .field-name-field-getstart4-desc {
-	float: right;
-	width: 180px;
-
-}*/
 
 /* Downloads */
 

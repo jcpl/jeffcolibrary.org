@@ -284,11 +284,11 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     global $base_url ;
 
     $content = "<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/email.gif\" /> Email</span>
-<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-JCPL (5275)</span>
+<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-JCPL (5275)</span><br /><br />
 <div>
 <iframe src=\"http://www.askcolorado.org/widgets/askcoloradowidget.html\" 
 id=\"askcolorado_iframe\" marginheight=\"0\" marginwidth=\"0\" scrolling=\"auto\" 
-frameborder=\"0\" style=\"width: 240px; height: 340px; border: none;\"> </iframe>
+frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe>
 </div>";
 
     $block = array(
