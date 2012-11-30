@@ -155,3 +155,11 @@
 td.col-first {
 	padding-left: 0px;
 }
+
+/* Blog posts */
+.field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {
+display:inline;
+float:left;
+font-weight:normal;
+padding-right:10px;
+}
