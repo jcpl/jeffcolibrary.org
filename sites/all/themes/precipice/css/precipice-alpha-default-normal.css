@@ -78,6 +78,7 @@
 	padding-right: 10px;
 	margin-left: 0px;
 	margin-right: 0px;
+	margin-top: 30px;
 }
 
 #region-footer-first {
@@ -122,9 +123,11 @@
 	margin-top: 7px;
 }
 
-/* Research */
+/* ------------- Research -------------- */
 
-.field-name-field-guide-image {
+/* Seasonal Guide teasers */
+
+.field-name-field-seasonal-guide-image {
 	float: left;
 	padding-right: 20px;
 }
@@ -144,7 +147,43 @@
 	padding-bottom: 25px;
 }
 
-/* Downloads */
+/* Subject Guide full nodes */
+
+.group_getstart1, .group_getstart2, .group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+	width: 300px;
+}
+
+.group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+	padding-top: 20px;
+}
+
+.group_getstart1, .group_getstart3, .field-name-field-guide-find-more-info {
+	float:left;
+}
+
+.group_getstart2, .group_getstart4, .field-name-field-guide-more {
+	float:right;
+}
+
+.field-name-field-getstart1-image, .field-name-field-getstart2-image, .field-name-field-getstart3-image, .field-name-field-getstart4-image {
+	float: left;
+	margin-right: 20px;
+}
+
+/* Ask Us */
+
+.icon_with_text {
+	padding-top: 10px;
+	padding-right: 4px;
+}
+
+/* Seasonal Guide full nodes */
+
+.node-seasonal-guide .field-name-field-guide-more {
+	float:left;
+}
+
+/* -------------- Downloads ------------- */
 
 .views-view-grid td {
 	vertical-align: top;
