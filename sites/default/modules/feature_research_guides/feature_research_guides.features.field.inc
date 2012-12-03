@@ -10,14 +10,14 @@
 function feature_research_guides_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-seasonal_guide-field_guide_description'.
-  $fields['node-seasonal_guide-field_guide_description'] = array(
+  // Exported field: 'node-seasonal_guide-field_getstart1_desc'.
+  $fields['node-seasonal_guide-field_getstart1_desc'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_guide_description',
+      'field_name' => 'field_getstart1_desc',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -48,19 +48,366 @@ function feature_research_guides_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 4,
+          'weight' => '3',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '3',
         ),
         'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_getstart1_desc',
+      'label' => 'Description',
+      'required' => 1,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => '140',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => '2',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-seasonal_guide-field_getstart1_titlelink'.
+  $fields['node-seasonal_guide-field_getstart1_titlelink'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_getstart1_titlelink',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'seasonal_guide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '2',
+        ),
+        'full' => array(
           'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '2',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '7',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_getstart1_titlelink',
+      'label' => 'Title & Link',
+      'required' => 1,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'required',
+        'title_maxlength' => '32',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
+        'type' => 'link_field',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-seasonal_guide-field_getstart2_desc'.
+  $fields['node-seasonal_guide-field_getstart2_desc'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_getstart2_desc',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'seasonal_guide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '4',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '4',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_getstart2_desc',
+      'label' => 'Description',
+      'required' => 1,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'maxlength_js' => '140',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => '2',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-seasonal_guide-field_getstart2_titlelink'.
+  $fields['node-seasonal_guide-field_getstart2_titlelink'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_getstart2_titlelink',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'seasonal_guide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '3',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '3',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_getstart2_titlelink',
+      'label' => 'Title & Link',
+      'required' => 1,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'required',
+        'title_maxlength' => '32',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
+        'type' => 'link_field',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-seasonal_guide-field_getstart3_desc'.
+  $fields['node-seasonal_guide-field_getstart3_desc'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_getstart3_desc',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'seasonal_guide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '5',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '5',
+        ),
+        'teaser' => array(
+          'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '3',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_guide_description',
+      'field_name' => 'field_getstart3_desc',
       'label' => 'Description',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
@@ -69,22 +416,118 @@ function feature_research_guides_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '5',
+          'maxlength_js' => '140',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => '2',
         ),
         'type' => 'text_textarea',
-        'weight' => '0',
+        'weight' => '6',
       ),
     ),
   );
 
-  // Exported field: 'node-seasonal_guide-field_guide_getting_started'.
-  $fields['node-seasonal_guide-field_guide_getting_started'] = array(
+  // Exported field: 'node-seasonal_guide-field_getstart3_titlelink'.
+  $fields['node-seasonal_guide-field_getstart3_titlelink'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_guide_getting_started',
+      'field_name' => 'field_getstart3_titlelink',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'seasonal_guide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '4',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '4',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '9',
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_getstart3_titlelink',
+      'label' => 'Title & Link',
+      'required' => 1,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'required',
+        'title_maxlength' => '32',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
+        'type' => 'link_field',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-seasonal_guide-field_getstart4_desc'.
+  $fields['node-seasonal_guide-field_getstart4_desc'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_getstart4_desc',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -115,18 +558,25 @@ function feature_research_guides_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 1,
+          'weight' => '6',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '6',
         ),
         'teaser' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '6',
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_guide_getting_started',
-      'label' => 'Getting Started',
+      'field_name' => 'field_getstart4_desc',
+      'label' => 'Description',
       'required' => 1,
       'settings' => array(
         'text_processing' => '0',
@@ -136,94 +586,106 @@ function feature_research_guides_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '5',
+          'maxlength_js' => '140',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
+          'rows' => '2',
         ),
         'type' => 'text_textarea',
-        'weight' => '-3',
+        'weight' => '9',
       ),
     ),
   );
 
-  // Exported field: 'node-seasonal_guide-field_guide_image'.
-  $fields['node-seasonal_guide-field_guide_image'] = array(
+  // Exported field: 'node-seasonal_guide-field_getstart4_titlelink'.
+  $fields['node-seasonal_guide-field_getstart4_titlelink'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_guide_image',
-      'foreign keys' => array(
-        'fid' => array(
-          'columns' => array(
-            'fid' => 'fid',
-          ),
-          'table' => 'file_managed',
-        ),
-      ),
-      'indexes' => array(
-        'fid' => array(
-          0 => 'fid',
-        ),
-      ),
+      'field_name' => 'field_getstart4_titlelink',
+      'foreign keys' => array(),
+      'indexes' => array(),
       'locked' => '0',
-      'module' => 'image',
+      'module' => 'link',
       'settings' => array(
-        'default_image' => 0,
-        'uri_scheme' => 'public',
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
       ),
       'translatable' => '0',
-      'type' => 'image',
+      'type' => 'link_field',
     ),
     'field_instance' => array(
       'bundle' => 'seasonal_guide',
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => 0,
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '5',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '5',
         ),
         'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => 'content',
-            'image_style' => '140x90',
-          ),
-          'type' => 'image',
-          'weight' => '0',
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_guide_image',
-      'label' => 'Image',
+      'field_name' => 'field_getstart4_titlelink',
+      'label' => 'Title & Link',
       'required' => 1,
       'settings' => array(
-        'alt_field' => 0,
-        'default_image' => 0,
-        'file_directory' => 'guide_images',
-        'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => 0,
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'required',
+        'title_maxlength' => '32',
+        'title_value' => '',
+        'url' => 0,
         'user_register_form' => FALSE,
+        'validate_url' => 1,
       ),
       'widget' => array(
-        'active' => 1,
-        'module' => 'image',
+        'active' => 0,
+        'module' => 'link',
         'settings' => array(
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
-        'type' => 'image_image',
-        'weight' => '-4',
+        'type' => 'link_field',
+        'weight' => '8',
       ),
     ),
   );
@@ -266,13 +728,20 @@ function feature_research_guides_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => '4',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '2',
+          'weight' => '10',
         ),
       ),
       'entity_type' => 'node',
@@ -287,79 +756,14 @@ function feature_research_guides_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '300',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-seasonal_guide-field_guide_source_title'.
-  $fields['node-seasonal_guide-field_guide_source_title'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_guide_source_title',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'seasonal_guide',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 2,
-        ),
-        'teaser' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '5',
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_guide_source_title',
-      'label' => 'Source Title',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '-2',
+        'weight' => '7',
       ),
     ),
   );
@@ -402,13 +806,19 @@ function feature_research_guides_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 6,
+          'weight' => 9,
+        ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'text_plain',
           'weight' => '1',
         ),
       ),
@@ -424,6 +834,10 @@ function feature_research_guides_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
+          'maxlength_js' => '270',
+          'maxlength_js_enforce' => 0,
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'maxlength_js_truncate_html' => 0,
           'rows' => '3',
         ),
         'type' => 'text_textarea',
@@ -432,85 +846,93 @@ function feature_research_guides_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-seasonal_guide-field_guide_url'.
-  $fields['node-seasonal_guide-field_guide_url'] = array(
+  // Exported field: 'node-seasonal_guide-field_seasonal_guide_image'.
+  $fields['node-seasonal_guide-field_seasonal_guide_image'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '-1',
+      'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_guide_url',
-      'foreign keys' => array(),
-      'indexes' => array(),
+      'field_name' => 'field_seasonal_guide_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
       'locked' => '0',
-      'module' => 'link',
+      'module' => 'image',
       'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'rel' => '',
-          'target' => 'default',
-        ),
-        'display' => array(
-          'url_cutoff' => 80,
-        ),
-        'enable_tokens' => 1,
-        'title' => 'optional',
-        'title_maxlength' => 128,
-        'title_value' => '',
-        'url' => 0,
+        'default_image' => 0,
+        'uri_scheme' => 'public',
       ),
       'translatable' => '0',
-      'type' => 'link_field',
+      'type' => 'image',
     ),
     'field_instance' => array(
       'bundle' => 'seasonal_guide',
-      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'link',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 8,
+        ),
+        'full' => array(
+          'label' => 'above',
           'settings' => array(),
-          'type' => 'link_default',
-          'weight' => 3,
+          'type' => 'hidden',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '4',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => 'content',
+            'image_style' => '140x90',
+          ),
+          'type' => 'image',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_guide_url',
-      'label' => 'URL',
-      'required' => 0,
+      'field_name' => 'field_seasonal_guide_image',
+      'label' => 'Image',
+      'required' => 1,
       'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'configurable_title' => 0,
-          'rel' => '',
-          'target' => 'default',
-          'title' => '',
-        ),
-        'display' => array(
-          'url_cutoff' => '80',
-        ),
-        'enable_tokens' => 1,
-        'title' => 'optional',
-        'title_maxlength' => '128',
-        'title_value' => '',
-        'url' => 0,
+        'alt_field' => 1,
+        'default_image' => 0,
+        'file_directory' => 'guide_images',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 1,
         'user_register_form' => FALSE,
-        'validate_url' => 1,
       ),
       'widget' => array(
-        'active' => 0,
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_field',
-        'weight' => '-1',
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'preview_image_style' => '140x90',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '1',
       ),
     ),
   );
@@ -660,14 +1082,14 @@ function feature_research_guides_field_default_fields() {
       'label' => 'Image',
       'required' => 1,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => 'guide_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -921,14 +1343,14 @@ function feature_research_guides_field_default_fields() {
       'label' => 'Image',
       'required' => 1,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => 'guide_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1182,14 +1604,14 @@ function feature_research_guides_field_default_fields() {
       'label' => 'Image',
       'required' => 1,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => 'guide_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1443,14 +1865,14 @@ function feature_research_guides_field_default_fields() {
       'label' => 'Image',
       'required' => 1,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => 'guide_images',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1718,14 +2140,11 @@ function feature_research_guides_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Description');
-  t('Getting Started');
   t('How to Find More Information');
   t('Image');
   t('More');
-  t('Source Title');
   t('Teaser');
   t('Title & Link');
-  t('URL');
 
   return $fields;
 }
