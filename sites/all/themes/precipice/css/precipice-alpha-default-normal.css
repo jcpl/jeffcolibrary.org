@@ -78,6 +78,7 @@
 	padding-right: 10px;
 	margin-left: 0px;
 	margin-right: 0px;
+	margin-top: 30px;
 }
 
 #region-footer-first {
@@ -122,7 +123,9 @@
 	margin-top: 7px;
 }
 
-/* Research */
+/* ------------- Research -------------- */
+
+/* Seasonal Guide teasers */
 
 .field-name-field-seasonal-guide-image {
 	float: left;
@@ -143,6 +146,8 @@
 .view-seasonal-guides .views-row {
 	padding-bottom: 25px;
 }
+
+/* Subject Guide full nodes */
 
 .group_getstart1, .group_getstart2, .group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
 	width: 300px;
@@ -165,12 +170,20 @@
 	margin-right: 20px;
 }
 
+/* Ask Us */
+
 .icon_with_text {
 	padding-top: 10px;
 	padding-right: 4px;
 }
 
-/* Downloads */
+/* Seasonal Guide full nodes */
+
+.node-seasonal-guide .field-name-field-guide-more {
+	float:left;
+}
+
+/* -------------- Downloads ------------- */
 
 .views-view-grid td {
 	padding-left: 10px;
