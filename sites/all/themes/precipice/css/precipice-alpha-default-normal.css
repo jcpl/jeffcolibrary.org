@@ -159,6 +159,7 @@
 
 .group_getstart1, .group_getstart3, .field-name-field-guide-find-more-info {
 	float:left;
+	clear:left;
 }
 
 .group_getstart2, .group_getstart4, .field-name-field-guide-more {
