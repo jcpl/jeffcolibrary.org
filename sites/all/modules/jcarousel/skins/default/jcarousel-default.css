@@ -10,10 +10,12 @@
 
 .jcarousel-skin-default {
   text-align: center;
+  color: #ffffff;
+  font-size: 0px;
 }
 
 .jcarousel-skin-default .jcarousel-container-horizontal {
-  width: 440px;
+  width: 780px;
   height: 102px;
   padding: 20px 40px;
   margin: auto;
@@ -27,7 +29,7 @@
 }
 
 .jcarousel-skin-default .jcarousel-clip-horizontal {
-  width: 440px;
+  width: 780px;
   overflow: hidden;
 }
 
@@ -41,7 +43,7 @@
   width: 100px;
   height: 100px;
   overflow: hidden;
-  border: 1px solid #CCC;
+  border: 0px solid #CCC;
   list-style: none;
   background: #fff none;
 }
