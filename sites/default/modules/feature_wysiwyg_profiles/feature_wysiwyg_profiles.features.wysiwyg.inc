@@ -36,7 +36,6 @@ function feature_wysiwyg_profiles_wysiwyg_default_profiles() {
           'undo' => 1,
           'link' => 1,
           'anchor' => 1,
-          'image' => 1,
         ),
         'media' => array(
           'media' => 1,
