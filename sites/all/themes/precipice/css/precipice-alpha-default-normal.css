@@ -203,3 +203,63 @@ float:left;
 font-weight:normal;
 padding-right:10px;
 }
+
+/* -------------- Kids ------------- */
+
+.kidsfeatureblk {
+	width: 920px;
+	height: 90px;	
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	background-color: #dcfaf3;
+}
+
+.kidsfeatureblk #kids_feature1 {
+	width: 440px;
+}
+
+.kidsfeatureblk #kids_feature2 {
+	width: 440px;
+	margin-right: 20px;
+}
+	
+.kidsfeatureblk #kids_feature1 {
+	float: left;
+}
+
+.kidsfeatureblk #kids_feature2 {
+	float: right;
+}
+
+.kidsfeatureblk #kids_feature1 img, .kidsfeatureblk #kids_feature2 img {
+	float: left;
+	padding-right: 20px;
+}
+	
+.kidsfeatureblk h2 {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
