@@ -44,6 +44,11 @@ function feature_wysiwyg_profiles_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
+      'filter_autop' => array(
+        'weight' => '2',
+        'status' => '1',
+        'settings' => array(),
+      ),
       'media_filter' => array(
         'weight' => '2',
         'status' => '1',
