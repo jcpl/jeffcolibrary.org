@@ -6,8 +6,6 @@
     <?php if ($messages): ?>
       <div id="messages" class="grid-<?php print $columns; ?>"><?php print $messages; ?></div>
     <?php endif; ?>
-    <?php if (!drupal_is_front_page()) { ?>
     <?php print $content; ?>
-<?php } ?>
   </div>
 <?php if ($wrapper): ?></div><?php endif; ?>
