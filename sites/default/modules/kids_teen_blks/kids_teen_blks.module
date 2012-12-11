@@ -39,7 +39,7 @@ function kids_teen_blks_block_view($block_name = '') {
   
     $content = "<div class=\"kidsfeatureblk\">
 	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
-	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Tutoring @ the Library</h3></div>
+	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Tutoring @ the Libraries</h3></div>
 </div>";
 
     $block = array(
