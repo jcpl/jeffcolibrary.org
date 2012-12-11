@@ -1,0 +1,228 @@
+<?php
+// $Id$
+
+/**
+ * Implements hook_block_info().
+ */
+function kids_teen_blks_block_info() {
+  $blocks = array();
+	
+    $blocks['kids_featured_homework_help'] = array(
+      'info' => t('Kids: Featured on Homework Help.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help',
+    );
+	
+    $blocks['kids_featured_safesearch'] = array(
+      'info' => t('Kids: Safesearch on Homework Help.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help',
+    );
+	
+  return $blocks;
+}
+
+
+
+/**
+ * Implements hook_block_view().
+ */
+function kids_teen_blks_block_view($block_name = '') {
+
+  if ($block_name == 'kids_featured_homework_help') {
+	  
+    global $base_url ; 
+  
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
+	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Tutoring @ the Libraries</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'kids_featured_safesearch') {
+  
+    $content = '<form action="http://www.google.com/search" method="get" name="google"><input type="text" size="23" maxlength="75" name="q" onblur="populateSearch(this.lii)" /> <input type="submit" value="Search" /><input type="hidden" name="safe" value="vss" /></form>';
+
+    $block = array(
+      'subject' => t('Google SafeSearch'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'foot_services') {
+  
+    $content = '<ul>
+        <li>Ask Us</li>
+        <li>Get a Library Card</li>
+        <li>Reserve a Computer</li>
+        <li>Wireless</li>
+        <li>Culture Pass</li>
+        <li>Outreach Services</li>
+        <li>Recursos en Espa&ntilde;ol</li>
+      </ul>';
+
+    $block = array(
+      'subject' => t('Services'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_support') {
+  
+    $content = '<ul>
+        <li>Advocate for JCPL</li>
+        <li>Donate</li>
+        <li>Volunteer</li>
+        <li>Request a Speaker</li>
+        <li>Foundation &amp; Friends</li>
+        <li>Community Partners</li>
+      </ul>';
+
+    $block = array(
+      'subject' => t('Support the Library'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_connect') {
+  
+    global $base_url ;
+	
+    $content = "<div id=\"social_media_icons\"><img src=\"$base_url/sites/default/files/head_foot/facebook.png\" width=\"40\" height=\"40\" alt=\"Facebook\" /><img src=\"$base_url/sites/default/files/head_foot/twitter.png\" width=\"40\" height=\"40\" alt=\"Twitter\" /><img src=\"$base_url/sites/default/files/head_foot/vimeo.png\" width=\"40\" height=\"40\" alt=\"Vimeo\" /><img src=\"$base_url/sites/default/files/head_foot/youtube.png\" width=\"40\" height=\"40\" alt=\"You Tube\" /></div>
+      <form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">
+        Sign up for our newsletter<br />
+      <input type=\"text\" name=\"textfield\" id=\"textfield\" />
+      </form>";
+
+    $block = array(
+      'subject' => t('Connect with Us'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_copyright') {
+  
+    $content = '<p>&copy;2013 Jefferson County Public Library</p>';
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'foot_address_phone') {
+  
+    $content = '10200 W. 20th Ave, Lakewood, CO 80215<br />
+      303-235-JCPL (5275)<br />
+      <a href="contact">Contact Us</a>';
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'downloads_search_ebooks') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt" /></div>
+<div id="search_box">
+<input type="text" name="target" size="26" value="search all ebooks" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="submit" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Ebooks'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'downloads_search_audiobooks') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt" /></div>
+<div id="search_box">
+<input type="text" name="target" size="26" value="search all audiobooks" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="submit" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Audiobooks'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+    if ($block_name == 'research_search_mags') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def" /></div>
+<div id="search_box">
+<input type="text" size="26" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="button" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Online Magazines & Newspapers'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+    if ($block_name == 'ask_us') {
+  
+    global $base_url ;
+
+    $content = "<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/email.gif\" /> Email</span>
+<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-JCPL (5275)</span><br /><br />
+<div>
+<iframe src=\"http://www.askcolorado.org/widgets/askcoloradowidget.html\" 
+id=\"askcolorado_iframe\" marginheight=\"0\" marginwidth=\"0\" scrolling=\"auto\" 
+frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe>
+</div>";
+
+    $block = array(
+      'subject' => t('Ask Us'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+}
