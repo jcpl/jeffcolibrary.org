@@ -209,16 +209,22 @@ padding-right:10px;
 /* Feature Blocks in sidebar second */
 
 .kidsfeatureblk {
-	padding: 20px;
-	background-color: #dcfaf3;
+
 }
 
 .kidsfeatureblk #kids_feature1 {
-	padding-bottom:20px;
+	padding: 20px;
 	height: 90px;
+	margin-bottom: 20px;
+	background-color: #dcfaf3;
 }
 
 .kidsfeatureblk #kids_feature2 {
+	padding: 20px;
+	height: 90px;
+	margin-bottom: 20px;
+	background-color: #dcfaf3;
+
 	clear: left;
 	height: 90px;
 }
@@ -226,31 +232,25 @@ padding-right:10px;
 .kidsfeatureblk #kids_feature1 img, .kidsfeatureblk #kids_feature2 img {
 	float: left;
 	padding-right: 20px;
+	padding-right: 20px;
 }
 
 /* Homework Help */
 
-.group_resource1, .group_resource3 {
-	width: 300px;
+#block-views-homework-help-a-z-block .field-group-format {
+	display: inline-table;
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+
+.group_resource1, .group_resource2, .group_resource3 {
 	margin-right: 20px;
-	margin-bottom: 20px;
-	float: left;
-}
-
-.group_resource2, .group_resource4 {
-	width: 300px;
-	margin-bottom: 20px;
-	float: right;
-}
-
-#block-views-homework-help-a-z-block .field-type-image {
-	float:left;
 }
 
 #block-views-homework-help-a-z-block .field-type-link-field {
-	float: right;
-	margin-left: 20px;
 	width: 140px;
+	padding-top: 10px;
 }
 
 
