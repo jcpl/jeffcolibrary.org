@@ -206,6 +206,8 @@ padding-right:10px;
 
 /* -------------- Kids ------------- */
 
+/* Feature Blocks in sidebar second */
+
 .kidsfeatureblk {
 	padding: 20px;
 	background-color: #dcfaf3;
@@ -226,14 +228,30 @@ padding-right:10px;
 	padding-right: 20px;
 }
 
+/* Homework Help */
 
+.group_resource1, .group_resource3 {
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
 
+.group_resource2, .group_resource4 {
+	width: 300px;
+	margin-bottom: 20px;
+	float: right;
+}
 
+#block-views-homework-help-a-z-block .field-type-image {
+	float:left;
+}
 
-
-
-
-
+#block-views-homework-help-a-z-block .field-type-link-field {
+	float: right;
+	margin-left: 20px;
+	width: 140px;
+}
 
 
 
