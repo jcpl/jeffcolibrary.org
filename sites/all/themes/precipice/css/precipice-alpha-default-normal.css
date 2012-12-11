@@ -208,10 +208,6 @@ padding-right:10px;
 
 /* Feature Blocks in sidebar second */
 
-.kidsfeatureblk {
-
-}
-
 .kidsfeatureblk #kids_feature1 {
 	padding: 20px;
 	height: 90px;
@@ -233,6 +229,15 @@ padding-right:10px;
 	float: left;
 	padding-right: 20px;
 	padding-right: 20px;
+}
+
+#block-kids-teen-blks-kids-featured-safesearch {
+	padding: 20px;
+	background-color: #dcfaf3;
+}
+
+#block-kids-teen-blks-kids-featured-safesearch .block-title {
+	padding-bottom: 7px;
 }
 
 /* Homework Help */

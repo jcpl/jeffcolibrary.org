@@ -15,6 +15,14 @@ function kids_teen_blks_block_info() {
 	  'pages' => 'kids/homework-help',
     );
 	
+    $blocks['kids_featured_safesearch'] = array(
+      'info' => t('Kids: Safesearch on Homework Help.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help',
+    );
+	
   return $blocks;
 }
 
@@ -42,19 +50,12 @@ function kids_teen_blks_block_view($block_name = '') {
     return $block;
   }
 
-  if ($block_name == 'foot_about_us') {
+  if ($block_name == 'kids_featured_safesearch') {
   
-    $content = '<ul>
-        <li>Leadership &amp; Mission</li>
-        <li>Board of Trustees</li>
-        <li>Planning &amp; Budget</li>
-        <li>Press Room</li>
-        <li>Policies</li>
-        <li>Jobs</li>
-      </ul>';
+    $content = '<form action="http://www.google.com/search" method="get" name="google"><input type="text" size="23" maxlength="75" name="q" onblur="populateSearch(this.lii)" /> <input type="submit" value="Search" /><input type="hidden" name="safe" value="vss" /></form>';
 
     $block = array(
-      'subject' => t('About Us'),
+      'subject' => t('Google SafeSearch'),
       'content' => $content,
     );
 
