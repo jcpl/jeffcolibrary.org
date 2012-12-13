@@ -248,19 +248,24 @@ padding-right:10px;
 	margin-bottom: 20px;
 }
 
-
 .group_resource1, .group_resource2, .group_resource3 {
 	margin-right: 20px;
 }
 
 #block-views-homework-help-a-z-block .field-type-link-field {
 	width: 140px;
-	padding-top: 10px;
 }
 
+/* Kids & Teen Reviews */
 
+.views-field-field-review-name {
+	padding-bottom: 7px;
+}
 
-
+.views-field-field-review-bookjacket {
+	float: left;
+	padding-right: 10px;
+}
 
 
 
