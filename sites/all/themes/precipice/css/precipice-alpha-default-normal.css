@@ -267,6 +267,16 @@ padding-right:10px;
 	padding-right: 10px;
 }
 
+/* --------------- Books, Movies & Music ---------------------- */
+
+#whattoread1, #whattoread2, #whattoread3, #whattoread4 {
+	display: inline-table;
+	padding-top: 7px;
+}
+
+#whattoread2, #whattoread3, #whattoread4 {
+	padding-left: 20px;
+}
 
 
 
