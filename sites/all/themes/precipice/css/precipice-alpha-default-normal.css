@@ -258,13 +258,36 @@ padding-right:10px;
 
 /* Kids & Teen Reviews */
 
-.views-field-field-review-name {
+.block-kids-teen-reviews-block h2 {
+	padding-bottom: 3px;
+}
+
+.view-kids-teen-reviews .views-row {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.views-field-field-review-author {
 	padding-bottom: 7px;
 }
 
 .views-field-field-review-bookjacket {
 	float: left;
-	padding-right: 10px;
+	padding-right: 15px;
+}
+
+.views-field-field-rate-it {
+	height: 20px;
+	float: right;
+	margin-right: 133px;
+}
+
+.views-field-field-rate-it p {
+	display: inline;
+}
+
+.view-kids-teen-reviews p {
+	display: inline;
 }
 
 /* --------------- Books, Movies & Music ---------------------- */
