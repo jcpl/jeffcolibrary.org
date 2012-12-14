@@ -297,6 +297,19 @@ padding-right:10px;
 
 /* Fun & Games */
 
+.kidsfungames img {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.kidsfungames h3 {
+	padding-top: 20px;
+}
+
+.kidsfungames div {
+	clear: left;
+}
 
 .node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
 	display: inline-table;
