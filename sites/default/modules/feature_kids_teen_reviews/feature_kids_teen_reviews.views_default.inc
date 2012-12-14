@@ -75,6 +75,8 @@ function feature_kids_teen_reviews_views_default_views() {
   $handler->display->display_options['fields']['field_review_author']['table'] = 'field_data_field_review_author';
   $handler->display->display_options['fields']['field_review_author']['field'] = 'field_review_author';
   $handler->display->display_options['fields']['field_review_author']['label'] = '';
+  $handler->display->display_options['fields']['field_review_author']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_review_author']['alter']['text'] = 'by [field_review_author-value]';
   $handler->display->display_options['fields']['field_review_author']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_review_author']['settings'] = array(
     'linked_field' => array(
