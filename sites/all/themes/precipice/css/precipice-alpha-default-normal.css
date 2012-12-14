@@ -256,6 +256,11 @@ padding-right:10px;
 	width: 140px;
 }
 
+#block-views-homework-help-a-z-block .field-type-link-field {
+	padding-top: 7px;
+	font-size: 1.15em;
+}
+
 /* Kids & Teen Reviews */
 
 .block-kids-teen-reviews-block h2 {
@@ -288,6 +293,24 @@ padding-right:10px;
 
 .view-kids-teen-reviews p {
 	display: inline;
+}
+
+/* Fun & Games */
+
+
+.node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
+	display: inline-table;
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+.group_resource5, .group_resource6, .group_resource7, group_resource9, .group_resource10, .group_resource11 {
+	margin-right: 20px;
+}
+
+.node-fun-and-games-category .field-type-link-field {
+	padding-top: 7px;
+	font-size: 1.15em;
 }
 
 /* --------------- Books, Movies & Music ---------------------- */
