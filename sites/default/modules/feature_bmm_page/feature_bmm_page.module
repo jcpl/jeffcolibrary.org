@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_bmm_page feature.
+ */
+
+include_once 'feature_bmm_page.features.inc';
