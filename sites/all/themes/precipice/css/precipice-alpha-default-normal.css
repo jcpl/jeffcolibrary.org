@@ -338,6 +338,25 @@ padding-right:10px;
 	float: right;
 }
 
+/* ---------------------- Teens ------------------------------- */
+
+/* Homework Help */
+
+#block-views-homework-help-a-z-block-1 .field-group-format {
+	display: inline-table;
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+#block-views-homework-help-a-z-block-1 .field-type-link-field {
+	width: 140px;
+}
+
+#block-views-homework-help-a-z-block-1 .field-type-link-field {
+	padding-top: 7px;
+	font-size: 1.15em;
+}
+
 
 /* --------------- Books, Movies & Music ---------------------- */
 
