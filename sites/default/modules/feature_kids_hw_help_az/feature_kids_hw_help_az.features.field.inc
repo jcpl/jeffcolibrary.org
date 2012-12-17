@@ -878,12 +878,94 @@ function feature_kids_hw_help_az_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-kids_homework_help-field_kids_or_teens'.
+  $fields['node-kids_homework_help-field_kids_or_teens'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_kids_or_teens',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'kids' => 'Kids',
+          'teens' => 'Teens',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'kids_homework_help',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Is this category going on the Kids Homework Help page or the Teens\'?',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'list_default',
+          'weight' => 8,
+        ),
+        'full' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_kids_or_teens',
+      'label' => 'Kids or Teens?',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+        ),
+        'type' => 'options_select',
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Image1');
   t('Image2');
   t('Image3');
   t('Image4');
+  t('Is this category going on the Kids Homework Help page or the Teens\'?');
+  t('Kids or Teens?');
   t('Resource1');
   t('Resource2');
   t('Resource3');

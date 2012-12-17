@@ -57,10 +57,46 @@ function feature_kids_hw_help_az_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'kids_homework_help' => 'kids_homework_help',
   );
+  /* Filter criterion: Content: Kids or Teens? (field_kids_or_teens) */
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['id'] = 'field_kids_or_teens_value';
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['table'] = 'field_data_field_kids_or_teens';
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['field'] = 'field_kids_or_teens_value';
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['value'] = array(
+    'kids' => 'kids',
+  );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  /* Display: Block: Kids HW Help */
+  $handler = $view->new_display('block', 'Block: Kids HW Help', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['block_description'] = 'Views: Kids HW Help';
+
+  /* Display: Block: Teens HW Help */
+  $handler = $view->new_display('block', 'Block: Teens HW Help', 'block_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'kids_homework_help' => 'kids_homework_help',
+  );
+  /* Filter criterion: Content: Kids or Teens? (field_kids_or_teens) */
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['id'] = 'field_kids_or_teens_value';
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['table'] = 'field_data_field_kids_or_teens';
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['field'] = 'field_kids_or_teens_value';
+  $handler->display->display_options['filters']['field_kids_or_teens_value']['value'] = array(
+    'teens' => 'teens',
+  );
+  $handler->display->display_options['block_description'] = 'Views: Teens HW Help';
   $export['homework_help_a_z'] = $view;
 
   return $export;
