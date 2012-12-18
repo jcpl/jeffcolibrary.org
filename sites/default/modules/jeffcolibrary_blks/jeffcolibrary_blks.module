@@ -87,7 +87,16 @@ function jeffcolibrary_blks_block_info() {
 	  'region' => 'content',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'book-movies-music',
+    );
+	
+    $blocks['events_search'] = array(
+      'info' => t('Events: Search the Calendar.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'events',
     );	
+
 	
   return $blocks;
 }
@@ -320,4 +329,21 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     return $block;
   }
+  
+  if ($block_name == 'events_search') {
+  
+    $content = '<form style="margin-bottom:0;" method="get" action="http://www.eventkeeper.com/code/events.cfm">
+<input type="text" maxlength="75" size="26" name="curSKW" value="" /> <input type="submit" value="Search" />
+<input type="hidden" name="curOrg" value="JCPL" />
+<input type="hidden" name="setRef" value="new" />
+</form>';
+
+    $block = array(
+      'subject' => t('Search the Calendar'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
 }
