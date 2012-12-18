@@ -97,6 +97,30 @@ function jeffcolibrary_blks_block_info() {
 	  'pages' => 'events',
     );	
 
+    $blocks['events_by_location'] = array(
+      'info' => t('Events: By Location.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'events',
+    );	
+
+    $blocks['events_by_topic'] = array(
+      'info' => t('Events: By Topic.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'events',
+    );	
+
+    $blocks['events_EK_today'] = array(
+      'info' => t('Events: Todays Events.'),
+      'status' => 1,
+	  'region' => 'content',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'events',
+    );	
+
   return $blocks;
 }
 
@@ -344,5 +368,43 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     return $block;
   }
+
+  if ($block_name == 'events_by_location') {
   
+    $content = '<table style="width: 300px; height: 145px;" align="left" border="0" cellpadding="10" cellspacing="10"><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Arvada%20Library">Arvada</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Evergreen%20Library">Evergreen</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Belmar%20Library">Belmar</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Golden%20Library">Golden</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Columbine%20Library">Columbine</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Lakewood%20Library">Lakewood</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Conifer%20Library">Conifer</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Standley%20Library">Standley Lake</a></td></tr><tr><td><a  href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Edgewater%20Library">Edgewater</a></td><td><a  href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Wheat%20Ridge%20Library">Wheat Ridge</a></td></tr></table>';
+
+    $block = array(
+      'subject' => t('By Location'),
+      'content' => $content,
+    );
+
+    return $block;
+  }  
+
+  if ($block_name == 'events_by_topic') {
+  
+    $content = '<p><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL">All events</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Computer+Classes&amp;setRef=new">Computer classes</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Storytimes&amp;setRef=new">Storytimes</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Kids+(All+Ages)&amp;curSKW=not(storytime or goose)&amp;setRef=new">Programs for kids - all ages</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Kids+(6+%26+Up)&amp;setRef=new">Programs for kids - 6 &amp; up</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Teens&amp;setRef=new">Programs for teens</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Adult&amp;setRef=new">Programs for adults</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=All+Ages&amp;setRef=new">Programs for all ages</a></p>';
+
+    $block = array(
+      'subject' => t('By Topic'),
+      'content' => $content,
+    );
+
+    return $block;
+  }  
+
+  if ($block_name == 'events_EK_today') {
+  
+    global $base_url ;
+	
+    $content = "<div><img src=\"$base_url/sites/default/files/events_images/todays_events.jpg\" alt=\"Todays Events\" /></div>
+     ";
+
+    $block = array(
+      'subject' => t('Todays Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
 }
