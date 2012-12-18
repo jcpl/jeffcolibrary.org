@@ -397,7 +397,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
   
     global $base_url ;
 	
-    $content = "<div><img src=\"$base_url/sites/default/files/events_images/todays_events.jpg\" alt=\"Todays Events\" /></div>
+    $content = "<div><img src=\"$base_url/sites/default/files/todays_events.jpg\" alt=\"Todays Events\" /></div>
      ";
 
     $block = array(
