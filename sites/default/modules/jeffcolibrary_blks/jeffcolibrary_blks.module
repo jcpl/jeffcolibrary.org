@@ -121,7 +121,7 @@ function jeffcolibrary_blks_block_info() {
 	  'pages' => 'events',
     );	
 
-    $blocks['kids_game'] = array(
+    $blocks['kids_games'] = array(
       'info' => t('Kids: Games'),
       'status' => 1,
 	  'region' => 'sidebar_second',
@@ -416,15 +416,15 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
     return $block;
   }
 
-  if ($block_name == 'kids_game') {
+  if ($block_name == 'kids_games') {
   
     global $base_url ;
 	
-    $content = "<div><img src=\"$base_url/sites/default/files/kids_teens/placeholder.gif\" alt=\"Kids Game\" /></div>
+    $content = "<div><img src=\"$base_url/sites/default/files/kids_teens/placeholder.gif\" alt=\"Kids Games\" /></div>
      ";
 
     $block = array(
-      'subject' => t('Game'),
+      'subject' => t('Games'),
       'content' => $content,
     );
 
