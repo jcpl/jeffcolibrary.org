@@ -1,7 +1,7 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
-/*No boder on any grid views, please.
+/*No border on any grid views, please.
 */
 
 table {
@@ -10,4 +10,44 @@ table {
 
 td.col-first {
 	padding-left: 0px;
+}
+
+#main-menu {
+	font-size: 1.5em;
+	font-weight:500;
+}
+
+#main-menu a {
+	text-decoration:none;
+	color: #000;
+}
+
+#main-menu li {
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #000;
+}
+
+.context-books-movies-music #main-menu .first a {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #d11241;
+}
+
+.context-downloads #main-menu .menu-499 a {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #d11241;
+}
+
+.context-research #main-menu .menu-652 a {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #d11241;
+}
+
+.context-events #main-menu .menu-839 a {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #d11241;
 }
