@@ -1,16 +1,7 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
-/*No border on any grid views, please.
-*/
-
-table {
-	border: none;
-}
-
-td.col-first {
-	padding-left: 0px;
-}
+/* Main Menu */
 
 #main-menu {
 	font-size: 1.5em;
@@ -28,26 +19,40 @@ td.col-first {
 	border-right-color: #000;
 }
 
-.context-books-movies-music #main-menu .first a {
+.context-books-movies-music #main-menu .first a { /*BOOKS MOVIES MUSIC*/
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-bottom-color: #d11241;
 }
 
-.context-downloads #main-menu .menu-499 a {
+.context-downloads #main-menu .menu-499 a { /*DOWNLOADS specific to installation*/
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-bottom-color: #d11241;
 }
 
-.context-research #main-menu .menu-652 a {
+.context-research #main-menu .menu-652 a { /*RESEARCH specific to installation*/
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-bottom-color: #d11241;
 }
 
-.context-events #main-menu .menu-839 a {
+.context-events #main-menu .menu-839 a { /*EVENTS specific to installation*/
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 	border-bottom-color: #d11241;
+}
+
+#main-menu .menu-734 a {
+	
+}
+
+/*No border on any grid views, please.*/
+
+table {
+	border: none;
+}
+
+td.col-first {
+	padding-left: 0px;
 }

@@ -12,7 +12,7 @@
 	margin-right: 10px;
 }
 
-#main-menu .last {
+#main-menu .menu-724, #main-menu .menu-734, #main-menu .last {  /*specific to installation*/
 	border-right:hidden;
 }
 
