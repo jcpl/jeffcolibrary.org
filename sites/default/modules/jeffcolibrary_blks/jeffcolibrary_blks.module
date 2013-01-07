@@ -1,6 +1,13 @@
 <?php
-// $Id$
 
+/**
+ * @file Some custom blocks.
+ */
+
+/**
+ * The ILS URL for facet form blocks.
+ */
+define('JEFFCOLIBRARY_BLKS_ENCOREBASE', 'http://encore.jefferson.lib.co.us/iii/encore/search/C|S');
 
 /**
  * Implements hook_block_info().
@@ -8,227 +15,225 @@
 function jeffcolibrary_blks_block_info() {
   $blocks = array();
 
-    $blocks['encore_search'] = array(
-      'info' => t('Encore Search for header Quicktabs.'),
-      'status' => 1,
-    );
+  $blocks['encore_search'] = array(
+    'info' => t('Encore Search for header Quicktabs.'),
+    'status' => 1,
+  );
 
-    $blocks['foot_about_us'] = array(
-      'info' => t('Footer: About Us.'),
-      'status' => 1,
+  $blocks['foot_about_us'] = array(
+    'info' => t('Footer: About Us.'),
+    'status' => 1,
     'region' => 'footer_first',
-    );
+  );
 
-    $blocks['foot_services'] = array(
-      'info' => t('Footer: Services.'),
-      'status' => 1,
+  $blocks['foot_services'] = array(
+    'info' => t('Footer: Services.'),
+    'status' => 1,
     'region' => 'footer_second',
-    );
+  );
 
   $blocks['foot_support'] = array(
-      'info' => t('Footer: Support the Library.'),
-      'status' => 1,
+    'info' => t('Footer: Support the Library.'),
+    'status' => 1,
     'region' => 'footer_third',
-    );
+  );
 
-    $blocks['foot_connect'] = array(
-      'info' => t('Footer: Connect with Us.'),
-      'status' => 1,
+  $blocks['foot_connect'] = array(
+    'info' => t('Footer: Connect with Us.'),
+    'status' => 1,
     'region' => 'footer_fourth',
-    );
+  );
 
-    $blocks['foot_copyright'] = array(
-      'info' => t('Footer: Copyright.'),
-      'status' => 1,
+  $blocks['foot_copyright'] = array(
+    'info' => t('Footer: Copyright.'),
+    'status' => 1,
     'region' => 'footer_fifth',
-    );
+  );
 
-    $blocks['foot_address_phone'] = array(
-      'info' => t('Footer: Address, phone number, contatct us.'),
-      'status' => 1,
+  $blocks['foot_address_phone'] = array(
+    'info' => t('Footer: Address, phone number, contatct us.'),
+    'status' => 1,
     'region' => 'footer_fifth',
-    );
+  );
 
-    $blocks['downloads_search_ebooks'] = array(
-      'info' => t('Downloads: Ebook Search.'),
-      'status' => 1,
+  $blocks['downloads_search_ebooks'] = array(
+    'info' => t('Downloads: Ebook Search.'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'downloads',
-    );
+  );
 
-    $blocks['downloads_search_audiobooks'] = array(
-      'info' => t('Downloads: Audiobooks Search.'),
-      'status' => 1,
+  $blocks['downloads_search_audiobooks'] = array(
+    'info' => t('Downloads: Audiobooks Search.'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'downloads',
-    );
+  );
 
-    $blocks['research_search_mags'] = array(
-      'info' => t('Research: Magazine & Newspaper Search.'),
-      'status' => 1,
+  $blocks['research_search_mags'] = array(
+    'info' => t('Research: Magazine & Newspaper Search.'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'research',
-    );
+  );
 
-    $blocks['ask_us'] = array(
-      'info' => t('Ask Us.'),
-      'status' => 1,
+  $blocks['ask_us'] = array(
+    'info' => t('Ask Us.'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'research/*',
-    );
+  );
 
-    $blocks['bmm_whattoread'] = array(
-      'info' => t('BMM: What to read next.'),
-      'status' => 1,
+  $blocks['bmm_whattoread'] = array(
+    'info' => t('BMM: What to read next.'),
+    'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'book-movies-music',
-    );
+  );
 
-    $blocks['events_search'] = array(
-      'info' => t('Events: Search the Calendar.'),
-      'status' => 1,
+  $blocks['events_search'] = array(
+    'info' => t('Events: Search the Calendar.'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'events',
-    );
+  );
 
-    $blocks['events_by_location'] = array(
-      'info' => t('Events: By Location.'),
-      'status' => 1,
+  $blocks['events_by_location'] = array(
+    'info' => t('Events: By Location.'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'events',
-    );
+  );
 
-    $blocks['events_by_topic'] = array(
-      'info' => t('Events: By Topic.'),
-      'status' => 1,
+  $blocks['events_by_topic'] = array(
+    'info' => t('Events: By Topic.'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'events',
-    );
+  );
 
-    $blocks['events_EK_today'] = array(
-      'info' => t('Events: Todays Events.'),
-      'status' => 1,
+  $blocks['events_EK_today'] = array(
+    'info' => t('Events: Todays Events.'),
+    'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'events',
-    );
+  );
 
-    $blocks['kids_games'] = array(
-      'info' => t('Kids: Games'),
-      'status' => 1,
+  $blocks['kids_games'] = array(
+    'info' => t('Kids: Games'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'kids',
-    );
+  );
 
     $blocks['events_AR_today'] = array(
       'info' => t('Events: Todays Events - Arvada'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'arvada',
-    );	
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'arvada',
+    );  
 
        $blocks['events_BL_today'] = array(
       'info' => t('Events: Todays Events - Belmar'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'belmar',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'belmar',
     );
-	
+  
     $blocks['events_CL_today'] = array(
       'info' => t('Events: Todays Events - Columbine'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'columbine',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'columbine',
     );
-	
+  
     $blocks['events_CF_today'] = array(
       'info' => t('Events: Todays Events - Conifer'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'conifer',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'conifer',
     );
-	
+  
     $blocks['events_ED_today'] = array(
       'info' => t('Events: Todays Events - Edgewater'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'edgewater',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'edgewater',
     );
-	
+  
     $blocks['events_EV_today'] = array(
       'info' => t('Events: Todays Events - Evergreen'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'evergreen',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'evergreen',
     );
-	
+  
     $blocks['events_GN_today'] = array(
       'info' => t('Events: Todays Events - Golden'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'golden',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'golden',
     );
-	
+  
     $blocks['events_LK_today'] = array(
       'info' => t('Events: Todays Events - Lakewood'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'lakewood',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'lakewood',
     );
-	
+  
     $blocks['events_SL_today'] = array(
       'info' => t('Events: Todays Events - Standley Lake'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'standley-lake',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'standley-lake',
     );
-	
+  
     $blocks['events_WR_today'] = array(
       'info' => t('Events: Todays Events - Wheat Ridge'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'wheat-ridge',
-    );	
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'wheat-ridge',
+    );  
  
     $blocks['locations_services'] = array(
       'info' => t('Library Pages: Services'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'arvada',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'arvada',
     );
 
     $blocks['locations_homepage'] = array(
       'info' => t('Front: Locations'),
       'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => '<front>',
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => '<front>',
     );
-	
+  
   return $blocks;
 }
-
-
 
 /**
  * Implements hook_block_view().
@@ -364,63 +369,24 @@ function jeffcolibrary_blks_block_view($block_name = '') {
   }
 
   if ($block_name == 'downloads_search_ebooks') {
-
-    $content = '<fieldset>
-<div style="display:none;">
-<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
-<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt" /></div>
-<div id="search_box">
-<input type="text" name="target" size="26" value="search all ebooks" id="target" onKeyPress="return submitenter(this,event)"/>
-<input type="submit" value="Search" id="go" onclick="gosearch();"/>
-</div>
-</fieldset>';
-
-    $block = array(
+    return array(
       'subject' => t('Ebooks'),
-      'content' => $content,
+      'content' => _jeffcolibrary_blks_build_facet_block($block_name),
     );
-
-    return $block;
   }
 
   if ($block_name == 'downloads_search_audiobooks') {
-
-    $content = '<fieldset>
-<div style="display:none;">
-<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
-<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt" /></div>
-<div id="search_box">
-<input type="text" name="target" size="26" value="search all audiobooks" id="target" onKeyPress="return submitenter(this,event)"/>
-<input type="submit" value="Search" id="go" onclick="gosearch();"/>
-</div>
-</fieldset>';
-
-    $block = array(
+    return array(
       'subject' => t('Audiobooks'),
-      'content' => $content,
+      'content' => _jeffcolibrary_blks_build_facet_block($block_name),
     );
-
-    return $block;
   }
 
     if ($block_name == 'research_search_mags') {
-
-    $content = '<fieldset>
-<div style="display:none;">
-<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
-<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def" /></div>
-<div id="search_box">
-<input type="text" size="26" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
-<input type="button" value="Search" id="go" onclick="gosearch();"/>
-</div>
-</fieldset>';
-
-    $block = array(
+    return array(
       'subject' => t('Online Magazines & Newspapers'),
-      'content' => $content,
+      'content' => _jeffcolibrary_blks_build_facet_block($block_name),
     );
-
-    return $block;
   }
 
     if ($block_name == 'ask_us') {
@@ -528,7 +494,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 if ($block_name == 'events_AR_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Arvada%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -542,7 +508,7 @@ if ($block_name == 'events_AR_today') {
 if ($block_name == 'events_BL_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Belmar%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -556,7 +522,7 @@ if ($block_name == 'events_BL_today') {
 if ($block_name == 'events_CL_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Columbine%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -570,7 +536,7 @@ if ($block_name == 'events_CL_today') {
 if ($block_name == 'events_CF_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Conifer%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -584,7 +550,7 @@ if ($block_name == 'events_CF_today') {
 if ($block_name == 'events_ED_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Edgewater%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -598,7 +564,7 @@ if ($block_name == 'events_ED_today') {
 if ($block_name == 'events_EV_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Evergreen%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -612,7 +578,7 @@ if ($block_name == 'events_EV_today') {
 if ($block_name == 'events_GN_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Golden%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -626,7 +592,7 @@ if ($block_name == 'events_GN_today') {
 if ($block_name == 'events_LK_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Lakewood%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -640,7 +606,7 @@ if ($block_name == 'events_LK_today') {
 if ($block_name == 'events_SL_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Standley%20Lake%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -654,7 +620,7 @@ if ($block_name == 'events_SL_today') {
 if ($block_name == 'events_WR_today') {
   
     global $base_url ;
-	
+  
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Wheat%20Ridge%20Library">Calendar of Events</a>';
 
     $block = array(
@@ -668,7 +634,7 @@ if ($block_name == 'events_WR_today') {
 if ($block_name == 'locations_services') {
   
     global $base_url ;
-	
+  
     $content = '<p><a href="http://libonline.jefferson.lib.co.us/">Reserve a computer</a><br /><a href="http://jeffcolibrary.org/pdf/wireless_brochure.pdf">Wireless network</a><br /><a href="http://jeffcolibrary.org/wireprint.html">Print from your laptop</a><br /><a href="http://jeffcolibrary.org/pdf/meetroom.pdf">Meeting rooms</a></p>';
 
     $block = array(
@@ -691,4 +657,77 @@ if ($block_name == 'locations_services') {
     return $block;
   }  
 
+}
+
+/**
+ * Options for a facet form block.
+ */
+function _jeffcolibrary_blks_build_facet_block($delta) {
+  // Provide location and label depending on delta.
+  switch ($delta) {
+    case 'downloads_search_ebooks':
+      $options = array(
+        'search_location' => '|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt',
+        'label' => t('Search all eBooks'),
+      );
+      break;
+    case 'downloads_search_audiobooks':
+      $options = array(
+        'search_location' => '|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt',
+        'label' => t('Search all audiobooks'),
+      );
+      break;
+    case 'research_search_mags':
+      $options = array(
+        'search_location' => '|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def',
+        'label' => t('Seach online magazines & newspapers'),
+      );
+      break;
+  }
+  // Build form.
+  return drupal_get_form('jeffcolibrary_blks_facet_form', $options);
+}
+
+/**
+ * Facet form builder.
+ */
+function jeffcolibrary_blks_facet_form($form, &$form_state, $options = array()) {
+  // Location.
+  $form['search_location'] = array(
+    '#type' => 'hidden',
+    '#value' => $options['search_location'],
+  );
+  // Term to search for.
+  $form['search_term'] = array(
+    '#type' => 'textfield',
+    '#title' => $options['label'],
+    '#size' => 26,
+  );
+  // Submit.
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+
+  // Class for all of these forms.
+  $class_name = 'jcpl-facet-form';
+  if (empty($form['#attributes'])) {
+    $form['#attributes'] = array('class' => $class_name);
+  }
+  elseif (!empty($form['#atttributes']['class'])) {
+    $form['#attributes']['class'] .= ' ' . $class_name;
+  }
+  else {
+    $form['#attributes']['class'] = $class_name;
+  }
+
+  return $form;
+}
+
+/**
+ * Submit handler for facet form.
+ */
+function jeffcolibrary_blks_facet_form_submit(&$form, &$form_state) {
+  // Go to URL.
+  drupal_goto(url(JEFFCOLIBRARY_BLKS_ENCOREBASE . $form_state['values']['search_term'] . $form_state['values']['search_location']));
 }
