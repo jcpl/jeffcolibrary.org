@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jcplfeedcontenttypes feature.
+ */
+
+include_once 'jcplfeedcontenttypes.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jcplfeedsimporter feature.
+ */
+
+include_once 'jcplfeedsimporter.features.inc';

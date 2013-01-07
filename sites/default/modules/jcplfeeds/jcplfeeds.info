@@ -1,0 +1,5 @@
+name = JCPL Feeds
+description = Feeds parse for sable.jefferson.lib.co.us
+dependencies[] = feeds
+dependencies[] = querypath
+core = 7.x
