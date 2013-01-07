@@ -43,9 +43,17 @@
 	border-bottom-color: #d11241;
 }
 
-#main-menu .menu-734 a {
-	
+/*#main-menu .menu-734 {
+	width: 140px;
+	height: 69px;
+	background-image: url(../../../../default/files/head_foot/kids.png);
+	background-repeat: no-repeat;	
 }
+
+#main-menu .menu-734 a {
+	display: none;
+}
+*/
 
 /*No border on any grid views, please.*/
 
