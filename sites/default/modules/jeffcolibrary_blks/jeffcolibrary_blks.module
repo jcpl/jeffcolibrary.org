@@ -697,7 +697,7 @@ function jeffcolibrary_blks_facet_form($form, &$form_state, $options = array()) 
   // Term to search for.
   $form['search_term'] = array(
     '#type' => 'textfield',
-    '#title' => t('Search for...'),
+    '#title' => t('Search terms'),
     '#size' => 26,
   );
   // Submit.
