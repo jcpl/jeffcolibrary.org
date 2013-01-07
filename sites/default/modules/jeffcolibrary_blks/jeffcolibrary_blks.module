@@ -668,19 +668,16 @@ function _jeffcolibrary_blks_build_facet_block($delta) {
     case 'downloads_search_ebooks':
       $options = array(
         'search_location' => '|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt',
-        'label' => t('Search all eBooks'),
       );
       break;
     case 'downloads_search_audiobooks':
       $options = array(
         'search_location' => '|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt',
-        'label' => t('Search all audiobooks'),
       );
       break;
     case 'research_search_mags':
       $options = array(
         'search_location' => '|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def',
-        'label' => t('Seach online magazines & newspapers'),
       );
       break;
   }
@@ -700,7 +697,7 @@ function jeffcolibrary_blks_facet_form($form, &$form_state, $options = array()) 
   // Term to search for.
   $form['search_term'] = array(
     '#type' => 'textfield',
-    '#title' => $options['label'],
+    '#title' => t('Search for...'),
     '#size' => 26,
   );
   // Submit.
