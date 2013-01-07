@@ -39,7 +39,6 @@ function kids_teen_blks_block_info() {
 	  'pages' => 'teen/homework-help',
     );
 
-
 	$blocks['kids_books_reading_nextreads'] = array(
       'info' => t('Kids: Nextreads booklists on Books and Reading.'),
       'status' => 1,
@@ -80,6 +79,12 @@ function kids_teen_blks_block_info() {
 	  'pages' => 'kids/parents-teachers',
     );
 	
+	$blocks['mainmenu_images'] = array(
+      'info' => t('Main menu images: Kids & Teens.'),
+      'status' => 1,
+	  'region' => 'menu',
+    );
+
 	return $blocks;
 }
 
@@ -261,7 +266,7 @@ function kids_teen_blks_block_view($block_name = '') {
     return $block;
   }
   
-    if ($block_name == 'research_search_mags') {
+  if ($block_name == 'research_search_mags') {
   
     $content = '<fieldset>
 <div style="display:none;">
@@ -295,6 +300,20 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     $block = array(
       'subject' => t('Ask Us'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'mainmenu_images') {
+
+    global $base_url ;
+
+    $content = "<a href=\"kids\"><img src=\"$base_url/sites/default/files/head_foot/kids.png\" width=\"101\" height=\"50\" alt=\"Kids\" /></a><a href=\"teen\"><img src=\"$base_url/sites/default/files/head_foot/teen.png\" width=\"101\" height=\"50\" alt=\"Teen\" /></a>";
+
+    $block = array(
+      'subject' => t(''),
       'content' => $content,
     );
 

@@ -7,7 +7,7 @@
 body {
 	background-image: url(../../../../default/files/jeffcolibrary_bg.png);
 	background-repeat: repeat-x;
-	background-color: #f9f9f9;
+	background-color: #b0b0bb;
 }
 
 #zone-content {
@@ -58,10 +58,25 @@ body {
 	margin-right: 10px;
 }
 
-#main-menu .menu-724, #main-menu .menu-734, #main-menu .last {  /*specific to installation*/
+#main-menu .last {  
 	border-right:hidden;
 }
 
+nav.navigation {
+	display: inline-table;
+	vertical-align:middle;
+}
+
+#block-kids-teen-blks-mainmenu-images {
+	display: inline-table;
+	vertical-align:middle;
+	margin-top: -12px;
+}
+
+#block-kids-teen-blks-mainmenu-images a {
+	padding-right: 5px;
+	padding-left: 5px;
+}
 /* Front Page Header */
  
 .front #zone-branding-wrapper {
