@@ -83,9 +83,9 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #1',
     'weight' => '1',
     'children' => array(
-      0 => 'field_getstart1_titlelink',
-      1 => 'field_getstart1_desc',
-      2 => 'field_getstart1_image',
+      0 => 'field_getstart1_desc',
+      1 => 'field_getstart1_image',
+      2 => 'field_getstart1_titlelink',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -112,8 +112,8 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #1',
     'weight' => '0',
     'children' => array(
-      0 => 'field_getstart1_titlelink',
-      1 => 'field_getstart1_desc',
+      0 => 'field_getstart1_desc',
+      1 => 'field_getstart1_titlelink',
       2 => 'field_getstart1_image',
     ),
     'format_type' => 'div',
@@ -205,9 +205,9 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #2',
     'weight' => '2',
     'children' => array(
-      0 => 'field_getstart2_image',
-      1 => 'field_getstart2_titlelink',
-      2 => 'field_getstart2_desc',
+      0 => 'field_getstart2_desc',
+      1 => 'field_getstart2_image',
+      2 => 'field_getstart2_titlelink',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -234,9 +234,9 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #2',
     'weight' => '1',
     'children' => array(
-      0 => 'field_getstart2_image',
+      0 => 'field_getstart2_desc',
       1 => 'field_getstart2_titlelink',
-      2 => 'field_getstart2_desc',
+      2 => 'field_getstart2_image',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -327,9 +327,9 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #3',
     'weight' => '3',
     'children' => array(
-      0 => 'field_getstart3_image',
-      1 => 'field_getstart3_titlelink',
-      2 => 'field_getstart3_desc',
+      0 => 'field_getstart3_desc',
+      1 => 'field_getstart3_image',
+      2 => 'field_getstart3_titlelink',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -356,9 +356,9 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #3',
     'weight' => '2',
     'children' => array(
-      0 => 'field_getstart3_image',
+      0 => 'field_getstart3_desc',
       1 => 'field_getstart3_titlelink',
-      2 => 'field_getstart3_desc',
+      2 => 'field_getstart3_image',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -449,9 +449,9 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #4',
     'weight' => '5',
     'children' => array(
-      0 => 'field_getstart4_image',
-      1 => 'field_getstart4_titlelink',
-      2 => 'field_getstart4_desc',
+      0 => 'field_getstart4_desc',
+      1 => 'field_getstart4_image',
+      2 => 'field_getstart4_titlelink',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -478,9 +478,9 @@ function feature_research_guides_field_group_info() {
     'label' => 'Getting Started #4',
     'weight' => '3',
     'children' => array(
-      0 => 'field_getstart4_image',
+      0 => 'field_getstart4_desc',
       1 => 'field_getstart4_titlelink',
-      2 => 'field_getstart4_desc',
+      2 => 'field_getstart4_image',
     ),
     'format_type' => 'div',
     'format_settings' => array(
