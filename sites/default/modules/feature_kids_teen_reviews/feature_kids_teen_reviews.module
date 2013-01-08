@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_kids_teen_reviews feature.
+ */
+
+include_once 'feature_kids_teen_reviews.features.inc';

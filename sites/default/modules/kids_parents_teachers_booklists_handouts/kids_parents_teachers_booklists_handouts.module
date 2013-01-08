@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the kids_parents_teachers_booklists_handouts feature.
+ */
+
+include_once 'kids_parents_teachers_booklists_handouts.features.inc';

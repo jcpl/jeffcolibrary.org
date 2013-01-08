@@ -1,0 +1,16 @@
+name = feature_kids_booklists
+description = Staff Picks on Books and Reading.
+core = 7.x
+package = Features
+php = 5.2.4
+version = 7.x-1.0
+project = feature_kids_booklists
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = file
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[field][] = node-booklist_kids-field_kids_booklist_file
+features[node][] = booklist_kids
+features[views_view][] = booklists_kids
