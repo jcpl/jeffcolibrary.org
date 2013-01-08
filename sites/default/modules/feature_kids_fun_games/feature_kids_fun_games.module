@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the feature_kids_fun_games feature.
- */
-
-include_once 'feature_kids_fun_games.features.inc';
