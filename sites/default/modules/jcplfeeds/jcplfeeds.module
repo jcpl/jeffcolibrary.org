@@ -51,7 +51,7 @@ function jcplfeeds_field_formatter_info() {
 }
 
 /**
- * IMplements hook_field_formatter_view().
+ * Implements hook_field_formatter_view().
  * @todo Consider implementing image styles.
  */
 function jcplfeeds_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
