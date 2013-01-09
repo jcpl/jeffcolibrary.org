@@ -143,56 +143,64 @@ function jeffcolibrary_blks_block_info() {
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'belmar',
-    );	
+    );
+	
     $blocks['events_CL_today'] = array(
       'info' => t('Events: Todays Events - Columbine'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'columbine',
-    );	
+    );
+	
     $blocks['events_CF_today'] = array(
       'info' => t('Events: Todays Events - Conifer'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'conifer',
-    );	
+    );
+	
     $blocks['events_ED_today'] = array(
       'info' => t('Events: Todays Events - Edgewater'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'edgewater',
-    );	
+    );
+	
     $blocks['events_EV_today'] = array(
       'info' => t('Events: Todays Events - Evergreen'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'evergreen',
-    );	
+    );
+	
     $blocks['events_GN_today'] = array(
       'info' => t('Events: Todays Events - Golden'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'golden',
-    );	
+    );
+	
     $blocks['events_LK_today'] = array(
       'info' => t('Events: Todays Events - Lakewood'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'lakewood',
-    );	
+    );
+	
     $blocks['events_SL_today'] = array(
       'info' => t('Events: Todays Events - Standley Lake'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'standley-lake',
-    );	
+    );
+	
     $blocks['events_WR_today'] = array(
       'info' => t('Events: Todays Events - Wheat Ridge'),
       'status' => 1,
@@ -201,6 +209,14 @@ function jeffcolibrary_blks_block_info() {
 	  'pages' => 'wheat-ridge',
     );	
  
+    $blocks['locations_services'] = array(
+      'info' => t('Library Pages: Services'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => array('arvada', 'belmar', 'columbine', 'conifer', 'edgewater', 'evergreen', 'golden', 'lakewood', 'standley-lake', 'wheat-ridge')
+    );
+	
   return $blocks;
 }
 
@@ -636,6 +652,20 @@ if ($block_name == 'events_WR_today') {
 
     $block = array(
       'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_WR_today') {
+  
+    global $base_url ;
+	
+    $content = '<p><a href="http://libonline.jefferson.lib.co.us/">Reserve a computer</a><br /><a href="http://jeffcolibrary.org/pdf/wireless_brochure.pdf">Wireless network</a><br /><a href="http://jeffcolibrary.org/wireprint.html">Print from your laptop</a><br /><a href="http://jeffcolibrary.org/pdf/meetroom.pdf">Meeting rooms</a></p>';
+
+    $block = array(
+      'subject' => t('Services),
       'content' => $content,
     );
 
