@@ -522,10 +522,7 @@ padding-right:10px;
 .view-books-and-beyond-blog-page .views-row {
 	height: 90px;
 	padding-bottom: 20px;
-	display: block;
 }
-
-
 
 #whattoread1, #whattoread2, #whattoread3, #whattoread4 {
 	display: inline-table;
@@ -537,8 +534,38 @@ padding-right:10px;
 }
 
 
+/* --------------- Events ---------------------- */
+
+.block-views-event-highlights-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-events-ek-today h2 {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.block-events-by-location h2 {
+	padding-top: 15px;
+}
 
 
+.block-views-event-highlights-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-views-event-highlights-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-views-event-highlights-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
 
 
 
