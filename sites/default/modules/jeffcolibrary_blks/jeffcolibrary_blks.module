@@ -132,7 +132,7 @@ function jeffcolibrary_blks_block_info() {
     $blocks['events_AR_today'] = array(
       'info' => t('Events: Todays Events - Arvada'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'arvada',
     );	
@@ -140,67 +140,91 @@ function jeffcolibrary_blks_block_info() {
        $blocks['events_BL_today'] = array(
       'info' => t('Events: Todays Events - Belmar'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'belmar',
-    );	
+    );
+	
     $blocks['events_CL_today'] = array(
       'info' => t('Events: Todays Events - Columbine'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'columbine',
-    );	
+    );
+	
     $blocks['events_CF_today'] = array(
       'info' => t('Events: Todays Events - Conifer'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'conifer',
-    );	
+    );
+	
     $blocks['events_ED_today'] = array(
       'info' => t('Events: Todays Events - Edgewater'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'edgewater',
-    );	
+    );
+	
     $blocks['events_EV_today'] = array(
       'info' => t('Events: Todays Events - Evergreen'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'evergreen',
-    );	
+    );
+	
     $blocks['events_GN_today'] = array(
       'info' => t('Events: Todays Events - Golden'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'golden',
-    );	
+    );
+	
     $blocks['events_LK_today'] = array(
       'info' => t('Events: Todays Events - Lakewood'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'lakewood',
-    );	
+    );
+	
     $blocks['events_SL_today'] = array(
       'info' => t('Events: Todays Events - Standley Lake'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'standley-lake',
-    );	
+    );
+	
     $blocks['events_WR_today'] = array(
       'info' => t('Events: Todays Events - Wheat Ridge'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'wheat-ridge',
     );	
  
+    $blocks['locations_services'] = array(
+      'info' => t('Library Pages: Services'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'arvada',
+    );
+
+    $blocks['locations_homepage'] = array(
+      'info' => t('Front: Locations'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => '<front>',
+    );
+	
   return $blocks;
 }
 
@@ -641,4 +665,31 @@ if ($block_name == 'events_WR_today') {
 
     return $block;
   }
+
+if ($block_name == 'locations_services') {
+  
+    global $base_url ;
+	
+    $content = '<p><a href="http://libonline.jefferson.lib.co.us/">Reserve a computer</a><br /><a href="http://jeffcolibrary.org/pdf/wireless_brochure.pdf">Wireless network</a><br /><a href="http://jeffcolibrary.org/wireprint.html">Print from your laptop</a><br /><a href="http://jeffcolibrary.org/pdf/meetroom.pdf">Meeting rooms</a></p>';
+
+    $block = array(
+      'subject' => t('Services'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'locations_homepage') {
+  
+    $content = '<table style="width: 300px; height: 145px;" border="0" cellspacing="10" cellpadding="10" align="left"><tr><td><a href="arvada">Arvada</a></td><td><a href="evergreen">Evergreen</a></td></tr><tr><td><a href="belmar">Belmar</a></td><td><a class="left6a" href="golden">Golden</a></td></tr><tr><td><a href="columbine">Columbine</a></td><td><a class="left6a" href="lakewood">Lakewood</a></td></tr><tr><td><a href="conifer">Conifer</a></td><td><a href="standley-lake">Standley Lake</a></td></tr><tr><td><a href="edgewater">Edgewater</a></td><td><a href="wheat-ridge">Wheat Ridge</a></td></tr></table>';
+
+    $block = array(
+      'subject' => t('Locations'),
+      'content' => $content,
+    );
+
+    return $block;
+  }  
+
 }

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_openlayers feature.
+ */
+
+include_once 'feature_openlayers.features.inc';
