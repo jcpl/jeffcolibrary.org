@@ -129,6 +129,78 @@ function jeffcolibrary_blks_block_info() {
 	  'pages' => 'kids',
     );	
 
+    $blocks['events_AR_today'] = array(
+      'info' => t('Events: Todays Events - Arvada'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'arvada',
+    );	
+
+       $blocks['events_BL_today'] = array(
+      'info' => t('Events: Todays Events - Belmar'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'belmar',
+    );	
+    $blocks['events_CL_today'] = array(
+      'info' => t('Events: Todays Events - Columbine'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'columbine',
+    );	
+    $blocks['events_CF_today'] = array(
+      'info' => t('Events: Todays Events - Conifer'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'conifer',
+    );	
+    $blocks['events_ED_today'] = array(
+      'info' => t('Events: Todays Events - Edgewater'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'edgewater',
+    );	
+    $blocks['events_EV_today'] = array(
+      'info' => t('Events: Todays Events - Evergreen'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'evergreen',
+    );	
+    $blocks['events_GN_today'] = array(
+      'info' => t('Events: Todays Events - Golden'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'golden',
+    );	
+    $blocks['events_LK_today'] = array(
+      'info' => t('Events: Todays Events - Lakewood'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'lakewood',
+    );	
+    $blocks['events_SL_today'] = array(
+      'info' => t('Events: Todays Events - Standley Lake'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'standley-lake',
+    );	
+    $blocks['events_WR_today'] = array(
+      'info' => t('Events: Todays Events - Wheat Ridge'),
+      'status' => 1,
+	  'region' => 'sidebar-second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'wheat-ridge',
+    );	
+ 
   return $blocks;
 }
 
@@ -424,6 +496,146 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     $block = array(
       'subject' => t('Games'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_AR_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Arvada%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_BL_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Belmar%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_CL_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Columbine%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_CF_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Conifer%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_ED_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Edgewater%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_EV_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Evergreen%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_GN_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Golden%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_LK_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Lakewood%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_SL_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Standley%20Lake%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+if ($block_name == 'events_WR_today') {
+  
+    global $base_url ;
+	
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Wheat%20Ridge%20Library">Calendar of Events</a>';
+
+    $block = array(
+      'subject' => t('Today\'s Events'),
       'content' => $content,
     );
 
