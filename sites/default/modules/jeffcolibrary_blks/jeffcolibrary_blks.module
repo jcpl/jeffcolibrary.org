@@ -658,7 +658,7 @@ if ($block_name == 'events_WR_today') {
     return $block;
   }
 
-if ($block_name == 'events_WR_today') {
+if ($block_name == 'locations_services') {
   
     global $base_url ;
 	
