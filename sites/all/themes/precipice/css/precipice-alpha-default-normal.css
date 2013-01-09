@@ -6,6 +6,10 @@ h1 {
 	margin-bottom: 10px;
 }
 
+body {
+	font-size: 1.05em;
+}
+
 /* Background */
 
 body {
@@ -278,7 +282,7 @@ td.col-first {
 }
 
 .view-device-guides .views-field-title a {
-	font-size: 1.7em;
+	font-size: 1.65em;
 	text-decoration: none;
 	padding-top: 10px;
 }
@@ -361,7 +365,7 @@ padding-right:10px;
 
 #block-views-homework-help-a-z-block .field-type-link-field {
 	padding-top: 7px;
-	font-size: 1.15em;
+	font-size: 1.1em;
 }
 
 /* Kids & Teen Reviews */
@@ -426,7 +430,7 @@ padding-right:10px;
 
 .node-fun-and-games-category .field-type-link-field {
 	padding-top: 7px;
-	font-size: 1.15em;
+	font-size: 1.1em;
 }
 
 /* Parents & Teachers */
@@ -457,11 +461,48 @@ padding-right:10px;
 
 #block-views-homework-help-a-z-block-1 .field-type-link-field {
 	padding-top: 7px;
-	font-size: 1.15em;
+	font-size: 1.1em;
 }
 
 
 /* --------------- Books, Movies & Music ---------------------- */
+
+.block-f5adb2600b17641aa6f949ce888b41eb h2 {
+	padding-bottom: 15px;
+}
+
+.views-field-field-blog-image {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.view-books-and-beyond-blog-page .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.view-books-and-beyond-blog-page .views-field-title a {
+	text-decoration: none;	
+}
+
+
+.views-field-field-blog-post {
+	float: right;
+	width: 460px;
+	line-height: 1.25em;
+}
+
+.view-books-and-beyond-blog-page .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+	display: block;
+}
+
+
 
 #whattoread1, #whattoread2, #whattoread3, #whattoread4 {
 	display: inline-table;
