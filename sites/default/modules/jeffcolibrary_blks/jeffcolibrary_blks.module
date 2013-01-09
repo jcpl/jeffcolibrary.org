@@ -132,7 +132,7 @@ function jeffcolibrary_blks_block_info() {
     $blocks['events_AR_today'] = array(
       'info' => t('Events: Todays Events - Arvada'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'arvada',
     );	
@@ -140,7 +140,7 @@ function jeffcolibrary_blks_block_info() {
        $blocks['events_BL_today'] = array(
       'info' => t('Events: Todays Events - Belmar'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'belmar',
     );	
@@ -154,49 +154,49 @@ function jeffcolibrary_blks_block_info() {
     $blocks['events_CF_today'] = array(
       'info' => t('Events: Todays Events - Conifer'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'conifer',
     );	
     $blocks['events_ED_today'] = array(
       'info' => t('Events: Todays Events - Edgewater'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'edgewater',
     );	
     $blocks['events_EV_today'] = array(
       'info' => t('Events: Todays Events - Evergreen'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'evergreen',
     );	
     $blocks['events_GN_today'] = array(
       'info' => t('Events: Todays Events - Golden'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'golden',
     );	
     $blocks['events_LK_today'] = array(
       'info' => t('Events: Todays Events - Lakewood'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'lakewood',
     );	
     $blocks['events_SL_today'] = array(
       'info' => t('Events: Todays Events - Standley Lake'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'standley-lake',
     );	
     $blocks['events_WR_today'] = array(
       'info' => t('Events: Todays Events - Wheat Ridge'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'wheat-ridge',
     );	
