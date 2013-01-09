@@ -361,7 +361,6 @@ padding-right:10px;
 	padding-bottom: 20px;
 }
 
-
 /* Feature Blocks in sidebar second */
 
 .kidsfeatureblk #kids_feature1 {
@@ -495,6 +494,27 @@ padding-right:10px;
 }
 
 /* ---------------------- Teens ------------------------------- */
+
+.block-teen-blog-page-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-teen-blog-page-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-teen-blog-page-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-teen-blog-page-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
 
 /* Homework Help */
 
