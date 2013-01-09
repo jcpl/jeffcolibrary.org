@@ -6,6 +6,10 @@ h1 {
 	margin-bottom: 10px;
 }
 
+body {
+	font-size: 1.05em;
+}
+
 /* Background */
 
 body {
@@ -206,6 +210,21 @@ nav.navigation {
 
 /* Seasonal Guide teasers */
 
+.context-research h1 {
+	margin-bottom: 0px;
+}
+
+.view-seasonal-guides h2 {
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-bottom: 7px;
+	padding-top: 15px;
+}
+
+.view-seasonal-guides h2 a {
+	text-decoration: none;
+}
+
 .field-name-field-seasonal-guide-image {
 	float: left;
 	padding-right: 20px;
@@ -224,7 +243,15 @@ nav.navigation {
 
 .view-seasonal-guides .views-row {
 	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
 }
+
+.view-seasonal-guides .views-row-3 {
+	border-bottom: none;
+}
+
 
 /* Subject Guide full nodes */
 
@@ -278,7 +305,7 @@ td.col-first {
 }
 
 .view-device-guides .views-field-title a {
-	font-size: 1.7em;
+	font-size: 1.35em;
 	text-decoration: none;
 	padding-top: 10px;
 }
@@ -308,6 +335,31 @@ padding-right:10px;
 }
 
 /* -------------- Kids ------------- */
+
+.block-kids-blog-page-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-new-arrivals-homepage-block-1 h2 {
+	padding-top: 15px;
+}
+
+.block-kids-blog-page-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-kids-blog-page-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-kids-blog-page-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
 
 /* Feature Blocks in sidebar second */
 
@@ -361,7 +413,7 @@ padding-right:10px;
 
 #block-views-homework-help-a-z-block .field-type-link-field {
 	padding-top: 7px;
-	font-size: 1.15em;
+	font-size: 1.1em;
 }
 
 /* Kids & Teen Reviews */
@@ -426,7 +478,7 @@ padding-right:10px;
 
 .node-fun-and-games-category .field-type-link-field {
 	padding-top: 7px;
-	font-size: 1.15em;
+	font-size: 1.1em;
 }
 
 /* Parents & Teachers */
@@ -443,6 +495,27 @@ padding-right:10px;
 
 /* ---------------------- Teens ------------------------------- */
 
+.block-teen-blog-page-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-teen-blog-page-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-teen-blog-page-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-teen-blog-page-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
+
 /* Homework Help */
 
 #block-views-homework-help-a-z-block-1 .field-group-format {
@@ -457,11 +530,43 @@ padding-right:10px;
 
 #block-views-homework-help-a-z-block-1 .field-type-link-field {
 	padding-top: 7px;
-	font-size: 1.15em;
+	font-size: 1.1em;
 }
 
-
 /* --------------- Books, Movies & Music ---------------------- */
+
+.block-f5adb2600b17641aa6f949ce888b41eb h2 {
+	padding-bottom: 15px;
+}
+
+.views-field-field-blog-image {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.view-books-and-beyond-blog-page .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.view-books-and-beyond-blog-page .views-field-title a {
+	text-decoration: none;	
+}
+
+.views-field-field-blog-post {
+	float: right;
+	width: 460px;
+	line-height: 1.25em;
+}
+
+.view-books-and-beyond-blog-page .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
 
 #whattoread1, #whattoread2, #whattoread3, #whattoread4 {
 	display: inline-table;
@@ -507,4 +612,34 @@ color:#000000;
 background-color:#ffffff;
 }
 
+/* --------------- Events ---------------------- */
 
+.block-views-event-highlights-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-events-ek-today h2 {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.block-events-by-location h2 {
+	padding-top: 15px;
+}
+
+.block-views-event-highlights-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-views-event-highlights-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-views-event-highlights-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
