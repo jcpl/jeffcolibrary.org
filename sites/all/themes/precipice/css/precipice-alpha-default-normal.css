@@ -2,6 +2,10 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
 
+h1 {
+	margin-bottom: 10px;
+}
+
 /* Background */
 
 body {
@@ -261,6 +265,8 @@ nav.navigation {
 
 /* -------------- Downloads ------------- */
 
+/*teasers*/
+
 .views-view-grid td {
 	vertical-align: top;
 	padding-right: 10px;
@@ -270,6 +276,28 @@ nav.navigation {
 td.col-first {
 	padding-left: 0px;
 }
+
+.view-device-guides .views-field-title a {
+	font-size: 1.7em;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+/*full nodes*/
+
+.field-name-field-device-image {
+	float: left;
+}
+
+.group_device_details {
+	float: right;
+	width: 300px;
+	margin-right: 320px;
+}
+
+	
+
+
 
 /* Blog posts */
 .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {
