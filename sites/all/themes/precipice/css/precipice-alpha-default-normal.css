@@ -472,9 +472,39 @@ padding-right:10px;
 	padding-left: 20px;
 }
 
-
-
-
-
+/* --------------- Locations & Hours ---------------------- */
+#hours
+{
+font-family:"myriad Pro", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+#hours td, #hours th 
+{
+font-size:1em;
+border:1px solid #e5eff8;
+padding:3px 3px 3px 3px;
+}
+#hours th 
+{
+font-size:1.5em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#f4f9fe;
+;
+color:#000000;
+}
+#hours tr.alt td 
+{
+color:#000000;
+background-color:#f4f9fe;
+;
+}
+#hours tr.alt2 td 
+{
+color:#000000;
+background-color:#ffffff;
+}
 
 
