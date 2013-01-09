@@ -19,6 +19,13 @@ function feature_openlayers_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function feature_openlayers_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function feature_openlayers_node_info() {
