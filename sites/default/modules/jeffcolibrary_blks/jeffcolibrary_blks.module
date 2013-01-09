@@ -147,7 +147,7 @@ function jeffcolibrary_blks_block_info() {
     $blocks['events_CL_today'] = array(
       'info' => t('Events: Todays Events - Columbine'),
       'status' => 1,
-	  'region' => 'sidebar-second',
+	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'columbine',
     );	
