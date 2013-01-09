@@ -75,3 +75,13 @@ table {
 td.col-first {
 	padding-left: 0px;
 }
+
+/* Locations big map pin popup box -- text in those boxes */
+
+#popup_contentDiv a {
+	color: #fff;
+	text-decoration: none;
+	background-color:#333;
+	padding: 5px;
+}
+

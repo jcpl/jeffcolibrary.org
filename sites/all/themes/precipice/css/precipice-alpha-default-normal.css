@@ -584,7 +584,6 @@ padding-right:10px;
 	font-size: 1.1em;
 }
 
-
 /* --------------- Books, Movies & Music ---------------------- */
 
 .block-f5adb2600b17641aa6f949ce888b41eb h2 {
@@ -609,7 +608,6 @@ padding-right:10px;
 	text-decoration: none;	
 }
 
-
 .views-field-field-blog-post {
 	float: right;
 	width: 460px;
@@ -630,6 +628,40 @@ padding-right:10px;
 	padding-left: 20px;
 }
 
+/* --------------- Locations & Hours ---------------------- */
+#hours
+{
+font-family:"myriad Pro", Arial, Helvetica, sans-serif;
+width:100%;
+border-collapse:collapse;
+}
+#hours td, #hours th 
+{
+font-size:1em;
+border:1px solid #e5eff8;
+padding:3px 3px 3px 3px;
+}
+#hours th 
+{
+font-size:1.5em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#f4f9fe;
+;
+color:#000000;
+}
+#hours tr.alt td 
+{
+color:#000000;
+background-color:#f4f9fe;
+;
+}
+#hours tr.alt2 td 
+{
+color:#000000;
+background-color:#ffffff;
+}
 
 /* --------------- Events ---------------------- */
 
@@ -645,7 +677,6 @@ padding-right:10px;
 .block-events-by-location h2 {
 	padding-top: 15px;
 }
-
 
 .block-views-event-highlights-block .views-field-title {
 	font-size: 1.1em;
@@ -663,6 +694,3 @@ padding-right:10px;
 	height: 90px;
 	padding-bottom: 20px;
 }
-
-
-
