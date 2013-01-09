@@ -336,6 +336,32 @@ padding-right:10px;
 
 /* -------------- Kids ------------- */
 
+.block-kids-blog-page-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-new-arrivals-homepage-block-1 h2 {
+	padding-top: 15px;
+}
+
+.block-kids-blog-page-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-kids-blog-page-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-kids-blog-page-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
+
+
 /* Feature Blocks in sidebar second */
 
 .kidsfeatureblk #kids_feature1 {
