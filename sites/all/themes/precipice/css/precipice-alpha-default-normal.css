@@ -210,6 +210,21 @@ nav.navigation {
 
 /* Seasonal Guide teasers */
 
+.context-research h1 {
+	margin-bottom: 0px;
+}
+
+.view-seasonal-guides h2 {
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-bottom: 7px;
+	padding-top: 15px;
+}
+
+.view-seasonal-guides h2 a {
+	text-decoration: none;
+}
+
 .field-name-field-seasonal-guide-image {
 	float: left;
 	padding-right: 20px;
@@ -228,7 +243,15 @@ nav.navigation {
 
 .view-seasonal-guides .views-row {
 	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
 }
+
+.view-seasonal-guides .views-row-3 {
+	border-bottom: none;
+}
+
 
 /* Subject Guide full nodes */
 
@@ -282,7 +305,7 @@ td.col-first {
 }
 
 .view-device-guides .views-field-title a {
-	font-size: 1.65em;
+	font-size: 1.35em;
 	text-decoration: none;
 	padding-top: 10px;
 }

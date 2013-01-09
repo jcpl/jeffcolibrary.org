@@ -2,8 +2,9 @@
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
 .field-label {
-	font-size: 1.4em;
+	font-size: 1.1em;
 	padding-top: 10px;
+	font-weight: normal;
 }
 
 /* Main Menu */
