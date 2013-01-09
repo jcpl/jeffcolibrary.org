@@ -1,6 +1,11 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
+/*h1, h2, h3, h4, h5, body {
+	font-style: normal !important; // trying to solve IE italicizing problem
+}
+*/
+
 .field-label {
 	font-size: 1.1em;
 	padding-top: 10px;

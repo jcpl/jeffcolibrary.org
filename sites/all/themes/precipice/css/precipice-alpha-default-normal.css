@@ -13,9 +13,9 @@ body {
 /* Background */
 
 body {
-	background-image: url(../../../../default/files/jeffcolibrary_bg.png);
-	background-repeat: repeat-x;
-	background-color: #b0b0bb;
+	background-image: url(../../../../default/files/head_foot/jeffcolibrary_bg6.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #zone-content {
@@ -145,6 +145,57 @@ nav.navigation {
 	height:200px;
 	width:620px;
 }
+
+/* Front page blog river teasers */
+
+.view-latest-from-the-blogs {
+	padding-top: 10px;
+}
+
+.view-latest-from-the-blogs .views-field-field-blog-image {
+	padding-right: 0px;
+	padding-bottom: 15px;
+}
+
+.view-latest-from-the-blogs .views-field-title a {
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 1.15em;
+	line-height: .9em;
+}
+
+/* Front page new arrival carousel */
+
+#zone-hpbookjackets {
+	background-color:#EAEAEA;
+	width: 960px;
+	margin-top: 20px;
+	border-top-style: solid;	
+	border-top-width: 3px;
+	border-top-color: #f0f0f0;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #f0f0f0;
+	border-right-style: solid;
+	border-right-width: 3px;
+	border-right-color: #ccc;
+	border-bottom-style: solid;	
+	border-bottom-width: 3px;
+	border-bottom-color: #ccc;
+
+}
+
+.view-new-arrivals-homepage .more-link {
+	padding-right: 5px;
+}
+
+.view-new-arrivals-homepage .jcarousel-container {
+	background-color: #fff;
+	margin-top: 20px;
+}
+/*.view-new-arrivals-homepage .jcarousel-next, .jcarousel-prev {
+	background-color: #ccc;
+}*/
 
 /* Footer */
 
