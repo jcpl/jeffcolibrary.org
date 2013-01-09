@@ -665,7 +665,7 @@ if ($block_name == 'events_WR_today') {
     $content = '<p><a href="http://libonline.jefferson.lib.co.us/">Reserve a computer</a><br /><a href="http://jeffcolibrary.org/pdf/wireless_brochure.pdf">Wireless network</a><br /><a href="http://jeffcolibrary.org/wireprint.html">Print from your laptop</a><br /><a href="http://jeffcolibrary.org/pdf/meetroom.pdf">Meeting rooms</a></p>';
 
     $block = array(
-      'subject' => t('Services),
+      'subject' => t('Services'),
       'content' => $content,
     );
 
