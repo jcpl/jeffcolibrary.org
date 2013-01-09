@@ -405,8 +405,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
   
     global $base_url ;
 	
-    $content = "<div><img src=\"$base_url/sites/default/files/todays_events.jpg\" alt=\"Todays Events\" /></div>
-     ";
+    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL">Calendar of Events</a>';
 
     $block = array(
       'subject' => t('Todays Events'),
