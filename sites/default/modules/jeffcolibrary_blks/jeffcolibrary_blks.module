@@ -447,7 +447,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
   
     global $base_url ;
 
-    $content = "<div id=\"whattoread1\"><a href=\"http://google.com\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /></a></div><div id=\"whattoread2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /></div><div id=\"whattoread3\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /></div><div id=\"whattoread4\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /></div>";
+    $content = "<div id=\"whattoread1\"><a href=\"http://jeffcolibrary.org/booklovers/PRRform.html\"><img src=\"$base_url/sites/default/files/bmm/prr.png\" /></a></div><div id=\"whattoread2\"><a href=\"http://jeffcolibrary.org/databases/connect_NoveList.html\"><img src=\"$base_url/sites/default/files/bmm/novelist.png\" /></a></div><div id=\"whattoread3\"><a href=\"http://jeffcolibrary.org/booklovers/NextReads.html\"><img src=\"$base_url/sites/default/files/bmm/nextreads.png\" /></a></div><div id=\"whattoread4\"><a href=\"http://jeffcolibrary.org/booklovers/join.html\"><img src=\"$base_url/sites/default/files/bmm/dearreader.png\" /></a></div>";
 
     $block = array(
       'subject' => t('What to Read Next'),
