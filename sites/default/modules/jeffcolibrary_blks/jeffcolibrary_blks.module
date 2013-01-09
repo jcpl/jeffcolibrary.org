@@ -408,7 +408,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
     $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL">Calendar of Events</a>';
 
     $block = array(
-      'subject' => t('Todays Events'),
+      'subject' => t('Today\'s Events'),
       'content' => $content,
     );
 
