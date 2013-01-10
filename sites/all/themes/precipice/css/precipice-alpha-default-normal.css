@@ -680,6 +680,31 @@ padding-right:10px;
 	padding-bottom: 20px;
 }
 
+.context-books-movies-music .jcarousel-container {
+	width: 200px;
+	background-color: #f3f3f3;
+}
+
+.context-new-arrivals-homepage img {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.context-new-arrivals-homepage .views-field-title {
+	width: 520px;
+	margin-right: 320px;
+	padding-top: 25px;
+}
+
+.context-new-arrivals-homepage .views-row {
+	clear: left;
+}
+
+.context-new-arrivals-homepage .views-field-description span {
+	padding-top: 10px;
+}
+
 
 /* --------------- Locations & Hours ---------------------- */
 #hours
