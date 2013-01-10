@@ -1,0 +1,701 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+h1 {
+	margin-bottom: 10px;
+}
+
+body {
+	font-size: 1.05em;
+}
+
+/* Background */
+
+body {
+	background-image: url(../../../../default/files/head_foot/jeffcolibrary_bg10.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#zone-content {
+	padding-top: 10px;
+	background-color:#FFF;
+	border-top-style: solid;	
+	border-top-width: 3px;
+	border-top-color: #f6f6f6;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #f6f6f6;
+	border-right-style: solid;
+	border-right-width: 3px;
+	border-right-color: #f1f4f4;
+	border-bottom-style: solid;	
+	border-bottom-width: 4px;
+	border-bottom-color: #f2f5f9;
+	padding-bottom: 20px;
+	margin-bottom:1px;
+	margin-top: 4px;
+}
+
+#zone-menu {
+	background-color:#edf5f5;
+	padding-bottom: 7px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #e3eded;
+	margin-top: 6px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #f1f2f2;
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: #f1f4f4;
+	border-bottom-width:3px;
+	border-bottom-style: solid;
+	border-bottom-color: #f5f5f5;/* #f4fcfc;*/
+}
+
+/* Main Menu */
+
+#region-menu {
+	margin-top: 4px;
+}
+
+#main-menu a {
+	margin-right: 10px;
+}
+
+#main-menu .last {  
+	border-right:hidden;
+}
+
+nav.navigation {
+	display: inline-table;
+	vertical-align:middle;
+}
+
+#block-kids-teen-blks-mainmenu-images {
+	display: inline-table;
+	vertical-align:middle;
+	margin-top: -12px;
+}
+
+#block-kids-teen-blks-mainmenu-images a {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+/* Front Page Header */
+ 
+.front #zone-branding-wrapper {
+	background-image:url(../../../../default/files/head_foot/header.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 300px;
+}
+
+.front #region-branding {
+	margin-top:175px;
+}
+
+.front #region-search {
+	margin-top:200px;
+}
+
+/* Secondary Pages Header */
+
+#zone-branding-wrapper {
+	background-image:url(../../../../default/files/head_foot/sm-header.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 220px;
+}
+
+#region-branding {
+	margin-top:95px;
+}
+
+#region-search {
+	margin-top:120px;
+}
+
+/* Omnipresent Searchbox */
+
+#quicktabs-container-tabbed_header_searchbox {
+	background-color: #FFF;
+	padding: 10px;
+	margin-top: -10px;
+	height: 45px;
+}
+
+#encore_searchform {
+	margin-bottom: 3px;
+}
+
+/* Branding */
+
+#logo {
+	width: 324px;
+/*	width: 170px;*/
+	margin-left: 15px
+}
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+	height:200px;
+	width:620px;
+}
+
+/* Front page blog river teasers */
+
+.view-latest-from-the-blogs {
+	padding-top: 10px;
+}
+
+.view-latest-from-the-blogs table {
+	margin-bottom: 0px;
+}
+
+.view-latest-from-the-blogs .views-field-field-blog-image {
+	padding-right: 0px;
+	padding-bottom: 15px;
+}
+
+.view-latest-from-the-blogs .views-field-title a {
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 1.15em;
+	line-height: .9em;
+}
+
+/* Front page new arrival carousel */
+
+#zone-hpbookjackets {
+	background-color:#EAEAEA;
+	width: 960px;
+	margin-top: 6px;
+	border-top-style: solid;	
+	border-top-width: 3px;
+	border-top-color: #f0f0f0;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-left-color: #f0f0f0;
+	border-right-style: solid;
+	border-right-width: 3px;
+	border-right-color: #ccc;
+	border-bottom-style: solid;	
+	border-bottom-width: 3px;
+	border-bottom-color: #ccc;
+
+}
+
+.view-new-arrivals-homepage .more-link {
+	padding-right: 5px;
+}
+
+.view-new-arrivals-homepage .jcarousel-container {
+	background-color: #fff;
+	margin-top: 20px;
+}
+/*.view-new-arrivals-homepage .jcarousel-next, .jcarousel-prev {
+	background-color: #ccc;
+}*/
+
+/* Footer */
+
+#zone-footer-wrapper li {
+	list-style-type: none;	
+}
+
+#region-footer-first, #region-footer-second, #region-footer-third, #region-footer-fourth {
+	background: #65679c;
+	color: #F0F0F0;
+	height: 220px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 6px;
+}
+
+#region-footer-first {
+	padding-left: 20px;
+	padding-right: 0px;
+}
+
+#region-footer-fifth {
+/*	height: 90px;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	background: #CCC;
+*/}
+
+#block-jeffcolibrary-blks-foot-copyright {
+	float: left;
+	margin-top: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 10px;
+}
+
+#block-jeffcolibrary-blks-foot-address-phone {
+	float: right;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#block-jeffcolibrary-blks-foot-connect #social_media_icons img {
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 9px;
+}
+
+#block-jeffcolibrary-blks-foot-connect #textfield {
+	margin-top: 7px;
+}
+
+/* ------------- Research -------------- */
+
+/* Seasonal Guide teasers */
+
+.context-research h1 {
+	margin-bottom: 0px;
+}
+
+.view-seasonal-guides h2 {
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-bottom: 7px;
+	padding-top: 15px;
+}
+
+.view-seasonal-guides h2 a {
+	text-decoration: none;
+}
+
+.field-name-field-seasonal-guide-image {
+	float: left;
+	padding-right: 20px;
+}
+
+.field-name-field-guide-teaser {
+	float: right;
+	width: 380px;
+	height: 90px;
+	padding-right: 50px;
+	margin-right: 30px;
+	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.view-seasonal-guides .views-row {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.view-seasonal-guides .views-row-3 {
+	border-bottom: none;
+}
+
+
+/* Subject Guide full nodes */
+
+.group_getstart1, .group_getstart2, .group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+	width: 300px;
+}
+
+.group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+	padding-top: 20px;
+}
+
+.group_getstart1, .group_getstart3, .field-name-field-guide-find-more-info {
+	float:left;
+	clear:left;
+}
+
+.group_getstart2, .group_getstart4, .field-name-field-guide-more {
+	float:right;
+}
+
+.field-name-field-getstart1-image, .field-name-field-getstart2-image, .field-name-field-getstart3-image, .field-name-field-getstart4-image {
+	float: left;
+	margin-right: 20px;
+}
+
+/* Ask Us */
+
+.icon_with_text {
+	padding-top: 10px;
+	padding-right: 4px;
+}
+
+/* Seasonal Guide full nodes */
+
+.node-seasonal-guide .field-name-field-guide-more {
+	float:left;
+}
+
+/* -------------- Downloads ------------- */
+
+/*teasers*/
+
+.views-view-grid td {
+	vertical-align: top;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+td.col-first {
+	padding-left: 0px;
+}
+
+.view-device-guides .views-field-title a {
+	font-size: 1.35em;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+/*full nodes*/
+
+.field-name-field-device-image {
+	float: left;
+}
+
+.group_device_details {
+	float: right;
+	width: 300px;
+	margin-right: 320px;
+}
+
+	
+
+
+
+/* Blog posts */
+.field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {
+display:inline;
+float:left;
+font-weight:normal;
+padding-right:10px;
+}
+
+/* -------------- Kids ------------- */
+
+.block-kids-blog-page-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-new-arrivals-homepage-block-1 h2 {
+	padding-top: 15px;
+}
+
+.block-kids-blog-page-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-kids-blog-page-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-kids-blog-page-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
+
+/* Feature Blocks in sidebar second */
+
+.kidsfeatureblk #kids_feature1 {
+	padding: 20px;
+	height: 90px;
+	margin-bottom: 20px;
+	background-color: #dcfaf3;
+}
+
+.kidsfeatureblk #kids_feature2 {
+	padding: 20px;
+	height: 90px;
+	margin-bottom: 20px;
+	background-color: #dcfaf3;
+
+	clear: left;
+	height: 90px;
+}
+	
+.kidsfeatureblk #kids_feature1 img, .kidsfeatureblk #kids_feature2 img {
+	float: left;
+	padding-right: 20px;
+	padding-right: 20px;
+}
+
+#block-kids-teen-blks-kids-featured-safesearch {
+	padding: 20px;
+	background-color: #dcfaf3;
+}
+
+#block-kids-teen-blks-kids-featured-safesearch .block-title {
+	padding-bottom: 7px;
+}
+
+/* Homework Help */
+
+#block-views-homework-help-a-z-block .field-group-format {
+	display: inline-table;
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+.group_resource1, .group_resource2, .group_resource3 {
+	margin-right: 20px;
+}
+
+#block-views-homework-help-a-z-block .field-type-link-field {
+	width: 140px;
+}
+
+#block-views-homework-help-a-z-block .field-type-link-field {
+	padding-top: 7px;
+	font-size: 1.1em;
+}
+
+/* Kids & Teen Reviews */
+
+.block-kids-teen-reviews-block h2 {
+	padding-bottom: 3px;
+}
+
+.view-kids-teen-reviews .views-row {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.views-field-field-review-author {
+	padding-bottom: 7px;
+}
+
+.views-field-field-review-bookjacket {
+	float: left;
+	padding-right: 15px;
+}
+
+.views-field-field-rate-it {
+	height: 20px;
+	float: right;
+	margin-right: 133px;
+}
+
+.views-field-field-rate-it p {
+	display: inline;
+}
+
+.view-kids-teen-reviews p {
+	display: inline;
+}
+
+/* Fun & Games */
+
+.kidsfungames img {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.kidsfungames h3 {
+	padding-top: 20px;
+}
+
+.kidsfungames div {
+	clear: left;
+}
+
+.node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
+	display: inline-table;
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+.group_resource5, .group_resource6, .group_resource7, .group_resource9, .group_resource10, .group_resource11 {
+	margin-right: 20px;
+}
+
+.node-fun-and-games-category .field-type-link-field {
+	padding-top: 7px;
+	font-size: 1.1em;
+}
+
+/* Parents & Teachers */
+
+#block-views-fe8dd910c13c51fba7969811f1856593 {
+	width: 300px;
+	float: left;
+}
+
+#block-views-2a744ea853a624bd298202c3a260f50f {
+	width: 300px;
+	float: right;
+}
+
+/* ---------------------- Teens ------------------------------- */
+
+.block-teen-blog-page-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-teen-blog-page-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-teen-blog-page-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-teen-blog-page-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
+
+/* Homework Help */
+
+#block-views-homework-help-a-z-block-1 .field-group-format {
+	display: inline-table;
+	width: 140px;
+	margin-bottom: 20px;
+}
+
+#block-views-homework-help-a-z-block-1 .field-type-link-field {
+	width: 140px;
+}
+
+#block-views-homework-help-a-z-block-1 .field-type-link-field {
+	padding-top: 7px;
+	font-size: 1.1em;
+}
+
+/* --------------- Books, Movies & Music ---------------------- */
+
+.block-f5adb2600b17641aa6f949ce888b41eb h2 {
+	padding-bottom: 15px;
+}
+
+.views-field-field-blog-image {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.view-books-and-beyond-blog-page .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.view-books-and-beyond-blog-page .views-field-title a {
+	text-decoration: none;	
+}
+
+.views-field-field-blog-post {
+	float: right;
+	width: 460px;
+	line-height: 1.25em;
+}
+
+.view-books-and-beyond-blog-page .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}
+
+#whattoread1, #whattoread2, #whattoread3, #whattoread4 {
+	display: inline-table;
+	padding-top: 7px;
+}
+
+#whattoread2, #whattoread3, #whattoread4 {
+	padding-left: 20px;
+}
+
+/* --------------- Locations & Hours ---------------------- */
+#hours
+{
+font-family:"myriad Pro", Arial, Helvetica, sans-serif;
+width:85%;
+border-collapse:collapse;
+}
+#hours td, #hours th 
+{
+font-size:1em;
+border:1px solid #e5eff8;
+padding:3px 3px 3px 3px;
+}
+#hours th 
+{
+font-size:1.5em;
+text-align:center;
+padding-top:5px;
+padding-bottom:4px;
+background-color:#f4f9fe;
+;
+color:#000000;
+}
+#hours tr.alt td 
+{
+color:#000000;
+background-color:#f4f9fe;
+;
+}
+#hours tr.alt2 td 
+{
+color:#000000;
+background-color:#ffffff;
+}
+
+/* --------------- Events ---------------------- */
+
+.block-views-event-highlights-block h2 {
+	padding-bottom: 15px;
+}
+
+.block-events-ek-today h2 {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.block-events-by-location h2 {
+	padding-top: 15px;
+}
+
+.block-views-event-highlights-block .views-field-title {
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+.block-views-event-highlights-block .views-field-title a {
+	text-decoration: none;	
+}
+
+.block-views-event-highlights-block .views-row {
+	height: 90px;
+	padding-bottom: 20px;
+}

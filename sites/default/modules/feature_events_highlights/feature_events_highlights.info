@@ -1,0 +1,17 @@
+name = feature_events_highlights
+description = Teaser view for blog content from Events vocabulary term.
+core = 7.x
+package = Features
+php = 5.2.4
+version = 7.x-1.0-beta1
+project = feature_events_highlights
+dependencies[] = block
+dependencies[] = ds
+dependencies[] = feature_blog_content_types
+dependencies[] = views
+dependencies[] = views_ui
+features[ctools][] = ds:ds:1
+features[ctools][] = views:views_default:3.0
+features[ds_field_settings][] = node|events|teaser
+features[features_api][] = api:1
+features[views_view][] = event_highlights_

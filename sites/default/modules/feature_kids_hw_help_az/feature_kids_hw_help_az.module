@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_kids_hw_help_az feature.
+ */
+
+include_once 'feature_kids_hw_help_az.features.inc';

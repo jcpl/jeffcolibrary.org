@@ -1,0 +1,13 @@
+name = Feature Nivo Slider block
+description = homepage feature slider
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = feature_nivo_slider_block
+dependencies[] = block
+dependencies[] = image
+dependencies[] = nivo_slider
+dependencies[] = views
+dependencies[] = views_ui
+features[features_api][] = api:1
+features[image][] = nivo_slider_slide

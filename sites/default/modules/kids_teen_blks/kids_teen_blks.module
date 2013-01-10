@@ -1,0 +1,323 @@
+<?php
+// $Id$
+
+/**
+ * Implements hook_block_info().
+ */
+function kids_teen_blks_block_info() {
+  $blocks = array();
+	
+    $blocks['kids_featured_homework_help'] = array(
+      'info' => t('Kids: Featured on Homework Help.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help',
+    );
+	
+    $blocks['kids_featured_safesearch'] = array(
+      'info' => t('Kids: Safesearch on Homework Help.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help',
+    );
+	
+	$blocks['kids_featured_books_reading'] = array(
+      'info' => t('Kids: Featured on Books and Reading.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/books-reading',
+    );
+	
+	$blocks['kids_featured_help_now'] = array(
+      'info' => t('Kids: Help now feature.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'teen/homework-help',
+    );
+
+	$blocks['kids_books_reading_nextreads'] = array(
+      'info' => t('Kids: Nextreads booklists on Books and Reading.'),
+      'status' => 1,
+	  'region' => 'content',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/books-reading',
+    );
+	
+	$blocks['kids_featured_fun_games'] = array(
+      'info' => t('Kids: Featured on Fun & Games.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/fun-games/*',
+    );
+	
+	$blocks['kids_fun_games'] = array(
+      'info' => t('Kids: Fun & Games.'),
+      'status' => 1,
+	  'region' => 'content',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/fun-games',
+    );
+	
+	$blocks['kids_parents_readytoreadvid'] = array(
+      'info' => t('Kids: Parents, Feature: Getting Ready to Read Vid.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/parents-teachers',
+    );
+	
+	$blocks['kids_parents_readytoreadtxt'] = array(
+      'info' => t('Kids: Parents, Feature: Getting Ready to Read Text.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/parents-teachers',
+    );
+	
+	$blocks['mainmenu_images'] = array(
+      'info' => t('Main menu images: Kids & Teens.'),
+      'status' => 1,
+	  'region' => 'menu',
+    );
+
+	return $blocks;
+}
+
+
+
+/**
+ * Implements hook_block_view().
+ */
+function kids_teen_blks_block_view($block_name = '') {
+
+  if ($block_name == 'kids_featured_homework_help') {
+	  
+    global $base_url ; 
+  
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
+	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Tutoring @ the Libraries</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'kids_featured_safesearch') {
+  
+    $content = '<form action="http://www.google.com/search" method="get" name="google"><input type="text" size="23" maxlength="75" name="q" onblur="populateSearch(this.lii)" /> <input type="submit" value="Search" /><input type="hidden" name="safe" value="vss" /></form>';
+
+    $block = array(
+      'subject' => t('Google SafeSearch'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'kids_featured_books_reading') {
+  
+    global $base_url ; 
+
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Bookflix</h3></div>
+	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Novelist<br />K - 8</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'kids_featured_help_now') {
+  
+    global $base_url ; 
+
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+
+  if ($block_name == 'kids_books_reading_nextreads') {
+  
+    $content = '<table class="views-view-grid cols-2" class="views-view-grid">
+  <tbody>
+  	<tr>
+    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=6638&Max=6&FMT=3&Sort=1"></script>
+        </td>
+    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=6436&Max=6&FMT=3&Sort=1"></script>
+        </td>
+    </tr>
+  	<tr>
+    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=9641&Max=6&FMT=3&Sort=1"></script>
+        </td>
+    	<td>
+        </td>
+    </tr>
+  </tbody>
+</table>
+';
+
+    $block = array(
+      'subject' => t('Reading Lists'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'kids_featured_fun_games') {
+  
+    global $base_url ;
+	
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Bookflix</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'kids_fun_games') {
+
+    global $base_url ;
+
+    $content = "<div class=\"kidsfungames\">
+	<div><a href=\"fun-games/preschool-playground\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Preschool Playground</h3></a></div>
+	<div><a href=\"fun-games/games\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Games</h3></a></div>
+	<div><a href=\"fun-games/crafts-coloring\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Crafts &amp; Coloring</h3></a></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'kids_parents_readytoreadvid') {
+
+    global $base_url ;
+
+    $content = "<div id=\"readytoreadvid\"><a href=\"http://jeffcolibrary.org/earlyliteracy/index.htm\"><img src=\"$base_url/sites/default/files/kids_teen/edpeu3f6.bmp\" /></a></div>";
+
+    $block = array(
+      'subject' => t('Getting Ready to Read'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'kids_parents_readytoreadtxt') {
+  
+    $content = '<div class="kidsfeatureblk"><div id="kids_feature1">Help your child become a reader! This short interactive video will highlight pre-reading skills, and give you quick and easy tips on how to help your child get ready to read.</div></div>';
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'downloads_search_audiobooks') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt" /></div>
+<div id="search_box">
+<input type="text" name="target" size="26" value="search all audiobooks" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="submit" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Audiobooks'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'research_search_mags') {
+  
+    $content = '<fieldset>
+<div style="display:none;">
+<input type="hidden" name="encorebase" id="encorebase" value="http://encore.jefferson.lib.co.us/iii/encore/search/C|S"/>
+<input type="hidden" name="searchlocation" id="searchlocation" value="|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def" /></div>
+<div id="search_box">
+<input type="text" size="26" name="target" value="" id="target" onKeyPress="return submitenter(this,event)"/>
+<input type="button" value="Search" id="go" onclick="gosearch();"/>
+</div>
+</fieldset>';
+
+    $block = array(
+      'subject' => t('Online Magazines & Newspapers'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+    if ($block_name == 'ask_us') {
+  
+    global $base_url ;
+
+    $content = "<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/email.gif\" /> Email</span>
+<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-JCPL (5275)</span><br /><br />
+<div>
+<iframe src=\"http://www.askcolorado.org/widgets/askcoloradowidget.html\" 
+id=\"askcolorado_iframe\" marginheight=\"0\" marginwidth=\"0\" scrolling=\"auto\" 
+frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe>
+</div>";
+
+    $block = array(
+      'subject' => t('Ask Us'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'mainmenu_images') {
+
+    global $base_url ;
+
+    $content = "<a href=\"kids\"><img src=\"$base_url/sites/default/files/head_foot/kids.png\" width=\"101\" height=\"50\" alt=\"Kids\" /></a><a href=\"teen\"><img src=\"$base_url/sites/default/files/head_foot/teen.png\" width=\"101\" height=\"50\" alt=\"Teen\" /></a>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+}
