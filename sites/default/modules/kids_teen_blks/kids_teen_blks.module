@@ -310,7 +310,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     global $base_url ;
 
-    $content = "<a href=\"kids\"><img src=\"$base_url/sites/default/files/head_foot/kids.png\" width=\"101\" height=\"50\" alt=\"Kids\" /></a><a href=\"teen\"><img src=\"$base_url/sites/default/files/head_foot/teen.png\" width=\"101\" height=\"50\" alt=\"Teen\" /></a>";
+    $content = "<a href=\"$base_url/kids\"><img src=\"$base_url/sites/default/files/head_foot/kids.png\" width=\"101\" height=\"50\" alt=\"Kids\" /></a><a href=\"$base_url/teen\"><img src=\"$base_url/sites/default/files/head_foot/teen.png\" width=\"101\" height=\"50\" alt=\"Teen\" /></a>";
 
     $block = array(
       'subject' => t(''),
