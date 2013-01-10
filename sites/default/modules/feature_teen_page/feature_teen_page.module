@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the feature_teen_page feature.
- */
-
-include_once 'feature_teen_page.features.inc';

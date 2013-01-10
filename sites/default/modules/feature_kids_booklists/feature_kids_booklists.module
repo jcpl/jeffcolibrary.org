@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the feature_kids_booklists feature.
- */
-
-include_once 'feature_kids_booklists.features.inc';

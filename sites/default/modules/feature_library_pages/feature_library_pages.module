@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the feature_library_pages feature.
- */
-
-include_once 'feature_library_pages.features.inc';

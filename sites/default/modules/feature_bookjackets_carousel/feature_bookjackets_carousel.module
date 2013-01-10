@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the feature_bookjackets_carousel feature.
- */
-
-include_once 'feature_bookjackets_carousel.features.inc';

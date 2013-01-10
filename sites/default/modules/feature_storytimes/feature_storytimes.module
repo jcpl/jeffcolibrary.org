@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the feature_storytimes feature.
- */
-
-include_once 'feature_storytimes.features.inc';

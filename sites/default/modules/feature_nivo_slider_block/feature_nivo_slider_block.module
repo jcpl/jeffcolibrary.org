@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Feature Nivo Slider block feature.
- */
-
-include_once 'feature_nivo_slider_block.features.inc';
