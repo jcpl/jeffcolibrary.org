@@ -735,3 +735,29 @@ background-color:#ffffff;
 	height: 90px;
 	padding-bottom: 20px;
 }
+
+/* --------------- Locations ---------------------- */
+
+/* all locations */
+
+.block-block-7 p {
+	margin-bottom: 5px;
+}
+	
+table#hours {
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+table#hours th {
+	font-size: .9em;
+}
+
+table#hours td {
+	width: 42.8px;
+	height: 20px;
+}
+
+
+
+
