@@ -34,7 +34,6 @@ body {
 	border-bottom-width: 4px;
 	border-bottom-color: #f2f5f9;
 	padding-bottom: 20px;
-	margin-bottom:1px;
 	margin-top: 4px;
 }
 
@@ -135,8 +134,7 @@ nav.navigation {
 /* Branding */
 
 #logo {
-	width: 324px;
-/*	width: 170px;*/
+	width: 170px;
 	margin-left: 15px
 }
 
@@ -225,7 +223,8 @@ nav.navigation {
 	padding-right: 0px;
 }
 
-#region-footer-fifth {
+#region-footer-fifth {	
+margin-top: 6px;
 /*	height: 90px;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -277,6 +276,10 @@ nav.navigation {
 	padding-top: 15px;
 }
 
+.view-seasonal-guides .views-row-1 h2 {
+	padding-top: 0px;
+}
+
 .view-seasonal-guides h2 a {
 	text-decoration: none;
 }
@@ -308,6 +311,9 @@ nav.navigation {
 	border-bottom: none;
 }
 
+.block-jeffcolibrary-blks h2 {
+	padding-bottom: 5px;
+}
 
 /* Subject Guide full nodes */
 
@@ -651,6 +657,12 @@ padding-right:10px;
 	padding-left: 20px;
 }
 
+/* Books and Beyond Blog page */
+.view-books-and-beyond-blog-page .view-mode-full {
+	clear: left;
+	display: block;
+}
+
 /* Books and Beyond Blog full node pages */
 
 .node-booksandbeyond {
@@ -704,14 +716,56 @@ color:#000000;
 background-color:#ffffff;
 }
 
+/* all locations */
+
+.block-block-7 p {
+	margin-bottom: 5px;
+}
+	
+table#hours {
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+table#hours th {
+	font-size: .9em;
+}
+
+table#hours td {
+	width: 42.8px;
+	height: 20px;
+}
+
+/* individual library pages */
+
+.block-views-event-highlights-block-1 .more-link {
+	text-align: left;
+}
+
+.node-type-library-page #region-sidebar-second h2 {
+	padding-top: 15px;
+	padding-bottom: 0px;
+}
+
+.node-type-library-page table#hours {
+	width: 100%;
+}
+.node-type-library-page table#hours th {
+	font-size: 1.2em;
+}
+
+.node-type-library-page table#hours td span {
+	font-size: 1.1em; /* have to removed inline styling before this will work */
+}
+
+
 /* --------------- Events ---------------------- */
 
 .block-views-event-highlights-block h2 {
-	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .block-events-ek-today h2 {
-	padding-top: 15px;
 	padding-bottom: 10px;
 }
 
@@ -734,28 +788,6 @@ background-color:#ffffff;
 .block-views-event-highlights-block .views-row {
 	height: 90px;
 	padding-bottom: 20px;
-}
-
-/* --------------- Locations ---------------------- */
-
-/* all locations */
-
-.block-block-7 p {
-	margin-bottom: 5px;
-}
-	
-table#hours {
-	width: 300px;
-	margin-bottom: 15px;
-}
-
-table#hours th {
-	font-size: .9em;
-}
-
-table#hours td {
-	width: 42.8px;
-	height: 20px;
 }
 
 
