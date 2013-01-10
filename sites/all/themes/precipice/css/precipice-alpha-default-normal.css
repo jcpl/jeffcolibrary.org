@@ -794,6 +794,24 @@ table#hours td {
 	padding-bottom: 20px;
 }
 
+.jcpl-facet-form {
+  clear: both;
+}
 
+.jcpl-facet-form .form-item-search-term {
+  float: left;
+  margin-right: 1em;
+}
 
+.jcpl-facet-form .form-submit {
+  float: left;
+  margin-top: 2.5em;
+}
 
+.jcpl-facet-form.compact-form .form-submit {
+  margin-top: 20px;
+}
+
+.compact-form-label {
+  opacity: .5;
+}
