@@ -721,6 +721,11 @@ background-color:#ffffff;
 .block-block-7 p {
 	margin-bottom: 5px;
 }
+
+.block-block-7 p a {
+	text-decoration: none;
+}
+
 	
 table#hours {
 	width: 300px;
