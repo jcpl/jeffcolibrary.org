@@ -1,7 +1,17 @@
 <?php
 
 /**
- * Implements feeds_parser_sources_alter().
+ * Implements hook_init().
+ */
+function jcplfeeds_init() {
+  drupal_add_js(drupal_get_path('module', 'jcplfeeds') . '/js/jcplfeeds.js');
+  drupal_add_js(array('jcplfeeds' => array(
+    'no_cover_src' => url(drupal_get_path('module', 'jcplfeeds'). '/images/no-cover.png'),
+  )), 'setting');
+}
+
+/**
+ * Implements hook_feeds_parser_sources_alter().
  */
 function jcplfeeds_feeds_parser_sources_alter(&$sources, $content_type) {
   $sources['jcplfeeds_description_image'] = array(
@@ -18,7 +28,7 @@ function jcplfeeds_feeds_parser_sources_alter(&$sources, $content_type) {
 }
 
 /**
- * Parser for field item data.
+ * Parser callback for field item data.
  */
 function jcplfeeds_parse_description(FeedsSource $source, FeedsParserResult $result, $key) {
   $storage = &drupal_static(__FUNCTION__);
@@ -47,6 +57,11 @@ function jcplfeeds_field_formatter_info() {
       'field types' => array('link_field'),
       'multiple values' => FIELD_BEHAVIOR_DEFAULT,
     ),
+    'jcplfeeds_img_link' => array(
+      'label' => t('Image tag, linked to catalog'),
+      'field types' => array('link_field'),
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ),
   );
 }
 
@@ -60,6 +75,13 @@ function jcplfeeds_field_formatter_view($entity_type, $entity, $field, $instance
     case 'jcplfeeds_img':
       foreach ($items as $delta => $item) {
         $element[$delta] = array('#theme' => 'image', '#path' => url($item['url'], $item));
+      }
+      break;
+    case 'jcplfeeds_img_link':
+      foreach ($items as $delta => $item) {
+        $url = url($entity->field_sable_catalog_url[LANGUAGE_NONE][$delta]['url'], $entity->field_sable_catalog_url[LANGUAGE_NONE][$delta]);
+        $image = theme('image', array('path' => url($item['url'], (array) $item)));
+        $element[$delta] = array('#markup' => l($image, $url, array('html' => TRUE)));
       }
       break;
   }
