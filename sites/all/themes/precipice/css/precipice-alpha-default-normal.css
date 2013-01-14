@@ -192,7 +192,7 @@ nav.navigation {
 	padding-right: 5px;
 }
 
-.view-new-arrivals-homepage .jcarousel-container {
+.jcarousel-container {
 	background-color: #fff;
 	margin-top: 20px;
 }
@@ -840,3 +840,16 @@ table#hours td {
 .compact-form-label {
   opacity: .5;
 }
+
+.node-teaser {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #CCC;
+}
+
+.node-teaser.node-jcpl-sable-feed-item .field-name-field-catalog-image-url {
+  float: left;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
