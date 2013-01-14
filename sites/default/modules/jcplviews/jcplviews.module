@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the jcplviews feature.
+ */
+
+include_once 'jcplviews.features.inc';
