@@ -48,16 +48,21 @@ function jcplfeedsimporter_feeds_importer_default() {
             'unique' => FALSE,
           ),
           2 => array(
-            'source' => 'title',
+            'source' => 'jcplfeeds_title_truncated',
             'target' => 'title',
             'unique' => FALSE,
           ),
           3 => array(
+            'source' => 'jcplfeeds_title_byline',
+            'target' => 'field_catalog_byline',
+            'unique' => FALSE,
+          ),
+          4 => array(
             'source' => 'jcplfeeds_description_description',
             'target' => 'body',
             'unique' => FALSE,
           ),
-          4 => array(
+          5 => array(
             'source' => 'jcplfeeds_description_image',
             'target' => 'field_catalog_image_url:url',
             'unique' => FALSE,

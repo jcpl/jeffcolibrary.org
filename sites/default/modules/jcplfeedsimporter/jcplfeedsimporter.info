@@ -1,6 +1,8 @@
 name = jcplfeedsimporter
+description = Feeds importer exports
 core = 7.x
 package = Features
+php = 5.2.4
 version = 7.x-0.1
 project = jcplfeedsimporter
 dependencies[] = ctools

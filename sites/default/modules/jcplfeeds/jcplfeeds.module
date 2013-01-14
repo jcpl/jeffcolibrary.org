@@ -24,6 +24,16 @@ function jcplfeeds_feeds_parser_sources_alter(&$sources, $content_type) {
     'description' => t('Text occuring in the description element of a feed item.'),
     'callback' => 'jcplfeeds_parse_description',
   );
+  $sources['jcplfeeds_title_truncated'] = array(
+    'name' => t('JCPL: Truncated title'),
+    'description' => t('Split titles'),
+    'callback' => 'jcplfeeds_parse_title',
+  );
+  $sources['jcplfeeds_title_byline'] = array(
+    'name' => t('JCPL: Truncated title, byline'),
+    'description' => t('The remainder of the split from the title'),
+    'callback' => 'jcplfeeds_parse_title',
+  );
   return $sources;
 }
 
@@ -41,6 +51,24 @@ function jcplfeeds_parse_description(FeedsSource $source, FeedsParserResult $res
     $storage[$uuid] = (object) array(
       'jcplfeeds_description_image' => htmlqp($result->current_item['description'], 'img')->attr('src'),
       'jcplfeeds_description_description' => htmlqp($result->current_item['description'])->text(),
+    );
+  }
+
+  return isset($storage[$uuid]->$key) ? $storage[$uuid]->$key : NULL;
+}
+
+function jcplfeeds_parse_title(FeedsSource $source, FeedsParserResult $result, $key) {
+  $storage = &drupal_static(__FUNCTION__);
+
+  // Safe key.
+  $uuid = md5($result->current_item['guid']);
+
+  if (!isset($storage[$uuid])) {
+    // Split out title into something that looks better.
+    $explode = explode(' / ', $result->current_item['title']);
+    $storage[$uuid] = (object) array(
+      'jcplfeeds_title_truncated' => isset($explode[0]) ? trim($explode[0]) : NULL,
+      'jcplfeeds_title_byline' => isset($explode[1]) ? trim($explode[1]) : NULL,
     );
   }
 

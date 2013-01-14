@@ -27,15 +27,32 @@ if (PHP_SAPI == 'cli') {
   // Add each feed item, added by root.
   $acct = user_load(1);
   foreach (array(
-    'http://sable.jefferson.lib.co.us/feeds/adultbooks.xml',
-    'http://sable.jefferson.lib.co.us/feeds/featurefilm.xml',
-    'http://sable.jefferson.lib.co.us/feeds/allmusic.xml',
-    'http://sable.jefferson.lib.co.us/feeds/yabooks.xml',
-    'http://sable.jefferson.lib.co.us/feeds/jthingsthatgo.xml'
-  ) as $feed_url) {
+    array(
+      'Recent Arrivals - Adult Books',
+      'http://sable.jefferson.lib.co.us/feeds/adultbooks.xml',
+    )
+    array(
+      'Recent Arrivals - Feature Films',
+      'http://sable.jefferson.lib.co.us/feeds/featurefilm.xml',
+    )
+    array(
+      'Recent Arrivals - Music',
+      'http://sable.jefferson.lib.co.us/feeds/allmusic.xml',
+    )
+    array(
+      'Recent Arrivals - Young Adult Books',
+      'http://sable.jefferson.lib.co.us/feeds/yabooks.xml',
+    )
+    array(
+      'Recent Arrivals - Things That Go',
+      'http://sable.jefferson.lib.co.us/feeds/jthingsthatgo.xml'
+    )
+  ) as $feed) {
+    list($title, $feed_url) = $feed;
     // Add some feeds.
     $node = (object) array(
       'uid' => $acct->uid,
+      'title' => $title,
       'name' => (isset($acct->name) ? $acct->name : ''),
       'type' => 'jcpl_sable_feed',
       'language' => LANGUAGE_NONE,

@@ -1,4 +1,5 @@
 name = jcplfeedcontenttypes
+description = Content type exports for feeds
 core = 7.x
 package = Features
 php = 5.2.4
@@ -12,6 +13,7 @@ features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[field][] = node-jcpl_sable_feed-body
 features[field][] = node-jcpl_sable_feed_item-body
+features[field][] = node-jcpl_sable_feed_item-field_catalog_byline
 features[field][] = node-jcpl_sable_feed_item-field_catalog_image_url
 features[field][] = node-jcpl_sable_feed_item-field_sable_catalog_url
 features[node][] = jcpl_sable_feed
