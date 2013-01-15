@@ -15,7 +15,7 @@ body {
 body {
 	background-image: url(../../../../default/files/head_foot/jeffcolibrary_bg10.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center 0;
 }
 
 #zone-content {
