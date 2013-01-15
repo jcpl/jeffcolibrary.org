@@ -28,10 +28,6 @@ if (PHP_SAPI == 'cli') {
   $acct = user_load(1);
   $feeds = array(
     array(
-      'Recent Arrivals - Adult Books',
-      'http://sable.jefferson.lib.co.us/feeds/adultbooks.xml',
-    ),
-    array(
       'Recent Arrivals - Feature Films',
       'http://sable.jefferson.lib.co.us/feeds/featurefilm.xml',
     ),
@@ -46,7 +42,11 @@ if (PHP_SAPI == 'cli') {
     array(
       'Recent Arrivals - Things That Go',
       'http://sable.jefferson.lib.co.us/feeds/jthingsthatgo.xml'
-    )
+    ),
+    array(
+      'Recent Arrivals - Adult Books',
+      'http://sable.jefferson.lib.co.us/feeds/adultbooks.xml',
+    ),
   );
 
   foreach ($feeds as $feed) {
