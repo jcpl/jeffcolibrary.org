@@ -2,6 +2,7 @@ name = jcplviews
 description = Views exports
 core = 7.x
 package = Features
+php = 5.2.4
 version = 7.x-0.1
 project = jcplviews
 dependencies[] = ctools
