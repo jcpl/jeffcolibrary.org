@@ -26,28 +26,30 @@ if (PHP_SAPI == 'cli') {
 
   // Add each feed item, added by root.
   $acct = user_load(1);
-  foreach (array(
+  $feeds = array(
     array(
       'Recent Arrivals - Adult Books',
       'http://sable.jefferson.lib.co.us/feeds/adultbooks.xml',
-    )
+    ),
     array(
       'Recent Arrivals - Feature Films',
       'http://sable.jefferson.lib.co.us/feeds/featurefilm.xml',
-    )
+    ),
     array(
       'Recent Arrivals - Music',
       'http://sable.jefferson.lib.co.us/feeds/allmusic.xml',
-    )
+    ),
     array(
       'Recent Arrivals - Young Adult Books',
       'http://sable.jefferson.lib.co.us/feeds/yabooks.xml',
-    )
+    ),
     array(
       'Recent Arrivals - Things That Go',
       'http://sable.jefferson.lib.co.us/feeds/jthingsthatgo.xml'
     )
-  ) as $feed) {
+  );
+
+  foreach ($feeds as $feed) {
     list($title, $feed_url) = $feed;
     // Add some feeds.
     $node = (object) array(
@@ -63,7 +65,7 @@ if (PHP_SAPI == 'cli') {
       )
     );
     node_save($node);
-    drupal_set_message(t('@feed_url maps to node !nid', array('@feed_url' => $feed_url, '!nid' => $node->nid)));
+    drupal_set_message(t('@title maps to node !nid', array('@title' => $title, '!nid' => $node->nid)));
   }
 
 }
