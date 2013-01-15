@@ -9,7 +9,9 @@ $vars['content_url'] = $vars['node_url'];
 
 switch ($node->type) {
   case 'jcpl_sable_feed_item':
-    $vars['content_url'] = url($node->field_sable_catalog_url[LANGUAGE_NONE][0]['url']);
+    if (!empty($node->field_sable_catalog_url[LANGUAGE_NONE][0]['url'])) {
+      $vars['content_url'] = url($node->field_sable_catalog_url[LANGUAGE_NONE][0]['url']);
+    }
     break;
 }
 
