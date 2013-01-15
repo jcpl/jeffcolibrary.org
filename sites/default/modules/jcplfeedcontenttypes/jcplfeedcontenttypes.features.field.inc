@@ -149,7 +149,7 @@ function jcplfeedcontenttypes_field_default_fields() {
             ),
           ),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -166,7 +166,7 @@ function jcplfeedcontenttypes_field_default_fields() {
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
-          'weight' => '1',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'node',
@@ -226,7 +226,7 @@ function jcplfeedcontenttypes_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'linked_field' => array(
@@ -239,13 +239,23 @@ function jcplfeedcontenttypes_field_default_fields() {
             ),
           ),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => '0',
         ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -307,7 +317,7 @@ function jcplfeedcontenttypes_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'jcplfeeds',
           'settings' => array(
             'linked_field' => array(
@@ -320,7 +330,7 @@ function jcplfeedcontenttypes_field_default_fields() {
             ),
           ),
           'type' => 'jcplfeeds_img',
-          'weight' => '4',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -336,7 +346,7 @@ function jcplfeedcontenttypes_field_default_fields() {
             ),
           ),
           'type' => 'jcplfeeds_img_link',
-          'weight' => '0',
+          'weight' => '1',
         ),
       ),
       'entity_type' => 'node',
@@ -411,7 +421,7 @@ function jcplfeedcontenttypes_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'link',
           'settings' => array(
             'linked_field' => array(
@@ -424,13 +434,13 @@ function jcplfeedcontenttypes_field_default_fields() {
             ),
           ),
           'type' => 'link_default',
-          'weight' => '1',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '2',
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'node',
