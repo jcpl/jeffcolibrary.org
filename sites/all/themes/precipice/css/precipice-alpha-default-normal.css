@@ -685,6 +685,16 @@ padding-right:10px;
 	background-color: #f3f3f3;
 }
 
+.context-teen .jcarousel-container {
+	width: 200px;
+	background-color: #f3f3f3;
+}
+
+.context-kids .jcarousel-container {
+	width: 200px;
+	background-color: #f3f3f3;
+}
+
 .context-new-arrivals-homepage img {
 	float: left;
 	margin-right: 20px;
