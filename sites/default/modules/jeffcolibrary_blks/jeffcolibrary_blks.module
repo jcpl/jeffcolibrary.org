@@ -10,6 +10,21 @@
 define('JEFFCOLIBRARY_BLKS_ENCOREBASE', 'http://encore.jefferson.lib.co.us/iii/encore/search/C|S');
 
 /**
+ * Implements hook_theme().
+ */
+function jeffcolibrary_blks_theme() {
+  $base = array(
+    'file' => 'jeffcolibrary_blks_theme',
+    'path' => drupal_get_path('module', 'jeffcolibrary_blks') . '/tpl',
+  );
+  return array(
+    'jcpl_events_today' => array(
+      'template' => 'jcpl-events-today',
+    ) + $base,
+  );
+}
+
+/**
  * Implements hook_block_info().
  */
 function jeffcolibrary_blks_block_info() {
@@ -121,7 +136,7 @@ function jeffcolibrary_blks_block_info() {
   );
 
   $blocks['events_EK_today'] = array(
-    'info' => t('Events: Todays Events.'),
+    'info' => t('Events: Today\'s Events'),
     'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -137,7 +152,7 @@ function jeffcolibrary_blks_block_info() {
   );
 
     $blocks['events_AR_today'] = array(
-      'info' => t('Events: Todays Events - Arvada'),
+      'info' => t('Events: Today\'s Events - Arvada'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -145,7 +160,7 @@ function jeffcolibrary_blks_block_info() {
     );  
 
        $blocks['events_BL_today'] = array(
-      'info' => t('Events: Todays Events - Belmar'),
+      'info' => t('Events: Today\'s Events - Belmar'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -153,7 +168,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_CL_today'] = array(
-      'info' => t('Events: Todays Events - Columbine'),
+      'info' => t('Events: Today\'s Events - Columbine'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -161,7 +176,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_CF_today'] = array(
-      'info' => t('Events: Todays Events - Conifer'),
+      'info' => t('Events: Today\'s Events - Conifer'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -169,7 +184,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_ED_today'] = array(
-      'info' => t('Events: Todays Events - Edgewater'),
+      'info' => t('Events: Today\'s Events - Edgewater'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -177,7 +192,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_EV_today'] = array(
-      'info' => t('Events: Todays Events - Evergreen'),
+      'info' => t('Events: Today\'s Events - Evergreen'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -185,7 +200,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_GN_today'] = array(
-      'info' => t('Events: Todays Events - Golden'),
+      'info' => t('Events: Today\'s Events - Golden'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -193,7 +208,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_LK_today'] = array(
-      'info' => t('Events: Todays Events - Lakewood'),
+      'info' => t('Events: Today\'s Events - Lakewood'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -201,7 +216,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_SL_today'] = array(
-      'info' => t('Events: Todays Events - Standley Lake'),
+      'info' => t('Events: Today\'s Events - Standley Lake'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -209,7 +224,7 @@ function jeffcolibrary_blks_block_info() {
     );
   
     $blocks['events_WR_today'] = array(
-      'info' => t('Events: Todays Events - Wheat Ridge'),
+      'info' => t('Events: Today\'s Events - Wheat Ridge'),
       'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -382,7 +397,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     );
   }
 
-    if ($block_name == 'research_search_mags') {
+  if ($block_name == 'research_search_mags') {
     return array(
       'subject' => t('Online Magazines & Newspapers'),
       'content' => _jeffcolibrary_blks_build_facet_block($block_name),
@@ -464,15 +479,10 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
   }
 
   if ($block_name == 'events_EK_today') {
-
-    global $base_url ;
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL">Calendar of Events</a>';
-
     $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today'),
     );
-
     return $block;
   }
 
