@@ -823,7 +823,7 @@ table#hours td {
   clear: both;
 }
 
-.jcpl-facet-form .form-item-search-term {
+.jcpl-facet-form .search-term {
   float: left;
   margin-right: 1em;
 }
@@ -834,7 +834,7 @@ table#hours td {
 }
 
 .jcpl-facet-form.compact-form .form-submit {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .compact-form-label {
