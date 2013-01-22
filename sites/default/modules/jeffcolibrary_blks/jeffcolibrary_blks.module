@@ -664,42 +664,55 @@ if ($block_name == 'locations_services') {
  */
 function _jeffcolibrary_blks_build_facet_block($delta) {
   // Provide location and label depending on delta.
+  $options = array('delta' => $delta);
   switch ($delta) {
     case 'downloads_search_ebooks':
-      $options = array(
-        'search_location' => '|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt',
-      );
+      $options['search_location'] = '|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt';
       break;
     case 'downloads_search_audiobooks':
-      $options = array(
-        'search_location' => '|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt',
-      );
+      $options['search_location'] = '|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt';
       break;
     case 'research_search_mags':
-      $options = array(
-        'search_location' => '|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def',
-      );
+      $options['search_location'] = '|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def';
       break;
   }
   // Build form.
-  return drupal_get_form('jeffcolibrary_blks_facet_form', $options);
+  return drupal_get_form('jeffcolibrary_blks_facet_form_' . $delta, $options);
+}
+
+/**
+ * Implements hook_forms().
+ */
+function jeffcolibrary_blks_forms($form_id, $args) {
+  return array(
+    $form_id => array(
+      'callback' => 'jeffcolibrary_blks_facet_form',
+    )
+  );
 }
 
 /**
  * Facet form builder.
  */
 function jeffcolibrary_blks_facet_form($form, &$form_state, $options = array()) {
+  $i = &drupal_static(__FUNCTION__);
+
+  $form['#id'] = 'jeffcolibrary-blks-facet-form--' . (++$i);
+
   // Location.
   $form['search_location'] = array(
-    '#type' => 'hidden',
+    '#type' => 'value',
     '#value' => $options['search_location'],
   );
+  
   // Term to search for.
   $form['search_term'] = array(
     '#type' => 'textfield',
     '#title' => t('Search terms'),
+    '#attributes' => array('class' => array('search-term')),
     '#size' => 26,
   );
+
   // Submit.
   $form['submit'] = array(
     '#type' => 'submit',
