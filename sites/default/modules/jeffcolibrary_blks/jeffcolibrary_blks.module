@@ -14,7 +14,7 @@ define('JEFFCOLIBRARY_BLKS_ENCOREBASE', 'http://encore.jefferson.lib.co.us/iii/e
  */
 function jeffcolibrary_blks_theme() {
   $base = array(
-    'file' => 'jeffcolibrary_blks_theme',
+    'file' => 'jeffcolibrary_blks.theme.inc',
     'path' => drupal_get_path('module', 'jeffcolibrary_blks') . '/tpl',
   );
   return array(
