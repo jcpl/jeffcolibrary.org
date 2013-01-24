@@ -1,0 +1,117 @@
+<?php
+
+/**
+ * Implements hook_init().
+ */
+function jcplfeeds_init() {
+  drupal_add_js(drupal_get_path('module', 'jcplfeeds') . '/js/jcplfeeds.js');
+  drupal_add_js(array('jcplfeeds' => array(
+    'no_cover_src' => url(drupal_get_path('module', 'jcplfeeds'). '/images/no-cover.png'),
+  )), 'setting');
+}
+
+/**
+ * Implements hook_feeds_parser_sources_alter().
+ */
+function jcplfeeds_feeds_parser_sources_alter(&$sources, $content_type) {
+  $sources['jcplfeeds_description_image'] = array(
+    'name' => t('JCPL: Image in description element'),
+    'description' => t('Image occuring in the description element of a feed item.'),
+    'callback' => 'jcplfeeds_parse_description',
+  );
+  $sources['jcplfeeds_description_description'] = array(
+    'name' => t('JCPL: Text in description element'),
+    'description' => t('Text occuring in the description element of a feed item.'),
+    'callback' => 'jcplfeeds_parse_description',
+  );
+  $sources['jcplfeeds_title_truncated'] = array(
+    'name' => t('JCPL: Truncated title'),
+    'description' => t('Split titles'),
+    'callback' => 'jcplfeeds_parse_title',
+  );
+  $sources['jcplfeeds_title_byline'] = array(
+    'name' => t('JCPL: Truncated title, byline'),
+    'description' => t('The remainder of the split from the title'),
+    'callback' => 'jcplfeeds_parse_title',
+  );
+  return $sources;
+}
+
+/**
+ * Parser callback for field item data.
+ */
+function jcplfeeds_parse_description(FeedsSource $source, FeedsParserResult $result, $key) {
+  $storage = &drupal_static(__FUNCTION__);
+
+  // Safe key.
+  $uuid = md5($result->current_item['guid']);
+
+  // Parse using QueryPath and statically store.
+  if (!isset($storage[$uuid])) {
+    $storage[$uuid] = (object) array(
+      'jcplfeeds_description_image' => htmlqp($result->current_item['description'], 'img')->attr('src'),
+      'jcplfeeds_description_description' => htmlqp($result->current_item['description'])->text(),
+    );
+  }
+
+  return isset($storage[$uuid]->$key) ? $storage[$uuid]->$key : NULL;
+}
+
+function jcplfeeds_parse_title(FeedsSource $source, FeedsParserResult $result, $key) {
+  $storage = &drupal_static(__FUNCTION__);
+
+  // Safe key.
+  $uuid = md5($result->current_item['guid']);
+
+  if (!isset($storage[$uuid])) {
+    // Split out title into something that looks better.
+    $explode = explode(' / ', $result->current_item['title']);
+    $storage[$uuid] = (object) array(
+      'jcplfeeds_title_truncated' => isset($explode[0]) ? trim($explode[0]) : NULL,
+      'jcplfeeds_title_byline' => isset($explode[1]) ? trim($explode[1]) : NULL,
+    );
+  }
+
+  return isset($storage[$uuid]->$key) ? $storage[$uuid]->$key:NULL;
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function jcplfeeds_field_formatter_info() {
+  return array(
+    'jcplfeeds_img' => array(
+      'label' => t('Image tag'),
+      'field types' => array('link_field'),
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ),
+    'jcplfeeds_img_link' => array(
+      'label' => t('Image tag, linked to catalog'),
+      'field types' => array('link_field'),
+      'multiple values' => FIELD_BEHAVIOR_DEFAULT,
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ * @todo Consider implementing image styles.
+ */
+function jcplfeeds_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  switch ($display['type']) {
+    case 'jcplfeeds_img':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = array('#theme' => 'image', '#path' => url($item['url'], $item));
+      }
+      break;
+    case 'jcplfeeds_img_link':
+      foreach ($items as $delta => $item) {
+        $url = url($entity->field_sable_catalog_url[LANGUAGE_NONE][$delta]['url'], $entity->field_sable_catalog_url[LANGUAGE_NONE][$delta]);
+        $image = theme('image', array('path' => url($item['url'], (array) $item)));
+        $element[$delta] = array('#markup' => l($image, $url, array('html' => TRUE)));
+      }
+      break;
+  }
+  return $element;
+}

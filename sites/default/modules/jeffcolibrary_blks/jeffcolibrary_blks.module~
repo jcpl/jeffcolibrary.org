@@ -647,7 +647,7 @@ if ($block_name == 'locations_services') {
 
   if ($block_name == 'locations_homepage') {
   
-    $content = '<table style="width: 300px; height: 145px;" border="0" cellspacing="10" cellpadding="10" align="left"><tr><td><a href="arvada">Arvada</a></td><td><a href="evergreen">Evergreen</a></td></tr><tr><td><a href="belmar">Belmar</a></td><td><a class="left6a" href="golden">Golden</a></td></tr><tr><td><a href="columbine">Columbine</a></td><td><a class="left6a" href="lakewood">Lakewood</a></td></tr><tr><td><a href="conifer">Conifer</a></td><td><a href="standley-lake">Standley Lake</a></td></tr><tr><td><a href="edgewater">Edgewater</a></td><td><a href="locations/wheat-ridge-library">Wheat Ridge</a></td></tr></table>';
+    $content = '<table style="width: 300px; height: 145px;" border="0" cellspacing="10" cellpadding="10" align="left"><tr><td><a href="arvada">Arvada</a></td><td><a href="evergreen">Evergreen</a></td></tr><tr><td><a href="belmar">Belmar</a></td><td><a class="left6a" href="golden">Golden</a></td></tr><tr><td><a href="columbine">Columbine</a></td><td><a class="left6a" href="lakewood">Lakewood</a></td></tr><tr><td><a href="conifer">Conifer</a></td><td><a href="standley-lake">Standley Lake</a></td></tr><tr><td><a href="edgewater">Edgewater</a></td><td><a href="wheat-ridge">Wheat Ridge</a></td></tr></table>';
 
     $block = array(
       'subject' => t('Locations'),
@@ -664,55 +664,42 @@ if ($block_name == 'locations_services') {
  */
 function _jeffcolibrary_blks_build_facet_block($delta) {
   // Provide location and label depending on delta.
-  $options = array('delta' => $delta);
   switch ($delta) {
     case 'downloads_search_ebooks':
-      $options['search_location'] = '|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt';
+      $options = array(
+        'search_location' => '|Ff:facetmediatype:z:z:E-Book::|Orightresult?lang=eng&suite=cobalt',
+      );
       break;
     case 'downloads_search_audiobooks':
-      $options['search_location'] = '|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt';
+      $options = array(
+        'search_location' => '|Ff:facetmediatype:4:4:Downloadable::|Orightresult?lang=eng&suite=cobalt',
+      );
       break;
     case 'research_search_mags':
-      $options['search_location'] = '|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def';
+      $options = array(
+        'search_location' => '|Ff:facetmediatype:s:s:Magazine::|Orightresult?lang=eng&suite=def',
+      );
       break;
   }
   // Build form.
-  return drupal_get_form('jeffcolibrary_blks_facet_form_' . $delta, $options);
-}
-
-/**
- * Implements hook_forms().
- */
-function jeffcolibrary_blks_forms($form_id, $args) {
-  return array(
-    $form_id => array(
-      'callback' => 'jeffcolibrary_blks_facet_form',
-    )
-  );
+  return drupal_get_form('jeffcolibrary_blks_facet_form', $options);
 }
 
 /**
  * Facet form builder.
  */
 function jeffcolibrary_blks_facet_form($form, &$form_state, $options = array()) {
-  $i = &drupal_static(__FUNCTION__);
-
-  $form['#id'] = 'jeffcolibrary-blks-facet-form--' . (++$i);
-
   // Location.
   $form['search_location'] = array(
-    '#type' => 'value',
+    '#type' => 'hidden',
     '#value' => $options['search_location'],
   );
-  
   // Term to search for.
   $form['search_term'] = array(
     '#type' => 'textfield',
     '#title' => t('Search terms'),
-    '#attributes' => array('class' => array('search-term')),
     '#size' => 26,
   );
-
   // Submit.
   $form['submit'] = array(
     '#type' => 'submit',
