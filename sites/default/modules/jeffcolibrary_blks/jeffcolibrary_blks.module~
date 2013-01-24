@@ -647,7 +647,7 @@ if ($block_name == 'locations_services') {
 
   if ($block_name == 'locations_homepage') {
   
-    $content = '<table style="width: 300px; height: 145px;" border="0" cellspacing="10" cellpadding="10" align="left"><tr><td><a href="arvada">Arvada</a></td><td><a href="evergreen">Evergreen</a></td></tr><tr><td><a href="belmar">Belmar</a></td><td><a class="left6a" href="golden">Golden</a></td></tr><tr><td><a href="columbine">Columbine</a></td><td><a class="left6a" href="lakewood">Lakewood</a></td></tr><tr><td><a href="conifer">Conifer</a></td><td><a href="standley-lake">Standley Lake</a></td></tr><tr><td><a href="edgewater">Edgewater</a></td><td><a href="locations/wheat-ridge-library">Wheat Ridge</a></td></tr></table>';
+    $content = '<table style="width: 300px; height: 145px;" border="0" cellspacing="10" cellpadding="10" align="left"><tr><td><a href="arvada">Arvada</a></td><td><a href="evergreen">Evergreen</a></td></tr><tr><td><a href="belmar">Belmar</a></td><td><a class="left6a" href="golden">Golden</a></td></tr><tr><td><a href="columbine">Columbine</a></td><td><a class="left6a" href="lakewood">Lakewood</a></td></tr><tr><td><a href="conifer">Conifer</a></td><td><a href="standley-lake">Standley Lake</a></td></tr><tr><td><a href="edgewater">Edgewater</a></td><td><a href="wheat-ridge">Wheat Ridge</a></td></tr></table>';
 
     $block = array(
       'subject' => t('Locations'),
