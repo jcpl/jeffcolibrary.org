@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://www.eventkeeper.com/ekfeed/JCPL_Calendar.js"></script>
+<script type="text/javascript" src="http://www.eventkeeper.com/ekfeed/JCPL_EV_events.js"></script>
 
 <script type="text/javascript">
 // new variable to handle long event names
@@ -72,7 +72,7 @@ document.write("</tr>");
   }
 document.write("</table></td></tr>");
 
-document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL' class='left4a'><b>All Events</b></a></td></tr>");
+document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Evergreen%20Library' class='left4a'><b>All Evergreen Events</b></a></td></tr>");
 
 // close the table tag
 document.write("</table>");
