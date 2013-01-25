@@ -21,53 +21,33 @@ function jeffcolibrary_blks_theme() {
     'jcpl_events_today' => array(
       'template' => 'jcpl-events-today',
     ) + $base,
-  );
-	return array(
     'jcpl_events_today_AR' => array(
       'template' => 'jcpl-events-today-AR',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_BL' => array(
       'template' => 'jcpl-events-today-BL',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_CL' => array(
       'template' => 'jcpl-events-today-CL',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_CF' => array(
       'template' => 'jcpl-events-today-CF',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_ED' => array(
       'template' => 'jcpl-events-today-ED',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_EV' => array(
       'template' => 'jcpl-events-today-EV',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_GN' => array(
       'template' => 'jcpl-events-today-GN',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_LK' => array(
       'template' => 'jcpl-events-today-LK',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_SL' => array(
       'template' => 'jcpl-events-today-SL',
     ) + $base,
-  );
-		return array(
     'jcpl_events_today_WR' => array(
       'template' => 'jcpl-events-today-WR',
     ) + $base,

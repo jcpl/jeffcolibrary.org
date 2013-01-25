@@ -20,8 +20,6 @@ var maxNameLength = 25;
 
 // outer table
 document.write("<table align='center' bgcolor='#fcf8f5' cellpadding='0' cellspacing='0' width='100%'>");
-document.write("<tr><td align='center' bgcolor='#f4e9dc' style='border-bottom:solid #555b53 1px\;padding:2px'>");
-document.write("<b>Today's Events</b></td></tr>");
 document.write("<tr><td>");
 
 // inner table with event data
