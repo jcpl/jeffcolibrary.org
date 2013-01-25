@@ -19,8 +19,8 @@ var maxNameLength = 25;
 // for this example we write out the data from this array in a table.
 
 // outer table
-document.write("<table align='center' bgcolor='#fcf8f5' cellpadding='0' cellspacing='0' width='100%'>");
-document.write("<tr><td align='center' bgcolor='#f4e9dc' style='border-bottom:solid #555b53 1px\;padding:2px'>");
+document.write("<table align='center' bgcolor='#ffffff' cellpadding='0' cellspacing='0' width='100%'>");
+document.write("<tr><td align='center' bgcolor='#f4f9fe' style='border-bottom:solid #555b53 1px\;padding:2px'>");
 document.write("<b>Today's Events</b></td></tr>");
 document.write("<tr><td>");
 
@@ -72,7 +72,7 @@ document.write("</tr>");
   }
 document.write("</table></td></tr>");
 
-document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL' class='left4a'><b>All Events</b></a></td></tr>");
+document.write("<tr><td bgcolor='#f4f9fe' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL' class='left4a'><b>All Events</b></a></td></tr>");
 
 // close the table tag
 document.write("</table>");
