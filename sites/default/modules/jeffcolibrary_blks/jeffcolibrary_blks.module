@@ -22,6 +22,56 @@ function jeffcolibrary_blks_theme() {
       'template' => 'jcpl-events-today',
     ) + $base,
   );
+	return array(
+    'jcpl_events_today_AR' => array(
+      'template' => 'jcpl-events-today-AR',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_BL' => array(
+      'template' => 'jcpl-events-today-BL',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_CL' => array(
+      'template' => 'jcpl-events-today-CL',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_CF' => array(
+      'template' => 'jcpl-events-today-CF',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_ED' => array(
+      'template' => 'jcpl-events-today-ED',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_EV' => array(
+      'template' => 'jcpl-events-today-EV',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_GN' => array(
+      'template' => 'jcpl-events-today-GN',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_LK' => array(
+      'template' => 'jcpl-events-today-LK',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_SL' => array(
+      'template' => 'jcpl-events-today-SL',
+    ) + $base,
+  );
+		return array(
+    'jcpl_events_today_WR' => array(
+      'template' => 'jcpl-events-today-WR',
+    ) + $base,
+  );
 }
 
 /**
@@ -502,140 +552,90 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
   }
 
 if ($block_name == 'events_AR_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Arvada%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_AR'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_BL_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Belmar%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_BL'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_CL_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Columbine%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_CL'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_CF_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Conifer%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_CF'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_ED_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Edgewater%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_ED'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_EV_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Evergreen%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_EV'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_GN_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Golden%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_GN'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_LK_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Lakewood%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_LK'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_SL_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Standley%20Lake%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_SL'),
     );
 
     return $block;
   }
 
 if ($block_name == 'events_WR_today') {
-  
-    global $base_url ;
-  
-    $content = '<a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey1=Wheat%20Ridge%20Library">Calendar of Events</a>';
-
-    $block = array(
+   $block = array(
       'subject' => t('Today\'s Events'),
-      'content' => $content,
+      'content' => theme('jcpl_events_today_WR'),
     );
 
     return $block;
