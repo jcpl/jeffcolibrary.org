@@ -670,15 +670,30 @@ function _jeffcolibrary_blks_build_facet_block($delta) {
   return drupal_get_form('jeffcolibrary_blks_facet_form_' . $delta, $options);
 }
 
+function _jeffcolibrary_blks_facet_form_ids() {
+  $base_id = 'jeffcolibrary_blks_facet_form_';
+  $form_ids = array();
+  foreach (array(
+    'downloads_search_ebooks',
+    'downloads_search_audiobooks',
+    'research_search_mags',
+  ) as $value) {
+    $form_ids[] = $base_id . $value;
+  };
+  return $form_ids;
+}
+
 /**
  * Implements hook_forms().
  */
 function jeffcolibrary_blks_forms($form_id, $args) {
-  return array(
-    $form_id => array(
+  $forms = array();
+  foreach (_jeffcolibrary_blks_facet_form_ids() as $id) {
+    $forms[$id] = array(
       'callback' => 'jeffcolibrary_blks_facet_form',
-    )
-  );
+    );
+  }
+  return $forms;
 }
 
 /**
