@@ -74,11 +74,6 @@ document.write("</table></td></tr>");
 
 document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL' class='left4a'><b>All Events</b></a></td></tr>");
 
-// if you would be so kind, please include a reference to EventKeeper
-var EKNOTICE = '<span class="small"><i>Powered by</i>';
-EKNOTICE += '  <a href="http://www.eventkeeper.com" target="_blank" class="left4a"><b>EventKeeper</b></span></a>';
-document.write("<tr><td bgcolor='#f4e9dc' align='right' style='padding:2px'>" + EKNOTICE + "</td></tr>");
-
 // close the table tag
 document.write("</table>");
 </script>
