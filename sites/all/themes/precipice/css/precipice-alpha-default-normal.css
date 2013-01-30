@@ -414,10 +414,42 @@ padding-right:10px;
 	text-decoration: none;	
 }
 
-.block-kids-blog-page-block .views-row {
+.node-type-page .block-kids-blog-page-block .views-row {
 	height: 90px;
 	padding-bottom: 20px;
+	border-bottom: 0px;
 }
+
+/* Kids Blog pages */
+
+.view-kids-blog-page .view-mode-full {
+	clear: left;
+}
+
+.node-jcpl-kids h2 {
+	margin-bottom: 0px;
+}
+
+.view-kids-blog-page .views-row {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.view-kids-blog-page .views-row-last {
+	border-bottom: none;
+}
+
+/* Kids blog taxonomy page */
+
+.page-taxonomy-term .node-jcpl-kids {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
 
 /* Feature Blocks in sidebar second */
 
@@ -433,9 +465,7 @@ padding-right:10px;
 	height: 90px;
 	margin-bottom: 20px;
 	background-color: #dcfaf3;
-
 	clear: left;
-	height: 90px;
 }
 	
 .kidsfeatureblk #kids_feature1 img, .kidsfeatureblk #kids_feature2 img {
@@ -576,10 +606,42 @@ padding-right:10px;
 	text-decoration: none;	
 }
 
-.block-teen-blog-page-block .views-row {
+.node-type-page .block-teen-blog-page-block .views-row {
 	height: 90px;
 	padding-bottom: 20px;
+	border-bottom: 0px;
 }
+
+/* Teen Blog pages */
+
+.view-teen-blog-page .view-mode-full {
+	clear: left;
+}
+
+.node-jcpl-teens h2 {
+	margin-bottom: 0px;
+}
+
+.view-teen-blog-page .views-row {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.view-teen-blog-page .views-row-last {
+	border-bottom: none;
+}
+
+/* Kids blog taxonomy page */
+
+.page-taxonomy-term .node-jcpl-teens {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
 
 /* Homework Help */
 
