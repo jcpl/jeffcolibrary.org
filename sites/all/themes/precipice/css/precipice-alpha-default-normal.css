@@ -1,9 +1,9 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
-
 h1 {
 	margin-bottom: 10px;
+	padding-bottom: 0px;
 }
 
 body {
@@ -264,10 +264,6 @@ margin-top: 6px;
 /* ------------- Research -------------- */
 
 /* Seasonal Guide teasers */
-
-.context-research h1 {
-	margin-bottom: 0px;
-}
 
 .view-seasonal-guides h2 {
 	font-size: 1.2em;
@@ -561,9 +557,7 @@ padding-right:10px;
 	margin-right:320px;
 	width: 640px;
 }
-.node-type-jcpl-kids h1 {
-	margin-bottom: 0px;
-}
+
 /* ---------------------- Teens ------------------------------- */
 
 .block-teen-blog-page-block h2 {
@@ -608,10 +602,6 @@ padding-right:10px;
 	margin-right:320px;
 	width: 640px;
 }
-.node-type-jcpl-teens h1 {
-	margin-bottom: 0px;
-}
-
 
 /* --------------- Books, Movies & Music ---------------------- */
 
@@ -643,9 +633,10 @@ padding-right:10px;
 	line-height: 1.25em;
 }
 
-.view-books-and-beyond-blog-page .views-row {
+.node-type-page .view-books-and-beyond-blog-page .views-row {
 	height: 90px;
 	padding-bottom: 20px;
+	border-bottom: 0px;
 }
 
 #whattoread1, #whattoread2, #whattoread3, #whattoread4 {
@@ -660,17 +651,29 @@ padding-right:10px;
 /* Books and Beyond Blog page */
 .view-books-and-beyond-blog-page .view-mode-full {
 	clear: left;
-	display: block;
 }
+
+.node-booksandbeyond h2 {
+	margin-bottom: 0px;
+}
+
+.view-books-and-beyond-blog-page .views-row {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.view-books-and-beyond-blog-page .views-row-last {
+	border-bottom: none;
+}
+
 
 /* Books and Beyond Blog full node pages */
 
 .node-booksandbeyond {
 	margin-right:320px;
 	width: 640px;
-}
-.node-type-booksandbeyond h1 {
-	margin-bottom: 0px;
 }
 
 .field-name-field-blog-author .field-label{
@@ -713,6 +716,15 @@ padding-right:10px;
 
 .context-new-arrivals-homepage .views-field-description span {
 	padding-top: 10px;
+}
+
+/* Books and Beyond taxonomy page */
+
+.page-taxonomy-term .node-booksandbeyond {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
 }
 
 
@@ -801,7 +813,7 @@ table#hours td {
 /* --------------- Events ---------------------- */
 
 .block-views-event-highlights-block h2 {
-	padding-top: 15px;
+	padding-bottom: 10px;
 }
 
 .block-events-ek-today h2 {
@@ -849,12 +861,6 @@ table#hours td {
 
 .compact-form-label {
   opacity: .5;
-}
-
-.node-teaser {
-  margin-bottom: 1em;
-  padding-bottom: 1em;
-  border-bottom: 1px solid #CCC;
 }
 
 .node-teaser.node-jcpl-sable-feed-item .field-name-field-catalog-image-url {
