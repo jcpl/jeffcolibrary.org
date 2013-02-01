@@ -583,10 +583,7 @@ padding-right:10px;
 
 /* Kids Blog full node pages */
 
-.node-jcpl-kids {
-	margin-right:320px;
-	width: 640px;
-}
+
 
 /* ---------------------- Teens ------------------------------- */
 
@@ -658,11 +655,6 @@ padding-right:10px;
 #block-views-homework-help-a-z-block-1 .field-type-link-field {
 	padding-top: 7px;
 	font-size: 1.1em;
-}
-
-.node-jcpl-teens {
-	margin-right:320px;
-	width: 640px;
 }
 
 /* --------------- Books, Movies & Music ---------------------- */
