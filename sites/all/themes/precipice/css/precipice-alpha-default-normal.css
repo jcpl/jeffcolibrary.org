@@ -722,6 +722,9 @@ padding-right:10px;
 	border-bottom: none;
 }
 
+.context-books-movies-music h2 a, .context-teen h2 a, .context-kids h2 a {
+	text-decoration: none;
+}
 
 /* Books and Beyond Blog full node pages */
 
@@ -776,6 +779,14 @@ padding-right:10px;
 	border-bottom-color:#CCC;
 }
 
+/* Blog archive pages */
+
+.view-archive-books-and-beyond .node-booksandbeyond, .view-archive-crazy-readersz-blog .node-jcpl-teens, .view-archive-jcpl-kids-blog .node-jcpl-kids {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
 
 /* --------------- Locations & Hours ---------------------- */
 #hours
