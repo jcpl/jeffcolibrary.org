@@ -779,13 +779,24 @@ padding-right:10px;
 	border-bottom-color:#CCC;
 }
 
-/* Blog archive pages */
+/* All Blog archive pages */
 
 .view-archive-books-and-beyond .node-booksandbeyond, .view-archive-crazy-readersz-blog .node-jcpl-teens, .view-archive-jcpl-kids-blog .node-jcpl-kids {
 	padding-bottom: 25px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color:#CCC;
+}
+
+/* All Full Node bottom-level Blog pages */
+
+.page-node .node-booksandbeyond h2 a, .page-node .node-jcpl-teens h2 a, .page-node .node-jcpl-kids h2 a {
+	display: none;
+	height: 0px;
+}
+
+.node-type-booksandbeyond h1, .node-type-jcpl-teens h1, .node-type-jcpl-kids h1 {
+	margin-bottom: 0px;
 }
 
 /* --------------- Locations & Hours ---------------------- */
