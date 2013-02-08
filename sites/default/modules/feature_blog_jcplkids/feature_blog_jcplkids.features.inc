@@ -113,6 +113,14 @@ function feature_blog_jcplkids_node_info() {
       'title_label' => t('JCPL Kids blog post title'),
       'help' => '',
     ),
+    'storytimes' => array(
+      'name' => t('Storytimes'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   return $items;
 }
