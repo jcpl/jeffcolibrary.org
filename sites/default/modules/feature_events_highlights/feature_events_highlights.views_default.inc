@@ -22,8 +22,9 @@ function feature_events_highlights_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Events';
+  $handler->display->display_options['title'] = 'Event Highlights ';
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'read more...';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -43,25 +44,6 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Library news blog post content */
-  $handler->display->display_options['fields']['field_blog_post']['id'] = 'field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['label'] = '';
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
-  $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_blog_post']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -85,11 +67,19 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
+  /* Filter criterion: Content: Events tag (field_events_tag) */
+  $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
+  $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
+  $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
+  $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
+    0 => '55',
+    1 => '53',
+    2 => '54',
+  );
+  $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Event Highlights';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
@@ -108,12 +98,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'full';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'full';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -124,6 +121,14 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
     'image_style' => '140x90',
     'image_link' => 'content',
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'title' => '',
+      'target' => '',
+      'rel' => '',
+      'text' => '',
+    ),
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -139,16 +144,6 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_blog_post']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -170,14 +165,15 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   $handler->display->display_options['path'] = 'event-highlights';
@@ -191,11 +187,11 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
-  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -205,7 +201,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -215,14 +211,6 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
     'image_style' => '140x90',
     'image_link' => 'content',
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -231,6 +219,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Library news blog post content */
   $handler->display->display_options['fields']['field_blog_post']['id'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
@@ -271,24 +260,25 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   $handler->display->display_options['block_description'] = 'Events: Highlights teaser block';
 
   /* Display: Arvada block */
   $handler = $view->new_display('block', 'Arvada block', 'block_1');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Arvada Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Arvada library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -305,7 +295,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -330,7 +320,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -365,14 +355,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -380,18 +370,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '10',
+    0 => '31',
+    1 => '21',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Arvada highlights teaser block';
 
   /* Display: Belmar block */
   $handler = $view->new_display('block', 'Belmar block', 'block_2');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Belmar Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Arvada library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -408,7 +399,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -433,7 +424,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -468,14 +459,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -483,18 +474,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '11',
+    0 => '31',
+    1 => '22',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Belmar highlights teaser block';
 
   /* Display: Columbine block */
   $handler = $view->new_display('block', 'Columbine block', 'block_3');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Columbine Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Columbine library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -511,7 +503,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -536,7 +528,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -571,14 +563,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -586,18 +578,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '12',
+    0 => '31',
+    1 => '23',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Columbine highlights teaser block';
 
   /* Display: Conifer block */
   $handler = $view->new_display('block', 'Conifer block', 'block_4');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Conifer Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Conifer library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -614,7 +607,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -639,7 +632,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -674,14 +667,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -689,18 +682,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '13',
+    0 => '31',
+    1 => '24',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Conifer highlights teaser block';
 
   /* Display: Edgewater block */
   $handler = $view->new_display('block', 'Edgewater block', 'block_5');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Edgewater  Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Edgewater library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -717,7 +711,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -742,7 +736,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -777,14 +771,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -792,18 +786,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '14',
+    0 => '31',
+    1 => '25',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Edgewater highlights teaser block';
 
   /* Display: Evergreen block */
   $handler = $view->new_display('block', 'Evergreen block', 'block_6');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Evergreen Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Evergreen library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -820,7 +815,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -845,7 +840,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -880,14 +875,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -895,18 +890,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '15',
+    0 => '31',
+    1 => '26',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Evergreen highlights teaser block';
 
   /* Display: Golden block */
   $handler = $view->new_display('block', 'Golden block', 'block_7');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Golden Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Golden library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -923,7 +919,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -948,7 +944,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -983,14 +979,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -998,18 +994,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '16',
+    0 => '31',
+    1 => '28',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Golden highlights teaser block';
 
   /* Display: Lakewood block */
   $handler = $view->new_display('block', 'Lakewood block', 'block_8');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Lakewood Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Lakewood library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -1026,7 +1023,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -1051,7 +1048,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -1086,14 +1083,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -1101,18 +1098,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '17',
+    0 => '31',
+    1 => '27',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Lakewood highlights teaser block';
 
   /* Display: Standley Lake block */
   $handler = $view->new_display('block', 'Standley Lake block', 'block_9');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Standley Lake Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Standley library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -1129,7 +1127,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -1154,7 +1152,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -1189,14 +1187,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -1204,18 +1202,19 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '18',
+    0 => '31',
+    1 => '29',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Standley Lake highlights teaser block';
 
   /* Display: Wheat Ridge block */
   $handler = $view->new_display('block', 'Wheat Ridge block', 'block_10');
-  $handler->display->display_options['display_description'] = 'Events content from blogs for Wheat Ridge Library or All locations.';
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['display_description'] = 'Event highlights teaser for Standley library';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = FALSE;
@@ -1232,7 +1231,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Library news blog image */
+  /* Field: Content: Select media image */
   $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
   $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
@@ -1257,7 +1256,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
   $handler->display->display_options['fields']['field_blog_post']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -1292,14 +1291,14 @@ function feature_events_highlights_views_default_views() {
     'jcpl_teens' => 'jcpl_teens',
     'library_news' => 'library_news',
   );
-  /* Filter criterion: Content: Events (field_events_tag) */
+  /* Filter criterion: Content: Events tag (field_events_tag) */
   $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '52',
-    1 => '50',
-    2 => '51',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
   /* Filter criterion: Content: Locations tag (field_locations_tag) */
@@ -1307,8 +1306,8 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['table'] = 'field_data_field_locations_tag';
   $handler->display->display_options['filters']['field_locations_tag_tid']['field'] = 'field_locations_tag_tid';
   $handler->display->display_options['filters']['field_locations_tag_tid']['value'] = array(
-    0 => '9',
-    1 => '19',
+    0 => '31',
+    1 => '30',
   );
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Wheat Ridge highlights teaser block';
