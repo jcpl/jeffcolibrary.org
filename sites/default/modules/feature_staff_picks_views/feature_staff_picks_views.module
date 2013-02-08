@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_staff_picks_views feature.
+ */
+
+include_once 'feature_staff_picks_views.features.inc';

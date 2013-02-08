@@ -1,0 +1,13 @@
+name = feature_staff_picks_views
+description = views for books, movies, and music blog taxonomy teasers in sidebar on media type pages
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = feature_staff_picks_views
+dependencies[] = feature_blog_booksandbeyond
+dependencies[] = feature_blog_jcplkids
+dependencies[] = feature_blog_jcplteen
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = staff_picks
