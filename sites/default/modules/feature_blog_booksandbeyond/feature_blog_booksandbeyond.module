@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_blog_booksandbeyond feature.
+ */
+
+include_once 'feature_blog_booksandbeyond.features.inc';
