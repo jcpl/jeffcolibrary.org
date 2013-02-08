@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_homepage_latestfromblogs feature.
+ */
+
+include_once 'feature_homepage_latestfromblogs.features.inc';
