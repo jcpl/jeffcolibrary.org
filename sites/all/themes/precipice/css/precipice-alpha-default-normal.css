@@ -8,11 +8,6 @@ h1 {
 
 body {
 	font-size: 1.05em;
-}
-
-/* Background */
-
-body {
 	background-image: url(../../../../default/files/head_foot/jeffcolibrary_bg10.jpg);
 	background-repeat: no-repeat;
 	background-position: center 0;
@@ -84,6 +79,7 @@ nav.navigation {
 	padding-right: 5px;
 	padding-left: 5px;
 }
+
 /* Front Page Header */
  
 .front #zone-branding-wrapper {
@@ -188,18 +184,6 @@ nav.navigation {
 
 }
 
-.view-new-arrivals-homepage .more-link {
-	padding-right: 5px;
-}
-
-.jcarousel-container {
-	background-color: #fff;
-	margin-top: 20px;
-}
-/*.view-new-arrivals-homepage .jcarousel-next, .jcarousel-prev {
-	background-color: #ccc;
-}*/
-
 /* Footer */
 
 #zone-footer-wrapper li {
@@ -259,6 +243,32 @@ margin-top: 6px;
 
 #block-jeffcolibrary-blks-foot-connect #textfield {
 	margin-top: 7px;
+}
+
+/* All carousel styles */
+
+.jcarousel-container, .jcarousel-clip, .views-field-field-carousel-bookjacket-image {
+	background-color: #EAEAEA;
+}
+
+.jcarousel-container {
+	margin-top: 20px;
+}
+
+.context-books-movies-music .jcarousel-container, .context-teen .jcarousel-container,.context-kids .jcarousel-container  {
+	width: 200px;
+}
+
+.page-home .jcarousel-container {
+	padding-bottom: 0px;
+	width: 870px;
+}
+
+.view-carousel-books .view-footer {
+	float: right;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-right: 10px;	
 }
 
 /* ------------- Research -------------- */
@@ -379,10 +389,6 @@ td.col-first {
 	width: 300px;
 	margin-right: 320px;
 }
-
-	
-
-
 
 /* Blog posts */
 .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {
@@ -733,21 +739,6 @@ padding-right:10px;
 	font-weight: normal;
 	font-size: 1em;	
 	padding-bottom: 20px;
-}
-
-.context-books-movies-music .jcarousel-container {
-	width: 200px;
-	background-color: #f3f3f3;
-}
-
-.context-teen .jcarousel-container {
-	width: 200px;
-	background-color: #f3f3f3;
-}
-
-.context-kids .jcarousel-container {
-	width: 200px;
-	background-color: #f3f3f3;
 }
 
 .context-new-arrivals-homepage img {
