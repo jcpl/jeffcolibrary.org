@@ -245,7 +245,7 @@ margin-top: 6px;
 	margin-top: 7px;
 }
 
-/* All carousel styles */
+/* All carousels */
 
 .jcarousel-container, .jcarousel-clip, .views-field-field-carousel-bookjacket-image {
 	background-color: #EAEAEA;
@@ -269,6 +269,39 @@ margin-top: 6px;
 	padding-bottom: 3px;
 	padding-top: 3px;
 	padding-right: 10px;	
+}
+
+/* All new arrivals listing pages */
+
+.node-type-media-type .view-new-arrivals .views-field img {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.node-type-media-type .view-new-arrivals .views-row {
+	clear: left;
+	width: 620px;
+	min-height: 130px;
+	margin-right: 320px;
+	padding-top: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.node-type-media-type .view-new-arrivals .views-field-description span {
+	padding-top: 10px;
+}
+
+/* Staff picks on new arrivals listing pages */
+
+.view-staff-picks .views-row {
+	clear: left;
+}
+
+.view-staff-picks .views-row-first {
+	padding-top: 10px;
 }
 
 /* ------------- Research -------------- */
@@ -587,9 +620,6 @@ padding-right:10px;
 	float: right;
 }
 
-/* Kids Blog full node pages */
-
-
 
 /* ---------------------- Teens ------------------------------- */
 
@@ -636,7 +666,7 @@ padding-right:10px;
 	border-bottom: none;
 }
 
-/* Kids blog taxonomy page */
+/* Teen blog taxonomy page */
 
 .page-taxonomy-term .node-jcpl-teens {
 	padding-bottom: 25px;
@@ -739,26 +769,6 @@ padding-right:10px;
 	font-weight: normal;
 	font-size: 1em;	
 	padding-bottom: 20px;
-}
-
-.context-new-arrivals-homepage img {
-	float: left;
-	margin-right: 20px;
-	margin-top: 10px;
-}
-
-.context-new-arrivals-homepage .views-field-title {
-	width: 520px;
-	margin-right: 320px;
-	padding-top: 25px;
-}
-
-.context-new-arrivals-homepage .views-row {
-	clear: left;
-}
-
-.context-new-arrivals-homepage .views-field-description span {
-	padding-top: 10px;
 }
 
 /* Books and Beyond taxonomy page */
