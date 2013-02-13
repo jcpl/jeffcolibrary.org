@@ -80,6 +80,26 @@ nav.navigation {
 	padding-left: 5px;
 }
 
+/* Global Nav */
+
+.block-menu-menu-global-nav a {
+	text-decoration: none;
+}
+
+.block-menu-menu-global-nav {
+	float: right;
+	margin-bottom: -15px;
+}
+
+.front .block-menu-menu-global-nav {
+	margin-bottom: -30px;
+}
+
+.block-menu-menu-global-nav li {
+	display: inline-table;
+	vertical-align:middle;
+}
+
 /* Front Page Header */
  
 .front #zone-branding-wrapper {
