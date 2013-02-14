@@ -303,7 +303,15 @@ function feature_blog_booksandbeyond_views_default_views() {
   $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
     'image_style' => '140x90',
-    'image_link' => '',
+    'image_link' => 'content',
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'title' => '',
+      'target' => '',
+      'rel' => '',
+      'text' => '',
+    ),
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
