@@ -374,6 +374,14 @@ margin-top: 6px;
 	padding-bottom: 5px;
 }
 
+/* Searchbox: online mags and newspapers */
+
+.block-research-search-mags h2 {
+	padding-bottom: 0px;
+	margin-bottom: -10px;
+}
+
+
 /* Subject Guide full nodes */
 
 .group_getstart1, .group_getstart2, .group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
