@@ -85,6 +85,22 @@ function kids_teen_blks_block_info() {
 	  'region' => 'menu',
     );
 
+	$blocks['kidsmenu_images'] = array(
+      'info' => t('Kids nav menu images.'),
+      'status' => 1,
+	  'region' => 'preface_first',
+  	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => "kids\nkids/*",
+    );
+
+	$blocks['teenmenu_images'] = array(
+      'info' => t('Teen nav menu images.'),
+      'status' => 1,
+	  'region' => 'preface_first',	  
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => "teen\nteen/*",
+    );
+
 	return $blocks;
 }
 
