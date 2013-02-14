@@ -431,7 +431,18 @@ td.col-first {
 	padding-top: 10px;
 }
 
-/*full nodes*/
+/* searchboxes */
+
+.block-downloads-search-ebooks {
+	padding-bottom: 20px;
+}
+
+.context-downloads .region-sidebar-second h2 {
+	padding-bottom: 0px;
+	margin-bottom: -10px;
+}
+
+/* full nodes */
 
 .field-name-field-device-image {
 	float: left;
