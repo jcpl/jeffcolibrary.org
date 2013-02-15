@@ -714,7 +714,6 @@ padding-right:10px;
 	border-bottom-color:#CCC;
 }
 
-
 /* Homework Help */
 
 #block-views-homework-help-a-z-block-1 .field-group-format {
@@ -836,6 +835,14 @@ padding-right:10px;
 }
 
 .node-type-booksandbeyond h1, .node-type-jcpl-teens h1, .node-type-jcpl-kids h1 {
+	margin-bottom: 0px;
+}
+
+/* All links sections*/
+
+.links {
+	float: left;
+	clear: left;
 	margin-bottom: 0px;
 }
 
