@@ -177,14 +177,16 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 .view-latest-from-the-blogs .views-field-field-blog-image {
 	padding-right: 0px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 
 .view-latest-from-the-blogs .views-field-title a {
 	font-weight: normal;
 	text-decoration: none;
-	font-size: 1.15em;
-	line-height: .9em;
+}
+
+.view-latest-from-the-blogs .views-field-title {
+	line-height: 1.2em;
 }
 
 /* Front page new arrival carousel */
