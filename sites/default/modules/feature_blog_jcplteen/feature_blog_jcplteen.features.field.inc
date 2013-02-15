@@ -177,7 +177,7 @@ function feature_blog_jcplteen_field_default_fields() {
       'settings' => array(
         'alt_field' => 0,
         'default_image' => 0,
-        'file_directory' => '',
+        'file_directory' => 'images/carousel_teen',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',

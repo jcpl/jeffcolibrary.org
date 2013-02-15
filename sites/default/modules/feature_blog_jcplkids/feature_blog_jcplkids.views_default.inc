@@ -32,7 +32,6 @@ function feature_blog_jcplkids_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
-  $handler->display->display_options['row_options']['view_mode'] = 'full';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -91,7 +90,6 @@ function feature_blog_jcplkids_views_default_views() {
   $handler->display->display_options['arguments']['created_year_month']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['created_year_month']['summary_options']['items_per_page'] = '30';
   $handler->display->display_options['arguments']['created_year_month']['specify_validation'] = TRUE;
-  $handler->display->display_options['block_description'] = 'Kids: JCPL Kids blog archive';
   $export['archive_jcpl_kids_blog'] = $view;
 
   $view = new view();
@@ -269,7 +267,15 @@ function feature_blog_jcplkids_views_default_views() {
   $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
     'image_style' => '140x90',
-    'image_link' => '',
+    'image_link' => 'content',
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'title' => '',
+      'target' => '',
+      'rel' => '',
+      'text' => '',
+    ),
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
