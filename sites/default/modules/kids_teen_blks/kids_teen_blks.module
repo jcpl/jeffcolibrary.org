@@ -340,11 +340,11 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     global $base_url ;
 
-    $content = "<a href="$base_url/kids/homework-help"><img src="$base_url/sites/default/files/kids_teen/nav/kidsnav_hwhelp.png" alt="homework help" width="136" height="84" border="0" /></a>
-<a href="$base_url/kids/books-reading"><img src="$base_url/sites/default/files/kids_teen/nav/kidsnav_booksreading.png" alt="books and reading" width="136" height="84" border="0" /></a>
-<a href="$base_url/kids/events"><img src="$base_url/sites/default/files/kids_teen/nav/kidsnav_events.png" alt="events" width="136" height="84" border="0" /></a>
-<a href="$base_url/kids/fun-games"><img src="$base_url/sites/default/files/kids_teen/nav/kidsnav_fungames.png" alt="fun and games" width="136" height="84" border="0" /></a>
-<a href="$base_url/kids/parents-teachers"><img src="$base_url/sites/default/files/kids_teen/nav/kidsnav_parentsteachers.png" alt="parents and teachers" width="136" height="84" border="0" /></a>" /></a>";
+    $content = "<a href=\"$base_url/kids/homework-help\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_hwhelp.png\" alt=\"homework help\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/books-reading\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_booksreading.png\" alt=\"books and reading\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/events\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_events.png\" alt=\"events\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/fun-games\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_fungames.png\" alt=\"fun and games\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/parents-teachers\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_parentsteachers.png\" alt=\"parents and teachers\" width=\"136\" height=\"84\" border=\"0\" /></a>";
 
     $block = array(
       'subject' => t(''),
