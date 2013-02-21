@@ -332,8 +332,8 @@ margin-top: 6px;
 
 /* Kids and Teen sub nav images */
 
-#block-kids-teen-blks-kidsmenu-images {
-	width: 940px;
+#block-kids-teen-blks-kidsmenu-images, #block-kids-teen-blks-teenmenu-images {
+	width: 960px;
 }
 
 #block-kids-teen-blks-kidsmenu-images a {
@@ -342,6 +342,11 @@ margin-top: 6px;
 	padding-bottom: 5px;
 	padding-left: 13px;
 }
+
+#block-kids-teen-blks-teenmenu-images a {
+	display: inline-block;
+	padding: 0px;
+
 
 
 /* ------------- Research -------------- */
