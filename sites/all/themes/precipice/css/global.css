@@ -101,3 +101,12 @@ h1 {
 	float: left;
 	margin-top: 35px;
 }
+
+.logged-in h1 {
+	float: none;
+	margin-top: 0px;
+}
+
+.logged-in .easy-breadcrumb {
+	display: none;
+}

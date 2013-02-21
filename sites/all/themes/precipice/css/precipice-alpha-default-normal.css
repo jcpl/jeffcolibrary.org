@@ -100,6 +100,10 @@ nav.navigation {
 	vertical-align:middle;
 }
 
+li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
+	padding: 0.2em 0 0 0;
+}
+
 /* Front Page Header */
  
 .front #zone-branding-wrapper {
@@ -173,14 +177,16 @@ nav.navigation {
 
 .view-latest-from-the-blogs .views-field-field-blog-image {
 	padding-right: 0px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 
 .view-latest-from-the-blogs .views-field-title a {
 	font-weight: normal;
 	text-decoration: none;
-	font-size: 1.15em;
-	line-height: .9em;
+}
+
+.view-latest-from-the-blogs .views-field-title {
+	line-height: 1.2em;
 }
 
 /* Front page new arrival carousel */
@@ -714,7 +720,6 @@ padding-right:10px;
 	border-bottom-color:#CCC;
 }
 
-
 /* Homework Help */
 
 #block-views-homework-help-a-z-block-1 .field-group-format {
@@ -836,6 +841,14 @@ padding-right:10px;
 }
 
 .node-type-booksandbeyond h1, .node-type-jcpl-teens h1, .node-type-jcpl-kids h1 {
+	margin-bottom: 0px;
+}
+
+/* All links sections*/
+
+.links {
+	float: left;
+	clear: left;
 	margin-bottom: 0px;
 }
 
