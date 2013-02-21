@@ -330,6 +330,20 @@ margin-top: 6px;
 	padding-top: 10px;
 }
 
+/* Kids and Teen sub nav images */
+
+#block-kids-teen-blks-kidsmenu-images {
+	width: 940px;
+}
+
+#block-kids-teen-blks-kidsmenu-images a {
+	display: inline-block;
+	padding: 15px;
+	padding-bottom: 5px;
+	padding-left: 13px;
+}
+
+
 /* ------------- Research -------------- */
 
 /* Seasonal Guide teasers */

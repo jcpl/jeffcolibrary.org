@@ -354,5 +354,20 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
     return $block;
   }
 
+    if ($block_name == 'teenmenu_images') {
 
+    global $base_url ;
+
+    $content = "<a href=\"$base_url/teen/homework-help\"><img src=\"$base_url/sites/default/files/kids_teen/nav/teennav_events.png\" width=\"332\" height=\"143\" alt=\"teen events\" /></a>
+<a href=\"$base_url/teen/reviews\"><img src=\"$base_url/sites/default/files/kids_teen/nav/teennav_reviews.png\" width=\"332\" height=\"143\" alt=\"teen reviews\" /></a>
+<a href=\"$base_url/teen/events\"><img src=\"$base_url/sites/default/files/kids_teen/nav/teennav_hwhelp.png\" width=\"332\" height=\"143\" alt=\"teen homework help\" /></a>
+";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
 }
