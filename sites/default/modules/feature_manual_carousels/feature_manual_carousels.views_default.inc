@@ -82,6 +82,7 @@ function feature_manual_carousels_views_default_views() {
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -148,12 +149,6 @@ function feature_manual_carousels_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['label'] = 'more link to books feed page';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<div class="custom_more_link"><a href="books-movies-music/books">more</a></div>
 ';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
 
   /* Display: Homepage Block */
   $handler = $view->new_display('block', 'Homepage Block', 'block_2');
@@ -182,12 +177,6 @@ function feature_manual_carousels_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['label'] = 'more link to books feed page';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href="books-movies-music/books">more</a>';
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
   $handler->display->display_options['block_description'] = 'Front: Manual Carousel - Books';
 
   /* Display: Music Block */
@@ -484,11 +473,6 @@ function feature_manual_carousels_views_default_views() {
       'text' => '',
     ),
   );
-  $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
