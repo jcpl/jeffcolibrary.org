@@ -85,6 +85,22 @@ function kids_teen_blks_block_info() {
 	  'region' => 'menu',
     );
 
+	$blocks['kidsmenu_images'] = array(
+      'info' => t('Kids nav menu images.'),
+      'status' => 1,
+	  'region' => 'preface_first',
+  	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => "kids\nkids/*",
+    );
+
+	$blocks['teenmenu_images'] = array(
+      'info' => t('Teen nav menu images.'),
+      'status' => 1,
+	  'region' => 'preface_first',	  
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => "teen\nteen/*",
+    );
+
 	return $blocks;
 }
 
@@ -319,5 +335,39 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     return $block;
   }
+  
+    if ($block_name == 'kidsmenu_images') {
 
+    global $base_url ;
+
+    $content = "<a href=\"$base_url/kids/homework-help\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_hwhelp.png\" alt=\"homework help\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/books-reading\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_booksreading.png\" alt=\"books and reading\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/events\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_events.png\" alt=\"events\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/fun-games\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_fungames.png\" alt=\"fun and games\" width=\"136\" height=\"84\" border=\"0\" /></a>
+<a href=\"$base_url/kids/parents-teachers\"><img src=\"$base_url/sites/default/files/kids_teen/nav/kidsnav_parentsteachers.png\" alt=\"parents and teachers\" width=\"136\" height=\"84\" border=\"0\" /></a>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+    if ($block_name == 'teenmenu_images') {
+
+    global $base_url ;
+
+    $content = "<a href=\"$base_url/teen/events\"><img src=\"$base_url/sites/default/files/kids_teen/nav/teennav_events.png\" width=\"238\" height=\"100\" alt=\"teen events\" /></a>
+<a href=\"$base_url/teen/reviews\"><img src=\"$base_url/sites/default/files/kids_teen/nav/teennav_reviews.png\" width=\"253\" height=\"100\" alt=\"teen reviews\" /></a>
+<a href=\"$base_url/teen/homework-help\"><img src=\"$base_url/sites/default/files/kids_teen/nav/teennav_hwhelp.png\" width=\"268\" height=\"100\" alt=\"teen homework help\" /></a>
+";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
 }
