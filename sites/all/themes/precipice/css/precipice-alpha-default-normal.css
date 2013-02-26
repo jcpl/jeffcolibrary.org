@@ -680,10 +680,20 @@ padding-right:10px;
 
 /* Homework Help */
 
+.view-homework-help-a-z .views-row {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.view-homework-help-a-z .views-row-last {
+	border-bottom: none;
+}
+
 #block-views-homework-help-a-z-block .field-group-format {
 	display: inline-table;
 	width: 140px;
-	margin-bottom: 20px;
 }
 
 .group_resource1, .group_resource2, .group_resource3 {
@@ -692,11 +702,11 @@ padding-right:10px;
 
 #block-views-homework-help-a-z-block .field-type-link-field {
 	width: 140px;
+	padding-top: 7px;
 }
 
-#block-views-homework-help-a-z-block .field-type-link-field {
-	padding-top: 7px;
-	font-size: 1.1em;
+#block-views-homework-help-a-z-block .field-type-link-field a {
+	text-decoration: none;
 }
 
 /* Kids & Teen Reviews */
