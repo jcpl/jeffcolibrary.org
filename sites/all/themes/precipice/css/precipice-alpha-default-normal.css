@@ -615,6 +615,10 @@ padding-right:10px;
 	border-bottom: 0px;
 }
 
+.context-kids .region-sidebar-second, .context-teen .region-sidebar-second {
+	padding-top: 20px;
+}
+
 /* Kids Blog pages */
 
 .view-kids-blog-page .view-mode-full {
@@ -648,25 +652,28 @@ padding-right:10px;
 
 /* Feature Blocks in sidebar second */
 
-.kidsfeatureblk #kids_feature1 {
+.kidsfeatureblk #kids_feature1, .kidsfeatureblk #kids_feature2 {
 	padding: 20px;
+	padding-left: 0px;
+	padding-right: 40px;
 	height: 90px;
 	margin-bottom: 20px;
-	background-color: #dcfaf3;
+	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.kidsfeatureblk h3 {
+	padding-top: 10px;
+
 }
 
 .kidsfeatureblk #kids_feature2 {
-	padding: 20px;
-	height: 90px;
-	margin-bottom: 20px;
-	background-color: #dcfaf3;
 	clear: left;
 }
 	
 .kidsfeatureblk #kids_feature1 img, .kidsfeatureblk #kids_feature2 img {
 	float: left;
-	padding-right: 20px;
-	padding-right: 20px;
+	padding-right: 15px;
 }
 
 #block-kids-teen-blks-kids-featured-safesearch {
@@ -680,7 +687,7 @@ padding-right:10px;
 
 /* Homework Help */
 
-.view-homework-help-a-z .views-row {
+.view-homework-help-a-z .views-row { /* pinline separators for both Kids & Teens */
 	padding-bottom: 25px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
