@@ -342,27 +342,27 @@ margin-top: 6px;
 
 /* Kids and Teen sub nav images */
 
-#block-kids-teen-blks-kidsmenu-images, #block-kids-teen-blks-teenmenu-images {
+/*#block-kids-teen-blks-kidsmenu-images, #block-kids-teen-blks-teenmenu-images {
 	width: 960px;
 	margin-left: -12px;
 }
-
-#block-kids-teen-blks-teenmenu-images {
-	/*	background-color: #fefbe8;*/
-	padding-bottom: 10px;
+*/
+/*#block-kids-teen-blks-teenmenu-images {
+*/	/*	background-color: #fefbe8;*/
+/*	padding-bottom: 10px;
 	background-image: url(../../../../default/files/kids_teen/nav/teen_bg.png);
 	background-repeat: repeat-x;
 }
-
-#block-kids-teen-blks-kidsmenu-images {
-	/*	background-color: #fde6de;*/
-	padding-bottom: 10px;
+*/
+/*#block-kids-teen-blks-kidsmenu-images {
+*/	/*	background-color: #fde6de;*/
+/*	padding-bottom: 10px;
 	background-image: url(../../../../default/files/kids_teen/nav/kids_bg.png);
 	background-repeat: repeat-x;
 }
+*/
 
-
-#block-kids-teen-blks-teenmenu-images img {
+/*#block-kids-teen-blks-teenmenu-images img {
 	display: inline-block;
 	padding-bottom: 5px;
 	padding-left: 14px;
@@ -375,7 +375,7 @@ margin-top: 6px;
 	padding-top: 5px;
 	padding-right: 25px;
 }
-
+*/
 
 /* ------------- Research -------------- */
 

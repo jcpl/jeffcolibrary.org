@@ -85,7 +85,7 @@ function kids_teen_blks_block_info() {
 	  'region' => 'menu',
     );
 
-	$blocks['kidsmenu_images'] = array(
+/*	$blocks['kidsmenu_images'] = array(
       'info' => t('Kids nav menu images.'),
       'status' => 1,
 	  'region' => 'preface_first',
@@ -100,7 +100,7 @@ function kids_teen_blks_block_info() {
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => "teen\nteen/*",
     );
-
+*/
 	return $blocks;
 }
 
@@ -336,7 +336,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
     return $block;
   }
   
-    if ($block_name == 'kidsmenu_images') {
+/*    if ($block_name == 'kidsmenu_images') {
 
     global $base_url ;
 
@@ -370,4 +370,4 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     return $block;
   }
-}
+*/}
