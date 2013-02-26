@@ -223,9 +223,9 @@ function kids_teen_blks_block_view($block_name = '') {
     global $base_url ;
 
     $content = "<div class=\"kidsfungames\">
-	<div><a href=\"fun-games/preschool-playground\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Preschool Playground</h3></a></div>
-	<div><a href=\"fun-games/games\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Games</h3></a></div>
-	<div><a href=\"fun-games/crafts-coloring\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Crafts &amp; Coloring</h3></a></div>
+	<div><a href=\"fun-games/preschool-playground\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_preschool.jpg\" /><h3>Preschool Playground</h3></a></div>
+	<div><a href=\"fun-games/games\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_games.jpg\" /><h3>Games</h3></a></div>
+	<div><a href=\"fun-games/crafts-coloring\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_coloring.jpg\" /><h3>Crafts &amp; Coloring</h3></a></div>
 </div>";
 
     $block = array(
