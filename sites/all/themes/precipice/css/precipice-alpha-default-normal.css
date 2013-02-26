@@ -27,7 +27,7 @@ body {
 	padding-bottom: 20px;
 }
 
-#block-kids-teen-blks-kidsmenu-images, #block-kids-teen-blks-teenmenu-images {
+/*#block-kids-teen-blks-kidsmenu-images, #block-kids-teen-blks-teenmenu-images {
 	padding-top: 10px;
 	border-top-style: solid;	
 	border-top-width: 3px;
@@ -41,6 +41,8 @@ body {
 	border-right-width: 3px;
 	border-right-color: #f1f4f4;
 }
+*/
+/* Main Menu */
 
 #zone-menu {
 	background-color:#edf5f5;
@@ -59,8 +61,6 @@ body {
 	border-bottom-style: solid;
 	border-bottom-color: #f5f5f5;/* #f4fcfc;*/
 }
-
-/* Main Menu */
 
 #region-menu {
 	margin-top: 4px;
@@ -90,6 +90,7 @@ nav.navigation {
 	padding-left: 5px;
 }
 
+
 /* Global Nav */
 
 .block-menu-menu-global-nav a {
@@ -113,6 +114,67 @@ nav.navigation {
 li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 	padding: 0.2em 0 0 0;
 }
+
+/* Kids sub nav */
+
+.context-kids #zone-content, .context-teen #zone-content {
+	padding-top: 10px;
+}
+
+#block-menu-menu-kids {
+	display: inline-table;
+	vertical-align:middle;
+}
+
+#block-menu-menu-kids a {
+	text-decoration: none;
+	font-size: 1.1em;
+	color: #FFF;
+	padding-right: 10px;
+}
+
+#block-menu-menu-kids {
+	float: right;
+	width: 100%;
+	margin-bottom: -15px;
+	background-color: #dc5a60;
+}
+
+#block-menu-menu-kids li {
+	display: inline-table;
+	vertical-align:middle;
+	padding-bottom: 5px;
+	padding-left: 15px;	
+}
+
+/* Teen sub nav */
+
+#block-menu-menu-teen {
+	display: inline-table;
+	vertical-align:middle;
+}
+
+#block-menu-menu-teen a {
+	text-decoration: none;
+	font-size: 1.1em;
+	color: #FFF;
+	padding-right: 10px;
+}
+
+#block-menu-menu-teen {
+	float: right;
+	width: 100%;
+	margin-bottom: -15px;
+	background-color: #acb672;
+}
+
+#block-menu-menu-teen li {
+	display: inline-table;
+	vertical-align:middle;
+	padding-bottom: 5px;
+	padding-left: 15px;	
+}
+
 
 /* Front Page Header */
  
@@ -376,6 +438,8 @@ margin-top: 6px;
 	padding-right: 25px;
 }
 */
+
+
 
 /* ------------- Research -------------- */
 
