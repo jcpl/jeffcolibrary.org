@@ -780,6 +780,10 @@ padding-right:10px;
 	border-bottom-color:#CCC;
 }
 
+.kidsfungames div.last {
+	border-bottom: 0px;
+}
+
 .node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
 	display: inline-table;
 	width: 140px;
