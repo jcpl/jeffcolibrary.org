@@ -755,15 +755,28 @@ padding-right:10px;
 .kidsfungames img {
 	float: left;
 	padding-right: 20px;
-	padding-bottom: 20px;
 }
 
 .kidsfungames h3 {
 	padding-top: 20px;
 }
 
+.kidsfungames a {
+	text-decoration: none;
+}
+
 .kidsfungames div {
 	clear: left;
+	height: 90px;
+	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	margin-right: 480px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
 }
 
 .node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
