@@ -2,7 +2,7 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
 h1 {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	padding-bottom: 0px;
 }
 
@@ -25,6 +25,11 @@ body {
 	border-bottom-width: 4px;
 	border-bottom-color: #f2f5f9;
 	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+.region-sidebar-second {
+	padding-top: 35px;
 }
 
 /*#block-kids-teen-blks-kidsmenu-images, #block-kids-teen-blks-teenmenu-images {
@@ -613,10 +618,6 @@ padding-right:10px;
 	height: 90px;
 	padding-bottom: 20px;
 	border-bottom: 0px;
-}
-
-.context-kids .region-sidebar-second, .context-teen .region-sidebar-second {
-	padding-top: 20px;
 }
 
 /* Kids Blog pages */
