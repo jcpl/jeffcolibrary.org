@@ -7,12 +7,36 @@
 function kids_teen_blks_block_info() {
   $blocks = array();
 	
-    $blocks['kids_featured_homework_help'] = array(
-      'info' => t('Kids: Featured on Homework Help.'),
+    $blocks['kt_featured_helpnow'] = array(
+      'info' => t('Kids & Teen: Feature: Help Now.'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'kids/homework-help',
+	  'pages' => "kids/homework-help\nteen/homework-help",
+    );
+	
+	$blocks['kt_featured_bookflix'] = array(
+      'info' => t('Kids & Teen: Feature: Bookflix.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => "kids/books-reading",
+    );
+	
+	$blocks['kt_featured_novelistk8'] = array(
+      'info' => t('Kids & Teen: Feature: Novelist K-8.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/books-reading',
+    );
+	
+	$blocks['kt_featured_tutoring'] = array(
+      'info' => t('Kids & Teen: Feature: Tutoring.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help\nteen/homework-help',
     );
 	
     $blocks['kids_featured_safesearch'] = array(
@@ -22,22 +46,6 @@ function kids_teen_blks_block_info() {
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'kids/homework-help',
     );
-	
-	$blocks['kids_featured_books_reading'] = array(
-      'info' => t('Kids: Featured on Books and Reading.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'kids/books-reading',
-    );
-	
-	$blocks['kids_featured_help_now'] = array(
-      'info' => t('Kids: Help now feature.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'teen/homework-help',
-    );
 
 	$blocks['kids_books_reading_nextreads'] = array(
       'info' => t('Kids: Nextreads booklists on Books and Reading.'),
@@ -45,14 +53,6 @@ function kids_teen_blks_block_info() {
 	  'region' => 'content',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'kids/books-reading',
-    );
-	
-	$blocks['kids_featured_fun_games'] = array(
-      'info' => t('Kids: Featured on Fun & Games.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'kids/fun-games/*',
     );
 	
 	$blocks['kids_fun_games'] = array(
