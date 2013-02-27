@@ -659,13 +659,12 @@ padding-right:10px;
 	padding-right: 40px;
 	height: 90px;
 	margin-bottom: 20px;
-	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-image:url(../../../../default/files/kids_teen/feature_blks/arrow_kids.gif);
 	background-position: right;
 	background-repeat: no-repeat;
 }
 .kidsfeatureblk h3 {
 	padding-top: 10px;
-
 }
 
 .kidsfeatureblk #kids_feature2 {
@@ -679,7 +678,8 @@ padding-right:10px;
 
 #block-kids-teen-blks-kids-featured-safesearch {
 	padding: 20px;
-	background-color: #dcfaf3;
+	padding-top: 15px;
+	background-color: #fef0f1; /*light salmon*/
 }
 
 #block-kids-teen-blks-kids-featured-safesearch .block-title {
@@ -769,7 +769,7 @@ padding-right:10px;
 .kidsfungames div {
 	clear: left;
 	height: 90px;
-	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-image:url(../../../../default/files/kids_teen/feature_blks/arrow_kids.gif);
 	background-position: right;
 	background-repeat: no-repeat;
 	margin-right: 480px;
