@@ -711,6 +711,7 @@ padding-right:10px;
 .view-kids-teen-reviews .views-row {
 	padding-top: 5px;
 	padding-bottom: 10px;
+	clear: left;
 }
 
 .views-field-field-review-author {
@@ -735,6 +736,39 @@ padding-right:10px;
 .view-kids-teen-reviews p {
 	display: inline;
 }
+
+/* Kids & Teen Reviews - Reviews by You pages */
+
+.page-kids-books-reading-reviews .views-field-field-rate-it, .page-teen-reviews .views-field-field-rate-it {
+	float: right;
+	margin-top: -20px;
+	margin-right: 0px;
+}
+
+.views-field views-field-field-review-bookjacket img {
+	width: 100px;
+}
+
+.page-kids-books-reading-reviews .view-display-id-page_1 .views-field-title a, .page-teen-reviews .view-display-id-page_2 .views-field-title a {
+	text-decoration:none;
+	font-size: 1.2em;
+}
+
+.page-kids-books-reading-reviews .view-display-id-block_2 .views-row , .page-teen-reviews .view-display-id-block_1 .views-row {
+	padding-bottom: 0px;
+}
+
+.page-kids-books-reading-reviews .view-display-id-page_1 .views-row, .page-teen-reviews .view-display-id-page_2 .views-row {
+	margin-top: 25px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color:#CCC;
+}
+
+.page-kids-books-reading-reviews .view-display-id-page_1 .views-row-first, .page-teen-reviews .view-display-id-page_2 .views-row-first {
+	margin-top: 0px;
+}
+
 
 /* Fun & Games */
 
