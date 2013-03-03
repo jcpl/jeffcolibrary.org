@@ -142,7 +142,7 @@ function feature_kids_teen_reviews_field_default_fields() {
       'label' => 'Your Review',
       'required' => 1,
       'settings' => array(
-        'text_processing' => '1',
+        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
