@@ -2,37 +2,31 @@
 // $Id$
 
 /**
+ * Implements hook_theme().
+ */
+function kids_teen_blks_theme() {
+  $base = array(
+    'file' => 'kids_teen_blks.theme.inc',
+    'path' => drupal_get_path('module', 'kids_teen_blks') . '/tpl',
+  );
+  return array(
+    'jcpl_events_today_kids' => array(
+      'template' => 'jcpl-events-today-kids',
+    ) + $base,
+    'jcpl_events_today_teen' => array(
+      'template' => 'jcpl-events-today-teen',
+    ) + $base,
+  );
+}
+
+/**
  * Implements hook_block_info().
  */
 function kids_teen_blks_block_info() {
   $blocks = array();
 	
-    $blocks['kt_featured_helpnow'] = array(
-      'info' => t('Kids & Teen: Feature: Help Now.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => "kids/homework-help\nteen/homework-help",
-    );
-	
-	$blocks['kt_featured_bookflix'] = array(
-      'info' => t('Kids & Teen: Feature: Bookflix.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => "kids/books-reading",
-    );
-	
-	$blocks['kt_featured_novelistk8'] = array(
-      'info' => t('Kids & Teen: Feature: Novelist K-8.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'kids/books-reading',
-    );
-	
-	$blocks['kt_featured_tutoring'] = array(
-      'info' => t('Kids & Teen: Feature: Tutoring.'),
+    $blocks['kids_featured_homework_help'] = array(
+      'info' => t('Kids: Featured on Homework Help.'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -46,6 +40,22 @@ function kids_teen_blks_block_info() {
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'kids/homework-help',
     );
+	
+	$blocks['kids_featured_books_reading'] = array(
+      'info' => t('Kids: Featured on Books and Reading.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/books-reading',
+    );
+	
+	$blocks['kids_featured_help_now'] = array(
+      'info' => t('Kids: Help now feature.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'teen/homework-help',
+    );
 
 	$blocks['kids_books_reading_nextreads'] = array(
       'info' => t('Kids: Nextreads booklists on Books and Reading.'),
@@ -53,6 +63,14 @@ function kids_teen_blks_block_info() {
 	  'region' => 'content',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'kids/books-reading',
+    );
+	
+	$blocks['kids_featured_fun_games'] = array(
+      'info' => t('Kids: Featured on Fun & Games.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/fun-games/*',
     );
 	
 	$blocks['kids_fun_games'] = array(
@@ -85,6 +103,54 @@ function kids_teen_blks_block_info() {
 	  'region' => 'menu',
     );
 
+  $blocks['events_by_location_kids'] = array(
+    'info' => t('Kids: Events By Location.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'kids/kids-events',
+  );
+  
+    $blocks['events_by_location_teen'] = array(
+    'info' => t('Teens: Events By Location.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'teen/teen-events',
+  );
+
+  $blocks['events_by_topic_kids'] = array(
+    'info' => t('Kids: Events By Topic.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'kids/kids-events',
+  );
+  
+    $blocks['events_by_topic_teen'] = array(
+    'info' => t('Teen: Events By Topic.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'teen/teen-events',
+  );
+
+  $blocks['events_kids_EK_today'] = array(
+    'info' => t('Kids: Today\'s Events'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'kids/kids-events',
+  );
+  
+    $blocks['events_teen_EK_today'] = array(
+    'info' => t('Teen: Today\'s Events'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'teen/teen-events',
+  );
+  
 	return $blocks;
 }
 
@@ -95,60 +161,13 @@ function kids_teen_blks_block_info() {
  */
 function kids_teen_blks_block_view($block_name = '') {
 
-  if ($block_name == 'kt_featured_helpnow') {
+  if ($block_name == 'kids_featured_homework_help') {
 	  
     global $base_url ; 
   
     $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature1\"><a href=\"http://0-jefferson.helpnow.co.brainfuse.com.sable.jefferson.lib.co.us\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/helpnow.png\" /><h3>Help Now</h3></a></div>
-</div>";
-
-    $block = array(
-      'subject' => t(''),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
-  if ($block_name == 'kt_featured_bookflix') {
-  
-    global $base_url ;
-	
-    $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature1\"><a href=\"http://0-bkflix.grolier.com.sable.jefferson.lib.co.us\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/bookflix.png\" /><h3>Bookflix</h3></a></div>
-</div>";
-
-    $block = array(
-      'subject' => t(''),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
-  if ($block_name == 'kt_featured_novelistk8') {
-  
-    global $base_url ; 
-
-    $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature2\"><a href=\"http://0-search.ebscohost.com.sable.jefferson.lib.co.us/login.asp?profile=novpk8\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/novelistk8.png\" /><h3>Novelist<br />K - 8</h3></a></div>
-</div>";
-
-    $block = array(
-      'subject' => t(''),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-  
-  if ($block_name == 'kt_featured_tutoring') {
-  
-    global $base_url ; 
-
-    $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature2\"><a href=\"$base_url/tutoring\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/tutoring.png\" /><h3>Tutoring @ the Libraries</h3></a></div>
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
+	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Tutoring @ the Libraries</h3></div>
 </div>";
 
     $block = array(
@@ -170,6 +189,40 @@ function kids_teen_blks_block_view($block_name = '') {
 
     return $block;
   }
+  
+  if ($block_name == 'kids_featured_books_reading') {
+  
+    global $base_url ; 
+
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Bookflix</h3></div>
+	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Novelist<br />K - 8</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'kids_featured_help_now') {
+  
+    global $base_url ; 
+
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
 
   if ($block_name == 'kids_books_reading_nextreads') {
   
@@ -199,14 +252,30 @@ function kids_teen_blks_block_view($block_name = '') {
     return $block;
   }
 
+  if ($block_name == 'kids_featured_fun_games') {
+  
+    global $base_url ;
+	
+    $content = "<div class=\"kidsfeatureblk\">
+	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Bookflix</h3></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
   if ($block_name == 'kids_fun_games') {
 
     global $base_url ;
 
     $content = "<div class=\"kidsfungames\">
-	<div><a href=\"fun-games/preschool-playground\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_preschool.jpg\" /><h3>Preschool Playground</h3></a></div>
-	<div><a href=\"fun-games/games\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_games.jpg\" /><h3>Games</h3></a></div>
-	<div class=\"last\"><a href=\"fun-games/crafts-coloring\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_coloring.jpg\" /><h3>Crafts &amp; Coloring</h3></a></div>
+	<div><a href=\"fun-games/preschool-playground\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Preschool Playground</h3></a></div>
+	<div><a href=\"fun-games/games\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Games</h3></a></div>
+	<div><a href=\"fun-games/crafts-coloring\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Crafts &amp; Coloring</h3></a></div>
 </div>";
 
     $block = array(
@@ -315,5 +384,70 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
     );
 
     return $block;
-  } 
+  }
+
+  if ($block_name == 'events_by_location_kids') {
+
+    $content = '<table style="width: 300px; height: 145px;" align="left" border="0" cellpadding="10" cellspacing="10"><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Arvada%20Library&amp;curKey2=All%20Ages">Arvada</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Evergreen%20Library&amp;curKey2=All%20Ages">Evergreen</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Belmar%20Library&amp;curKey2=All%20Ages">Belmar</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Golden%20Library&amp;curKey2=All%20Ages">Golden</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Columbine%20Library&amp;curKey2=All%20Ages">Columbine</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Lakewood%20Library&amp;curKey2=All%20Ages">Lakewood</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Conifer%20Library&amp;curKey2=All%20Ages">Conifer</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Standley%20Library&amp;curKey2=All%20Ages">Standley Lake</a></td></tr><tr><td><a  href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Edgewater%20Library&amp;curKey2=All%20Ages">Edgewater</a></td><td><a  href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Wheat%20Ridge%20Library&amp;curKey2=All%20Ages">Wheat Ridge</a></td></tr></table>';
+
+    $block = array(
+      'subject' => t('By Location'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+    if ($block_name == 'events_by_location_teen') {
+
+    $content = '<table style="width: 300px; height: 145px;" align="left" border="0" cellpadding="10" cellspacing="10"><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Arvada%20Library&amp;curKey2=Teens">Arvada</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Evergreen%20Library&amp;curKey2=Teens">Evergreen</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Belmar%20Library&amp;curKey2=Teens">Belmar</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Golden%20Library&amp;curKey2=Teens">Golden</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Columbine%20Library&amp;curKey2=Teens">Columbine</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Lakewood%20Library&amp;curKey2=Teens">Lakewood</a></td></tr><tr><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Conifer%20Library&amp;curKey2=Teens">Conifer</a></td><td><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Standley%20Library&amp;curKey2=Teens">Standley Lake</a></td></tr><tr><td><a  href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Edgewater%20Library&amp;curKey2=Teens">Edgewater</a></td><td><a  href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey1=Wheat%20Ridge%20Library&amp;curKey2=Teens">Wheat Ridge</a></td></tr></table>';
+
+    $block = array(
+      'subject' => t('By Location'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'events_by_topic_kids') {
+
+    $content = '<p><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Storytimes&amp;setRef=new">Storytimes</a><br /><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Kids+(6+%26+Up)&amp;setRef=new">Programs for kids - 6 &amp; up</a><br /><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=All+Ages&amp;setRef=new">Programs for all ages</a></p>';
+
+    $block = array(
+      'subject' => t('By Topic'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+    if ($block_name == 'events_by_topic_teen') {
+
+    $content = '<p><a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=Teens&amp;setRef=new">Programs for teens</a><br /> <a href="http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&amp;curKey2=All+Ages&amp;setRef=new">Programs for all ages</a></p>';
+
+    $block = array(
+      'subject' => t('By Topic'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'events_kids_EK_today') {
+    $block = array(
+      'subject' => t('Upcoming Events'),
+      'content' => theme('jcpl_events_today_kids'),
+    );
+    return $block;
+  }
+  
+   if ($block_name == 'events_teen_EK_today') {
+    $block = array(
+      'subject' => t('Upcoming Events'),
+      'content' => theme('jcpl_events_today_teen'),
+    );
+    return $block;
+  }
+
 }
