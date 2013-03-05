@@ -51,7 +51,7 @@ theName = theName.substring(0,maxNameLength-2) + '...';
 
 // create the hyperlink based on the Event Name and the Event ID
 
-var linkurl = 'http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL';
+var linkurl = 'http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=Teens';
 
 linkurl += "#" + evtArray[i][evt_id];
 var namelink = '<a class="left4a" href="' + linkurl + '" target="_blank" title="';

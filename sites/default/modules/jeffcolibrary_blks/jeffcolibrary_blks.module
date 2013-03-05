@@ -51,6 +51,9 @@ function jeffcolibrary_blks_theme() {
     'jcpl_events_today_WR' => array(
       'template' => 'jcpl-events-today-WR',
     ) + $base,
+	 'jcpl_contact_us' => array(
+      'template' => 'jcpl-contact-us',
+    ) + $base,
   );
 }
 
@@ -616,6 +619,15 @@ if ($block_name == 'events_WR_today') {
    $block = array(
       'subject' => t('Today\'s Events'),
       'content' => theme('jcpl_events_today_WR'),
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'contact_us') {
+   $block = array(
+      'subject' => t('Contact Us'),
+      'content' => theme('jcpl_contact_us'),
     );
 
     return $block;

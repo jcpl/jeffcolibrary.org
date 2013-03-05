@@ -54,7 +54,7 @@ theName = theName.substring(0,maxNameLength-2) + '...';
 var linkurl = 'http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL';
 
 linkurl += "#" + evtArray[i][evt_id];
-var namelink = '<a class="left4a" href="' + linkurl + '" target="_blank" title="';
+var namelink = '<a href="' + linkurl + '" target="_blank" title="';
 namelink += evtArray[i][evt_name] + '">' + '<b>' + theName + '</b>' + '</a>';
 document.write("<td width='31%' class='small' style='border-bottom:solid #555b53 1px\;padding:4px'>" + namelink + "</td>");
   }
@@ -70,7 +70,7 @@ document.write("</tr>");
   }
 document.write("</table></td></tr>");
 
-document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=Kids+(6+%26+Up)&setRef=new' class='left4a'><b>More Events</b></a></td></tr>");
+document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=Kids%20%286%20%26%20Up%29'><b>More Events</b></a></td></tr>");
 
 // close the table tag
 document.write("</table>");
