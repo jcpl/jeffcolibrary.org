@@ -34,6 +34,14 @@ function feature_kids_teen_reviews_node_info() {
       'title_label' => t('Work Title'),
       'help' => '',
     ),
+    'teen_reviews' => array(
+      'name' => t('Reviews: Teen'),
+      'base' => 'node_content',
+      'description' => t('Patron contributed reviews for Kids: Books and Reading.'),
+      'has_title' => '1',
+      'title_label' => t('Work Title'),
+      'help' => '',
+    ),
   );
   return $items;
 }
