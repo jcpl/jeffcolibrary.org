@@ -212,9 +212,9 @@ function kids_teen_blks_block_view($block_name = '') {
     $content = '<table class="views-view-grid cols-2" class="views-view-grid">
   <tbody>
   	<tr>
-    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=1210&Max=6&FMT=3&Sort=1"></script>
+    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=1210&Max=10&FMT=3&Sort=1"></script>
         </td>
-    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=9641&Max=6&FMT=3&Sort=1"></script>
+    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=9641&Max=10&FMT=3&Sort=1"></script>
         </td>
     </tr>
   </tbody>
