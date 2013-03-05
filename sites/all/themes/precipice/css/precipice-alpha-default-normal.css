@@ -25,7 +25,7 @@ body {
 	border-bottom-width: 4px;
 	border-bottom-color: #f2f5f9;
 	padding-bottom: 20px;
-	padding-top: 10px;
+	padding-top: 10px; 
 }
 
 .region-sidebar-second {
@@ -795,10 +795,18 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 	border-bottom: 0px;
 }
 
+.node-fun-and-games-category {
+	margin-right: 320px;
+}
+
 .node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
 	display: inline-table;
 	width: 140px;
 	margin-bottom: 20px;
+}
+
+.node-fun-and-games-category a {
+	text-decoration: none;
 }
 
 .group_resource5, .group_resource6, .group_resource7, .group_resource9, .group_resource10, .group_resource11 {
