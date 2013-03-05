@@ -899,16 +899,14 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 #block-views-homework-help-a-z-block-1 .field-group-format {
 	display: inline-table;
 	width: 140px;
-	margin-bottom: 20px;
 }
 
 #block-views-homework-help-a-z-block-1 .field-type-link-field {
 	width: 140px;
 }
 
-#block-views-homework-help-a-z-block-1 .field-type-link-field {
-	padding-top: 7px;
-	font-size: 1.1em;
+#block-views-homework-help-a-z-block-1 a {
+	text-decoration: none;
 }
 
 /* --------------- Books, Movies & Music ---------------------- */
