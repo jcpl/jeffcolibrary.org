@@ -79,9 +79,31 @@ function feature_kids_booklists_views_default_views() {
     'booklist_kids' => 'booklist_kids',
   );
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  /* Display: Block: Kids blist */
+  $handler = $view->new_display('block', 'Block: Kids blist', 'block');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['block_description'] = 'Kids: staff picks';
+
+  /* Display: Block: Teen blist */
+  $handler = $view->new_display('block', 'Block: Teen blist', 'block_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'booklist_teen' => 'booklist_teen',
+  );
+  $handler->display->display_options['block_description'] = 'Teen: staff picks';
   $export['booklists_kids'] = $view;
 
   return $export;
