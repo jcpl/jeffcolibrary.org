@@ -638,6 +638,10 @@ padding-right:10px;
 
 /* Feature Blocks in sidebar second */
 
+.kidsfeatureblk a {
+	text-decoration: none;
+}
+
 .kidsfeatureblk #kids_feature1, .kidsfeatureblk #kids_feature2 {
 	padding: 20px;
 	padding-left: 0px;
@@ -648,6 +652,11 @@ padding-right:10px;
 	background-position: right;
 	background-repeat: no-repeat;
 }
+
+.context-teen .kidsfeatureblk #kids_feature1, .context-teen .kidsfeatureblk #kids_feature2 {
+	background-image:url(../../../../default/files/kids_teen/feature_blks/arrow_teen.gif);
+}
+
 .kidsfeatureblk h3 {
 	padding-top: 10px;
 }
