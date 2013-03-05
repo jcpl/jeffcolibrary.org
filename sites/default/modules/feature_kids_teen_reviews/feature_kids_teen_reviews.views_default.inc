@@ -95,7 +95,7 @@ function feature_kids_teen_reviews_views_default_views() {
   $handler->display->display_options['fields']['field_review_bookjacket']['field'] = 'field_review_bookjacket';
   $handler->display->display_options['fields']['field_review_bookjacket']['label'] = '';
   $handler->display->display_options['fields']['field_review_bookjacket']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_review_bookjacket']['alter']['text'] = '<a href="[field_review_catalog_url]"><img src="[field_review_bookjacket-value]" /></a>';
+  $handler->display->display_options['fields']['field_review_bookjacket']['alter']['text'] = '<a href="[field_review_catalog_url]"><img width="100" src="[field_review_bookjacket-value]" /></a>';
   $handler->display->display_options['fields']['field_review_bookjacket']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_review_bookjacket']['settings'] = array(
     'linked_field' => array(
@@ -395,7 +395,7 @@ function feature_kids_teen_reviews_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'kids_reviews' => 'kids_reviews',
   );
-  $handler->display->display_options['block_description'] = 'Kids: Reviews Block';
+  $handler->display->display_options['block_description'] = 'Kids: Reviews Sidebar Block';
 
   /* Display: Block: Kids Reviews Titles */
   $handler = $view->new_display('block', 'Block: Kids Reviews Titles', 'block_2');
@@ -448,7 +448,7 @@ function feature_kids_teen_reviews_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'kids_reviews' => 'kids_reviews',
   );
-  $handler->display->display_options['block_description'] = 'Reviews: Kids by Title';
+  $handler->display->display_options['block_description'] = 'Kids: Reviews by Title';
 
   /* Display: Page: Teens */
   $handler = $view->new_display('page', 'Page: Teens', 'page_2');
@@ -616,7 +616,41 @@ function feature_kids_teen_reviews_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'teen_reviews' => 'teen_reviews',
   );
-  $handler->display->display_options['path'] = 'teen/reviews';
+  $handler->display->display_options['path'] = 'teen/reviews/reviews-by-you';
+
+  /* Display: Block: Teen Reviews */
+  $handler = $view->new_display('block', 'Block: Teen Reviews', 'block_3');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['use_more'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = TRUE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'more Reviews by You...';
+  $handler->display->display_options['defaults']['link_display'] = FALSE;
+  $handler->display->display_options['link_display'] = 'page_2';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '2';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'teen_reviews' => 'teen_reviews',
+  );
+  $handler->display->display_options['block_description'] = 'Teen: Reviews Sidebar Block';
 
   /* Display: Block: Teen Reviews Titles */
   $handler = $view->new_display('block', 'Block: Teen Reviews Titles', 'block_1');
@@ -669,7 +703,7 @@ function feature_kids_teen_reviews_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'teen_reviews' => 'teen_reviews',
   );
-  $handler->display->display_options['block_description'] = 'Reviews: Teen by Title';
+  $handler->display->display_options['block_description'] = 'Kids: Reviews by Title';
   $export['kids_teen_reviews'] = $view;
 
   return $export;
