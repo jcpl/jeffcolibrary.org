@@ -54,6 +54,14 @@ function kids_teen_blks_block_info() {
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'kids/books-reading',
     );
+
+	$blocks['teen_reviewspg_nextreads'] = array(
+      'info' => t('Teen: Nextreads booklists in Reviews.'),
+      'status' => 1,
+	  'region' => 'content',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'teen/reviews',
+    );
 	
 	$blocks['kids_fun_games'] = array(
       'info' => t('Kids: Fun & Games.'),
@@ -185,6 +193,28 @@ function kids_teen_blks_block_view($block_name = '') {
     	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=9641&Max=6&FMT=3&Sort=1"></script>
         </td>
     	<td>
+        </td>
+    </tr>
+  </tbody>
+</table>
+';
+
+    $block = array(
+      'subject' => t('Reading Lists'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'teen_reviewspg_nextreads') {
+  
+    $content = '<table class="views-view-grid cols-2" class="views-view-grid">
+  <tbody>
+  	<tr>
+    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=1210&Max=6&FMT=3&Sort=1"></script>
+        </td>
+    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=9641&Max=6&FMT=3&Sort=1"></script>
         </td>
     </tr>
   </tbody>
