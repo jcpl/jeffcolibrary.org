@@ -70,7 +70,7 @@ document.write("</tr>");
   }
 document.write("</table></td></tr>");
 
-document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=Kids%20%286%20%26%20Up%29'><b>More Events</b></a></td></tr>");
+document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=Kids%20%286%20%26%20Up%29'><b>All Events</b></a></td></tr>");
 
 // close the table tag
 document.write("</table>");
