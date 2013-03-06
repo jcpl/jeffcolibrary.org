@@ -491,20 +491,20 @@ margin-top: 6px;
 
 /* Subject Guide full nodes */
 
-.group_getstart1, .group_getstart2, .group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+.group_resource1, .group_resource2, .group_resource3, .group_resource4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
 	width: 300px;
 }
 
-.group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+.group_resource3, .group_resource4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
 	padding-top: 20px;
 }
 
-.group_getstart1, .group_getstart3, .field-name-field-guide-find-more-info {
+.group_resource1, .group_resource3, .field-name-field-guide-find-more-info {
 	float:left;
 	clear:left;
 }
 
-.group_getstart2, .group_getstart4, .field-name-field-guide-more {
+.group_resource2, .group_resource4, .field-name-field-guide-more {
 	float:right;
 }
 
@@ -850,6 +850,33 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 
 .block-kids-parents-readytoreadvid h2 {
 	padding-bottom: 10px;
+}
+
+/* Parents & Teachers Guides full nodes */
+
+.group_resource1, .group_resource2, .group_resource3, .group_resource4 {
+	width: 300px;
+}
+
+.group_resource3, .group_resource4 {
+	padding-top: 20px;
+}
+
+.group_resource1, .group_resource3{
+	float:left;
+	clear:left;
+}
+
+.group_resource2, .group_resource4 {
+	float:right;
+}
+
+.group_resource1, .group_resource2, .group_resource3 {
+    margin-right: 0px;
+}
+
+.node-parent-teacher-guide .content {
+	margin-right: 300px;
 }
 
 
