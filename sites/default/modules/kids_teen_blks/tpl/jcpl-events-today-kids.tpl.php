@@ -51,7 +51,7 @@ theName = theName.substring(0,maxNameLength-2) + '...';
 
 // create the hyperlink based on the Event Name and the Event ID
 
-var linkurl = 'http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL';
+var linkurl = 'http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=All%20Ages';
 
 linkurl += "#" + evtArray[i][evt_id];
 var namelink = '<a href="' + linkurl + '" target="_blank" title="';
@@ -70,7 +70,7 @@ document.write("</tr>");
   }
 document.write("</table></td></tr>");
 
-document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=Kids%20%286%20%26%20Up%29'><b>All Events</b></a></td></tr>");
+document.write("<tr><td bgcolor='#fcf8f5' align='left' style='border-bottom:solid #555b53 1px;padding:2px'><a href='http://www.eventkeeper.com/code/events.cfm?curOrg=JCPL&curKey2=All%20Ages'><b>All Events</b></a></td></tr>");
 
 // close the table tag
 document.write("</table>");
