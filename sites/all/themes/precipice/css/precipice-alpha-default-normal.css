@@ -839,11 +839,18 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 	float: right;
 }
 
+.block-kids-parents-guides .kidsfungames {
+	margin-bottom: 25px;
+}
+
 .block-kids-parents-guides .kidsfungames div {
 	margin-right: 0px;
 	width: 450px;
 }
 
+.block-kids-parents-readytoreadvid h2 {
+	padding-bottom: 10px;
+}
 
 
 /* ---------------------- Teens ------------------------------- */
