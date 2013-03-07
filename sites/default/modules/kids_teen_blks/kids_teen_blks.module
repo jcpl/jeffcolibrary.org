@@ -25,14 +25,6 @@ function kids_teen_blks_theme() {
 function kids_teen_blks_block_info() {
   $blocks = array();
 	
-    $blocks['kids_featured_homework_help'] = array(
-      'info' => t('Kids: Featured on Homework Help.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'kids/homework-help',
-    );
-	
     $blocks['kids_featured_safesearch'] = array(
       'info' => t('Kids: Safesearch on Homework Help.'),
       'status' => 1,
@@ -41,20 +33,36 @@ function kids_teen_blks_block_info() {
 	  'pages' => 'kids/homework-help',
     );
 	
-	$blocks['kids_featured_books_reading'] = array(
-      'info' => t('Kids: Featured on Books and Reading.'),
+    $blocks['kt_featured_helpnow'] = array(
+      'info' => t('Kids Teens: Featured: Help Now.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help',
+    );
+	
+	$blocks['kt_featured_tutoring'] = array(
+      'info' => t('Kids Teens: Featured: Tutoring.'),
+      'status' => 1,
+	  'region' => 'sidebar_second',
+	  'visibility' => BLOCK_VISIBILITY_LISTED,
+	  'pages' => 'kids/homework-help\nteen/homework-help',
+    );
+	
+	$blocks['kt_featured_novelistk8'] = array(
+      'info' => t('Kids Teens: Featured: Novelist K-8.'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'kids/books-reading',
     );
 	
-	$blocks['kids_featured_help_now'] = array(
-      'info' => t('Kids: Help now feature.'),
+	$blocks['kt_featured_bookflix'] = array(
+      'info' => t('Kids Teens: Featured: Bookflix.'),
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'teen/homework-help',
+	  'pages' => 'kids/books-reading',
     );
 
 	$blocks['kids_books_reading_nextreads'] = array(
@@ -71,14 +79,6 @@ function kids_teen_blks_block_info() {
 	  'region' => 'content',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'teen/reviews',
-    );
-	
-	$blocks['kids_featured_fun_games'] = array(
-      'info' => t('Kids: Featured on Fun & Games.'),
-      'status' => 1,
-	  'region' => 'sidebar_second',
-	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'kids/fun-games/*',
     );
 	
 	$blocks['kids_fun_games'] = array(
@@ -104,7 +104,6 @@ function kids_teen_blks_block_info() {
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
 	  'pages' => 'kids/parents-teachers',
     );
-	
 	
 	$blocks['mainmenu_images'] = array(
       'info' => t('Main menu images: Kids & Teens.'),
