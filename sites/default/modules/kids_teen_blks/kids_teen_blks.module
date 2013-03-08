@@ -46,7 +46,7 @@ function kids_teen_blks_block_info() {
       'status' => 1,
 	  'region' => 'sidebar_second',
 	  'visibility' => BLOCK_VISIBILITY_LISTED,
-	  'pages' => 'kids/homework-help\nteen/homework-help',
+	  'pages' => "kids/homework-help\nteen/homework-help\nkids/parents-teachers",
     );
 	
 	$blocks['kt_featured_novelistk8'] = array(
@@ -169,23 +169,6 @@ function kids_teen_blks_block_info() {
  */
 function kids_teen_blks_block_view($block_name = '') {
 
-  if ($block_name == 'kids_featured_homework_help') {
-	  
-    global $base_url ; 
-  
-    $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
-	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Tutoring @ the Libraries</h3></div>
-</div>";
-
-    $block = array(
-      'subject' => t(''),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
   if ($block_name == 'kids_featured_safesearch') {
   
     $content = '<form action="http://www.google.com/search" method="get" name="google"><input type="text" size="23" maxlength="75" name="q" onblur="populateSearch(this.lii)" /> <input type="submit" value="Search" /><input type="hidden" name="safe" value="vss" /></form>';
@@ -198,30 +181,13 @@ function kids_teen_blks_block_view($block_name = '') {
     return $block;
   }
   
-  if ($block_name == 'kids_featured_books_reading') {
-  
+  if ($block_name == 'kt_featured_helpnow') {
+	  
     global $base_url ; 
-
-    $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Bookflix</h3></div>
-	<div id=\"kids_feature2\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Novelist<br />K - 8</h3></div>
-</div>";
-
-    $block = array(
-      'subject' => t(''),
-      'content' => $content,
-    );
-
-    return $block;
-  }
   
-  if ($block_name == 'kids_featured_help_now') {
-  
-    global $base_url ; 
-
     $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Help Now</h3></div>
-</div>";
+	<div><a href=\"http://0-jefferson.helpnow.co.brainfuse.com.sable.jefferson.lib.co.us\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/helpnow.png\" /><h3>Help Now</h3></div>
+</a></div>";
 
     $block = array(
       'subject' => t(''),
@@ -231,7 +197,51 @@ function kids_teen_blks_block_view($block_name = '') {
     return $block;
   }
 
+  if ($block_name == 'kt_featured_tutoring') {
+  
+    global $base_url ; 
 
+    $content = "<div class=\"kidsfeatureblk\">
+	<div><a href=\"$base_url/kids/tutoring\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/tutoring.png\" /><h3>Tutoring @<br />the Library</h3></div>
+</a></div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'kt_featured_novelistk8') {
+  
+    global $base_url ; 
+
+    $content = "<div class=\"kidsfeatureblk\">
+	<div><a href=\"http://0-search.ebscohost.com.sable.jefferson.lib.co.us/login.asp?profile=novpk8\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/novelistk8.png\" /><h3>Novelist<br />K - 8</h3></div>
+</a></div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'kt_featured_bookflix') {
+  
+    global $base_url ;
+	
+    $content = "<div class=\"kidsfeatureblk\">
+	<div><a href=\"http://0-bkflix.grolier.com.sable.jefferson.lib.co.us\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/bookflix.png\" /><h3>Bookflix</h3></div>
+</a></div>";
+
+    $block = array(
+      'subject' => t(''),
+    ); 
+  }
+  
   if ($block_name == 'kids_books_reading_nextreads') {
   
     $content = '<table class="views-view-grid cols-2" class="views-view-grid">
@@ -260,19 +270,6 @@ function kids_teen_blks_block_view($block_name = '') {
     return $block;
   }
 
-  if ($block_name == 'kids_featured_fun_games') {
-  
-    global $base_url ;
-	
-    $content = "<div class=\"kidsfeatureblk\">
-	<div id=\"kids_feature1\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Bookflix</h3></div>
-</div>";
-
-    $block = array(
-      'subject' => t(''),
-    ); 
-  }
-  
   if ($block_name == 'teen_reviewspg_nextreads') {
   
     $content = '<table class="views-view-grid cols-2" class="views-view-grid">
@@ -299,9 +296,9 @@ function kids_teen_blks_block_view($block_name = '') {
     global $base_url ;
 
     $content = "<div class=\"kidsfungames\">
-	<div><a href=\"fun-games/preschool-playground\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Preschool Playground</h3></a></div>
-	<div><a href=\"fun-games/games\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Games</h3></a></div>
-	<div><a href=\"fun-games/crafts-coloring\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Crafts &amp; Coloring</h3></a></div>
+	<div><a href=\"fun-games/preschool-playground\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_preschool.jpg\" /><h3>Preschool Playground</h3></a></div>
+	<div><a href=\"fun-games/games\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_games.jpg\" /><h3>Games</h3></a></div>
+	<div><a href=\"fun-games/crafts-coloring\"><img src=\"$base_url/sites/default/files/kids_teen/fun_games/home/kids_fun-games_coloring.jpg\" /><h3>Crafts &amp; Coloring</h3></a></div>
 </div>";
 
     $block = array(
