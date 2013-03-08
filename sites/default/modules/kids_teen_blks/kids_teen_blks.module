@@ -234,7 +234,7 @@ function kids_teen_blks_block_view($block_name = '') {
     global $base_url ;
 	
     $content = "<div class=\"kidsfeatureblk\">
-	<div><a href=\"http://0-bkflix.grolier.com.sable.jefferson.lib.co.us\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/bookflix.png\" /><h3>Bookflix</h3></div>
+	<div><a href=\"http://0-bkflix.grolier.com.sable.jefferson.lib.co.us\"><img src=\"$base_url/sites/default/files/kids_teen/feature_blks/bookflix.png\" /><h3>Bookflix</h3></a></div>
 </a></div>";
 
     $block = array(
