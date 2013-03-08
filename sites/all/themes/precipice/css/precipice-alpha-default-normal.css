@@ -680,7 +680,7 @@ padding-right:10px;
 	background-repeat: no-repeat;
 }
 
-.context-teen .kidsfeatureblk #kids_feature1, .context-teen .kidsfeatureblk #kids_feature2 {
+.context-teen .kidsfeatureblk div {
 	background-image:url(../../../../default/files/kids_teen/feature_blks/arrow_teen.gif);
 }
 
