@@ -879,6 +879,10 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 	padding-bottom: 10px;
 }
 
+.block-kids-parents-readytoreadvid {
+	margin-bottom: 25px;
+}
+
 /* Parents & Teachers Guides full nodes */
 
 .node-parent-teacher-guide .group_resource1, .node-parent-teacher-guide .group_resource2, .node-parent-teacher-guide .group_resource3, .node-parent-teacher-guide .group_resource4 {
