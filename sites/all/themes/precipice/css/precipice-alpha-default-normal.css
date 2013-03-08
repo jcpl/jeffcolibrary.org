@@ -489,28 +489,55 @@ margin-top: 6px;
 }
 
 
-/* Subject Guide full nodes */
+/* subject Guide full nodes */
 
-.group_getstart1, .group_getstart2, .group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+.node-subject-guide .group_getstart1, .node-subject-guide .group_getstart2, .node-subject-guide .group_getstart3, .node-subject-guide .group_getstart4, .node-subject-guide .field-name-field-guide-find-more-info, .node-subject-guide .field-name-field-guide-more {
 	width: 300px;
 }
 
-.group_getstart3, .group_getstart4, .field-name-field-guide-find-more-info, .field-name-field-guide-more {
+.node-subject-guide .group_getstart3, .node-subject-guide .group_getstart4, .node-subject-guide .field-name-field-guide-find-more-info, .node-subject-guide .field-name-field-guide-more {
 	padding-top: 20px;
 }
 
-.group_getstart1, .group_getstart3, .field-name-field-guide-find-more-info {
+.node-subject-guide .group_getstart1, .node-subject-guide .group_getstart3, .node-subject-guide .field-name-field-guide-find-more-info {
 	float:left;
 	clear:left;
 }
 
-.group_getstart2, .group_getstart4, .field-name-field-guide-more {
+.node-subject-guide .group_getstart2, .node-subject-guide .group_getstart4, .node-subject-guide .field-name-field-guide-more {
 	float:right;
+}
+
+.node-subject-guide .group_getstart2 {
+	margin-right: 0px;
 }
 
 .field-name-field-getstart1-image, .field-name-field-getstart2-image, .field-name-field-getstart3-image, .field-name-field-getstart4-image {
 	float: left;
 	margin-right: 20px;
+}
+
+/* Seasonal Guide full nodes */
+
+.node-seasonal-guide .group_getstart1, .node-seasonal-guide .group_getstart2, .node-seasonal-guide .group_getstart3, .node-seasonal-guide .group_getstart4, .node-seasonal-guide .field-name-field-guide-find-more-info, .node-seasonal-guide .field-name-field-guide-more {
+	width: 300px;
+}
+
+.node-seasonal-guide .group_getstart3, .node-seasonal-guide .group_getstart4, .node-seasonal-guide .field-name-field-guide-find-more-info, .node-seasonal-guide .field-name-field-guide-more {
+	padding-top: 20px;
+}
+
+.node-seasonal-guide .group_getstart1, .node-seasonal-guide .group_getstart3, .node-seasonal-guide .field-name-field-guide-find-more-info {
+	float:left;
+	clear:left;
+}
+
+.node-seasonal-guide .group_getstart2, .node-seasonal-guide .group_getstart4, .node-seasonal-guide .field-name-field-guide-more {
+	float:right;
+}
+
+.node-seasonal-guide .group_getstart2 {
+	margin-right: 0px;
 }
 
 /* Ask Us */
@@ -642,7 +669,7 @@ padding-right:10px;
 	text-decoration: none;
 }
 
-.kidsfeatureblk #kids_feature1, .kidsfeatureblk #kids_feature2 {
+.kidsfeatureblk div {
 	padding: 20px;
 	padding-left: 0px;
 	padding-right: 40px;
@@ -661,11 +688,11 @@ padding-right:10px;
 	padding-top: 10px;
 }
 
-.kidsfeatureblk #kids_feature2 {
+.kidsfeatureblk div {
 	clear: left;
 }
 	
-.kidsfeatureblk #kids_feature1 img, .kidsfeatureblk #kids_feature2 img {
+.kidsfeatureblk div img {
 	float: left;
 	padding-right: 15px;
 }
@@ -818,7 +845,7 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 	text-decoration: none;
 }
 
-.group_resource5, .group_resource6, .group_resource7, .group_resource9, .group_resource10, .group_resource11 {
+.node-fun-and-games-category .group_resource5, .node-fun-and-games-category .group_resource6, .node-fun-and-games-category .group_resource7, .node-fun-and-games-category .group_resource9, .node-fun-and-games-category .group_resource10, .node-fun-and-games-category .group_resource11 {
 	margin-right: 20px;
 }
 
@@ -837,6 +864,50 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 #block-views-2a744ea853a624bd298202c3a260f50f {
 	width: 300px;
 	float: right;
+}
+
+.block-kids-parents-guides .kidsfungames {
+	margin-bottom: 25px;
+}
+
+.block-kids-parents-guides .kidsfungames div {
+	margin-right: 0px;
+	width: 450px;
+}
+
+.block-kids-parents-readytoreadvid h2 {
+	padding-bottom: 10px;
+}
+
+.block-kids-parents-readytoreadvid {
+	margin-bottom: 25px;
+}
+
+/* Parents & Teachers Guides full nodes */
+
+.node-parent-teacher-guide .group_resource1, .node-parent-teacher-guide .group_resource2, .node-parent-teacher-guide .group_resource3, .node-parent-teacher-guide .group_resource4 {
+	width: 300px;
+}
+
+.node-parent-teacher-guide .group_resource3, .node-parent-teacher-guide .group_resource4 {
+	padding-top: 20px;
+}
+
+.node-parent-teacher-guide .group_resource1, .node-parent-teacher-guide .group_resource3{
+	float:left;
+	clear:left;
+}
+
+.node-parent-teacher-guide .group_resource2, .node-parent-teacher-guide .group_resource4 {
+	float:right;
+}
+
+.node-parent-teacher-guide .group_resource1, .node-parent-teacher-guide .group_resource2, .node-parent-teacher-guide .group_resource3 {
+    margin-right: 0px;
+}
+
+.node-parent-teacher-guide .content {
+	margin-right: 300px;
 }
 
 
