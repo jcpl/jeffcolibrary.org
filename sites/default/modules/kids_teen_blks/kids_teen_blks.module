@@ -314,10 +314,10 @@ function kids_teen_blks_block_view($block_name = '') {
     global $base_url ;
 
     $content = "<div class=\"kidsfungames\">
-	<div><a href=\"parents-teachers/reading\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Reading</h3></a></div>
-	<div><a href=\"parents-teachers/home-schooling\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Home Schooling</h3></a></div>
-	<div><a href=\"parents-teachers/child-care\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Child Care</h3></a></div>
-	<div><a href=\"parents-teachers/education\"><img src=\"$base_url/sites/default/files/kids_teen/placeholder.gif\" /><h3>Education</h3></a></div>
+	<div><a href=\"parents-teachers/reading\"><img src=\"$base_url/sites/default/files/kids_teen/parents_teachers_home/reading.jpg\" /><h3>Reading</h3></a></div>
+	<div><a href=\"parents-teachers/home-schooling\"><img src=\"$base_url/sites/default/files/kids_teen/parents_teachers_home/homeschool.jpg\" /><h3>Home Schooling</h3></a></div>
+	<div><a href=\"parents-teachers/child-care\"><img src=\"$base_url/sites/default/files/kids_teen/parents_teachers_home/childcare.jpg\" /><h3>Child Care</h3></a></div>
+	<div><a href=\"parents-teachers/education\"><img src=\"$base_url/sites/default/files/kids_teen/parents_teachers_home/education.jpg\" /><h3>Education</h3></a></div>
 </div>";
 
     $block = array(
