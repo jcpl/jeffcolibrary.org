@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_kids_parents_teachers feature.
+ */
+
+include_once 'feature_kids_parents_teachers.features.inc';
