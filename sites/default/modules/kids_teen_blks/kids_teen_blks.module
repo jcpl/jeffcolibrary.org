@@ -239,7 +239,10 @@ function kids_teen_blks_block_view($block_name = '') {
 
     $block = array(
       'subject' => t(''),
-    ); 
+      'content' => $content,
+    );
+
+    return $block;
   }
   
   if ($block_name == 'kids_books_reading_nextreads') {
