@@ -104,16 +104,25 @@ function jeffcolibrary_blks_block_info() {
     'region' => 'footer_fifth',
   );
 
-  $blocks['downloads_search_ebooks'] = array(
+/*  $blocks['downloads_search_ebooks'] = array(
     'info' => t('Downloads: Ebook Search.'),
     'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'downloads',
   );
-
-  $blocks['downloads_search_audiobooks'] = array(
+*/
+/*  $blocks['downloads_search_audiobooks'] = array(
     'info' => t('Downloads: Audiobooks Search.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'downloads',
+  );
+*/
+
+  $blocks['downloads_findX'] = array(
+    'info' => t('Downloads: Find Ebooks, Find Audiobooks, etc.'),
     'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -416,18 +425,50 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     return $block;
   }
 
-  if ($block_name == 'downloads_search_ebooks') {
+/*  if ($block_name == 'downloads_search_ebooks') {
     return array(
       'subject' => t('Ebooks'),
       'content' => _jeffcolibrary_blks_build_facet_block($block_name),
     );
   }
-
-  if ($block_name == 'downloads_search_audiobooks') {
+*/
+/*  if ($block_name == 'downloads_search_audiobooks') {
     return array(
       'subject' => t('Audiobooks'),
       'content' => _jeffcolibrary_blks_build_facet_block($block_name),
     );
+  }
+*/
+
+    if ($block_name == 'downloads_findX') {
+
+    $content = '<h3>Find Ebooks</h3>
+<ul>
+  <li><a href="http://ebook.3m.com/library/en/patrons">3M Cloud Library</a></li>
+  <li><a href="http://jefferson.lib.overdrive.com/BF57A2A0-4C60-405B-A765-5A82A21642C4/10/408/en/BANGSearch.dll?Type=Format&amp;ID=420,50,410,450,810%C2%A0">Overdrive</a></li>
+  <li><a href="http://0-search.ebscohost.com.sable.jefferson.lib.co.us/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=nlebk%C2%A0">EBSCO</a></li>
+</ul>
+<h3>Find Audiobooks</h3>
+<ul>
+  <li><a href="http://0-jeffersoncoco.oneclickdigital.com.sable.jefferson.lib.co.us">OneClick Digital</a></li>
+  <li><a href="http://jefferson.lib.overdrive.com/BF57A2A0-4C60-405B-A765-5A82A21642C4/10/408/en/BANGSearch.dll?Type=Format&amp;ID=25,425">Overdrive</a></li>
+</ul>
+<h3>Find Magazines</h3>
+<ul>
+  <li><a href="https://rbdg.envionsoftware.com/jeffersonco/zinio">Zinio</a></li>
+</ul>
+<h3>Find Music</h3>
+<ul>
+  <li><a href="http://jefferson.lib.overdrive.com/BF57A2A0-4C60-405B-A765-5A82A21642C4/10/408/en/BANGSearch.dll?Type=Format&amp;ID=30">Overdrive</a></li>
+</ul>
+';
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
   }
 
   if ($block_name == 'research_search_mags') {
