@@ -615,8 +615,6 @@ td.col-first {
 	padding-bottom: 10px;
 }
 
-
-
 /* device guide full nodes */
 
 .field-name-field-device-image {
@@ -627,6 +625,7 @@ td.col-first {
 	margin-top: -15px;
 	float: right;
 	width: 300px;
+	margin-right: 320px;
 }
 
 /* Blog posts */

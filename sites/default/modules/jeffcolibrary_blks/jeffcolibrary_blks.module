@@ -126,7 +126,7 @@ function jeffcolibrary_blks_block_info() {
     'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => "downloads\ndownloads/*",
+    'pages' => "downloads\ndownloads/devices",
   );
 
   $blocks['research_search_mags'] = array(
