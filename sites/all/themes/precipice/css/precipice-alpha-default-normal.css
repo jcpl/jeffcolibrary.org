@@ -583,6 +583,7 @@ td.col-first {
 	padding-bottom: 0px;
 	margin-bottom: -10px;
 }
+
 /* Find X Vendor links */
 .block-downloads-findx {
 	margin-left: 20px;
@@ -623,9 +624,9 @@ td.col-first {
 }
 
 .group_device_details {
+	margin-top: -15px;
 	float: right;
 	width: 300px;
-	margin-right: 320px;
 }
 
 /* Blog posts */
