@@ -585,7 +585,7 @@ td.col-first {
 }
 /* Find X Vendor links */
 .block-downloads-findx {
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 .block-downloads-findx h3 {
@@ -603,6 +603,17 @@ td.col-first {
 .block-downloads-findx ul {
 	margin-left: 10px;
 }
+
+.view-id-device_guides .more-link {
+	margin-top: -7px;
+}
+
+/* Devices */
+
+.page-downloads-devices .view-device-guides td {
+	padding-bottom: 10px;
+}
+
 
 
 /* device guide full nodes */
