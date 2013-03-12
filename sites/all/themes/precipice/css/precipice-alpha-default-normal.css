@@ -575,7 +575,7 @@ td.col-first {
 
 /* searchboxes */
 
-.block-downloads-search-ebooks {
+/*.block-downloads-search-ebooks {
 	padding-bottom: 20px;
 }
 
@@ -583,8 +583,26 @@ td.col-first {
 	padding-bottom: 0px;
 	margin-bottom: -10px;
 }
+/* Find X Vendor links */
 
-/* full nodes */
+.block-downloads-findx h3 {
+	margin-bottom: 0px;
+}
+
+.block-downloads-findx ul {
+	margin-bottom: 10px;
+}
+
+.block-downloads-findx li {
+	list-style: none;
+}
+
+.block-downloads-findx ul {
+	margin-left: 10px;
+}
+
+
+/* device guide full nodes */
 
 .field-name-field-device-image {
 	float: left;
@@ -1206,6 +1224,10 @@ table#hours td {
 .block-views-event-highlights-block .views-row, .block-views-event-highlights-block-13 .views-row, .block-views-event-highlights-block-12 .views-row {
 	height: 90px;
 	padding-bottom: 20px;
+}
+
+.block-events-by-topic p, .block-events-by-topic-kids p, .block-events-by-topic-teen p {
+	margin-left: 10px;
 }
 
 .jcpl-facet-form {
