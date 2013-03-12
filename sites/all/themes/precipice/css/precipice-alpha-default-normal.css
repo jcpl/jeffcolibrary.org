@@ -584,6 +584,9 @@ td.col-first {
 	margin-bottom: -10px;
 }
 /* Find X Vendor links */
+.block-downloads-findx {
+	margin-left: 10px;
+}
 
 .block-downloads-findx h3 {
 	margin-bottom: 0px;
