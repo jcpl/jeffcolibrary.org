@@ -1,0 +1,5 @@
+name = Embedded Form Blocks
+description = "Collection of custom blocks for sections with embedded scripting and code."
+core = 7.x
+package = Custom Modules
+files[] = form_embed_blks.module

@@ -158,7 +158,7 @@ function kids_teen_blks_block_info() {
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'teen/teen-events',
   );
-  
+    
 	return $blocks;
 }
 

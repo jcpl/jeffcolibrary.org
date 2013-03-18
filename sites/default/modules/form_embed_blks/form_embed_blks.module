@@ -1,0 +1,91 @@
+<?php
+// $Id$
+
+/**
+ * Implements hook_theme().
+ */
+function form_embed_blks_theme() {
+  $base = array(
+    'file' => 'form_embed_blks.theme.inc',
+    'path' => drupal_get_path('module', 'form_embed_blks') . '/tpl',
+  );
+  return array(
+    'jcpl_ill_request' => array(
+      'template' => 'jcpl-ill-request',
+    ) + $base,
+	    'jcpl_suggest_title' => array(
+      'template' => 'jcpl-suggest-title',
+    ) + $base,
+		    'jcpl_contact_us' => array(
+      'template' => 'jcpl-contact-us',
+    ) + $base,
+
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function form_embed_blks_block_info() {
+  $blocks = array();
+  
+   $blocks['ill_request' ] = array(
+    'info' => t('Didnt find it: Request an interlibrary loan'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/interlibrary-loan',
+   );
+  
+   $blocks['suggest_title'] = array(
+    'info' => t('Didnt find it: Suggest a title'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/suggest-title',
+   );
+
+   $blocks['contact_us'] = array(
+    'info' => t('Contact Us: form'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'contact-us',
+   );
+   
+	return $blocks;
+}   
+  
+/**
+ * Implements hook_block_view().
+ */
+function form_embed_blks_block_view($block_name = '') {
+	 
+   if ($block_name == 'ill_request') {
+    $block = array(
+      'subject' => t('Request an Interlibrary Loan'),
+      'content' => theme('jcpl_ill_request'),
+    );
+	
+    return $block;
+  }
+  
+      if ($block_name == 'suggest_title') {
+    $block = array(
+      'subject' => t('Suggest a Title'),
+      'content' => theme('jcpl_suggest_title'),
+    );
+	
+    return $block;
+  }
+  
+    
+      if ($block_name == 'contact_us') {
+    $block = array(
+      'subject' => t('Contact Us'),
+      'content' => theme('jcpl_contact_us'),
+    );
+	
+    return $block;
+  }
+}
