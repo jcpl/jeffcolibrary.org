@@ -714,7 +714,7 @@ if ($block_name == 'locations_services') {
 
     $content = "<div class=\"content clearfix\">
   <div id=\"findloclinks\"><a title=\"Locations Map\" href=\"locations\">Locations Map</a> | <a title=\"Bookmobile stops\" href=\"http://jeffcolibrary.org/pdf/bk.pdf\">Bookmobile Stops</a></div>
-  <div id=\"findlocmap\"><a title=\"Locations Map\" href=\"locations\"><img src=\"$base_url/sites/default/files/head_foot/map_homepage.png\" width=\"300\" height=\"157\" alt=\"Locations Map\" border=\"0\" /></a></div>
+  <div id=\"findlocmap\"><a title=\"Locations Map\" href=\"locations\"><img src=\"$base_url/sites/default/files/head_foot/map_homepage.png\" width=\"292\" height=\"157\" alt=\"Locations Map\" border=\"0\" /></a></div>
 </div>";
 
     $block = array(

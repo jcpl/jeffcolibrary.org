@@ -32,6 +32,34 @@ body {
 	padding-top: 35px;
 }
 
+/* front sidebar 2 */
+
+.front .region-sidebar-second {
+	padding-top: 0px;
+}
+
+.block-locations-homepage table {
+	margin-bottom: 15px;
+}
+
+.front .block-jeffcolibrary-blks h2 {
+	padding-bottom: 0px;
+}
+
+.block-locations-homepage td {
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+
+#findloclinks {
+	padding-bottom: 11px;
+	padding-top: 2px;
+}
+
+#findloclinks, #findlocmap {
+	padding-left: 8px;
+}
+
 /* Main Menu */
 
 #zone-menu {
