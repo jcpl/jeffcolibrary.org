@@ -176,7 +176,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 .front #region-branding {
-	margin-top:175px;
+	margin-top:172px;
 }
 
 .front #region-search {
@@ -193,7 +193,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 #region-branding {
-	margin-top:95px;
+	margin-top:92px;
 }
 
 #region-search {
@@ -217,8 +217,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 #logo {
 	width: 170px;
-	margin-left: 15px;
-	margin-bottom: 3px;
+	margin-left: 13px;
 }
 
 /* The Nivo Slider styles */
