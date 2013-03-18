@@ -193,102 +193,110 @@ function jeffcolibrary_blks_block_info() {
     'pages' => 'kids',
   );
 
-    $blocks['events_AR_today'] = array(
-      'info' => t('Events: Today\'s Events - Arvada'),
-      'status' => 1,
+  $blocks['events_AR_today'] = array(
+    'info' => t('Events: Today\'s Events - Arvada'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/arvada-library',
     );  
 
-       $blocks['events_BL_today'] = array(
-      'info' => t('Events: Today\'s Events - Belmar'),
-      'status' => 1,
+  $blocks['events_BL_today'] = array(
+    'info' => t('Events: Today\'s Events - Belmar'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/belmar-library',
     );
   
-    $blocks['events_CL_today'] = array(
-      'info' => t('Events: Today\'s Events - Columbine'),
-      'status' => 1,
+  $blocks['events_CL_today'] = array(
+    'info' => t('Events: Today\'s Events - Columbine'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/columbine-library',
     );
   
-    $blocks['events_CF_today'] = array(
-      'info' => t('Events: Today\'s Events - Conifer'),
-      'status' => 1,
+  $blocks['events_CF_today'] = array(
+    'info' => t('Events: Today\'s Events - Conifer'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/conifer-library',
     );
   
-    $blocks['events_ED_today'] = array(
-      'info' => t('Events: Today\'s Events - Edgewater'),
-      'status' => 1,
+  $blocks['events_ED_today'] = array(
+    'info' => t('Events: Today\'s Events - Edgewater'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/edgewater-library',
     );
   
-    $blocks['events_EV_today'] = array(
-      'info' => t('Events: Today\'s Events - Evergreen'),
-      'status' => 1,
+  $blocks['events_EV_today'] = array(
+    'info' => t('Events: Today\'s Events - Evergreen'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/evergreen-library',
     );
   
-    $blocks['events_GN_today'] = array(
-      'info' => t('Events: Today\'s Events - Golden'),
-      'status' => 1,
+  $blocks['events_GN_today'] = array(
+    'info' => t('Events: Today\'s Events - Golden'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/golden-library',
     );
   
-    $blocks['events_LK_today'] = array(
-      'info' => t('Events: Today\'s Events - Lakewood'),
-      'status' => 1,
+  $blocks['events_LK_today'] = array(
+    'info' => t('Events: Today\'s Events - Lakewood'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/lakewood-library',
     );
   
-    $blocks['events_SL_today'] = array(
-      'info' => t('Events: Today\'s Events - Standley Lake'),
-      'status' => 1,
+  $blocks['events_SL_today'] = array(
+    'info' => t('Events: Today\'s Events - Standley Lake'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/standley-lake-library',
     );
   
-    $blocks['events_WR_today'] = array(
-      'info' => t('Events: Today\'s Events - Wheat Ridge'),
-      'status' => 1,
+  $blocks['events_WR_today'] = array(
+    'info' => t('Events: Today\'s Events - Wheat Ridge'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/wheat-ridge-library',
     );  
  
-    $blocks['locations_services'] = array(
-      'info' => t('Library Pages: Services'),
-      'status' => 1,
+  $blocks['locations_services'] = array(
+    'info' => t('Library Pages: Services'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'locations/arvada-library',
     );
 
-    $blocks['locations_homepage'] = array(
-      'info' => t('Front: Locations'),
-      'status' => 1,
+  $blocks['locations_homepage'] = array(
+    'info' => t('Front: Locations'),
+    'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => '<front>',
     );
   
+  $blocks['findlocmap_homepage'] = array(
+    'info' => t('Front: Find Locations Map'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => '<front>',
+    );
+
   return $blocks;
 }
 
@@ -694,6 +702,23 @@ if ($block_name == 'locations_services') {
 
     $block = array(
       'subject' => t('Locations'),
+      'content' => $content,
+    );
+
+    return $block;
+  }  
+
+  if ($block_name == 'findlocmap_homepage') {
+  
+    global $base_url ; 
+
+    $content = "<div class=\"content clearfix\">
+  <div id=\"findloclinks\"><a title=\"Locations Map\" href=\"locations\">Locations Map</a> | <a title=\"Bookmobile stops\" href=\"http://jeffcolibrary.org/pdf/bk.pdf\">Bookmobile Stops</a></div>
+  <div id=\"findlocmap\"><a title=\"Locations Map\" href=\"locations\"><img src=\"$base_url/sites/default/files/head_foot/map_homepage.png\" width=\"300\" height=\"157\" alt=\"Locations Map\" border=\"0\" /></a></div>
+</div>";
+
+    $block = array(
+      'subject' => t('Find Your Nearest Location'),
       'content' => $content,
     );
 
