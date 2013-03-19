@@ -118,7 +118,10 @@ function footer_blks_block_view($block_name = '') {
 
     global $base_url ;
 
-    $content = "<div id=\"social_media_icons\"><img src=\"$base_url/sites/default/files/head_foot/facebook.png\" width=\"40\" height=\"40\" alt=\"Facebook\" /><img src=\"$base_url/sites/default/files/head_foot/twitter.png\" width=\"40\" height=\"40\" alt=\"Twitter\" /><img src=\"$base_url/sites/default/files/head_foot/vimeo.png\" width=\"40\" height=\"40\" alt=\"Vimeo\" /><img src=\"$base_url/sites/default/files/head_foot/youtube.png\" width=\"40\" height=\"40\" alt=\"You Tube\" /></div>
+    $content = "<div id=\"social_media_icons\"><a href=\"http://www.facebook.com/JeffersonCountyPublicLibrary\"><img src=\"$base_url/sites/default/files/head_foot/facebook.png\" width=\"40\" height=\"40\" alt=\"Facebook\" /></a>
+	<a href=\"http://www.twitter.com/JCPL\"><img src=\"$base_url/sites/default/files/head_foot/twitter.png\" width=\"40\" height=\"40\" alt=\"Twitter\" /></a>
+	<a href=\"http://vimeo.com/jcpl\"><img src=\"$base_url/sites/default/files/head_foot/vimeo.png\" width=\"40\" height=\"40\" alt=\"Vimeo\" /></a>
+	<a href=\"http://www.youtube.com/jcplcolorado\"><img src=\"$base_url/sites/default/files/head_foot/youtube.png\" width=\"40\" height=\"40\" alt=\"You Tube\" /></a></div>
 	<!-- <form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">
 	  Sign up for our newsletter<br />
 	<input type=\"text\" name=\"textfield\" id=\"textfield\" />
