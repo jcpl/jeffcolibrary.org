@@ -76,7 +76,7 @@ function feature_device_guides_field_default_fields() {
             ),
           ),
           'type' => 'link_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -187,7 +187,7 @@ function feature_device_guides_field_default_fields() {
             ),
           ),
           'type' => 'image',
-          'weight' => '0',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -293,7 +293,7 @@ function feature_device_guides_field_default_fields() {
           'settings' => array(
             'linked_field' => array(
               'destination' => '',
-              'linked' => 0,
+              'linked' => FALSE,
               'rel' => '',
               'target' => '',
               'text' => '',
@@ -301,7 +301,7 @@ function feature_device_guides_field_default_fields() {
             ),
           ),
           'type' => 'list_default',
-          'weight' => '1',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -395,7 +395,7 @@ function feature_device_guides_field_default_fields() {
             ),
           ),
           'type' => 'file_default',
-          'weight' => '3',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -412,13 +412,14 @@ function feature_device_guides_field_default_fields() {
         'description_field' => 1,
         'file_directory' => 'vendor_device_guides',
         'file_extensions' => 'pdf',
-        'max_filesize' => '2',
+        'max_filesize' => '10 MB',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'file',
         'settings' => array(
+          'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
@@ -493,7 +494,7 @@ function feature_device_guides_field_default_fields() {
             ),
           ),
           'type' => 'link_default',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',

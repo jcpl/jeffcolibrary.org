@@ -28,8 +28,40 @@ body {
 	padding-top: 10px; 
 }
 
+.front #zone-content {
+	padding-bottom: 2px;
+}
+
 .region-sidebar-second {
 	padding-top: 35px;
+}
+
+/* front sidebar 2 */
+
+.front .region-sidebar-second {
+	padding-top: 0px;
+}
+
+.block-locations-homepage table {
+	margin-bottom: 15px;
+}
+
+.front .block-jeffcolibrary-blks h2 {
+	padding-bottom: 0px;
+}
+
+.block-locations-homepage td {
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+
+#findloclinks {
+	padding-bottom: 11px;
+	padding-top: 2px;
+}
+
+#findloclinks, #findlocmap {
+	padding-left: 8px;
 }
 
 /* Main Menu */
@@ -176,7 +208,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 .front #region-branding {
-	margin-top:175px;
+	margin-top:172px;
 }
 
 .front #region-search {
@@ -193,7 +225,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 #region-branding {
-	margin-top:95px;
+	margin-top:92px;
 }
 
 #region-search {
@@ -217,7 +249,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 #logo {
 	width: 170px;
-	margin-left: 15px
+	margin-left: 13px;
 }
 
 /* The Nivo Slider styles */
@@ -575,7 +607,7 @@ td.col-first {
 
 /* searchboxes */
 
-.block-downloads-search-ebooks {
+/*.block-downloads-search-ebooks {
 	padding-bottom: 20px;
 }
 
@@ -584,13 +616,45 @@ td.col-first {
 	margin-bottom: -10px;
 }
 
-/* full nodes */
+/* Find X Vendor links */
+.block-downloads-findx {
+	margin-left: 20px;
+}
+
+.block-downloads-findx h3 {
+	margin-bottom: 0px;
+}
+
+.block-downloads-findx ul {
+	margin-bottom: 10px;
+}
+
+.block-downloads-findx li {
+	list-style: none;
+}
+
+.block-downloads-findx ul {
+	margin-left: 10px;
+}
+
+.view-id-device_guides .more-link {
+	margin-top: -7px;
+}
+
+/* Devices */
+
+.page-downloads-devices .view-device-guides td {
+	padding-bottom: 10px;
+}
+
+/* device guide full nodes */
 
 .field-name-field-device-image {
 	float: left;
 }
 
 .group_device_details {
+	margin-top: -15px;
 	float: right;
 	width: 300px;
 	margin-right: 320px;
@@ -1206,6 +1270,10 @@ table#hours td {
 .block-views-event-highlights-block .views-row, .block-views-event-highlights-block-13 .views-row, .block-views-event-highlights-block-12 .views-row {
 	height: 90px;
 	padding-bottom: 20px;
+}
+
+.block-events-by-topic p, .block-events-by-topic-kids p, .block-events-by-topic-teen p {
+	margin-left: 10px;
 }
 
 .jcpl-facet-form {
