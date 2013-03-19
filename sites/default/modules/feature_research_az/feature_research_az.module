@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_research_AZ feature.
+ */
+
+include_once 'feature_research_az.features.inc';
