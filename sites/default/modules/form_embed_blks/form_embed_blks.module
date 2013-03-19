@@ -61,7 +61,7 @@ function form_embed_blks_block_info() {
     'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => 'books-movies-music/email-librarian',
+    'pages' => 'ask-us/email-librarian',
    );
       
 	return $blocks;
