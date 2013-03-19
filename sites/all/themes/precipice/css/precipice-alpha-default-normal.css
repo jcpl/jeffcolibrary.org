@@ -306,13 +306,22 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 /* Footer */
 
-#zone-footer-wrapper li {
+.block-footer-blks ul li {
 	list-style-type: none;	
+}
+
+.block-footer-blks a {
+	text-decoration: none;
+	color: #F0F0F0;
+}
+
+.block-footer-blks h2 {
+	color: #DBDBDB;
 }
 
 #region-footer-first, #region-footer-second, #region-footer-third, #region-footer-fourth {
 	background: #65679c;
-	color: #F0F0F0;
+
 	height: 220px;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -329,7 +338,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 #region-footer-fifth {	
 margin-top: 6px;
-/*	height: 90px;
+	height: 90px;
 	padding-top: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -337,9 +346,9 @@ margin-top: 6px;
 	margin-right: 0px;
 	margin-bottom: 10px;
 	background: #CCC;
-*/}
+}
 
-#block-jeffcolibrary-blks-foot-copyright {
+#block-footer-blks-footer-copyright {
 	float: left;
 	margin-top: 25px;
 	margin-left: 0px;
@@ -347,7 +356,7 @@ margin-top: 6px;
 	padding-left: 10px;
 }
 
-#block-jeffcolibrary-blks-foot-address-phone {
+#block-footer-blks-footer-address-phone {
 	float: right;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -355,13 +364,17 @@ margin-top: 6px;
 	padding-right: 10px;
 }
 
-#block-jeffcolibrary-blks-foot-connect #social_media_icons img {
+#block-footer-blks-footer-address-phone a {
+	color: #000;
+}
+
+#block-footer-blks-footer-connect #social_media_icons img {
 	padding-right: 7px;
 	padding-top: 5px;
 	padding-bottom: 9px;
 }
 
-#block-jeffcolibrary-blks-foot-connect #textfield {
+#block-footer-blks-footer-connect #textfield {
 	margin-top: 7px;
 }
 
@@ -577,6 +590,11 @@ margin-top: 6px;
 .icon_with_text {
 	padding-top: 10px;
 	padding-right: 4px;
+}
+
+.icon_with_text a {
+	text-decoration: none;
+	color: #000;
 }
 
 /* Seasonal Guide full nodes */

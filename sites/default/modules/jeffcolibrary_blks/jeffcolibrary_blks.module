@@ -68,42 +68,6 @@ function jeffcolibrary_blks_block_info() {
     'status' => 1,
   );
 
-  $blocks['foot_about_us'] = array(
-    'info' => t('Footer: About Us.'),
-    'status' => 1,
-    'region' => 'footer_first',
-  );
-
-  $blocks['foot_services'] = array(
-    'info' => t('Footer: Services.'),
-    'status' => 1,
-    'region' => 'footer_second',
-  );
-
-  $blocks['foot_support'] = array(
-    'info' => t('Footer: Support the Library.'),
-    'status' => 1,
-    'region' => 'footer_third',
-  );
-
-  $blocks['foot_connect'] = array(
-    'info' => t('Footer: Connect with Us.'),
-    'status' => 1,
-    'region' => 'footer_fourth',
-  );
-
-  $blocks['foot_copyright'] = array(
-    'info' => t('Footer: Copyright.'),
-    'status' => 1,
-    'region' => 'footer_fifth',
-  );
-
-  $blocks['foot_address_phone'] = array(
-    'info' => t('Footer: Address, phone number, contatct us.'),
-    'status' => 1,
-    'region' => 'footer_fifth',
-  );
-
 /*  $blocks['downloads_search_ebooks'] = array(
     'info' => t('Downloads: Ebook Search.'),
     'status' => 1,
@@ -144,6 +108,14 @@ function jeffcolibrary_blks_block_info() {
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'research/*',
   );
+	
+  $blocks['ask_us_email_how_it_works'] = array(
+    'info' => t('Ask Us: Email a lib: How it works'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'ask-us/email-librarian',
+    );
 
   $blocks['bmm_whattoread'] = array(
     'info' => t('BMM: What to read next.'),
@@ -306,6 +278,8 @@ function jeffcolibrary_blks_block_info() {
 function jeffcolibrary_blks_block_view($block_name = '') {
 
   if ($block_name == 'encore_search') {
+	  
+    global $base_url ; 
 
     $content = '<form method="get" action="http://encore.jefferson.lib.co.us/iii/encore/Home,$Search.form.sdirect" name="form" id="form">
       <div style="height:0px;">
@@ -319,9 +293,10 @@ function jeffcolibrary_blks_block_view($block_name = '') {
       <div id="encore_searchform">
       <input name="target" value="" id="target" size="36" type="text">
       <input type="submit" value="Search"/>
-      </div>
-      <a href="http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=cobalt&advancedSearch=true&searchString=">Advanced Search</a>
-      </form>';
+      </div>' . 
+      "<a href=\"http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=cobalt&advancedSearch=true&searchString=\">Advanced search</a> | 
+	  <a href=\"$base_url/books-movies-music/didnt-find-it\">Didn&#039;t find it?</a>
+      </form>";
 
     $block = array(
       'subject' => t('Encore Search'),
@@ -331,107 +306,6 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     return $block;
   }
 
-  if ($block_name == 'foot_about_us') {
-
-    $content = '<ul>
-        <li>Leadership &amp; Mission</li>
-        <li>Board of Trustees</li>
-        <li>Planning &amp; Budget</li>
-        <li>Press Room</li>
-        <li>Policies</li>
-        <li>Jobs</li>
-      </ul>';
-
-    $block = array(
-      'subject' => t('About Us'),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
-  if ($block_name == 'foot_services') {
-
-    $content = '<ul>
-        <li>Ask Us</li>
-        <li>Get a Library Card</li>
-        <li>Reserve a Computer</li>
-        <li>Wireless</li>
-        <li>Culture Pass</li>
-        <li>Outreach Services</li>
-        <li>Recursos en Espa&ntilde;ol</li>
-      </ul>';
-
-    $block = array(
-      'subject' => t('Services'),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
-  if ($block_name == 'foot_support') {
-
-    $content = '<ul>
-        <li>Advocate for JCPL</li>
-        <li>Donate</li>
-        <li>Volunteer</li>
-        <li>Request a Speaker</li>
-        <li>Foundation &amp; Friends</li>
-        <li>Community Partners</li>
-      </ul>';
-
-    $block = array(
-      'subject' => t('Support the Library'),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
-  if ($block_name == 'foot_connect') {
-
-    global $base_url ;
-
-    $content = "<div id=\"social_media_icons\"><img src=\"$base_url/sites/default/files/head_foot/facebook.png\" width=\"40\" height=\"40\" alt=\"Facebook\" /><img src=\"$base_url/sites/default/files/head_foot/twitter.png\" width=\"40\" height=\"40\" alt=\"Twitter\" /><img src=\"$base_url/sites/default/files/head_foot/vimeo.png\" width=\"40\" height=\"40\" alt=\"Vimeo\" /><img src=\"$base_url/sites/default/files/head_foot/youtube.png\" width=\"40\" height=\"40\" alt=\"You Tube\" /></div>
-      <form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">
-        Sign up for our newsletter<br />
-      <input type=\"text\" name=\"textfield\" id=\"textfield\" />
-      </form>";
-
-    $block = array(
-      'subject' => t('Connect with Us'),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
-  if ($block_name == 'foot_copyright') {
-
-    $content = '<p>&copy;2013 Jefferson County Public Library</p>';
-
-    $block = array(
-      'subject' => t(''),
-      'content' => $content,
-    );
-
-    return $block;
-  }
-
-  if ($block_name == 'foot_address_phone') {
-
-    $content = '10200 W. 20th Ave, Lakewood, CO 80215<br />
-      303-235-JCPL (5275)<br />
-      <a href="contact">Contact Us</a>';
-
-    $block = array(
-      'subject' => t(''),
-      'content' => $content,
-    );
-
-    return $block;
-  }
 
 /*  if ($block_name == 'downloads_search_ebooks') {
     return array(
@@ -486,11 +360,11 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     );
   }
 
-    if ($block_name == 'ask_us') {
+  if ($block_name == 'ask_us') {
 
     global $base_url ;
 
-    $content = "<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/email.gif\" /> Email</span>
+    $content = "<span class=\"icon_with_text\"><a href=\"$base_url/ask-us/email-librarian\"><img src=\"$base_url/sites/default/files/icons/email.gif\" /> Email</a></span>
 <span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-JCPL (5275)</span><br /><br />
 <div>
 <iframe src=\"http://www.askcolorado.org/widgets/askcoloradowidget.html\"
@@ -506,7 +380,19 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
     return $block;
   }
 
-    if ($block_name == 'bmm_whattoread') {
+  if ($block_name == 'ask_us_email_how_it_works') {
+
+    $content = '<p>Ask a question 24 hours a day, seven days a week.</p><p>Receive an answer by e-mail within two library business days.</p><p>For faster service, call the library at 303-235-5275</p>';
+
+    $block = array(
+      'subject' => t('How it works'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'bmm_whattoread') {
 
     global $base_url ;
 

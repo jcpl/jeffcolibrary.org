@@ -1,0 +1,5 @@
+name = Footer Blocks
+description = "Collection of custom blocks for the Footer built in code for versioning purposes."
+core = 7.x
+package = Custom Modules
+files[] = footer_blks.module

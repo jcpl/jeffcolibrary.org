@@ -2,4 +2,4 @@ name = Kids Teen Blocks
 description = "Collection of custom blocks for the Kids & Teens sections built in code for versioning purposes."
 core = 7.x
 package = Custom Modules
-files[] = kids_teen.module
+files[] = kids_teen_blks.module
