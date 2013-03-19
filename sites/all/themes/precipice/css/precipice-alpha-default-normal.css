@@ -312,13 +312,17 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 .block-footer-blks a {
 	text-decoration: none;
+	color: #F0F0F0;
 }
 
+.block-footer-blks h2 {
+	color: #DBDBDB;
+}
 
 
 #region-footer-first, #region-footer-second, #region-footer-third, #region-footer-fourth {
 	background: #65679c;
-	color: #F0F0F0;
+
 	height: 220px;
 	padding-top: 15px;
 	padding-left: 10px;
