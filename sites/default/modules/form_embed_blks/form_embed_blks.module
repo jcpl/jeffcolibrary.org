@@ -16,8 +16,11 @@ function form_embed_blks_theme() {
 	    'jcpl_suggest_title' => array(
       'template' => 'jcpl-suggest-title',
     ) + $base,
-		    'jcpl_contact_us' => array(
+		'jcpl_contact_us' => array(
       'template' => 'jcpl-contact-us',
+    ) + $base,
+	    'jcpl_email_librarian' => array(
+      'template' => 'jcpl-email-librarian',
     ) + $base,
 
   );
@@ -52,7 +55,15 @@ function form_embed_blks_block_info() {
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'contact-us',
    );
-   
+
+   $blocks['email_librarian'] = array(
+    'info' => t('Ask Us: Email a Librarian'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/email-librarian',
+   );
+      
 	return $blocks;
 }   
   
@@ -78,12 +89,20 @@ function form_embed_blks_block_view($block_name = '') {
 	
     return $block;
   }
-  
     
       if ($block_name == 'contact_us') {
     $block = array(
       'subject' => t('Contact Us'),
       'content' => theme('jcpl_contact_us'),
+    );
+	
+    return $block;
+  }
+  
+        if ($block_name == 'email_librarian') {
+    $block = array(
+      'subject' => t('Email a Librarian'),
+      'content' => theme('jcpl_email_librarian'),
     );
 	
     return $block;
