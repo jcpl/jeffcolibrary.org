@@ -25,7 +25,25 @@ function footer_blks_block_info() {
       'status' => 1,
 	  'region' => 'footer_third',
     );
-  
+	
+	$blocks['footer_connect'] = array(
+    'info' => t('Footer: Connect with Us.'),
+    'status' => 1,
+    'region' => 'footer_fourth',
+    );
+
+    $blocks['footer_copyright'] = array(
+    'info' => t('Footer: Copyright.'),
+    'status' => 1,
+    'region' => 'footer_fifth',
+    );
+
+    $blocks['footer_address_phone'] = array(
+    'info' => t('Footer: Address, phone number, contatct us.'),
+    'status' => 1,
+    'region' => 'footer_fifth',
+    );
+
 	return $blocks;
 }
 
@@ -96,5 +114,48 @@ function footer_blks_block_view($block_name = '') {
     return $block;
   }
   
+  if ($block_name == 'footer_connect') {
+
+    global $base_url ;
+
+    $content = "<div id=\"social_media_icons\"><img src=\"$base_url/sites/default/files/head_foot/facebook.png\" width=\"40\" height=\"40\" alt=\"Facebook\" /><img src=\"$base_url/sites/default/files/head_foot/twitter.png\" width=\"40\" height=\"40\" alt=\"Twitter\" /><img src=\"$base_url/sites/default/files/head_foot/vimeo.png\" width=\"40\" height=\"40\" alt=\"Vimeo\" /><img src=\"$base_url/sites/default/files/head_foot/youtube.png\" width=\"40\" height=\"40\" alt=\"You Tube\" /></div>
+	<!-- <form id=\"form1\" name=\"form1\" method=\"post\" action=\"\">
+	  Sign up for our newsletter<br />
+	<input type=\"text\" name=\"textfield\" id=\"textfield\" />
+	</form> -->";
+
+    $block = array(
+	'subject' => t('Connect with Us'),
+	'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'footer_copyright') {
+
+    $content = '<p>&copy;2013 Jefferson County Public Library</p>';
+
+    $block = array(
+	'subject' => t(''),
+	'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'footer_address_phone') {
+
+    $content = '10200 W. 20th Ave, Lakewood, CO 80215<br />
+	303-235-JCPL (5275)<br />
+	<a href="contact">Contact Us</a>';
+
+    $block = array(
+	'subject' => t(''),
+	'content' => $content,
+    );
+
+    return $block;
+  }
 
 }
