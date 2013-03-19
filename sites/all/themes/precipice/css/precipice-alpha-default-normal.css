@@ -306,8 +306,13 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 /* Footer */
 
-#zone-footer-wrapper li {
+.block-footer-blks ul li {
 	list-style-type: none;	
+}
+
+.block-footer-blks a {
+	text-decoration: none;
+	color: #fff;
 }
 
 #region-footer-first, #region-footer-second, #region-footer-third, #region-footer-fourth {

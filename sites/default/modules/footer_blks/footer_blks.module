@@ -39,13 +39,13 @@ function footer_blks_block_view($block_name = '') {
 	  
     global $base_url ; 
   
-    $content = "<div class=\"content clearfix\"><ul class=\"menu\"><li class=\"first leaf\"><a href=\"$base_url/board-of-trustees\" title=\"Board of Trustees\">Board of Trustees</a></li>
-<li class=\"leaf\"><a href=\"$base_url/jobs\" title=\"Jobs\">Jobs</a></li>
-<li class=\"leaf\"><a href=\"$base_url/leadership-mission\" title=\"Leadership and Mission\">Leadership &amp; Mission</a></li>
-<li class=\"leaf\"><a href=\"$base_url/planning-budget\" title=\"Planning and Budget\">Planning &amp; Budget</a></li>
-<li class=\"leaf\"><a href=\"$base_url/policies\" title=\"Policies\">Policies</a></li>
-<li class=\"last leaf\"><a href=\"$base_url/press-room\" title=\"Press Room\">Press Room</a></li>
-</ul></div>";
+    $content = "<ul class=\"menu\"><li><a href=\"$base_url/board-of-trustees\" title=\"Board of Trustees\">Board of Trustees</a></li>
+<li><a href=\"$base_url/jobs\" title=\"Jobs\">Jobs</a></li>
+<li><a href=\"$base_url/leadership-mission\" title=\"Leadership and Mission\">Leadership &amp; Mission</a></li>
+<li><a href=\"$base_url/planning-budget\" title=\"Planning and Budget\">Planning &amp; Budget</a></li>
+<li><a href=\"$base_url/policies\" title=\"Policies\">Policies</a></li>
+<li><a href=\"$base_url/press-room\" title=\"Press Room\">Press Room</a></li>
+</ul>";
 
     $block = array(
       'subject' => t('About Us'),
@@ -59,15 +59,14 @@ function footer_blks_block_view($block_name = '') {
 	  
     global $base_url ; 
   
-    $content = "<div class=\"content clearfix\">
-      <ul class=\"menu\"><li class=\"first leaf\"><a href=\"$base_url/ask-us\" title=\"Ask Us\">Ask Us</a></li>
-<li class=\"leaf\"><a href=\"$base_url/culture-pass\" title=\"Culture Pass\">Culture Pass</a></li>
-<li class=\"leaf\"><a href=\"$base_url/get-library-card\" title=\"Get a Library Card\">Get a Library Card</a></li>
-<li class=\"leaf\"><a href=\"$base_url/outreach-services\" title=\"Outreach Services\">Outreach Services</a></li>
-<li class=\"leaf\"><a href=\"$base_url/recursos-en-espa%C3%B1ol\" title=\"Recuroso en Espanol\">Recursos en Espa&ntilde;ol</a></li>
-<li class=\"leaf\"><a href=\"$base_url/reserve-computer\" title=\"Reserve a Computer\">Reserve a Computer</a></li>
-<li class=\"last leaf\"><a href=\"$base_url/wireless\" title=\"Wireless\">Wireless</a></li>
-</ul></div>";
+    $content = "<ul class=\"menu\"><li><a href=\"$base_url/ask-us\" title=\"Ask Us\">Ask Us</a></li>
+<li><a href=\"$base_url/culture-pass\" title=\"Culture Pass\">Culture Pass</a></li>
+<li><a href=\"$base_url/get-library-card\" title=\"Get a Library Card\">Get a Library Card</a></li>
+<li><a href=\"$base_url/outreach-services\" title=\"Outreach Services\">Outreach Services</a></li>
+<li><a href=\"$base_url/recursos-en-espa%C3%B1ol\" title=\"Recuroso en Espanol\">Recursos en Espa&ntilde;ol</a></li>
+<li><a href=\"$base_url/reserve-computer\" title=\"Reserve a Computer\">Reserve a Computer</a></li>
+<li><a href=\"$base_url/wireless\" title=\"Wireless\">Wireless</a></li>
+</ul>";
 
     $block = array(
       'subject' => t('Services'),
@@ -81,14 +80,13 @@ function footer_blks_block_view($block_name = '') {
   
     global $base_url ; 
 
-    $content = "<div class=\"content clearfix\">
-      <ul class=\"menu\"><li class=\"first leaf\"><a href=\"$base_url/community-partners\" title=\"Community Partners\">Community Partners</a></li>
-<li class=\"leaf\"><a href=\"$base_url/directors-blog\" title=\"Directors Blog\">Director&#039;s Blog</a></li>
-<li class=\"leaf\"><a href=\"http://jeffcolibraryfoundation.org\" title=\"Donate\">Donate</a></li>
-<li class=\"leaf\"><a href=\"http://jeffcolibraryfoundation.org\" title=\"Foundation and Friends\">Foundation &amp; Friends</a></li>
-<li class=\"leaf\"><a href=\"$base_url/request-speaker\" title=\"Request a Speaker\">Request a Speaker</a></li>
-<li class=\"last leaf\"><a href=\"$base_url/volunteer\" title=\"Volunteer\">Volunteer</a></li>
-</ul></div>";
+    $content = "<ul class=\"menu\"><li><a href=\"$base_url/community-partners\" title=\"Community Partners\">Community Partners</a></li>
+<li><a href=\"$base_url/directors-blog\" title=\"Directors Blog\">Director&#039;s Blog</a></li>
+<li><a href=\"http://jeffcolibraryfoundation.org\" title=\"Donate\">Donate</a></li>
+<li><a href=\"http://jeffcolibraryfoundation.org\" title=\"Foundation and Friends\">Foundation &amp; Friends</a></li>
+<li><a href=\"$base_url/request-speaker\" title=\"Request a Speaker\">Request a Speaker</a></li>
+<li><a href=\"$base_url/volunteer\" title=\"Volunteer\">Volunteer</a></li>
+</ul>";
 
     $block = array(
       'subject' => t('Support the Library'),
