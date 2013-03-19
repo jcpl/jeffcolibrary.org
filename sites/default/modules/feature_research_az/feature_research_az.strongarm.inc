@@ -104,6 +104,47 @@ function feature_research_az_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_taxonomy_term__database_subjects';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(),
+      'display' => array(
+        'description' => array(
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
+    ),
+  );
+  $export['field_bundle_settings_taxonomy_term__database_subjects'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_label_subscription_database';
+  $strongarm->value = 'Content limited to @limit characters, remaining: <strong>@remaining</strong>';
+  $export['maxlength_js_label_subscription_database'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'maxlength_js_subscription_database';
+  $strongarm->value = '';
+  $export['maxlength_js_subscription_database'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_subscription_database';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -139,6 +180,27 @@ function feature_research_az_strongarm() {
   $strongarm->name = 'node_submitted_subscription_database';
   $strongarm->value = 0;
   $export['node_submitted_subscription_database'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_subscription_database_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_subscription_database_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_database_subjects_pattern';
+  $strongarm->value = 'research/databases/[term:name]';
+  $export['pathauto_taxonomy_term_database_subjects_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'save_continue_subscription_database';
+  $strongarm->value = 'Save and add fields';
+  $export['save_continue_subscription_database'] = $strongarm;
 
   return $export;
 }
