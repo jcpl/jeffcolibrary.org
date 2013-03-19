@@ -146,9 +146,7 @@ function feature_research_az_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_subscription_database';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_subscription_database'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -185,14 +183,14 @@ function feature_research_az_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_subscription_database_pattern';
-  $strongarm->value = '';
+  $strongarm->value = 'research/research-A-Z/connect/[node:title]';
   $export['pathauto_node_subscription_database_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_database_subjects_pattern';
-  $strongarm->value = 'research/databases/[term:name]';
+  $strongarm->value = 'research/research-A-Z/[term:name]';
   $export['pathauto_taxonomy_term_database_subjects_pattern'] = $strongarm;
 
   $strongarm = new stdClass();

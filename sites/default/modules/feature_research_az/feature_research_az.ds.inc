@@ -20,12 +20,12 @@ function feature_research_az_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_database_link',
+        0 => 'title',
         1 => 'body',
       ),
     ),
     'fields' => array(
-      'field_database_link' => 'ds_content',
+      'title' => 'ds_content',
       'body' => 'ds_content',
     ),
     'classes' => array(),
@@ -48,12 +48,12 @@ function feature_research_az_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_database_link',
+        0 => 'title',
         1 => 'body',
       ),
     ),
     'fields' => array(
-      'field_database_link' => 'ds_content',
+      'title' => 'ds_content',
       'body' => 'ds_content',
     ),
     'classes' => array(),

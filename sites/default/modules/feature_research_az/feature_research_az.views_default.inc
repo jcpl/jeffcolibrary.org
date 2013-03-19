@@ -33,51 +33,13 @@ function feature_research_az_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Database link */
-  $handler->display->display_options['fields']['field_database_link']['id'] = 'field_database_link';
-  $handler->display->display_options['fields']['field_database_link']['table'] = 'field_data_field_database_link';
-  $handler->display->display_options['fields']['field_database_link']['field'] = 'field_database_link';
-  $handler->display->display_options['fields']['field_database_link']['label'] = '';
-  $handler->display->display_options['fields']['field_database_link']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_database_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_database_link']['click_sort_column'] = 'url';
-  $handler->display->display_options['fields']['field_database_link']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['path'] = '[field_database_link]';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Database link */
-  $handler->display->display_options['fields']['field_database_link_1']['id'] = 'field_database_link_1';
-  $handler->display->display_options['fields']['field_database_link_1']['table'] = 'field_data_field_database_link';
-  $handler->display->display_options['fields']['field_database_link_1']['field'] = 'field_database_link';
-  $handler->display->display_options['fields']['field_database_link_1']['label'] = '';
-  $handler->display->display_options['fields']['field_database_link_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_database_link_1']['click_sort_column'] = 'url';
-  $handler->display->display_options['fields']['field_database_link_1']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
