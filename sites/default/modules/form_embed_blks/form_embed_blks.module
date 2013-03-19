@@ -74,7 +74,7 @@ function form_embed_blks_block_view($block_name = '') {
 	 
    if ($block_name == 'ill_request') {
     $block = array(
-      'subject' => t('Request an Interlibrary Loan'),
+      'subject' => t(''),
       'content' => theme('jcpl_ill_request'),
     );
 	
@@ -83,7 +83,7 @@ function form_embed_blks_block_view($block_name = '') {
   
       if ($block_name == 'suggest_title') {
     $block = array(
-      'subject' => t('Suggest a Title'),
+      'subject' => t(''),
       'content' => theme('jcpl_suggest_title'),
     );
 	
@@ -92,7 +92,7 @@ function form_embed_blks_block_view($block_name = '') {
     
       if ($block_name == 'contact_us') {
     $block = array(
-      'subject' => t('Contact Us'),
+      'subject' => t(''),
       'content' => theme('jcpl_contact_us'),
     );
 	
@@ -101,7 +101,7 @@ function form_embed_blks_block_view($block_name = '') {
   
         if ($block_name == 'email_librarian') {
     $block = array(
-      'subject' => t('Email a Librarian'),
+      'subject' => t(''),
       'content' => theme('jcpl_email_librarian'),
     );
 	
