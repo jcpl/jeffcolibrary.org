@@ -170,3 +170,14 @@ function _scheduler_workbench_scheduler_pre_publish(&$node) {
     $node->workbench_moderation_state_new = $state;
   }
 }
+
+/**
+ * Handles when scheduler triggers publishing a node.
+ *
+ * @param stdClass $node
+ */
+function _scheduler_workbench_scheduler_publish(&$node){
+  if ($state = variable_get('scheduler_publish_moderation_state_' . $node->type, FALSE)) {
+    workbench_moderation_moderate($node, $state);
+  }
+}
