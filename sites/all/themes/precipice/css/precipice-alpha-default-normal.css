@@ -306,22 +306,21 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 /* Footer */
 
-.block-footer-blks ul li {
+.section-footer .block-footer-blks ul li {
 	list-style-type: none;	
 }
 
-.block-footer-blks a {
+.section-footer .block-footer-blks a {
 	text-decoration: none;
 	color: #F0F0F0;
 }
 
-.block-footer-blks h2 {
+.section-footer .block-footer-blks h2 {
 	color: #DBDBDB;
 }
 
 #region-footer-first, #region-footer-second, #region-footer-third, #region-footer-fourth {
 	background: #65679c;
-
 	height: 220px;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -337,7 +336,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 #region-footer-fifth {	
-margin-top: 6px;
+	margin-top: 6px;
 	height: 90px;
 	padding-top: 15px;
 	padding-left: 10px;
