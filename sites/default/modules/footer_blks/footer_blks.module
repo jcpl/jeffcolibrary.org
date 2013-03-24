@@ -174,11 +174,11 @@ function footer_blks_block_view($block_name = '') {
 	  
     global $base_url ; 
   
-    $content = '<ul>
-  <li><a href="http://ebook.3m.com/library/en/patrons">3M Cloud Library</a></li>
-  <li><a href="http://jefferson.lib.overdrive.com/BF57A2A0-4C60-405B-A765-5A82A21642C4/10/408/en/BANGSearch.dll?Type=Format&amp;ID=420,50,410,450,810%C2%A0">Overdrive</a></li>
-  <li><a href="http://0-search.ebscohost.com.sable.jefferson.lib.co.us/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=nlebk%C2%A0">EBSCO</a></li>
-</ul>';
+    $content = "<ul>
+  <li><a href=\"$base_url/board-of-trustees/interested-in-joining\">Interested in Joining?</a></li>
+  <li><a href=\"$base_url/board-of-trustees/responsibilities\">Responsibilities</a></li>
+  <li><a href=\"$base_url/board-of-trustees/ends-statement\">Ends Statement</a></li>
+</ul>";
 
     $block = array(
       'subject' => t('Join Our Board'),
