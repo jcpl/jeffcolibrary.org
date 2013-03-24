@@ -326,22 +326,22 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
     $content = '<h3>Find Ebooks</h3>
 <ul>
-  <li><a href="http://ebook.3m.com/library/en/patrons">3M Cloud Library</a></li>
-  <li><a href="http://jefferson.lib.overdrive.com/BF57A2A0-4C60-405B-A765-5A82A21642C4/10/408/en/BANGSearch.dll?Type=Format&amp;ID=420,50,410,450,810%C2%A0">Overdrive</a></li>
-  <li><a href="http://0-search.ebscohost.com.sable.jefferson.lib.co.us/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=nlebk%C2%A0">EBSCO</a></li>
+  <li><a href="$base_url/research/research-A-Z/connect/3m-cloud-library">3M Cloud Library</a></li>
+  <li><a href="$base_url/research/research-A-Z/connect/overdrive-ebooks">Overdrive</a></li>
+  <li><a href="$base_url/research/research-A-Z/connect/ebsco-ebook-collection">EBSCO</a></li>
 </ul>
 <h3>Find Audiobooks</h3>
 <ul>
-  <li><a href="http://0-jeffersoncoco.oneclickdigital.com.sable.jefferson.lib.co.us">OneClick Digital</a></li>
-  <li><a href="http://jefferson.lib.overdrive.com/BF57A2A0-4C60-405B-A765-5A82A21642C4/10/408/en/BANGSearch.dll?Type=Format&amp;ID=25,425">Overdrive</a></li>
+  <li><a href="$base_url/research/research-A-Z/connect/oneclick-digital">OneClick Digital</a></li>
+  <li><a href="$base_url/research/research-A-Z/connect/overdrive-audiobooks">Overdrive</a></li>
 </ul>
 <h3>Find Magazines</h3>
 <ul>
-  <li><a href="https://www.rbdigital.com/jeffersonco/zinio">Zinio</a></li>
+  <li><a href="$base_url/research/research-A-Z/connect/zinio">Zinio</a></li>
 </ul>
 <h3>Find Music</h3>
 <ul>
-  <li><a href="http://jefferson.lib.overdrive.com/BF57A2A0-4C60-405B-A765-5A82A21642C4/10/408/en/BANGSearch.dll?Type=Format&amp;ID=30">Overdrive</a></li>
+  <li><a href="$base_url/research/research-A-Z/connect/overdrive-music">Overdrive</a></li>
 </ul>
 ';
 
