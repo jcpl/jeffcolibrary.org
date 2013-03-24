@@ -1325,6 +1325,10 @@ table#hours td {
 	font-size: 1.2em;
 }
 
+.block-board-join ul {
+	list-style-type: none;
+	margin-left: 8px;
+}
 
 /* full nodes */
 
