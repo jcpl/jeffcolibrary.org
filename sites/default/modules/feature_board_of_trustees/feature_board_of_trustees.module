@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_board_of_trustees feature.
+ */
+
+include_once 'feature_board_of_trustees.features.inc';

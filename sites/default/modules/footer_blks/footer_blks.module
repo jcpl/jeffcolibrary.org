@@ -44,6 +44,15 @@ function footer_blks_block_info() {
     'region' => 'footer_fifth',
     );
 
+    $blocks['board_join'] = array(
+    'info' => t('Board of Trustees: Join our board.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+	'pages' => 'board-of-trustees',
+
+    );
+
 	return $blocks;
 }
 
@@ -156,6 +165,24 @@ function footer_blks_block_view($block_name = '') {
     $block = array(
 	'subject' => t(''),
 	'content' => $content,
+    );
+
+    return $block;
+  }
+  
+  if ($block_name == 'board_join') {
+	  
+    global $base_url ; 
+  
+    $content = "<ul>
+  <li><a href=\"$base_url/board-of-trustees/interested-in-joining\">Interested in Joining?</a></li>
+  <li><a href=\"$base_url/board-of-trustees/responsibilities\">Responsibilities</a></li>
+  <li><a href=\"$base_url/board-of-trustees/ends-statement\">Ends Statement</a></li>
+</ul>";
+
+    $block = array(
+      'subject' => t('Join Our Board'),
+      'content' => $content,
     );
 
     return $block;

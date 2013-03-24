@@ -306,22 +306,21 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 /* Footer */
 
-.block-footer-blks ul li {
+.section-footer .block-footer-blks ul li {
 	list-style-type: none;	
 }
 
-.block-footer-blks a {
+.section-footer .block-footer-blks a {
 	text-decoration: none;
 	color: #F0F0F0;
 }
 
-.block-footer-blks h2 {
+.section-footer .block-footer-blks h2 {
 	color: #DBDBDB;
 }
 
 #region-footer-first, #region-footer-second, #region-footer-third, #region-footer-fourth {
 	background: #65679c;
-
 	height: 220px;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -337,7 +336,7 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 #region-footer-fifth {	
-margin-top: 6px;
+	margin-top: 6px;
 	height: 90px;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -1293,6 +1292,62 @@ table#hours td {
 .block-events-by-topic p, .block-events-by-topic-kids p, .block-events-by-topic-teen p {
 	margin-left: 10px;
 }
+
+/* ----------------- Footer pages ---------------- */
+
+/* Board of Trustees */
+
+.views-field-field-board-member-photo {
+	float: left;
+	padding-right: 15px;
+}
+
+.views-field-field-board-office, .field-name-field-board-office {
+	font-style: italic;
+}
+
+.view-board-members td {
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.views-field-field-board-meeting-info-packet a, .views-field-field-board-meeting-minutes a {
+	font-size: .9em;
+}
+
+.view-board-meetings table {
+	width: 940px;
+	margin-top: 10px;
+}
+
+.view-board-meetings th {
+	font-weight: 200;
+	font-size: 1.2em;
+}
+
+.block-board-join ul {
+	list-style-type: none;
+	margin-left: 8px;
+}
+
+/* full nodes */
+
+.field-name-field-board-member-photo {
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.field-name-field-board-member-term .field-label {
+	font-weight: normal;
+	margin-top: -13px;
+}
+
+.node-type-board-member .field-name-body {
+	margin-right: 300px;
+}
+
+/* Carl's rules for search forms */
 
 .jcpl-facet-form {
   clear: both;
