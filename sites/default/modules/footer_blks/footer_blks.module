@@ -177,7 +177,7 @@ function footer_blks_block_view($block_name = '') {
     global $base_url ; 
   
     $content = "<ul>
-  <li><a href=\"http://jeffco.us/bcc/bcc_T25_R20.htm\">Join Our Board</a></li>
+  <li><a href=\"http://jeffco.us/bcc/bcc_T25_R20.htm\">How to Join</a></li>
   <li><a href=\"$base_url/board-of-trustees/responsibilities\">Responsibilities</a></li>
   <li><a href=\"$base_url/board-of-trustees/ends-statement\">Ends Statement</a></li>
 </ul>";
