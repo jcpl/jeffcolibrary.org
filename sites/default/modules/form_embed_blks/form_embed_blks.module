@@ -72,7 +72,7 @@ $blocks['volunteer'] = array(
     'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => 'volunteer-now',
+    'pages' => 'volunteer/volunteer-now',
    );
          
 	return $blocks;
