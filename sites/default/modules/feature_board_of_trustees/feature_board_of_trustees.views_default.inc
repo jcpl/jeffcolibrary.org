@@ -36,7 +36,7 @@ function feature_board_of_trustees_views_default_views() {
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'blog',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -56,6 +56,23 @@ function feature_board_of_trustees_views_default_views() {
   $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
   $handler->display->display_options['fields']['field_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_location']['settings'] = array(
+    'linked_field' => array(
+      'linked' => 0,
+      'destination' => '',
+      'title' => '',
+      'target' => '',
+      'rel' => '',
+      'text' => '',
+    ),
+  );
+  /* Field: Content: Notice */
+  $handler->display->display_options['fields']['field_board_meeting_notice']['id'] = 'field_board_meeting_notice';
+  $handler->display->display_options['fields']['field_board_meeting_notice']['table'] = 'field_data_field_board_meeting_notice';
+  $handler->display->display_options['fields']['field_board_meeting_notice']['field'] = 'field_board_meeting_notice';
+  $handler->display->display_options['fields']['field_board_meeting_notice']['label'] = 'Notice (Agenda)';
+  $handler->display->display_options['fields']['field_board_meeting_notice']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_board_meeting_notice']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_board_meeting_notice']['settings'] = array(
     'linked_field' => array(
       'linked' => 0,
       'destination' => '',

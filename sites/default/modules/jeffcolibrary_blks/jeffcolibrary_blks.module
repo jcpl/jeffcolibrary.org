@@ -269,6 +269,14 @@ function jeffcolibrary_blks_block_info() {
     'pages' => '<front>',
     );
 
+  $blocks['researchAZ_door'] = array(
+    'info' => t('Research: Research A-Z front door.'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'research',
+    );
+
   return $blocks;
 }
 
@@ -609,7 +617,20 @@ if ($block_name == 'locations_services') {
     );
 
     return $block;
+  }
+
+  if ($block_name == 'researchAZ_door') {
+  
+    $content = '<a href=/research/research-A-Z/a>A</a></span> | <span class="result"><a href=/research/research-A-Z/b>B</a></span> | <span class="result"><a href=/research/research-A-Z/c>C</a></span> | <span class="result"><a href=/research/research-A-Z/d>D</a></span> | <span class="result"><a href=/research/research-A-Z/e>E</a></span> | <span class="result"><a href=/research/research-A-Z/f>F</a></span> | <span class="result"><a href=/research/research-A-Z/g>G</a></span> | <span class="result"><a href=/research/research-A-Z/h>H</a></span> | <span class="result"><a href=/research/research-A-Z/i>I</a></span> | <span class="result"><a href=/research/research-A-Z/j>J</a></span> | <span class="result"><a href=/research/research-A-Z/k>K</a></span> | <span class="result"><a href=/research/research-A-Z/l>L</a></span> | <span class="result"><a href=/research/research-A-Z/m>M</a></span> | <span class="result"><a href=/research/research-A-Z/n>N</a></span> | <span class="result"><a href=/research/research-A-Z/o>O</a></span> | <span class="result"><a href=/research/research-A-Z/p>P</a></span> | <span class="no-result">Q</span> | <span class="result"><a href=/research/research-A-Z/r>R</a></span> | <span class="result"><a href=/research/research-A-Z/s>S</a></span> | <span class="result"><a href=/research/research-A-Z/t>T</a></span> | <span class="result"><a href=/research/research-A-Z/u>U</a></span> | <span class="no-result">V</span> | <span class="result"><a href=/research/research-A-Z/w>W</a></span> | <span class="no-result">X</span> | <span class="no-result">Y</span> | <span class="result"><a href=/research/research-A-Z/z>Z</a></span> | <span class="result"><a href=/research/research-A-Z/all>All</a>';
+
+    $block = array(
+      'subject' => t('Research A-Z'),
+      'content' => $content,
+    );
+
+    return $block;
   }  
+
 
 }
 
