@@ -13,9 +13,24 @@ body {
 	background-position: center 0;
 }
 
+/* homepage cleanup */
+
+.block-encore-search a {
+	text-decoration: none;	
+}
+
+.block-locations-homepage a {
+	text-decoration: none;	
+}
+
+#findloclinks a {
+	text-decoration: none;	
+}
+
 #zone-content {
 	background-color:#FFF;
-	border-left-style: solid;
+	padding-bottom: 10px;
+/*	border-left-style: solid;
 	border-left-width: 2px;
 	border-left-color: #f6f6f6;
 	border-right-style: solid;
@@ -26,11 +41,7 @@ body {
 	border-bottom-color: #f2f5f9;
 	padding-bottom: 20px;
 	padding-top: 10px; 
-}
-
-.front #zone-content {
-	padding-bottom: 2px;
-}
+*/}
 
 .region-sidebar-second {
 	padding-top: 35px;
@@ -67,7 +78,7 @@ body {
 /* Main Menu */
 
 #zone-menu {
-	background-color:#edf5f5;
+	/*background-color:#edf5f5;
 	padding-bottom: 7px;
 	border-top-width: 2px;
 	border-top-style: solid;
@@ -81,11 +92,30 @@ body {
 	border-right-color: #f1f4f4;
 	border-bottom-width:3px;
 	border-bottom-style: solid;
-	border-bottom-color: #f5f5f5;/* #f4fcfc;*/
+	border-bottom-color: #f5f5f5;*//* #f4fcfc;*/
+	
+	background-color: #fff;
+	padding-top: 5px;
+	padding-bottom: 15px;
 }
 
 #region-menu {
-	margin-top: 4px;
+	width: 960px;
+	margin-left: -1px;
+/*	padding-top: 10px;
+*/	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCC;
+	border-bottom-color: #CCC;
+	background-color:#edf5f5;/*	margin-top: 4px;
+*/
+	
+}
+
+#region-menu ul {
+	margin-left: 10px;
 }
 
 #main-menu a {
@@ -104,7 +134,6 @@ nav.navigation {
 #block-kids-teen-blks-mainmenu-images {
 	display: inline-table;
 	vertical-align:middle;
-	margin-top: -12px;
 }
 
 #block-kids-teen-blks-mainmenu-images a {
@@ -157,8 +186,9 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 #block-menu-menu-kids {
 	float: right;
-	width: 100%;
+	width: 925px;
 	margin-bottom: -15px;
+	margin-right: 15px;
 	background-color: #dc5a60;
 }
 
@@ -185,8 +215,9 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 
 #block-menu-menu-teen {
 	float: right;
-	width: 100%;
+	width: 925px;
 	margin-bottom: -15px;
+	margin-right: 15px;
 	background-color: #acb672;
 }
 
