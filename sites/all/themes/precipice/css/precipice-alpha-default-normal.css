@@ -462,6 +462,10 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 
 /* All new arrivals listing pages */
 
+.node-type-media-type .view-new-arrivals .views-field-description span {
+	padding-top: 10px;
+}
+
 .node-type-media-type .view-new-arrivals .views-field img {
 	float: left;
 	margin-right: 20px;
@@ -479,16 +483,17 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	border-bottom-color:#CCC;
 }
 
-.view-new-arrivals .views-field-description span {
+.page-books-movies-music-new-arrivals .view-new-arrivals .views-field-description span {
 	padding-top: 10px;
 }
-.view-new-arrivals .views-field img {
+
+.page-books-movies-music-new-arrivals .view-new-arrivals .views-field img {
 	float: left;
 	margin-right: 20px;
 	margin-top: 10px;
 }
 
-.view-new-arrivals .views-row {
+.page-books-movies-music-new-arrivals .view-new-arrivals .views-row {
 	clear: left;
 	width: 620px;
 	min-height: 130px;
@@ -499,9 +504,7 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	border-bottom-color:#CCC;
 }
 
-.view-new-arrivals .views-field-description span {
-	padding-top: 10px;
-}
+
 
 /* Staff picks on new arrivals listing pages */
 
