@@ -172,7 +172,7 @@ nav.navigation {
 
 li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 	padding-left: 8px;
-	padding-right: 10px;
+	padding-right: 11px;
 	margin-top: 5px;
 	margin-bottom:5px;
 }
