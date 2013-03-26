@@ -479,7 +479,27 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	border-bottom-color:#CCC;
 }
 
-.node-type-media-type .view-new-arrivals .views-field-description span {
+.view-new-arrivals .views-field-description span {
+	padding-top: 10px;
+}
+.view-new-arrivals .views-field img {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.view-new-arrivals .views-row {
+	clear: left;
+	width: 620px;
+	min-height: 130px;
+	margin-right: 320px;
+	padding-top: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.view-new-arrivals .views-field-description span {
 	padding-top: 10px;
 }
 
