@@ -302,7 +302,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
       <input name="target" value="" id="target" size="36" type="text">
       <input type="submit" value="Search"/>
       </div>' . 
-      "<a href=\"http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=cobalt&advancedSearch=true&searchString=\">Advanced search</a> | 
+      "<a href=\"http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=cobalt&advancedSearch=true&searchString=\">Advanced search</a>&nbsp; | &nbsp; 
 	  <a href=\"$base_url/books-movies-music/didnt-find-it\">Didn&#039;t find it?</a>
       </form>";
 

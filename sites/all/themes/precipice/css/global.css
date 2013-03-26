@@ -25,9 +25,9 @@
 }
 
 #main-menu li {
-	border-right-width: 2px;
+	border-right-width: 1px;
 	border-right-style: solid;
-	border-right-color: #000;
+	border-right-color: #CCC;
 }
 
 .context-books-movies-music #main-menu .first a { /*BOOKS MOVIES MUSIC*/
