@@ -54,25 +54,21 @@ body {
 }
 
 .block-locations-homepage table {
-	margin-bottom: 15px;
+	margin-bottom: 23px;
 }
 
 .front .block-jeffcolibrary-blks h2 {
-	padding-bottom: 0px;
+	padding-bottom: 2px;
 }
 
 .block-locations-homepage td {
-	padding-bottom: 3px;
-	padding-top: 3px;
+	padding-bottom: 5px;
+	padding-top: 4px;
 }
 
-#findloclinks {
-	padding-bottom: 11px;
-	padding-top: 2px;
-}
-
-#findloclinks, #findlocmap {
+#findlocmap {
 	padding-left: 8px;
+	padding-top: 10px;
 }
 
 /* Main Menu */
@@ -101,7 +97,7 @@ body {
 
 #region-menu {
 	width: 960px;
-	margin-left: -1px;
+	margin-left: 0px;
 /*	padding-top: 10px;
 */	border-top-width: 1px;
 	border-bottom-width: 1px;
@@ -143,6 +139,9 @@ nav.navigation {
 
 
 /* Global Nav */
+#region-globalnav {
+	padding-top: 5px;
+}
 
 .block-menu-menu-global-nav a {
 	text-decoration: none;
@@ -150,20 +149,33 @@ nav.navigation {
 
 .block-menu-menu-global-nav {
 	float: right;
-	margin-bottom: -15px;
 }
 
-.front .block-menu-menu-global-nav {
-	margin-bottom: -30px;
+/*.front .block-menu-menu-global-nav {
+	margin-bottom: -50px;
 }
-
+*/
 .block-menu-menu-global-nav li {
 	display: inline-table;
 	vertical-align:middle;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #000;
+}
+
+.block-menu-menu-global-nav li.last {
+	border-right: none;
 }
 
 li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
-	padding: 0.2em 0 0 0;
+	padding-left: 8px;
+	padding-right: 10px;
+	margin-top: 5px;
+	margin-bottom:5px;
+}
+
+.block-menu-menu-global-nav ul.menu li {
+	margin-left: 0px;
 }
 
 /* Kids sub nav */
@@ -229,9 +241,9 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 
-/* Front Page Header */
+/* Front Page Header - larger header is disabled because of spacing display issues on older monitors in the library locations */
  
-.front #zone-branding-wrapper {
+/*.front #zone-branding-wrapper {
 	background-image:url(../../../../default/files/head_foot/header.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -245,22 +257,25 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 .front #region-search {
 	margin-top:200px;
 }
+*/
 
 /* Secondary Pages Header */
 
 #zone-branding-wrapper {
-	background-image:url(../../../../default/files/head_foot/sm-header.png);
+	background-image:url(../../../../default/files/head_foot/header_bg.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
-	height: 220px;
+	margin-top: 5px;
+	padding-top: 0px;
+	height: 201px;
 }
 
 #region-branding {
-	margin-top:92px;
+	margin-top:72px;
 }
 
 #region-search {
-	margin-top:120px;
+	margin-top:100px;
 }
 
 /* Omnipresent Searchbox */
@@ -268,8 +283,13 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 #quicktabs-container-tabbed_header_searchbox {
 	background-color: #FFF;
 	padding: 10px;
+	margin-right: 10px;
 	margin-top: -10px;
 	height: 45px;
+}
+
+ul.quicktabs-tabs.quicktabs-style-zen {
+	margin-right: 10px;
 }
 
 #encore_searchform {
@@ -319,18 +339,19 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 #zone-hpbookjackets {
 	background-color:#EAEAEA;
 	width: 960px;
-	margin-top: 6px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	border-top-style: solid;	
-	border-top-width: 3px;
-	border-top-color: #f0f0f0;
+	border-top-width: 1px;
+	border-top-color: #ccc;
 	border-left-style: solid;
-	border-left-width: 2px;
-	border-left-color: #f0f0f0;
+	border-left-width: 1px;
+	border-left-color: #ccc;
 	border-right-style: solid;
-	border-right-width: 3px;
+	border-right-width: 1px;
 	border-right-color: #ccc;
 	border-bottom-style: solid;	
-	border-bottom-width: 3px;
+	border-bottom-width: 1px;
 	border-bottom-color: #ccc;
 
 }
@@ -358,7 +379,6 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 	padding-right: 10px;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 6px;
 }
 
 #region-footer-first {
@@ -367,7 +387,6 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 #region-footer-fifth {	
-	margin-top: 6px;
 	height: 90px;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -399,9 +418,13 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 }
 
 #block-footer-blks-footer-connect #social_media_icons img {
-	padding-right: 7px;
+	padding-right: 10px;
 	padding-top: 5px;
 	padding-bottom: 9px;
+}
+
+#block-footer-blks-footer-connect #social_media_icons {
+	padding-left: 8px;
 }
 
 #block-footer-blks-footer-connect #textfield {
