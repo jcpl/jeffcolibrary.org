@@ -17,18 +17,13 @@ function feature_blog_libnews_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'library_news';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
     'links' => array(
-      'weight' => '5',
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'post_date' => array(
-      'weight' => '1',
+      'weight' => '0',
       'label' => 'hidden',
       'format' => 'ds_post_date_blog',
     ),
@@ -79,23 +74,17 @@ function feature_blog_libnews_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'post_date',
-        2 => 'field_blog_author',
-        3 => 'field_blog_post',
-        4 => 'field_locations_tag',
-        5 => 'links',
-        6 => 'field_library_news_tag',
+        0 => 'post_date',
+        1 => 'field_blog_author',
+        2 => 'field_blog_post',
+        3 => 'links',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
       'post_date' => 'ds_content',
       'field_blog_author' => 'ds_content',
       'field_blog_post' => 'ds_content',
-      'field_locations_tag' => 'ds_content',
       'links' => 'ds_content',
-      'field_library_news_tag' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
