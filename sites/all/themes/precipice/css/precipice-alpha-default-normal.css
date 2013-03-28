@@ -130,7 +130,8 @@ nav.navigation {
 }
 
 .block-menu-menu-global-nav li {
-	display: inline-table;
+	list-style-type: none;
+	display: inline;
 	vertical-align:middle;
 	border-right-width: 1px;
 	border-right-style: solid;
@@ -143,9 +144,7 @@ nav.navigation {
 
 li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 	padding-left: 8px;
-	padding-right: 11px;
-	margin-top: 5px;
-	margin-bottom:5px;
+	padding-right: 12px;
 }
 
 .block-menu-menu-global-nav ul.menu li {
