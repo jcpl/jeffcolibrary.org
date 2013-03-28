@@ -1407,6 +1407,29 @@ table#hours td {
 	display:inline-table;
 }
 
+/* Press Room */
+
+.page-press-room-press-releases .view-display-id-page .views-row {
+	margin-top: 25px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color:#CCC;
+}
+
+.page-press-room-press-releases .view-display-id-page .views-row-first {
+	border-top-style:none;
+	margin-top: 0px;
+}
+
+.page-press-room-press-releases .field-name-post-date, .node-press-release .field-name-post-date {
+	padding-bottom: 20px;
+}
+
+.page-press-room-press-releases h2 {
+	margin-bottom: 7px;
+}
+
+
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {
