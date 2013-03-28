@@ -1435,7 +1435,25 @@ table#hours td {
 	margin-bottom: 7px;
 }
 
+.media_contact {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 5px;	
+}
 
+#quicktabs-reporter_resources {
+	margin-top: 7px;
+}
+
+#quicktabs-reporter_resources .quicktabs-tabpage {
+	padding-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+}
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {
