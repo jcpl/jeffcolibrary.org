@@ -101,7 +101,7 @@ nav.navigation {
 }
 
 #block-kids-teen-blks-mainmenu-images {
-	display: inline-table;
+	display: inline-block;
 	vertical-align:middle;
 }
 
