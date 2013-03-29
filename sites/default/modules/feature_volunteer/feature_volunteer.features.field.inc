@@ -182,7 +182,7 @@ function feature_volunteer_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'media',
+        'module' => 'image',
         'settings' => array(
           'allowed_schemes' => array(
             'public' => 'public',
@@ -195,9 +195,10 @@ function feature_volunteer_field_default_fields() {
             'video' => 0,
           ),
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'media_generic',
+        'type' => 'image_image',
         'weight' => '1',
       ),
     ),
