@@ -31,8 +31,8 @@ function feature_board_of_trustees_node_info() {
       'base' => 'node_content',
       'description' => t('Meetings and study sessions of the JCPL Board of Trustees.'),
       'has_title' => '1',
-      'title_label' => t('Meeting Name'),
-      'help' => '',
+      'title_label' => t('Admin Title'),
+      'help' => t('Month and year of the meeting (Jan 2013).'),
     ),
     'board_member' => array(
       'name' => t('Board Member'),
