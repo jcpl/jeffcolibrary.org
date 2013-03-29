@@ -50,7 +50,14 @@ function footer_blks_block_info() {
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
 	'pages' => 'board-of-trustees',
+    );
 
+    $blocks['media_contacts'] = array(
+    'info' => t('Press Room: Media Contacts.'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+	'pages' => 'press-room',
     );
 
 	return $blocks;
@@ -184,6 +191,22 @@ function footer_blks_block_view($block_name = '') {
 
     $block = array(
       'subject' => t('Join Our Board'),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+
+  if ($block_name == 'media_contacts') {
+	  
+    global $base_url ; 
+  
+    $content = "<div class=\"media_contact\"><a href=\"mailto:rebecca.winning@jeffcolibrary.org\">Rebecca Winning</a><br />Associate Director, Communications &amp; Public Engagement<br />303-275-2203</div>
+	<div class=\"media_contact\"><a href=\"mailto:bethany.frisbie@jeffcolibrary.org\">Bethany Frisbie</a><br />Promotions &amp; Marketing Manager<br />303-275-2234</div>
+	<a href=\"$base_url/contact\">Contact Us</a>";
+
+    $block = array(
+      'subject' => t('Media Contacts'),
       'content' => $content,
     );
 

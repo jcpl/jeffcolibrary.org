@@ -29,10 +29,16 @@ body {
 
 #zone-content {
 	background-color:#FFF;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
+	margin-bottom: 15px;
 	border-bottom-style: solid;	
 	border-bottom-width: 1px;
 	border-bottom-color:#e4e4e4; 
+}
+
+.front #zone-content {
+	padding-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 .region-sidebar-second {
@@ -101,7 +107,7 @@ nav.navigation {
 }
 
 #block-kids-teen-blks-mainmenu-images {
-	display: inline-table;
+	display: inline-block;
 	vertical-align:middle;
 }
 
@@ -1359,7 +1365,7 @@ table#hours td {
 
 .view-board-members td {
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 }
 
 .views-field-field-board-meeting-info-packet a, .views-field-field-board-meeting-minutes a {
@@ -1406,6 +1412,54 @@ table#hours td {
 	display:inline-table;
 }
 
+/* Press Room */
+
+.page-press-room-press-releases .view-display-id-page .views-row {
+	margin-top: 25px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color:#CCC;
+}
+
+.page-press-room-press-releases .view-display-id-page .views-row-first {
+	border-top-style:none;
+	margin-top: 0px;
+}
+
+.page-press-room-press-releases .field-name-post-date, .node-press-release .field-name-post-date {
+	padding-bottom: 20px;
+}
+
+.page-press-room-press-releases h2 {
+	margin-bottom: 7px;
+}
+
+.media_contact {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	padding-bottom: 5px;	
+}
+
+#quicktabs-reporter_resources {
+	margin-top: 7px;
+}
+
+#quicktabs-reporter_resources .quicktabs-tabpage {
+	padding-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+}
+
+/* Leadership & Mission */
+
+.context-leadership-mission .views-field-field-email-link {
+	font-size: .8em;
+}
+	
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {

@@ -991,34 +991,21 @@ function feature_board_of_trustees_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-board_member-field_email'.
-  $fields['node-board_member-field_email'] = array(
+  // Exported field: 'node-board_member-field_email_link'.
+  $fields['node-board_member-field_email_link'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_email',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
+      'field_name' => 'field_email_link',
+      'foreign keys' => array(),
+      'indexes' => array(),
       'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
+      'module' => 'email',
+      'settings' => array(),
       'translatable' => '0',
-      'type' => 'text',
+      'type' => 'email',
     ),
     'field_instance' => array(
       'bundle' => 'board_member',
@@ -1028,7 +1015,7 @@ function feature_board_of_trustees_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
+          'module' => 'email',
           'settings' => array(
             'linked_field' => array(
               'destination' => '',
@@ -1039,12 +1026,12 @@ function feature_board_of_trustees_field_default_fields() {
               'title' => '',
             ),
           ),
-          'type' => 'text_default',
-          'weight' => '3',
+          'type' => 'email_default',
+          'weight' => 7,
         ),
         'full' => array(
           'label' => 'hidden',
-          'module' => 'text',
+          'module' => 'email',
           'settings' => array(
             'linked_field' => array(
               'destination' => '',
@@ -1055,33 +1042,25 @@ function feature_board_of_trustees_field_default_fields() {
               'title' => '',
             ),
           ),
-          'type' => 'text_default',
+          'type' => 'email_default',
           'weight' => '3',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '11',
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_email',
-      'label' => 'Email',
+      'field_name' => 'field_email_link',
+      'label' => 'Email Link',
       'required' => 1,
       'settings' => array(
-        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'text',
+        'module' => 'email',
         'settings' => array(
-          'maxlength_js' => 0,
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'size' => '60',
         ),
-        'type' => 'text_textfield',
+        'type' => 'email_textfield',
         'weight' => '4',
       ),
     ),
@@ -1188,7 +1167,7 @@ function feature_board_of_trustees_field_default_fields() {
   t('Bio');
   t('Board Office');
   t('Date & Time');
-  t('Email');
+  t('Email Link');
   t('Information Packet');
   t('Location');
   t('Meeting Type');

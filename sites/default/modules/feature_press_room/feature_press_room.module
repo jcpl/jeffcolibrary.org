@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_press_room feature.
+ */
+
+include_once 'feature_press_room.features.inc';

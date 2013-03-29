@@ -28,14 +28,14 @@ function feature_board_of_trustees_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_board_meeting';
-  $strongarm->value = '0';
+  $strongarm->value = '2';
   $export['comment_board_meeting'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_board_member';
-  $strongarm->value = '0';
+  $strongarm->value = '2';
   $export['comment_board_member'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -217,6 +217,7 @@ function feature_board_of_trustees_strongarm() {
   $strongarm->name = 'node_options_board_member';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_board_member'] = $strongarm;
 
@@ -224,28 +225,28 @@ function feature_board_of_trustees_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_board_meeting';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_board_meeting'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_board_member';
-  $strongarm->value = '1';
+  $strongarm->value = '2';
   $export['node_preview_board_member'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_board_meeting';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['node_submitted_board_meeting'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_board_member';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['node_submitted_board_member'] = $strongarm;
 
   return $export;

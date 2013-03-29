@@ -36,7 +36,7 @@ function feature_board_of_trustees_views_default_views() {
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['settings'] = array(
-    'format_type' => 'blog',
+    'format_type' => 'short',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -56,23 +56,6 @@ function feature_board_of_trustees_views_default_views() {
   $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
   $handler->display->display_options['fields']['field_location']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_location']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
-  /* Field: Content: Notice */
-  $handler->display->display_options['fields']['field_board_meeting_notice']['id'] = 'field_board_meeting_notice';
-  $handler->display->display_options['fields']['field_board_meeting_notice']['table'] = 'field_data_field_board_meeting_notice';
-  $handler->display->display_options['fields']['field_board_meeting_notice']['field'] = 'field_board_meeting_notice';
-  $handler->display->display_options['fields']['field_board_meeting_notice']['label'] = 'Notice (Agenda)';
-  $handler->display->display_options['fields']['field_board_meeting_notice']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_board_meeting_notice']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_board_meeting_notice']['settings'] = array(
     'linked_field' => array(
       'linked' => 0,
       'destination' => '',
@@ -148,54 +131,12 @@ function feature_board_of_trustees_views_default_views() {
 
   /* Display: Block: Board Meetings */
   $handler = $view->new_display('block', 'Block: Board Meetings', 'block');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Board Meetings';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['block_description'] = 'Board of Trustees: Board Meetings';
 
   /* Display: Block: Study Sessions */
   $handler = $view->new_display('block', 'Block: Study Sessions', 'block_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Date & Time */
-  $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
-  $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
-  $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
-  $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_date']['settings'] = array(
-    'format_type' => 'short',
-    'fromto' => 'both',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
-  /* Field: Content: Location */
-  $handler->display->display_options['fields']['field_location']['id'] = 'field_location';
-  $handler->display->display_options['fields']['field_location']['table'] = 'field_data_field_location';
-  $handler->display->display_options['fields']['field_location']['field'] = 'field_location';
-  $handler->display->display_options['fields']['field_location']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_location']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
-  /* Field: Content: Notes */
-  $handler->display->display_options['fields']['field_notes']['id'] = 'field_notes';
-  $handler->display->display_options['fields']['field_notes']['table'] = 'field_data_field_notes';
-  $handler->display->display_options['fields']['field_notes']['field'] = 'field_notes';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
