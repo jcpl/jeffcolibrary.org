@@ -1459,7 +1459,34 @@ table#hours td {
 .context-leadership-mission .views-field-field-email-link {
 	font-size: .8em;
 }
-	
+
+/* Library News */
+
+.block-lib-news-blog-page-block, .block-views-event-highlights-block-11 {
+	width: 300px;
+	display: inline-block;
+}
+
+.block-lib-news-blog-page-block .views-row, .block-views-event-highlights-block-11 .views-row {
+	clear: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	padding-bottom: 15px;
+}
+
+.block-lib-news-blog-page-block .views-field-field-blog-image, .block-views-event-highlights-block-11 .views-field-field-blog-image {
+	padding-bottom: 5px;
+}
+
+.block-lib-news-blog-page-block .views-field-field-blog-post, .block-views-event-highlights-block-11 .views-field-field-blog-post {
+	float: none;
+	width: 300px;
+	padding-top: 5px;
+}
+
+.block-views-event-highlights-block-11 {
+	float: right;
+}
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {

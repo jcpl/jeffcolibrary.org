@@ -76,6 +76,7 @@ function footer_blks_block_view($block_name = '') {
     $content = "<ul class=\"menu\"><li><a href=\"$base_url/board-of-trustees\" title=\"Board of Trustees\">Board of Trustees</a></li>
 <li><a href=\"$base_url/jobs\" title=\"Jobs\">Jobs</a></li>
 <li><a href=\"$base_url/leadership-mission\" title=\"Leadership and Mission\">Leadership &amp; Mission</a></li>
+<li><a href=\"$base_url/library-news\" title=\"Library News\">Library News</a></li>
 <li><a href=\"$base_url/planning-budget\" title=\"Planning and Budget\">Planning &amp; Budget</a></li>
 <li><a href=\"$base_url/policies\" title=\"Policies\">Policies</a></li>
 <li><a href=\"$base_url/press-room\" title=\"Press Room\">Press Room</a></li>
