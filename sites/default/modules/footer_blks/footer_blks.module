@@ -202,7 +202,7 @@ function footer_blks_block_view($block_name = '') {
 	  
     global $base_url ; 
   
-    $content = "<div class=\"media_contact\"><a href=\"mailto:rebecca.winning@jeffcolibrary.org\">Rebecca Winning</a><br />Associate Director, Communications &amp; Public Engagement<br />303-275-2203</div>
+    $content = "<div class=\"media_contact\"><a href=\"mailto:rebecca.winning@jeffcolibrary.org\">Rebecca Winning</a><br />Director of Communications<br />303-275-2203</div>
 	<div class=\"media_contact\"><a href=\"mailto:bethany.frisbie@jeffcolibrary.org\">Bethany Frisbie</a><br />Promotions &amp; Marketing Manager<br />303-275-2234</div>
 	<a href=\"$base_url/contact\">Contact Us</a>";
 
