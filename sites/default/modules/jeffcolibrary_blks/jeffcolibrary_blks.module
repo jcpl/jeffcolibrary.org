@@ -341,15 +341,15 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 <h3>Find Audiobooks</h3>
 <ul>
   <li><a href=\"$base_url/research/research-A-Z/connect/oneclick-digital\">OneClick Digital</a></li>
-  <li><a href=\"$base_url/research/research-A-Z/conneict/overdrive-audiobooks\">Overdrive</a></li>
+  <li><a href=\"$base_url/research/research-A-Z/connect/overdrive-audiobooks\">Overdrive</a></li>
 </ul>
 <h3>Find Magazines</h3>
 <ul>
   <li><a href=\"$base_url/research/research-A-Z/connect/zinio\">Zinio</a></li>
-</ul>
+</ul>h
 <h3>Find Music</h3>
 <ul>
-  <li><a href=]\"$base_url/research/research-A-Z/connect/overdrive-music\">Overdrive</a></li>
+  <li><a href=\"$base_url/research/research-A-Z/connect/overdrive-music\">Overdrive</a></li>
 </ul>";
 
     $block = array(
