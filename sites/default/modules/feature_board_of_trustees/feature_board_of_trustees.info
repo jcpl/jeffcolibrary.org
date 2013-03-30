@@ -28,6 +28,7 @@ features[field][] = node-board_member-body
 features[field][] = node-board_member-field_board_member_photo
 features[field][] = node-board_member-field_board_member_term
 features[field][] = node-board_member-field_board_office
+features[field][] = node-board_member-field_email
 features[field][] = node-board_member-field_email_link
 features[field][] = node-board_member-field_phone
 features[node][] = board_meeting
