@@ -1487,6 +1487,36 @@ table#hours td {
 .block-views-event-highlights-block-11 {
 	float: right;
 }
+/* Library news Blog pages */
+
+.view-lib-news-blog-page .view-mode-full {
+	clear: left;
+}
+
+.node-library-news h2 {
+	margin-bottom: 0px;
+}
+
+.view-lib-news-blog-page .views-row {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.view-lib-news-blog-page .views-row-last {
+	border-bottom: none;
+}
+
+/* Library news blog taxonomy page */
+
+.page-taxonomy-term .node-library-news {
+	padding-bottom: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {
