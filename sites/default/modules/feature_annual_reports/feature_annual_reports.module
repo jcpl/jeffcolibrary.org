@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the feature_annual_reports feature.
+ */
+
+include_once 'feature_annual_reports.features.inc';
