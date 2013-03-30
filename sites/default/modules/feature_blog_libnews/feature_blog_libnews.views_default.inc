@@ -156,6 +156,7 @@ function feature_blog_libnews_views_default_views() {
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_text'] = 'read more...';
+  $handler->display->display_options['link_display'] = 'page_1';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -214,43 +215,6 @@ function feature_blog_libnews_views_default_views() {
     'library_news' => 'library_news',
   );
 
-  /* Display: Lib News blog Page */
-  $handler = $view->new_display('page', 'Lib News blog Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
-  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'read more...';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'ds';
-  $handler->display->display_options['row_options']['view_mode'] = 'full';
-  $handler->display->display_options['row_options']['load_comments'] = 0;
-  $handler->display->display_options['row_options']['alternating'] = 0;
-  $handler->display->display_options['row_options']['grouping'] = 0;
-  $handler->display->display_options['row_options']['advanced'] = 0;
-  $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
-  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
-  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'full';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Library news blog post content */
-  $handler->display->display_options['fields']['field_blog_post']['id'] = 'field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
-  $handler->display->display_options['path'] = 'library-news';
-
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
@@ -273,10 +237,10 @@ function feature_blog_libnews_views_default_views() {
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
-  $handler->display->display_options['use_more_text'] = 'more Books and Beyond blog posts...';
+  $handler->display->display_options['use_more_text'] = 'more Library News...';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -312,13 +276,13 @@ function feature_blog_libnews_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
   /* Field: Content: Library news blog post content */
   $handler->display->display_options['fields']['field_blog_post']['id'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '95';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -423,6 +387,43 @@ function feature_blog_libnews_views_default_views() {
   );
   $handler->display->display_options['filters']['field_format_tag_tid']['vocabulary'] = 'format';
   $handler->display->display_options['block_description'] = 'Books: staff picks teaser';
+
+  /* Display: Lib News blog Page */
+  $handler = $view->new_display('page', 'Lib News blog Page', 'page_1');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['use_more'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'read more...';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'ds';
+  $handler->display->display_options['row_options']['view_mode'] = 'full';
+  $handler->display->display_options['row_options']['load_comments'] = 0;
+  $handler->display->display_options['row_options']['alternating'] = 0;
+  $handler->display->display_options['row_options']['grouping'] = 0;
+  $handler->display->display_options['row_options']['advanced'] = 0;
+  $handler->display->display_options['row_options']['delta_fieldset']['delta_fields'] = array();
+  $handler->display->display_options['row_options']['grouping_fieldset']['group_field'] = 'node|created';
+  $handler->display->display_options['row_options']['default_fieldset']['view_mode'] = 'full';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Library news blog post content */
+  $handler->display->display_options['fields']['field_blog_post']['id'] = 'field_blog_post';
+  $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
+  $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
+  $handler->display->display_options['path'] = 'library-news-blog';
   $export['lib_news_blog_page'] = $view;
 
   $view = new view();

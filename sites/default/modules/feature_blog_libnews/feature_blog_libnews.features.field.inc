@@ -133,6 +133,22 @@ function feature_blog_libnews_field_default_fields() {
           'type' => 'text_default',
           'weight' => '2',
         ),
+        'full' => array(
+          'label' => 'inline',
+          'module' => 'text',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => '2',
+        ),
         'teaser' => array(
           'label' => 'inline',
           'module' => 'text',
@@ -208,6 +224,12 @@ function feature_blog_libnews_field_default_fields() {
       'description' => 'Under <b>Library</b>, select the image to be published to the homepage.',
       'display' => array(
         'default' => array(
+          'label' => 'hidden',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '13',
+        ),
+        'full' => array(
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
@@ -292,6 +314,22 @@ function feature_blog_libnews_field_default_fields() {
       'description' => 'See <a href="http://jeffcolibrary.org/staff/documents/template_blog.pdf">Blog Template</a> and <a href="http://jeffcolibrary.org/staff/documents/ed_standards.pdf">jeffcolibrary.org Editorial Standards</a>.',
       'display' => array(
         'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'text_default',
+          'weight' => '3',
+        ),
+        'full' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
@@ -392,8 +430,34 @@ function feature_blog_libnews_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
+          'module' => 'taxonomy',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '6',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'taxonomy',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'taxonomy_term_reference_link',
           'weight' => '6',
         ),
         'teaser' => array(
@@ -427,7 +491,7 @@ function feature_blog_libnews_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'options_buttons',
-        'weight' => '8',
+        'weight' => '6',
       ),
     ),
   );
@@ -486,7 +550,23 @@ function feature_blog_libnews_field_default_fields() {
             ),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '7',
+          'weight' => '4',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'taxonomy',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -519,7 +599,7 @@ function feature_blog_libnews_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'options_buttons',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -578,7 +658,23 @@ function feature_blog_libnews_field_default_fields() {
             ),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'weight' => '5',
+        ),
+        'full' => array(
+          'label' => 'hidden',
+          'module' => 'taxonomy',
+          'settings' => array(
+            'linked_field' => array(
+              'destination' => '',
+              'linked' => FALSE,
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+          ),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -611,7 +707,7 @@ function feature_blog_libnews_field_default_fields() {
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
         ),
         'type' => 'options_buttons',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
