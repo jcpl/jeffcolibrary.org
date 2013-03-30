@@ -172,7 +172,7 @@ function feature_volunteer_field_default_fields() {
       'settings' => array(
         'alt_field' => 0,
         'default_image' => '566',
-        'file_directory' => 'volunteers',
+        'file_directory' => 'images/volunteers',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
@@ -184,6 +184,16 @@ function feature_volunteer_field_default_fields() {
         'active' => 1,
         'module' => 'image',
         'settings' => array(
+          'allowed_schemes' => array(
+            'public' => 'public',
+            'youtube' => 0,
+          ),
+          'allowed_types' => array(
+            'audio' => 0,
+            'default' => 0,
+            'image' => 'image',
+            'video' => 0,
+          ),
           'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
