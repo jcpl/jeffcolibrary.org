@@ -1312,8 +1312,8 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_locations_tag_tid']['vocabulary'] = 'locations';
   $handler->display->display_options['block_description'] = 'Events: Wheat Ridge highlights teaser block';
 
-  /* Display: Kids Event Highlights Teaser block */
-  $handler = $view->new_display('block', 'Kids Event Highlights Teaser block', 'block_12');
+  /* Display: Event teaser block: Library news */
+  $handler = $view->new_display('block', 'Event teaser block: Library news', 'block_11');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Event Highlights';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
@@ -1322,9 +1322,10 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['defaults']['use_more_always'] = FALSE;
   $handler->display->display_options['use_more_always'] = TRUE;
   $handler->display->display_options['defaults']['use_more_text'] = FALSE;
+  $handler->display->display_options['use_more_text'] = 'more Event blog posts';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
@@ -1358,7 +1359,7 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
   $handler->display->display_options['fields']['field_blog_post']['label'] = '';
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
+  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '95';
   $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
@@ -1398,101 +1399,12 @@ function feature_events_highlights_views_default_views() {
   $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
   $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
   $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '53',
+    0 => '55',
+    1 => '53',
+    2 => '54',
   );
   $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
-  $handler->display->display_options['block_description'] = 'Kids: Event Highlights';
-
-  /* Display: Teen Event Highlights Teaser block */
-  $handler = $view->new_display('block', 'Teen Event Highlights Teaser block', 'block_13');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Event Highlights';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['use_more'] = FALSE;
-  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
-  $handler->display->display_options['defaults']['use_more_always'] = FALSE;
-  $handler->display->display_options['use_more_always'] = TRUE;
-  $handler->display->display_options['defaults']['use_more_text'] = FALSE;
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['defaults']['style_options'] = FALSE;
-  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
-  $handler->display->display_options['row_plugin'] = 'fields';
-  $handler->display->display_options['defaults']['row_options'] = FALSE;
-  $handler->display->display_options['defaults']['relationships'] = FALSE;
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Select media image */
-  $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
-  $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
-  $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
-  $handler->display->display_options['fields']['field_blog_image']['label'] = '';
-  $handler->display->display_options['fields']['field_blog_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
-    'image_style' => '140x90',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Library news blog post content */
-  $handler->display->display_options['fields']['field_blog_post']['id'] = 'field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['table'] = 'field_data_field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['field'] = 'field_blog_post';
-  $handler->display->display_options['fields']['field_blog_post']['label'] = '';
-  $handler->display->display_options['fields']['field_blog_post']['alter']['max_length'] = '180';
-  $handler->display->display_options['fields']['field_blog_post']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['field_blog_post']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_blog_post']['settings'] = array(
-    'linked_field' => array(
-      'linked' => 0,
-      'destination' => '',
-      'title' => '',
-      'target' => '',
-      'rel' => '',
-      'text' => '',
-    ),
-  );
-  $handler->display->display_options['defaults']['arguments'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'advocacy' => 'advocacy',
-    'booksandbeyond' => 'booksandbeyond',
-    'jcpl_kids' => 'jcpl_kids',
-    'jcpl_teens' => 'jcpl_teens',
-    'library_news' => 'library_news',
-  );
-  /* Filter criterion: Content: Events tag (field_events_tag) */
-  $handler->display->display_options['filters']['field_events_tag_tid']['id'] = 'field_events_tag_tid';
-  $handler->display->display_options['filters']['field_events_tag_tid']['table'] = 'field_data_field_events_tag';
-  $handler->display->display_options['filters']['field_events_tag_tid']['field'] = 'field_events_tag_tid';
-  $handler->display->display_options['filters']['field_events_tag_tid']['value'] = array(
-    0 => '54',
-  );
-  $handler->display->display_options['filters']['field_events_tag_tid']['vocabulary'] = 'events';
-  $handler->display->display_options['block_description'] = 'Teen: Event Highlights';
+  $handler->display->display_options['block_description'] = 'Library News: Highlights teaser block';
   $export['event_highlights_'] = $view;
 
   return $export;
