@@ -346,7 +346,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 <h3>Find Magazines</h3>
 <ul>
   <li><a href=\"$base_url/research/research-A-Z/connect/zinio\">Zinio</a></li>
-</ul>h
+</ul>
 <h3>Find Music</h3>
 <ul>
   <li><a href=\"$base_url/research/research-A-Z/connect/overdrive-music\">Overdrive</a></li>
