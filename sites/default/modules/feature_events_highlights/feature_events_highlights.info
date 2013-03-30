@@ -2,7 +2,6 @@ name = feature_events_highlights
 description = Teaser view for blog content from Events vocabulary term.
 core = 7.x
 package = Features
-php = 5.2.4
 version = 7.x-1.2
 project = feature_events_highlights
 dependencies[] = block
