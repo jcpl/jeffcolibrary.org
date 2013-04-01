@@ -120,6 +120,15 @@ function feature_annual_reports_views_default_views() {
       'text' => '',
     ),
   );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Annual Strategy Image */
   $handler->display->display_options['fields']['field_annual_report_image']['id'] = 'field_annual_report_image';
   $handler->display->display_options['fields']['field_annual_report_image']['table'] = 'field_data_field_annual_report_image';
@@ -127,7 +136,7 @@ function feature_annual_reports_views_default_views() {
   $handler->display->display_options['fields']['field_annual_report_image']['label'] = '';
   $handler->display->display_options['fields']['field_annual_report_image']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_annual_report_image']['alter']['path'] = '[field_kids_booklist_file]';
-  $handler->display->display_options['fields']['field_annual_report_image']['alter']['alt'] = 'Annual Report';
+  $handler->display->display_options['fields']['field_annual_report_image']['alter']['alt'] = '[title] Annual Report';
   $handler->display->display_options['fields']['field_annual_report_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_annual_report_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_annual_report_image']['settings'] = array(
@@ -142,15 +151,6 @@ function feature_annual_reports_views_default_views() {
       'text' => '',
     ),
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['displays'] = array(
     'block' => 'block',
     'default' => 0,
@@ -267,6 +267,15 @@ function feature_annual_reports_views_default_views() {
       'text' => '',
     ),
   );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Annual Strategy Image */
   $handler->display->display_options['fields']['field_annual_report_image']['id'] = 'field_annual_report_image';
   $handler->display->display_options['fields']['field_annual_report_image']['table'] = 'field_data_field_annual_report_image';
@@ -274,7 +283,7 @@ function feature_annual_reports_views_default_views() {
   $handler->display->display_options['fields']['field_annual_report_image']['label'] = '';
   $handler->display->display_options['fields']['field_annual_report_image']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_annual_report_image']['alter']['path'] = '[field_kids_booklist_file]';
-  $handler->display->display_options['fields']['field_annual_report_image']['alter']['alt'] = 'Annual Report';
+  $handler->display->display_options['fields']['field_annual_report_image']['alter']['alt'] = '[title] Annual Report';
   $handler->display->display_options['fields']['field_annual_report_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_annual_report_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_annual_report_image']['settings'] = array(
@@ -289,15 +298,6 @@ function feature_annual_reports_views_default_views() {
       'text' => '',
     ),
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['displays'] = array(
     'block' => 'block',
     'default' => 0,
@@ -414,6 +414,15 @@ function feature_annual_reports_views_default_views() {
       'text' => '',
     ),
   );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Annual Strategy Image */
   $handler->display->display_options['fields']['field_annual_report_image']['id'] = 'field_annual_report_image';
   $handler->display->display_options['fields']['field_annual_report_image']['table'] = 'field_data_field_annual_report_image';
@@ -421,7 +430,7 @@ function feature_annual_reports_views_default_views() {
   $handler->display->display_options['fields']['field_annual_report_image']['label'] = '';
   $handler->display->display_options['fields']['field_annual_report_image']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_annual_report_image']['alter']['path'] = '[field_kids_booklist_file]';
-  $handler->display->display_options['fields']['field_annual_report_image']['alter']['alt'] = 'Annual Report';
+  $handler->display->display_options['fields']['field_annual_report_image']['alter']['alt'] = '[title] Annual Report';
   $handler->display->display_options['fields']['field_annual_report_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_annual_report_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_annual_report_image']['settings'] = array(
@@ -436,15 +445,6 @@ function feature_annual_reports_views_default_views() {
       'text' => '',
     ),
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['displays'] = array(
     'block' => 'block',
     'default' => 0,
