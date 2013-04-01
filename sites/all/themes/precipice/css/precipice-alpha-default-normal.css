@@ -1497,6 +1497,10 @@ table#hours td {
 	margin-bottom: 0px;
 }
 
+.block-lib-news-blog-page-block .views-row {
+	border-bottom: none;
+}
+
 .view-lib-news-blog-page .views-row {
 	padding-bottom: 25px;
 	border-bottom-width: 1px;
@@ -1508,9 +1512,9 @@ table#hours td {
 	border-bottom: none;
 }
 
-/* Library news blog taxonomy page */
+/* Library news blog category & taxonomy pages */
 
-.page-taxonomy-term .node-library-news {
+.page-taxonomy-term .node-library-news, .page-library-news-archive, .node-library-news {
 	padding-bottom: 25px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
