@@ -1525,6 +1525,18 @@ table#hours td {
 	border-bottom: none;
 }
 
+/* Sorry, we can't find the page you're looking for */
+
+.block-block block-23 {
+	padding-top: 20px;
+}
+
+.block-block block-23 ul {
+	list-style-position: inside;
+	list-style-image: none;
+	list-style-type: disc;
+	padding-left: 8px;
+}
 
 /* Carl's rules for search forms */
 
