@@ -1521,6 +1521,11 @@ table#hours td {
 	border-bottom-color:#CCC;
 }
 
+.page-taxonomy-term .node-library-news .views-row-last, .page-library-news-archive .node-library-news .views-row-last {
+	border-bottom: none;
+}
+
+
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {
