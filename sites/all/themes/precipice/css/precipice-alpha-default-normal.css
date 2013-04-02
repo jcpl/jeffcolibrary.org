@@ -119,8 +119,8 @@ nav.navigation {
 	vertical-align:middle;
 }
 
-#block-kids-teen-blks-mainmenu-images a {
-	padding-right: 5px;
+#block-kids-teen-blks-mainmenu-images .mm_kids {
+	padding-right: 10px;
 	padding-left: 5px;
 }
 
@@ -454,7 +454,6 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	clear: left;
 	width: 620px;
 	min-height: 130px;
-	margin-right: 320px;
 	padding-top: 10px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
@@ -475,7 +474,6 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	clear: left;
 	width: 620px;
 	min-height: 130px;
-	margin-right: 320px;
 	padding-top: 10px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
@@ -976,10 +974,6 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 	border-bottom: 0px;
 }
 
-.node-fun-and-games-category {
-	margin-right: 320px;
-}
-
 .node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
 	display: inline-table;
 	width: 140px;
@@ -1402,10 +1396,6 @@ table#hours td {
 	margin-top: -13px;
 }
 
-.node-type-board-member .field-name-body {
-	margin-right: 300px;
-}
-
 /* Community Parters */
 
 .context-community-partners div.field-item div {
@@ -1584,6 +1574,25 @@ table#hours td {
 .didnt_find_it div img {
 	float: left;
 	padding-right: 20px;
+}
+
+/* Planning & Budget */
+
+.block-annual-budgets-block, .block-annual-reports-block, .block-annual-strategy-block {
+	width: 220px;
+	display: inline-table;
+	text-align: center;
+}
+
+.block-annual-budgets-block img, .block-annual-reports-block img, .block-annual-strategy-block img {
+	padding-left: 12px;
+	padding-top: 5px;
+}
+
+/* Contact us */
+
+.block-block-26 .specific_list {
+	padding-left: 8px;
 }
 
 /* Carl's rules for search forms */
