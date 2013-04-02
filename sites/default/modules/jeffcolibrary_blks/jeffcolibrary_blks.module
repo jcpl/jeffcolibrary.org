@@ -452,7 +452,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
 
     global $base_url ;
 
-    $content = "<div id=\"whattoread1\"><a href=\"list-for-you\"><img src=\"$base_url/sites/default/files/bmm/prr.png\" /></a></div><div id=\"whattoread2\"><a href=\"we-recommend\"><img src=\"$base_url/sites/default/files/bmm/novelist.png\" /></a></div><div id=\"whattoread3\"><a href=\"http://jeffcolibrary.org/booklovers/NextReads.html\"><img src=\"$base_url/sites/default/files/bmm/nextreads.png\" /></a></div><div id=\"whattoread4\"><a href=\"new-arrivals\"><img src=\"$base_url/sites/default/files/bmm/new_arrivals.png\" /></a></div>";
+    $content = "<div id=\"whattoread1\"><a href=\"books-movies-music/we-recommend/list-for-you\"><img src=\"$base_url/sites/default/files/bmm/prr.png\" /></a></div><div id=\"whattoread2\"><a href=\"research/research-A-Z/connect/novelist-plus\"><img src=\"$base_url/sites/default/files/bmm/novelist.png\" /></a></div><div id=\"whattoread3\"><a href=\"books-movies-music/list-for-you\"><img src=\"$base_url/sites/default/files/bmm/nextreads.png\" /></a></div><div id=\"whattoread4\"><a href=\"books-movies-music/new-arrivals\"><img src=\"$base_url/sites/default/files/bmm/new_arrivals.png\" /></a></div>";
 
     $block = array(
       'subject' => t('What to Read Next'),
