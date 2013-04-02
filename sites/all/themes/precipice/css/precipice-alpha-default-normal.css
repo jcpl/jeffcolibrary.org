@@ -1578,10 +1578,15 @@ table#hours td {
 
 /* Planning & Budget */
 
-.block-annual-reports-block {
+.block-annual-budgets-block, .block-annual-reports-block, .block-annual-strategy-block {
 	width: 220px;
-	display: inline-block
+	display: inline-table;
 	text-align: center;
+}
+
+.block-annual-budgets-block img, .block-annual-reports-block img, .block-annual-strategy-block img {
+	padding-left: 12px;
+	padding-top: 5px;
 }
 
 /* Carl's rules for search forms */
