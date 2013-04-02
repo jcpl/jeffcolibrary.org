@@ -454,7 +454,6 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	clear: left;
 	width: 620px;
 	min-height: 130px;
-	margin-right: 320px;
 	padding-top: 10px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
@@ -475,7 +474,6 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	clear: left;
 	width: 620px;
 	min-height: 130px;
-	margin-right: 320px;
 	padding-top: 10px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
@@ -976,10 +974,6 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 	border-bottom: 0px;
 }
 
-.node-fun-and-games-category {
-	margin-right: 320px;
-}
-
 .node-fun-and-games-category .field-group-format { /*same rules as view HW Help view*/
 	display: inline-table;
 	width: 140px;
@@ -1400,10 +1394,6 @@ table#hours td {
 .field-name-field-board-member-term .field-label {
 	font-weight: normal;
 	margin-top: -13px;
-}
-
-.node-type-board-member .field-name-body {
-	margin-right: 300px;
 }
 
 /* Community Parters */
