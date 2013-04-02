@@ -447,6 +447,22 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	border-bottom-color: #999;
 }
 
+.jcarousel-container img {
+	border-top-style: solid;	
+	border-top-width: 1px;
+	border-top-color: #999;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #999;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #999;
+	border-bottom-style: solid;	
+	border-bottom-width: 1px;
+	border-bottom-color: #999;
+}
+
+
 .context-books-movies-music .jcarousel-container, .context-teen .jcarousel-container,.context-kids .jcarousel-container  {
 	width: 200px;
 }
