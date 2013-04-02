@@ -45,6 +45,14 @@ body {
 	padding-top: 35px;
 }
 
+.block-print-links {
+	height: 40px;
+	width: 100%;
+}
+.block-print-links img {
+	float: right;
+}
+
 /* front sidebar 2 */
 
 .front .region-sidebar-second {
@@ -731,7 +739,6 @@ td.col-first {
 	margin-top: -15px;
 	float: right;
 	width: 300px;
-	margin-right: 320px;
 }
 
 /* Blog posts */
@@ -1043,11 +1050,6 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 .node-parent-teacher-guide .group_resource1, .node-parent-teacher-guide .group_resource2, .node-parent-teacher-guide .group_resource3 {
     margin-right: 0px;
 }
-
-.node-parent-teacher-guide .content {
-	margin-right: 300px;
-}
-
 
 /* ---------------------- Teens ------------------------------- */
 
