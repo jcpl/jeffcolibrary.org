@@ -665,7 +665,7 @@ if ($block_name == 'events_WR_today') {
  
  if ($block_name == 'PRR_how') {
 
-    $content = "<p>Tell us what you like to read and we'll send you a list of about 5 book recommendations.</p>";
+    $content = "<p>Tell us what you like to read and we\'ll send you a list of about 5 book recommendations.</p>";
 
     $block = array(
       'subject' => t('How it works'),
