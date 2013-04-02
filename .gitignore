@@ -1,6 +1,10 @@
-# Ignore configuration files that may contain sensitive information.
+# Ig0nore configuration files that may contain sensitive information.
 sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+.htaccess
+htaccess
+htaccess_BU.txt
+.gitignore
