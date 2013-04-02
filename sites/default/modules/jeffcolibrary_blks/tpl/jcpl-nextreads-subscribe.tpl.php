@@ -1,8 +1,4 @@
-<div class="small" style="width:77%; margin-left:50px; padding-left:1px;">
-
-Welcome to NextReads, a service brought to you through JCPL and EBSCO. Choose from one of the categories below and receive email newsletters with selected titles of great reads.  When you sign up for a newsletter you will receive a confirmation email and then you will receive the current issue of the newsletter(s) you selected.  Emails will come monthly or bi-monthly, depending on the category selected. Position the cursor on a category for a description which includes the frequency.<br /><br />
-
-<a href="books-movies-music/we-recommend">Archive of Past Newsletters</a><br /><br />
+<div>
 
 <b>NOTE:</b> If you encounter display problems using the Manage Subscriptions link below, use this one instead:  <a href="javascript: window.open('http://www.nextreads.com/members.aspx?S=59','','toolbar=no,scrollbars=yes,width=650,height=520,left=0,top=0'); void('');">Manage Subscriptions</a><br /><br />
 
