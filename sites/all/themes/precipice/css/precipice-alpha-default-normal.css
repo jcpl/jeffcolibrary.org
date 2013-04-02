@@ -101,6 +101,10 @@ body {
 	margin-left: 10px;
 }
 
+nav.navigtion, #block-kids-teen-blks-mainmenu-images {
+	display: inline-block;
+}
+
 #main-menu a {
 	margin-right: 10px;
 }
