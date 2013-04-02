@@ -327,7 +327,7 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 /* Front page new arrival carousel */
 
 #zone-hpbookjackets {
-	background-color: #fff;
+	background-color: #ECECEC;
 	width: 960px;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -428,7 +428,7 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 /* All carousels */
 
 .jcarousel-container, .jcarousel-clip, .views-field-field-carousel-bookjacket-image {
-	background-color: #fff;
+	background-color: #ECECEC;
 }
 
 .jcarousel-container {
@@ -462,6 +462,9 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	border-bottom-color: #999;
 }
 
+.jcarousel-skin-default .jcarousel-item {
+	height: 102px;
+}
 
 .context-books-movies-music .jcarousel-container, .context-teen .jcarousel-container,.context-kids .jcarousel-container  {
 	width: 200px;
