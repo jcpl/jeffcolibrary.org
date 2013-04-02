@@ -1548,6 +1548,43 @@ table#hours td {
 	padding-left: 8px;
 }
 
+/* Didn't Find It? */
+.didnt_find_it div {
+	width: 440px;
+	height: 90px;
+	padding-right: 50px;
+	margin-right: 30px;
+	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color:#CCC;
+}
+
+.didnt_find_it div.last {
+	border-bottom: none;
+}
+
+.didnt_find_it div.first {
+	padding-top: 10px;
+}
+
+.didnt_find_it a {
+	text-decoration: none;
+}
+
+.didnt_find_it h3 {
+	padding-top: 10px;
+}
+	
+.didnt_find_it div img {
+	float: left;
+	padding-right: 20px;
+}
+
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {

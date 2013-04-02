@@ -60,6 +60,14 @@ function footer_blks_block_info() {
 	'pages' => 'press-room',
     );
 
+    $blocks['didnt_find_it'] = array(
+    'info' => t('Didnt Find It.'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+	'pages' => 'books-movies-music/didnt-find-it',
+    );
+
 	return $blocks;
 }
 
@@ -213,5 +221,27 @@ function footer_blks_block_view($block_name = '') {
 
     return $block;
   }
+  
+  if ($block_name == 'didnt_find_it') {
+	  
+    global $base_url ; 
+  
+    $content = "<div class=\"didnt_find_it\">
+<div class=\"first\"><a title=\"Search Prospector\" href=\"http://www.coalliance.org/prospector/\"><img src=\"$base_url/sites/default/files/didnt_find_it/prospector.png\" width=\"282\" height=\"90\" alt=\"Search Prospector\" />
+  </a></div>
+<div><a title=\"Suggest a title for purchase\" href=\"didnt-find-it/suggest-title\"><img src=\"$base_url/sites/default/files/didnt_find_it/suggestatitle.png\" width=\"140\" height=\"90\" alt=\"Suggest a Title\" />
+  <h3>Suggest a title for purchase</h3></a></div>
+<div class=\"last\"><a title=\"Request interlibrary loan\" href=\"didnt-find-it/interlibrary-loan\"><img src=\"$base_url/sites/default/files/didnt_find_it/ill.png\" width=\"140\" height=\"90\" alt=\"Interlibrary Loan\" />
+  <h3>Request an interlibrary loan</h3></a></div>
+</div>";
+
+    $block = array(
+      'subject' => t(''),
+      'content' => $content,
+    );
+
+    return $block;
+  }
+  
 
 }
