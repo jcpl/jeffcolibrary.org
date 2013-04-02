@@ -1,4 +1,4 @@
-<div style="width:75%" class="small">Join our Online Book Clubs and start reading books in your e-mail. Each day we'll send you a 5-minute portion of a book. By the end of the week, you'll have read 2-3 chapters. If you'd like to finish a book, stop by the library and pick up a copy or reserve one online. Every week we feature new books. This week's books are listed below. Sign up today and start reading tomorrow.</div><br />
+<div>
  
 <form name="signup" action="http://www.supportlibrary.com/su/su.cfm?x=73441" method="post">
  
@@ -95,3 +95,4 @@ Book Club</b>
 <a href="http://www.emailbookclub.com/book/teen.htm">About this book</a><br /><br />
 </td>
 </tr></table>
+</div>

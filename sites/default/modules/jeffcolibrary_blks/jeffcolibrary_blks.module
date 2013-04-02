@@ -64,7 +64,7 @@ function jeffcolibrary_blks_theme() {
       'template' => 'jcpl-nextreads-subscribe',
     ) + $base,
 	  'jcpl_online_clubs' => array(
-      'template' => 'jcpl-online_clubs',
+      'template' => 'jcpl-online-clubs',
     ) + $base,
   );
 }
@@ -698,7 +698,7 @@ if ($block_name == 'events_WR_today') {
  
   if ($block_name == 'online_club_how') {
 
-    $content = '<p>Join our Online Book Clubs and start reading books in your e-mail. Each day we will send you a 5-minute portion of a book. By the end of the week, you will have read 2-3 chapters. If you would like to finish a book, stop by the library and pick up a copy or reserve one online. Every week we feature new books. This week\'s books are listed here. Sign up today and start reading tomorrow.</p>';
+    $content = '<p>Start reading books in your e-mail. Each day we will send you a 5-minute portion of a book. By the end of the week, you will have read 2-3 chapters. If you would like to finish a book, stop by the library and pick up a copy or reserve one online. Every week we feature new books. This week\'s books are listed here. Sign up today and start reading tomorrow.</p>';
 
     $block = array(
       'subject' => t('How It Works'),
