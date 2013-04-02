@@ -25,7 +25,10 @@ function form_embed_blks_theme() {
 	  'jcpl_volunteer' => array(
       'template' => 'jcpl-volunteer',
     ) + $base,
-
+      'jcpl_PRR_form' => array(
+      'template' => 'jcpl-PRR-form',
+    ) + $base,
+	
   );
 }
 
@@ -67,14 +70,21 @@ function form_embed_blks_block_info() {
     'pages' => 'ask-us/email-librarian',
    );
 
-$blocks['volunteer'] = array(
+   $blocks['volunteer'] = array(
     'info' => t('Volunteer'),
     'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'volunteer/volunteer-now',
    );
-         
+   
+   $blocks['PRR_form'] = array(
+    'info' => t('BMM: A List for You'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/list-for-you',
+   );      
 	return $blocks;
 }   
   
@@ -123,6 +133,15 @@ function form_embed_blks_block_view($block_name = '') {
     $block = array(
       'subject' => t(''),
       'content' => theme('jcpl_volunteer'),
+    );
+	
+    return $block;
+  }
+  
+   if ($block_name == 'PRR_form') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_PRR_form'),
     );
 	
     return $block;
