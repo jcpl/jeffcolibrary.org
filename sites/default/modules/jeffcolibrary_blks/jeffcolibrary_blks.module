@@ -281,7 +281,7 @@ function jeffcolibrary_blks_block_info() {
     );
 
   $blocks['online_mags'] = array(
-    'info' => t('Online Magazines and Newspapers'),
+    'info' => t('Research:Online Magazines and Newspapers'),
     'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
