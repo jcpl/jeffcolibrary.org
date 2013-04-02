@@ -327,24 +327,28 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 /* Front page new arrival carousel */
 
 #zone-hpbookjackets {
-	background-color: #999;
+	background-color: #fff;
 	width: 960px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	border-top-style: solid;	
 	border-top-width: 1px;
-	border-top-color: #000;
+	border-top-color: #999;
 	border-left-style: solid;
 	border-left-width: 1px;
-	border-left-color: #000;
+	border-left-color: #999;
 	border-right-style: solid;
 	border-right-width: 1px;
-	border-right-color: #000;
+	border-right-color: #999;
 	border-bottom-style: solid;	
 	border-bottom-width: 1px;
-	border-bottom-color: #000;
-
+	border-bottom-color: #999;
 }
+
+#zone-hpbookjackets .jcarousel-container {
+	border: none;
+}
+
 
 /* Footer */
 
@@ -424,11 +428,23 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 /* All carousels */
 
 .jcarousel-container, .jcarousel-clip, .views-field-field-carousel-bookjacket-image {
-	background-color: #999;
+	background-color: #fff;
 }
 
 .jcarousel-container {
 	margin-top: 20px;
+	border-top-style: solid;	
+	border-top-width: 1px;
+	border-top-color: #999;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #999;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #999;
+	border-bottom-style: solid;	
+	border-bottom-width: 1px;
+	border-bottom-color: #999;
 }
 
 .context-books-movies-music .jcarousel-container, .context-teen .jcarousel-container,.context-kids .jcarousel-container  {
