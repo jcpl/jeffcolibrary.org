@@ -1570,6 +1570,7 @@ table#hours td {
 
 .didnt_find_it div.first {
 	padding-top: 10px;
+	margin-top: 0px;
 }
 
 .didnt_find_it a {
