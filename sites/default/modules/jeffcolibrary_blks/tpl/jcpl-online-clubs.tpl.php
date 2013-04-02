@@ -40,7 +40,6 @@
 <b>Good News<br /> Book Club</b>
 <a href="http://www.emailbookclub.com/book/goodnews.htm"><img src="http://www.emailbookclub.com/book/goodnews.jpg" border="0" alt="Book Cover" width="94" height="145" /></a>
 <br /><a href="http://www.emailbookclub.com/book/goodnews.htm">About this book</a><br /><br />
-<br /><br />
 </td>
  
 <td width="25%">
