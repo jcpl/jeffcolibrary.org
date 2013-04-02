@@ -1,10 +1,6 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
-#main-menu {
-	font-size: 1.4em;
-	font-weight:500;
-}
 
 h1 {
 	margin-bottom: 5px;
@@ -90,6 +86,10 @@ body {
 	padding-bottom: 15px;
 }
 
+#zone-menu ul.inline li {
+	padding: 0 0.3em;
+}
+	
 #region-menu {
 	width: 960px;
 	margin-left: 0px;
@@ -103,7 +103,7 @@ body {
 }
 
 #region-menu ul {
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 nav.navigtion, #block-kids-teen-blks-mainmenu-images {
