@@ -1,4 +1,4 @@
-<div><a href="subscribe-Nextreads">Subscribe to receive recommendations</a></div>
+<div style="float:right"><a href="subscribe-Nextreads">Subscribe to receive lists</a></div>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" summary="This table is used for layout"><tr valign="top" align="left">
 <td>
 <p style="text-indent:3px"><b>Armchair Travel</b><br />

@@ -619,7 +619,7 @@ if ($block_name == 'events_WR_today') {
 
   if ($block_name == 'nextreads_lists') {
    $block = array(
-      'subject' => t('We Recommend'),
+      'subject' => t(''),
       'content' => theme('jcpl_nextreads_lists'),
     );
 
@@ -628,7 +628,7 @@ if ($block_name == 'events_WR_today') {
   
     if ($block_name == 'nextreads_subscribe') {
    $block = array(
-      'subject' => t('Subscribe to receive recommendations'),
+      'subject' => t('Subscribe'),
       'content' => theme('jcpl_nextreads_suscribe'),
     );
 
