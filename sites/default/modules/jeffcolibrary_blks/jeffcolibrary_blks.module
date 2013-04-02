@@ -323,7 +323,7 @@ function jeffcolibrary_blks_block_info() {
     'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => 'books-movies-music/list_for-you',
+    'pages' => 'books-movies-music/list-for-you',
     );		
 	
   return $blocks;
