@@ -1589,6 +1589,12 @@ table#hours td {
 	padding-top: 5px;
 }
 
+/* Contact us */
+
+.block-block-26 .specific_list {
+	padding-left: 8px;
+}
+
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {
