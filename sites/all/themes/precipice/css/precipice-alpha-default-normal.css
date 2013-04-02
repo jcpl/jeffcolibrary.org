@@ -1091,9 +1091,14 @@ section.block-kids-teen-reviews-block-3 .views-field-field-rate-it, section.bloc
 
 /* ---------------------- Teens ------------------------------- */
 
-.block-block-28 h2 {
+.block-block-28 {
 	padding-top: 20px;
 }
+
+.block-block-28 p{
+	padding-left: 8px;
+}
+
 
 .block-teen-blog-page-block h2 {
 	padding-bottom: 15px;
