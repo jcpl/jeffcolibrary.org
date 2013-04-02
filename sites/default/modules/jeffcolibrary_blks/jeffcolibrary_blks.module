@@ -381,6 +381,8 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
     if ($block_name == 'downloads_findX') {
 
+    global $base_url ; 
+
     $content = "<h3>Find Ebooks</h3>
 <ul>
   <li><a href=\"$base_url/research/research-A-Z/connect/3m-cloud-library\">3M Cloud Library</a></li>
