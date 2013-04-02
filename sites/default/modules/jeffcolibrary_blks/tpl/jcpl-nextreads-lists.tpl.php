@@ -70,7 +70,7 @@
 </p>
 
 <p style="text-indent:3px"><b>New York Times Non-Fiction Bestsellers</b><br />
-<script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=12246&Max=13&FMT=3&Sort=1"></script>
+<script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=12246&Max=2&FMT=3&Sort=1"></script>
 </p>
 
 <p style="text-indent:3px"><b>Picture Books</b><br />
