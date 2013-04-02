@@ -1,6 +1,6 @@
 <div>
 
-<b>NOTE:</b> If you encounter display problems using the Manage Subscriptions link below, use this one instead:  <a href="javascript: window.open('http://www.nextreads.com/members.aspx?S=59','','toolbar=no,scrollbars=yes,width=650,height=520,left=0,top=0'); void('');">Manage Subscriptions</a><br /><br />
+<b>NOTE:</b> If you encounter display problems using the Manage Subscriptions link below, use this one instead:  <a href="javascript: window.open('http://www.nextreads.com/members.aspx?S=59','','toolbar=no,scrollbars=yes,width=650,height=520,left=0,top=0'); void('');">Manage Subscriptions</a><br />
 
 <!-- Welcome to the beta test of EBSCO's Next Reads. When you sign up for a newsletter you will receive a confirmation email and then you will receive the selected newsletter. New subscribers will receive a Dec newsletter immediately, and can expect to see a January newsletter sample approx. 1/23. For more information on NextReads, go to <a href="http://www.nextreads.com">www.nextreads.com</a>.<br /><br />
 
