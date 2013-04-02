@@ -647,7 +647,7 @@ if ($block_name == 'events_WR_today') {
 
     $content = '<p>Choose from one of the categories and receive email newsletters with selected titles of great reads.  When you sign up for a newsletter you will receive a confirmation email and then you will receive the current issue of the newsletter(s) you selected.  Emails will come monthly or bi-monthly, depending on the category selected. Position the cursor on a category for a description which includes the frequency. NextReads is a service brought to you through JCPL and EBSCO.<br /><br />
 
-<a href="books-movies-music/we-recommend">Archive of Past Newsletters</a><br /><br /></p>';
+<a href="$base_url/we-recommend">Archive of Past Newsletters</a><br /><br /></p>';
 
     $block = array(
       'subject' => t('How it works'),
