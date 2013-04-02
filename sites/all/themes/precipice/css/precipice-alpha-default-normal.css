@@ -327,22 +327,22 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 /* Front page new arrival carousel */
 
 #zone-hpbookjackets {
-	background-color:#EAEAEA;
+	background-color: #999;
 	width: 960px;
 	margin-top: 15px;
 	margin-bottom: 15px;
 	border-top-style: solid;	
 	border-top-width: 1px;
-	border-top-color: #ccc;
+	border-top-color: #000;
 	border-left-style: solid;
 	border-left-width: 1px;
-	border-left-color: #ccc;
+	border-left-color: #000;
 	border-right-style: solid;
 	border-right-width: 1px;
-	border-right-color: #ccc;
+	border-right-color: #000;
 	border-bottom-style: solid;	
 	border-bottom-width: 1px;
-	border-bottom-color: #ccc;
+	border-bottom-color: #000;
 
 }
 
@@ -424,7 +424,7 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 /* All carousels */
 
 .jcarousel-container, .jcarousel-clip, .views-field-field-carousel-bookjacket-image {
-	background-color: #EAEAEA;
+	background-color: #999;
 }
 
 .jcarousel-container {
