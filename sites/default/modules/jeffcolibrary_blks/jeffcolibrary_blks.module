@@ -317,6 +317,14 @@ function jeffcolibrary_blks_block_info() {
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'books-movies-music/we-recommend/subscribe-Nextreads',
     );	
+
+   $blocks['PRR_how'] = array(
+    'info' => t('BMM: PRR How'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/list_for-you',
+    );		
 	
   return $blocks;
 }
@@ -654,7 +662,19 @@ if ($block_name == 'events_WR_today') {
 
     return $block;
   }  
-  
+ 
+ if ($block_name == 'PRR_how') {
+
+    $content = "<p>Tell us what you like to read and we'll send you a list of about 5 book recommendations.</p>";
+
+    $block = array(
+      'subject' => t('How it works'),
+      'content' => $content,
+    );
+
+    return $block;
+  }  
+   
 if ($block_name == 'locations_services') {
   
     global $base_url ;
