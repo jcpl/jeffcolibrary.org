@@ -119,8 +119,8 @@ nav.navigation {
 	vertical-align:middle;
 }
 
-#block-kids-teen-blks-mainmenu-images a {
-	padding-right: 5px;
+#block-kids-teen-blks-mainmenu-images .mm_kids {
+	padding-right: 10px;
 	padding-left: 5px;
 }
 
