@@ -57,6 +57,12 @@ function jeffcolibrary_blks_theme() {
 	  'jcpl_online_mags' => array(
       'template' => 'jcpl-online-mags',
     ) + $base,
+	  'jcpl_nextreads_lists' => array(
+      'template' => 'jcpl-nextreads-lists',
+    ) + $base,
+	  'jcpl_nextreads_subscribe' => array(
+      'template' => 'jcpl-nextreads-subscribe',
+    ) + $base,
   );
 }
 
@@ -287,6 +293,22 @@ function jeffcolibrary_blks_block_info() {
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'research',
     );
+	
+   $blocks['nextreads_lists'] = array(
+    'info' => t('BMM: We Recommend'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/we-recommend',
+    );
+	
+   $blocks['nextreads_subscribe'] = array(
+    'info' => t('BMM: We Recommend'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/we-recommend/subscribe-Nextreads',
+    );	
 	
   return $blocks;
 }
