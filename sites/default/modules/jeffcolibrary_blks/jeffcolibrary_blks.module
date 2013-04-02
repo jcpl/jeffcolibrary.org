@@ -280,6 +280,14 @@ function jeffcolibrary_blks_block_info() {
     'pages' => 'research',
     );
 
+  $blocks['online_mags'] = array(
+    'info' => t('Online Magazines and Newspapers'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'research',
+    );
+	
   return $blocks;
 }
 
@@ -580,7 +588,7 @@ if ($block_name == 'events_WR_today') {
   
   if ($block_name == 'online_mags') {
    $block = array(
-      'subject' => t('Online Magazines & Newspapers'),
+      'subject' => t('Online Magazines and Newspapers'),
       'content' => theme('jcpl_online_mags'),
     );
 
