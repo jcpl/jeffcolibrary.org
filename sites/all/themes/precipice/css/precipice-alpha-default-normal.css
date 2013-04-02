@@ -86,6 +86,10 @@ body {
 	padding-bottom: 15px;
 }
 
+#zone-menu ul.inline li {
+	padding: 0 0.3em;
+}
+	
 #region-menu {
 	width: 960px;
 	margin-left: 0px;
@@ -99,7 +103,7 @@ body {
 }
 
 #region-menu ul {
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 nav.navigtion, #block-kids-teen-blks-mainmenu-images {
@@ -126,7 +130,6 @@ nav.navigation {
 
 #block-kids-teen-blks-mainmenu-images .mm_kids {
 	padding-right: 10px;
-	padding-left: 5px;
 }
 
 /* Global Nav */
