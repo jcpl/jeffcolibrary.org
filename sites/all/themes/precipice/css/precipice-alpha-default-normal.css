@@ -1576,6 +1576,14 @@ table#hours td {
 	padding-right: 20px;
 }
 
+/* Planning & Budget */
+
+.block-annual-reports-block {
+	width: 220px;
+	display: inline-block
+	text-align: center;
+}
+
 /* Carl's rules for search forms */
 
 .jcpl-facet-form {
