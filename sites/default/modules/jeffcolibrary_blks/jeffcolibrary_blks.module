@@ -63,6 +63,9 @@ function jeffcolibrary_blks_theme() {
 	  'jcpl_nextreads_subscribe' => array(
       'template' => 'jcpl-nextreads-subscribe',
     ) + $base,
+	  'jcpl_online_clubs' => array(
+      'template' => 'jcpl-online_clubs',
+    ) + $base,
   );
 }
 
@@ -119,7 +122,7 @@ function jeffcolibrary_blks_block_info() {
   );
 	
   $blocks['ask_us_email_how_it_works'] = array(
-    'info' => t('Ask Us: Email a lib: How it works'),
+    'info' => t('Ask Us: Email a lib: How It Works'),
     'status' => 1,
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -326,6 +329,22 @@ function jeffcolibrary_blks_block_info() {
     'pages' => 'books-movies-music/list-for-you',
     );		
 	
+	 $blocks['online_club_how'] = array(
+    'info' => t('BMM: Online Book Club How'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/online-book-clubs',
+    );		
+	
+	$blocks['online_clubs'] = array(
+    'info' => t('BMM: Online Book Clubs'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'books-movies-music/online-book-clubs',
+    );
+	
   return $blocks;
 }
 
@@ -441,7 +460,7 @@ frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe
     $content = '<p>Ask a question 24 hours a day, seven days a week.</p><p>Receive an answer by e-mail within two library business days.</p><p>For faster service, call the library at 303-235-5275</p>';
 
     $block = array(
-      'subject' => t('How it works'),
+      'subject' => t('How It Works'),
       'content' => $content,
     );
 
@@ -653,10 +672,10 @@ if ($block_name == 'events_WR_today') {
 
  if ($block_name == 'nextreads_how') {
 
-    $content = "<p>Choose from one of the categories and receive email newsletters with selected titles of great reads.  When you sign up for a newsletter you will receive a confirmation email and then you will receive the current issue of the newsletter(s) you selected.  Emails will come monthly or bi-monthly, depending on the category selected. Position the cursor on a category for a description which includes the frequency. NextReads is a service brought to you through JCPL and EBSCO.<br /><br /><a href=\"$base_url/we-recommend\">Archive of Past Newsletters</a><br /><br /></p>";
+    $content = "<p>Sign up for email newsletters featuring great reads. Service provided by NextReads.</p>";
 
     $block = array(
-      'subject' => t('How it works'),
+      'subject' => t('How It Works'),
       'content' => $content,
     );
 
@@ -668,13 +687,34 @@ if ($block_name == 'events_WR_today') {
     $content = '<p>Tell us what you like to read and we will send you a list of about 5 book recommendations.</p>';
 
     $block = array(
-      'subject' => t('How it works'),
+      'subject' => t('How It Works'),
       'content' => $content,
     );
 
     return $block;
   }  
-   
+ 
+  if ($block_name == 'online_club_how') {
+
+    $content = '<p>Join our Online Book Clubs and start reading books in your e-mail. Each day we will send you a 5-minute portion of a book. By the end of the week, you will have read 2-3 chapters. If you would like to finish a book, stop by the library and pick up a copy or reserve one online. Every week we feature new books. This week\'s books are listed here. Sign up today and start reading tomorrow.</p>';
+
+    $block = array(
+      'subject' => t('How It Works'),
+      'content' => $content,
+    );
+
+    return $block;
+  }  
+ 
+ if ($block_name == 'online_clubs') {
+   $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_online_clubs'),
+    );
+
+    return $block;
+  }
+     
 if ($block_name == 'locations_services') {
   
     global $base_url ;
