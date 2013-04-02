@@ -629,7 +629,7 @@ if ($block_name == 'events_WR_today') {
     if ($block_name == 'nextreads_subscribe') {
    $block = array(
       'subject' => t('Subscribe'),
-      'content' => theme('jcpl_nextreads_suscribe'),
+      'content' => theme('jcpl_nextreads_subscribe'),
     );
 
     return $block;
