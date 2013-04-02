@@ -636,7 +636,7 @@ if ($block_name == 'events_WR_today') {
   
     if ($block_name == 'nextreads_subscribe') {
    $block = array(
-      'subject' => t('Subscribe'),
+      'subject' => t(''),
       'content' => theme('jcpl_nextreads_subscribe'),
     );
 
@@ -656,14 +656,6 @@ if ($block_name == 'events_WR_today') {
 
     return $block;
   }  
-      if ($block_name == 'nextreads_how') {
-   $block = array(
-      'subject' => t('How it works'),
-      'content' => theme('nextreads_how'),
-    );
-
-    return $block;
-  }
   
 if ($block_name == 'locations_services') {
   
