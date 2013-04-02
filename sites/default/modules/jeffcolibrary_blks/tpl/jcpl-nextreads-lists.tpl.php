@@ -1,4 +1,4 @@
-<div><a href="books-movies-music/we-recommend/subscribe-Nextreads">Subsciribe to receive recommendations</a></div>
+<div><a href="books-movies-music/we-recommend/subscribe-Nextreads">Subscribe to receive recommendations</a></div>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" summary="This table is used for layout"><tr valign="top" align="left">
 <td>
 <p style="text-indent:3px"><b>Armchair Travel</b><br />
@@ -44,10 +44,6 @@
 <p style="text-indent:3px"><b>Horror</b><br />
 <script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=1197&Max=2&FMT=3&Sort=1"></script>
 </p>
-
-<!-- <p style="text-indent:3px"><b>JCPL Special Booklists</b><br />
-<script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=2486&Max=2&FMT=1&Sort=1"></script>
-</p> -->
 
 <p style="text-indent:3px"><b>Kids' Books</b><br />
 <script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=6638&Max=2&FMT=3&Sort=1"></script>

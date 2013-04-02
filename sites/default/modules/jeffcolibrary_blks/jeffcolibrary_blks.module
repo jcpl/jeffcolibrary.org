@@ -303,7 +303,7 @@ function jeffcolibrary_blks_block_info() {
     );
 	
    $blocks['nextreads_subscribe'] = array(
-    'info' => t('BMM: We Recommend'),
+    'info' => t('BMM: Subscribe NextReads'),
     'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
@@ -617,6 +617,24 @@ if ($block_name == 'events_WR_today') {
     return $block;
   }
 
+  if ($block_name == 'nextreads_lists') {
+   $block = array(
+      'subject' => t('We Recommend'),
+      'content' => theme('jcpl_nextreads_lists'),
+    );
+
+    return $block;
+  }
+  
+    if ($block_name == 'nextreads_subscribe') {
+   $block = array(
+      'subject' => t('Subscribe to receive recommendations'),
+      'content' => theme('jcpl_nextreads_suscribe'),
+    );
+
+    return $block;
+  }
+  
 if ($block_name == 'locations_services') {
   
     global $base_url ;
