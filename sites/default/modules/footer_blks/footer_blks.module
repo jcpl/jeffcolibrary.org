@@ -196,6 +196,7 @@ function footer_blks_block_view($block_name = '') {
   <li><a href=\"http://jeffco.us/bcc/bcc_T25_R20.htm\">How to Join</a></li>
   <li><a href=\"$base_url/board-of-trustees/responsibilities\">Responsibilities</a></li>
   <li><a href=\"$base_url/board-of-trustees/ends-statement\">Ends Statement</a></li>
+  <li><a href=\"$base_url/sites/default/files/board_member_photos/board_gov_policies.pdf\">Governance Policies</a></li>
 </ul>";
 
     $block = array(
