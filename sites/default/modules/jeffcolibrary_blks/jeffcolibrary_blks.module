@@ -721,7 +721,7 @@ if ($block_name == 'locations_services') {
   
     global $base_url ;
   
-    $content = '<p><a href="http://libonline.jefferson.lib.co.us/">Reserve a computer</a><br /><a href="../wireless">Wireless network</a><br /><a href="../wireless">Print from your laptop</a><br /><a href="sites/default/files/meetroom.pdf">Meeting rooms</a></p>';
+    $content = '<p><a href="http://libonline.jefferson.lib.co.us/">Reserve a computer</a><br /><a href="../wireless">Wireless network</a><br /><a href="../wireless">Print from your laptop</a><br /><a href="../sites/default/files/meetroom.pdf">Meeting rooms</a></p>';
 
     $block = array(
       'subject' => t('Services'),
