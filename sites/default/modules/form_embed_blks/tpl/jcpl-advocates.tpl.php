@@ -12,7 +12,7 @@
 		text-decoration: none;
 		}
 	.signupframe {
-		border: 1px solid #000000;
+		border: 0px solid #000000;
 		background: #ffffff;
 		}
 .signupframe .required {
