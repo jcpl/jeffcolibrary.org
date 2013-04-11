@@ -28,6 +28,10 @@ function form_embed_blks_theme() {
       'jcpl_PRR_form' => array(
       'template' => 'jcpl-PRR-form',
     ) + $base,
+	  'jcpl_advocates' => array(
+      'template' => 'jcpl-advocates',
+    ) + $base,
+
 	
   );
 }
@@ -84,7 +88,15 @@ function form_embed_blks_block_info() {
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'books-movies-music/list-for-you',
-   );      
+   );  
+   
+    $blocks['advocates'] = array(
+    'info' => t('Directors Blog: Email sign up'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'directors-blog',
+   );          
 	return $blocks;
 }   
   
@@ -142,6 +154,15 @@ function form_embed_blks_block_view($block_name = '') {
     $block = array(
       'subject' => t(''),
       'content' => theme('jcpl_PRR_form'),
+    );
+	
+    return $block;
+  }
+  
+   if ($block_name == 'advocates') {
+    $block = array(
+      'subject' => t('Receive email updates'),
+      'content' => theme('jcpl_advocates'),
     );
 	
     return $block;
