@@ -26,26 +26,20 @@
 <div id="SignUp">
 <table width="260" class="signupframe" border="0" cellspacing="0" cellpadding="5">
 	<tr>
-      <td valign="top" align="right">
-        <span class="required">*</span> Email
-      </td>
-      <td align="left">
+      <td valign="top">
+        Email<br />
         <input type="text" name="fields_email">
       </td>
     </tr>
 	<tr>
-      <td valign="top" align="right">
-        <span class="required">*</span> First Name
-      </td>
-      <td align="left">
+      <td valign="top">
+        First Name<br />
         <input type="text" name="fields_fname">
       </td>
     </tr>
 	<tr>
-      <td valign="top" align="right">
-        <span class="required">*</span> Last Name
-      </td>
-      <td align="left">
+      <td valign="top">
+        Last Name<br />
         <input type="text" name="fields_lname">
       </td>
     </tr>
