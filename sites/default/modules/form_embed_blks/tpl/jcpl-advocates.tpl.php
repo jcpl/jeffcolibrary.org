@@ -61,9 +61,9 @@
     <!--<tr>
       <td> </td>
       <td><span class="required">*</span> = Required Field</td>
-    </tr>
-    <tr> -->
-      <td> </td>
+    </tr> -->
+    <tr>
+      
       <td><input type="submit" name="Submit" value="Submit"></td>
     </tr>
     </table>
