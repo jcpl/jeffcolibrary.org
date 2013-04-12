@@ -4,7 +4,7 @@
 .signupframe
 {
 	color: #226699;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	}
 	.link,
@@ -31,18 +31,18 @@
         <input type="text" name="fields_email">
       </td>
     </tr>
-	<tr>
+	<!--<tr>
       <td valign="top">
         First Name<br />
         <input type="text" name="fields_fname">
       </td>
-    </tr>
-	<tr>
+    </tr> -->
+	<!--<tr>
       <td valign="top">
         Last Name<br />
         <input type="text" name="fields_lname">
       </td>
-    </tr>
+    </tr> -->
 	<!--<tr>
       <td valign="top" align="right">
         <span class="required">*</span> Business
