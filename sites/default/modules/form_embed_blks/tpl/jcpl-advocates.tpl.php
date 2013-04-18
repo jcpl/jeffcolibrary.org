@@ -31,26 +31,26 @@
         <input type="text" name="fields_email">
       </td>
     </tr>
-	<!--<tr>
+<tr>
       <td valign="top">
         First Name<br />
         <input type="text" name="fields_fname">
       </td>
-    </tr> -->
-	<!--<tr>
+    </tr>
+	<tr>
       <td valign="top">
         Last Name<br />
         <input type="text" name="fields_lname">
       </td>
-    </tr> -->
-	<!--<tr>
+    </tr>
+	<tr>
       <td valign="top" align="right">
         <span class="required">*</span> Business
       </td>
       <td align="left">
         <input type="text" name="fields_business">
       </td>
-    </tr> -->
+    </tr>
     <input type="hidden" name="listid" value="22584">
     <input type="hidden" name="specialid:22584" value="XLJT">
 
