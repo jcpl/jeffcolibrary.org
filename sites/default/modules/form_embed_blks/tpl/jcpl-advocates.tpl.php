@@ -44,10 +44,8 @@
       </td>
     </tr>
 	<tr>
-      <td valign="top" align="right">
-        <span class="required">*</span> Business
-      </td>
-      <td align="left">
+      <td valign="top">
+       Business<br />
         <input type="text" name="fields_business">
       </td>
     </tr>
