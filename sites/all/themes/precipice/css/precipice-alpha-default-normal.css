@@ -1645,6 +1645,18 @@ table#hours td {
 	padding-right: 20px;
 }
 
+/* Summer Reading Portal Page */
+
+.context-summerreading .didnt_find_it div {
+	width: 600px;
+}
+
+.context-summerreading .didnt_find_it h3 {
+	padding-top: 0px;
+	margin-top: -10px;
+}
+
+
 /* Planning & Budget */
 
 .block-annual-budgets-block, .block-annual-reports-block, .block-annual-strategy-block {
