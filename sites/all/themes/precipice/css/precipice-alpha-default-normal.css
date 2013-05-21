@@ -80,7 +80,7 @@ body {
 
 /* Emergency Message */
 
-.block-block-31 {
+#block-block-31, #block-block-33 {
 	height: 30px;
 	padding-top: 2px;
 	margin-top: 5px;
