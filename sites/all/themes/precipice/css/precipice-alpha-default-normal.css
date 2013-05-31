@@ -884,6 +884,10 @@ padding-right:10px;
 	background-image:url(../../../../default/files/kids_teen/feature_blks/arrow_teen.gif);
 }
 
+.context-books-movies-music .kidsfeatureblk div {
+	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
+}
+
 .kidsfeatureblk h3 {
 	padding-top: 10px;
 }
