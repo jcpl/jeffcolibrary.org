@@ -76,7 +76,7 @@ function jcplfeedsimporter_feeds_importer_default() {
     ),
     'content_type' => 'jcpl_sable_feed',
     'update' => 0,
-    'import_period' => '1800',
+    'import_period' => '3600',
     'expire_period' => 3600,
     'import_on_create' => 1,
     'process_in_background' => 1,
