@@ -33,7 +33,7 @@ function jcplfeedsimporter_feeds_importer_default() {
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
         'content_type' => 'jcpl_sable_feed_item',
-        'expire' => '-1',
+        'expire' => '3600',
         'author' => 0,
         'authorize' => 0,
         'mappings' => array(
