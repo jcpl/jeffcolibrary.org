@@ -71,7 +71,7 @@ function jcplfeedsimporter_feeds_importer_default() {
         'update_existing' => '1',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
-        'bundle' => 'jcpl_sable_feed',
+        'bundle' => 'jcpl_sable_feed_item',
       ),
     ),
     'content_type' => 'jcpl_sable_feed',
