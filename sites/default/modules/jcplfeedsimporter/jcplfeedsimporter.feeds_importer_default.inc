@@ -23,6 +23,7 @@ function jcplfeedsimporter_feeds_importer_default() {
         'auto_detect_feeds' => FALSE,
         'use_pubsubhubbub' => FALSE,
         'designated_hub' => '',
+        'request_timeout' => NULL,
       ),
     ),
     'parser' => array(
@@ -32,7 +33,6 @@ function jcplfeedsimporter_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
-        'content_type' => 'jcpl_sable_feed_item',
         'expire' => '3600',
         'author' => 0,
         'authorize' => 0,
@@ -71,6 +71,7 @@ function jcplfeedsimporter_feeds_importer_default() {
         'update_existing' => '1',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
+        'bundle' => 'jcpl_sable_feed',
       ),
     ),
     'content_type' => 'jcpl_sable_feed',
