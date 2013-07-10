@@ -1664,7 +1664,7 @@ table#hours td {
 /* Planning & Budget */
 
 .block-annual-budgets-block, .block-annual-reports-block, .block-annual-strategy-block {
-	width: 220px;
+	width: 200px;
 	display: inline-table;
 	text-align: center;
 }
