@@ -31,7 +31,9 @@ function form_embed_blks_theme() {
 	  'jcpl_advocates' => array(
       'template' => 'jcpl-advocates',
     ) + $base,
-
+      'jcpl_pmsurvey' => array(
+      'template' => 'jcpl-pmsurvey',
+    ) + $base,
 	
   );
 }
@@ -96,7 +98,15 @@ function form_embed_blks_block_info() {
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'directors-blog',
-   );          
+   );    
+      
+    $blocks['pmsurvey'] = array(
+    'info' => t('Events: PM Survey form'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'events/pm-survey',
+   );                
 	return $blocks;
 }   
   
@@ -163,6 +173,15 @@ function form_embed_blks_block_view($block_name = '') {
     $block = array(
       'subject' => t('Receive email updates'),
       'content' => theme('jcpl_advocates'),
+    );
+	
+    return $block;
+  }
+  
+     if ($block_name == 'pmsurvey') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_pmsurvey'),
     );
 	
     return $block;
