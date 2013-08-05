@@ -228,7 +228,7 @@ function footer_blks_block_view($block_name = '') {
     global $base_url ; 
   
     $content = "<div class=\"didnt_find_it\">
-<div class=\"first\"><a title=\"Search Prospector\" href=\"http://www.coalliance.org/prospector/\"><img src=\"$base_url/sites/default/files/didnt_find_it/prospector.png\" width=\"282\" height=\"90\" alt=\"Search Prospector\" />
+<div class=\"first\"><a title=\"Search Prospector\" href=\"http://prospectorhome.coalliance.org/\"><img src=\"$base_url/sites/default/files/didnt_find_it/prospector.png\" width=\"282\" height=\"90\" alt=\"Search Prospector\" />
   </a></div>
 <div><a title=\"Suggest a title for purchase\" href=\"didnt-find-it/suggest-title\"><img src=\"$base_url/sites/default/files/didnt_find_it/suggestatitle.png\" width=\"140\" height=\"90\" alt=\"Suggest a Title\" />
   <h3>Suggest a title for purchase</h3></a></div>
