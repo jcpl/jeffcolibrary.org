@@ -34,6 +34,10 @@ body {
 	text-decoration: none;	
 }
 
+#zone-breadcrumbs {
+	background-color:#FFF;
+}
+
 #zone-content {
 	background-color:#FFF;
 	padding-bottom: 25px;
