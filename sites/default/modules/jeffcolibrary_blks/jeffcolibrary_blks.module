@@ -357,22 +357,26 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 	  
     global $base_url ; 
 
-    $content = '<form method="get" action="http://encore.jefferson.lib.co.us/iii/encore/Home,$Search.form.sdirect" name="form" id="form">
+    $content = '<form action="http://encore.jefferson.lib.co.us/iii/encore50/HomePage,queryComponent.searchFormComponent.sdirect" id="form" method="get" name="form" target="_blank">
       <div style="height:0px;">
-      <input name="formids" value="target" type="hidden">
-      <input name="lang" value="eng" type="hidden">
-      <input name="suite" value="def" type="hidden">
-      <input name="reservedids" value="lang,suite" type="hidden">
-      <input name="submitmode" value="" type="hidden">
-      <input name="submitname" value="" type="hidden">
+     <input name="formids" type="hidden" value="autoCompleteIfComponentCopy_0,searchString,autoCompleteIfComponent_0,showAdvSearchLinkIfComponent_0,searchImageSumbitComponent" />
+<input name="lang" type="hidden" value="eng" />
+<input name="suite" type="hidden" value="def" />
+<input name="reservedids" type="hidden" value="inst,lang,suite" />
+<input name="submitmode" type="hidden" value="" />
+<input name="submitname" type="hidden" value="" />
+<input name="autoCompleteIfComponentCopy_0" type="hidden" value="F" />
+<input name="showAdvSearchLinkIfComponent_0" type="hidden" value="T" />
+<input name="autoCompleteIfComponent_0" type="hidden" value="F" />
+<input name="searchImageSumbitComponent" type="hidden" value="" />
       </div>
       <div id="encore_searchform">
-      <input name="target" value="" id="target" size="36" type="text">
-      <input type="submit" value="Search"/>
+<input id="searchString" name="searchString" size="36" type="text" value="" />
+<input type="submit" value="Search"/>
       </div>' . 
-      "<a href=\"http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=cobalt&advancedSearch=true&searchString=\">Advanced search</a>&nbsp; | &nbsp; 
+      "<a href=\"http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=gold&advancedSearch=true&searchString=\">Advanced search</a>&nbsp; | &nbsp; 
 	  <a href=\"$base_url/books-movies-music/didnt-find-it\">Didn&#039;t find it?</a>
-      </form>";
+      </form>"; 
 
     $block = array(
       'subject' => t('Encore Search'),
