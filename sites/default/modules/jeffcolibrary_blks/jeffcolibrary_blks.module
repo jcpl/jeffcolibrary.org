@@ -357,7 +357,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 	  
     global $base_url ; 
 
-    $content = '<form action="http://encore.jefferson.lib.co.us/iii/encore50/HomePage,queryComponent.searchFormComponent.sdirect" id="form" method="get" name="form" target="_blank">
+    $content = '<form action="http://encore.jefferson.lib.co.us/iii/encore/HomePage,queryComponent.searchFormComponent.sdirect" id="form" method="get" name="form" target="_blank">
       <div style="height:0px;">
      <input name="formids" type="hidden" value="autoCompleteIfComponentCopy_0,searchString,autoCompleteIfComponent_0,showAdvSearchLinkIfComponent_0,searchImageSumbitComponent" />
 <input name="lang" type="hidden" value="eng" />
