@@ -66,6 +66,9 @@ function jeffcolibrary_blks_theme() {
 	  'jcpl_online_clubs' => array(
       'template' => 'jcpl-online-clubs',
     ) + $base,
+	 'jcpl_encore_search' => array(
+      'template' => 'jcpl-encore-search',
+    ) + $base,
   );
 }
 
@@ -79,7 +82,7 @@ function jeffcolibrary_blks_block_info() {
     'info' => t('Encore Search for header Quicktabs.'),
     'status' => 1,
   );
-
+  
 /*  $blocks['downloads_search_ebooks'] = array(
     'info' => t('Downloads: Ebook Search.'),
     'status' => 1,
@@ -353,30 +356,27 @@ function jeffcolibrary_blks_block_info() {
  */
 function jeffcolibrary_blks_block_view($block_name = '') {
 
+/*
   if ($block_name == 'encore_search') {
 	  
     global $base_url ; 
 
-    $content = '<form action="http://encore.jefferson.lib.co.us/iii/encore/HomePage,queryComponent.searchFormComponent.sdirect" id="form" method="get" name="form">
+    $content = '<form method="get" action="http://encore.jefferson.lib.co.us/iii/encore/Home,$Search.form.sdirect" name="form" id="form">
       <div style="height:0px;">
-     <input name="formids" type="hidden" value="autoCompleteIfComponentCopy_0,searchString,autoCompleteIfComponent_0,showAdvSearchLinkIfComponent_0,searchImageSumbitComponent" />
-<input name="lang" type="hidden" value="eng" />
-<input name="suite" type="hidden" value="def" />
-<input name="reservedids" type="hidden" value="inst,lang,suite" />
-<input name="submitmode" type="hidden" value="" />
-<input name="submitname" type="hidden" value="" />
-<input name="autoCompleteIfComponentCopy_0" type="hidden" value="F" />
-<input name="showAdvSearchLinkIfComponent_0" type="hidden" value="T" />
-<input name="autoCompleteIfComponent_0" type="hidden" value="F" />
-<input name="searchImageSumbitComponent" type="hidden" value="" />
+      <input name="formids" value="target" type="hidden">
+      <input name="lang" value="eng" type="hidden">
+      <input name="suite" value="def" type="hidden">
+      <input name="reservedids" value="lang,suite" type="hidden">
+      <input name="submitmode" value="" type="hidden">
+      <input name="submitname" value="" type="hidden">
       </div>
       <div id="encore_searchform">
-<input id="searchString" name="searchString" size="36" type="text" value="" />
-<input type="submit" value="Search"/>
+      <input name="target" value="" id="target" size="36" type="text">
+      <input type="submit" value="Search"/>
       </div>' . 
-      "<a href=\"http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=gold&advancedSearch=true&searchString=\">Advanced search</a>&nbsp; | &nbsp; 
+      "<a href=\"http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=cobalt&advancedSearch=true&searchString=\">Advanced search</a>&nbsp; | &nbsp; 
 	  <a href=\"$base_url/books-movies-music/didnt-find-it\">Didn&#039;t find it?</a>
-      </form>"; 
+      </form>";
 
     $block = array(
       'subject' => t('Encore Search'),
@@ -385,8 +385,15 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 
     return $block;
   }
-
-
+*/
+ if ($block_name == 'encore_search') {
+    $block = array(
+      'subject' => t('Encore Search'),
+      'content' => theme('jcpl_encore_search'),
+    );
+    return $block;
+  }
+  
 /*  if ($block_name == 'downloads_search_ebooks') {
     return array(
       'subject' => t('Ebooks'),
