@@ -97,7 +97,7 @@ The script at minimum requires
     <input type="submit" value="Search" />
           </div>
    <a href="http://encore.jefferson.lib.co.us/iii/encore/home?lang=eng&suite=gold&advancedSearch=true&searchString=">Advanced search</a>&nbsp; | &nbsp; 
-	  <a href="http://jeffcolibrary.org/books-movies-music/didnt-find-it">Didn&#039;t find it?</a>m
+	  <a href="http://jeffcolibrary.org/books-movies-music/didnt-find-it">Didn&#039;t find it?</a>
       </div>
 </form>
 
