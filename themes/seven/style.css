@@ -886,7 +886,7 @@ ol.task-list li.done {
 }
 .overlay ul.secondary {
   background: transparent none;
- /* margin: -1.4em 0 0.3em 0;*/ /* LTR */ /* HACK - easy breadcrumb disables navtive breadcrumbs in overaly and renders My Edits and All Recent Content illegible in Workbench */
+  margin: -1.4em 0 0.3em 0; /* LTR */
   overflow: visible;
 }
 .overlay #content {
