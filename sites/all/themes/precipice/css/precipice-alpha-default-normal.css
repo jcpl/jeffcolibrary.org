@@ -12,6 +12,12 @@ body {
 	background-image: url(../../../../default/files/head_foot/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center 0;
+	background-attachment: fixed;
+	background-color: #9eb593;
+}
+
+#block-system-main {
+	clear: left;
 }
 
 /* homepage cleanup */
@@ -26,6 +32,10 @@ body {
 
 #findloclinks a {
 	text-decoration: none;	
+}
+
+#zone-breadcrumbs, #zone-emergency {
+	background-color:#FFF;
 }
 
 #zone-content {
@@ -80,14 +90,15 @@ body {
 
 /* Emergency Message */
 
-#block-block-31, #block-block-35 {
+#block-block-31, #block-block-35, #block-block-33 {
 	height: 30px;
-	padding-top: 2px;
-	margin-top: 5px;
+	padding-top: 4px;
+	padding-left: 10px;
+	margin-bottom: 15px;
 	background-color: #fff0f4;
 	color: #d11241;
-	text-align: center;
-	vertical-align:middle;
+/*	text-align: center;
+*/	vertical-align:middle;
 	border: 1px solid #d11241;	
 }
 
@@ -265,20 +276,24 @@ li.expanded, li.collapsed, li.leaf { /* fixing Chrome wrapping problem */
 /* Secondary Pages Header */
 
 #zone-branding-wrapper {
-	background-image:url(../../../../default/files/head_foot/header_bg.png);
-	background-repeat: no-repeat;
+/*	background-image:url(../../../../default/files/head_foot/header_bg.png);
+*/	background-repeat: no-repeat;
 	background-position: bottom;
 	margin-top: 5px;
 	padding-top: 0px;
-	height: 201px;
-}
+/*	height: 100px;
+*/}
 
 #region-branding {
-	margin-top:72px;
+/*	margin-top:72px;
+*/
+	padding-bottom: 20px;
 }
 
 #region-search {
-	margin-top:100px;
+/*	margin-top:100px;
+*/
+	margin-top: 25px;
 }
 
 /* Omnipresent Searchbox */
@@ -717,11 +732,11 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 
 /* Research A-Z letter pages */
 
-.page-research-research-a-z-a .easy-breadcrumb, .page-research-research-a-z-b .easy-breadcrumb, .page-research-research-a-z-c .easy-breadcrumb, .page-research-research-a-z-d .easy-breadcrumb, .page-research-research-a-z-e .easy-breadcrumb, .page-research-research-a-z-f .easy-breadcrumb, .page-research-research-a-z-g .easy-breadcrumb, .page-research-research-a-z-h .easy-breadcrumb, .page-research-research-a-z-i .easy-breadcrumb, .page-research-research-a-z-j .easy-breadcrumb, .page-research-research-a-z-k .easy-breadcrumb, .page-research-research-a-z-l .easy-breadcrumb, .page-research-research-a-z-m .easy-breadcrumb, .page-research-research-a-z-n .easy-breadcrumb, .page-research-research-a-z-o .easy-breadcrumb, .page-research-research-a-z-p .easy-breadcrumb, .page-research-research-a-z-q .easy-breadcrumb, .page-research-research-a-z-r .easy-breadcrumb, .page-research-research-a-z-s .easy-breadcrumb, .page-research-research-a-z-t .easy-breadcrumb, .page-research-research-a-z-u .easy-breadcrumb, .page-research-research-a-z-v .easy-breadcrumb, .page-research-research-a-z-w .easy-breadcrumb, .page-research-research-a-z-x .easy-breadcrumb, .page-research-research-a-z-y .easy-breadcrumb, .page-research-research-a-z-z .easy-breadcrumb, .page-research-research-a-z-all .easy-breadcrumb {
+/*.page-research-research-a-z-a .easy-breadcrumb, .page-research-research-a-z-b .easy-breadcrumb, .page-research-research-a-z-c .easy-breadcrumb, .page-research-research-a-z-d .easy-breadcrumb, .page-research-research-a-z-e .easy-breadcrumb, .page-research-research-a-z-f .easy-breadcrumb, .page-research-research-a-z-g .easy-breadcrumb, .page-research-research-a-z-h .easy-breadcrumb, .page-research-research-a-z-i .easy-breadcrumb, .page-research-research-a-z-j .easy-breadcrumb, .page-research-research-a-z-k .easy-breadcrumb, .page-research-research-a-z-l .easy-breadcrumb, .page-research-research-a-z-m .easy-breadcrumb, .page-research-research-a-z-n .easy-breadcrumb, .page-research-research-a-z-o .easy-breadcrumb, .page-research-research-a-z-p .easy-breadcrumb, .page-research-research-a-z-q .easy-breadcrumb, .page-research-research-a-z-r .easy-breadcrumb, .page-research-research-a-z-s .easy-breadcrumb, .page-research-research-a-z-t .easy-breadcrumb, .page-research-research-a-z-u .easy-breadcrumb, .page-research-research-a-z-v .easy-breadcrumb, .page-research-research-a-z-w .easy-breadcrumb, .page-research-research-a-z-x .easy-breadcrumb, .page-research-research-a-z-y .easy-breadcrumb, .page-research-research-a-z-z .easy-breadcrumb, .page-research-research-a-z-all .easy-breadcrumb {
     position: relative;
 	padding-bottom: 15px;
 }
-
+*/
 /* -------------- Downloads ------------- */
 
 /*teasers*/
@@ -882,10 +897,6 @@ padding-right:10px;
 
 .context-teen .kidsfeatureblk div {
 	background-image:url(../../../../default/files/kids_teen/feature_blks/arrow_teen.gif);
-}
-
-.context-books-movies-music .kidsfeatureblk div {
-	background-image:url(../../../../default/files/guide_images/arrow_seasonal_guides.gif);
 }
 
 .kidsfeatureblk h3 {
@@ -1664,7 +1675,7 @@ table#hours td {
 /* Planning & Budget */
 
 .block-annual-budgets-block, .block-annual-reports-block, .block-annual-strategy-block {
-	width: 200px;
+	width: 220px;
 	display: inline-table;
 	text-align: center;
 }

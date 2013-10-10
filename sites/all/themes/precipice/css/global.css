@@ -87,7 +87,7 @@ td.col-first {
 
 /* Easy breadcumbs */
 
-.front .easy-breadcrumb {
+/*.front .easy-breadcrumb {
 	display: none;
 }
 
@@ -109,4 +109,4 @@ h1 {
 
 .logged-in .easy-breadcrumb {
 	display: none;
-}
+}*/
