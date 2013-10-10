@@ -40,16 +40,7 @@ body {
 
 #zone-content {
 	background-color:#FFF;
-	padding-bottom: 25px;
-	margin-bottom: 15px;
-	border-bottom-style: solid;	
-	border-bottom-width: 1px;
-	border-bottom-color:#e4e4e4; 
-}
-
-.front #zone-content {
-	padding-bottom: 10px;
-	margin-bottom: 0px;
+	padding-bottom: 22px;
 }
 
 .region-sidebar-second {
@@ -106,7 +97,6 @@ body {
 
 #zone-menu {
 	background-color: #fff;
-	padding-top: 10px;
 	padding-bottom: 15px;
 }
 
@@ -357,8 +347,6 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 #zone-hpbookjackets {
 	background-color: #ECECEC;
 	width: 960px;
-	margin-top: 15px;
-	margin-bottom: 15px;
 	border-top-style: solid;	
 	border-top-width: 1px;
 	border-top-color: #999;

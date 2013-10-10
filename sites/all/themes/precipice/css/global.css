@@ -87,10 +87,10 @@ td.col-first {
 
 /* Easy breadcumbs */
 
-/*.front .easy-breadcrumb {
+.front .easy-breadcrumb {
 	display: none;
 }
-
+/*
 .easy-breadcrumb {
 	position: absolute;
 	left: 0px;
