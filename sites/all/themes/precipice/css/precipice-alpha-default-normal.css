@@ -36,6 +36,7 @@ body {
 
 #zone-breadcrumbs, #zone-emergency {
 	background-color:#FFF;
+	font-size: 1em;
 }
 
 #zone-content {
@@ -82,14 +83,14 @@ body {
 /* Emergency Message */
 
 #block-block-31, #block-block-35, #block-block-33 {
-	height: 30px;
-	padding-top: 4px;
+	height: 26px;
+	padding-top: 2px;
 	padding-left: 10px;
 	margin-bottom: 15px;
 	background-color: #fff0f4;
 	color: #d11241;
-/*	text-align: center;
-*/	vertical-align:middle;
+	text-align: center;
+	vertical-align:middle;
 	border: 1px solid #d11241;	
 }
 
