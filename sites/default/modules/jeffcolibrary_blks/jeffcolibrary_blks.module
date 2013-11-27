@@ -453,7 +453,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     global $base_url ;
 
     $content = "<span class=\"icon_with_text\"><a href=\"$base_url/ask-us/email-librarian\"><img src=\"$base_url/sites/default/files/icons/email.gif\" /> Email</a></span>
-<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-JCPL (5275)</span><br /><br />
+<span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-5275</span><br /><br />
 <div>
 <iframe src=\"http://chat.askcolorado.org/widgets/widget_askcolorado.php\"
 id=\"askcolorado_iframe\" marginheight=\"0\" marginwidth=\"0\" scrolling=\"auto\"
