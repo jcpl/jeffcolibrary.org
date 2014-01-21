@@ -22,6 +22,9 @@ function form_embed_blks_theme() {
 	    'jcpl_email_librarian' => array(
       'template' => 'jcpl-email-librarian',
     ) + $base,
+	    'jcpl_email_librarian_sidebar' => array(
+      'template' => 'jcpl-email-librarian-sidebar',
+    ) + $base,
 	  'jcpl_volunteer' => array(
       'template' => 'jcpl-volunteer',
     ) + $base,
@@ -74,6 +77,14 @@ function form_embed_blks_block_info() {
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'ask-us/email-librarian',
+   );
+
+ $blocks['email_librarian_sidebar'] = array(
+    'info' => t('Email Us'),
+    'status' => 1,
+    'region' => 'sidebar_second',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'ask-us',
    );
 
    $blocks['volunteer'] = array(
@@ -146,6 +157,15 @@ function form_embed_blks_block_view($block_name = '') {
     $block = array(
       'subject' => t(''),
       'content' => theme('jcpl_email_librarian'),
+    );
+	
+    return $block;
+  } 
+
+        if ($block_name == 'email_librarian_sidebar') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_email_librarian_sidebar'),
     );
 	
     return $block;
