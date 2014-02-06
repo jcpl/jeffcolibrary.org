@@ -271,22 +271,7 @@ function kids_teen_blks_block_view($block_name = '') {
   
   if ($block_name == 'kids_books_reading_nextreads') {
   
-    $content = '<table class="views-view-grid cols-2" class="views-view-grid">
-  <tbody>
-  	<tr>
-    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=6638&Max=2&FMT=3&Sort=1"></script>
-        </td>
-    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=6436&Max=2&FMT=3&Sort=1"></script>
-        </td>
-    </tr>
-  	<tr>
-    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=9641&Max=2&FMT=3&Sort=1"></script>
-        </td>
-    	<td>
-        </td>
-    </tr>
-  </tbody>
-</table>
+    $content = '<div class="libraryaware_widget_c52fb277288c42cabc7946d014335192"></div><script async src="//www.libraryaware.com/Widgets/Show/c52fb277-288c-42ca-bc79-46d014335192"></script>
 ';
 
     $block = array(
@@ -299,15 +284,7 @@ function kids_teen_blks_block_view($block_name = '') {
 
   if ($block_name == 'teen_reviewspg_nextreads') {
   
-    $content = '<table>
-  <tbody>
-  	<tr>
-    	<td><script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=1210&Max=2&FMT=3&Sort=1"></script>
-       <script language="javascript" src="http://www.nextreads.com/display.aspx?SID=582a9df1-001f-4661-8366-bbbd4a3e75cd&NL=9641&Max=2&FMT=3&Sort=1"></script>
-        </td>
-    </tr>
-  </tbody>
-</table>';
+    $content = '<div class="libraryaware_widget_4fca927954434320b3616ea35a4a1a82"></div><script async src="//www.libraryaware.com/Widgets/Show/4fca9279-5443-4320-b361-6ea35a4a1a82"></script>';
 
     $block = array(
       'subject' => t('Reading Lists'),
