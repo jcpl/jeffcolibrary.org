@@ -25,6 +25,12 @@ function form_embed_blks_theme() {
 	    'jcpl_email_librarian_sidebar' => array(
       'template' => 'jcpl-email-librarian-sidebar',
     ) + $base,
+		'jcpl_book_librarian' => array(
+      'template' => 'jcpl-book-librarian',	 
+    ) + $base,
+		'jcpl_book_librarian_feedback' => array(
+      'template' => 'jcpl-book-librarian-feedback',	   
+    ) + $base,
 	  'jcpl_volunteer' => array(
       'template' => 'jcpl-volunteer',
     ) + $base,
@@ -87,6 +93,22 @@ function form_embed_blks_block_info() {
     'pages' => 'ask-us',
    );
 
+    $blocks['book_librarian'] = array(
+    'info' => t('Ask Us: Book a Librarian'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'ask-us/book-librarian',
+   );
+   
+    $blocks['book_librarian_feedback'] = array(
+    'info' => t('Ask Us: Book a Librarian - Feedback'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'ask-us/book-librarian-feedback',
+   );
+   
    $blocks['volunteer'] = array(
     'info' => t('Volunteer'),
     'status' => 1,
@@ -170,7 +192,25 @@ function form_embed_blks_block_view($block_name = '') {
 	
     return $block;
   } 
-  
+
+        if ($block_name == 'book_librarian') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_book_librarian'),
+    );
+	
+    return $block;
+  } 
+
+        if ($block_name == 'book_librarian_feedback') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_book_librarian_feedback'),
+    );
+	
+    return $block;
+  } 
+              
         if ($block_name == 'volunteer') {
     $block = array(
       'subject' => t(''),
