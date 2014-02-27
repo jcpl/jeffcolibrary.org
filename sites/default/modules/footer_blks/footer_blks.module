@@ -106,7 +106,7 @@ function footer_blks_block_view($block_name = '') {
 <li><a href=\"$base_url/culture-pass\" title=\"Culture Pass\">Culture Pass</a></li>
 <li><a href=\"$base_url/get-library-card\" title=\"Get a Library Card\">Get a Library Card</a></li>
 <li><a href=\"$base_url/outreach-services\" title=\"Outreach Services\">Outreach Services</a></li>
-<li><a href=\"$base_url/recursos-en-espa%C3%B1ol\" title=\"Recuroso en Espanol\">Recursos en Espa&ntilde;ol</a></li>
+<li><a href=\"$base_url/recursos-en-espa%C3%B1ol\" title=\"Recursos en Espanol\">Recursos en Espa&ntilde;ol</a></li>
 <li><a href=\"$base_url/reserve-computer\" title=\"Reserve a Computer\">Reserve a Computer</a></li>
 <li><a href=\"$base_url/wireless\" title=\"Wireless\">Wireless</a></li>
 </ul>";
