@@ -121,11 +121,11 @@ function form_embed_blks_block_info() {
    );
    
    $blocks['PRR_form'] = array(
-    'info' => t('BMM: A List for You'),
+    'info' => t('BMM: Your Next 5 Books'),
     'status' => 1,
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
-    'pages' => 'books-movies-music/list-for-you',
+    'pages' => 'books-movies-music/your-next-5-books',
    );  
    
     $blocks['advocates'] = array(
