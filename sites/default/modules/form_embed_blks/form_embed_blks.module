@@ -46,6 +46,12 @@ function form_embed_blks_theme() {
       'jcpl_pmsurvey' => array(
       'template' => 'jcpl-pmsurvey',
     ) + $base,
+	  'jcpl_GRtickets' => array(
+      'template' => 'jcpl-GRtickets',
+    ) + $base,
+	  'jcpl_GRdrawing' => array(
+      'template' => 'jcpl-GRdrawing',
+    ) + $base,
 	
   );
 }
@@ -150,7 +156,23 @@ function form_embed_blks_block_info() {
     'region' => 'content',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'events/pm-survey',
-   );                
+   ); 
+   
+     $blocks['GRtickets'] = array(
+    'info' => t('Golden Reads: Get tickets form'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'golden-reads-test/tickets',
+   );  
+      
+     $blocks['GRdrawing'] = array(
+    'info' => t('Golden Reads: Enter drawing form'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'golden-reads-test/drawing',
+   );               
 	return $blocks;
 }   
   
@@ -264,6 +286,24 @@ function form_embed_blks_block_view($block_name = '') {
       'content' => theme('jcpl_pmsurvey'),
     );
 	
+    return $block;
+  }
+  
+    if ($block_name == 'GRtickets') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_GRtickets'),
+    );
+
+    return $block;
+  }
+  	
+    if ($block_name == 'GRdrawing') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_GRdrawing'),
+    );
+		
     return $block;
   }
 }
