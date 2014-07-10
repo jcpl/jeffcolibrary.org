@@ -1,3 +1,3 @@
-<div><a class="twitter-timeline" width="300" height="500" href="https://twitter.com/hashtag/OB4CO"  data-widget-id="481240202698969088">#OB4CO Tweets</a>
+<div><a class="twitter-timeline" data-dnt="true" width="300" height="500" href="https://twitter.com/hashtag/goldenreads"  data-widget-id="487178526680825859">#goldenreads Tweets</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
