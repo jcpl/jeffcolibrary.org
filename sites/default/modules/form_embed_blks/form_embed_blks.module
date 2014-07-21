@@ -55,6 +55,9 @@ function form_embed_blks_theme() {
 	  'jcpl_GRtweets' => array(
       'template' => 'jcpl-GRtweets',
     ) + $base,
+		'jcpl_book_librarian2' => array(
+      'template' => 'jcpl-book-librarian2',	 
+    ) + $base,
 	
   );
 }
@@ -183,7 +186,16 @@ function form_embed_blks_block_info() {
     'region' => 'sidebar_second',
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'golden-reads-test/talk-about-long-man-test',
-   );                
+   );   
+
+
+    $blocks['book_librarian2'] = array(
+    'info' => t('BAL: DRAFT form'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'ask-us/book-librarian-DRAFT',
+   );             
 	return $blocks;
 }   
   
@@ -326,4 +338,13 @@ function form_embed_blks_block_view($block_name = '') {
 		
     return $block;
   }
+
+        if ($block_name == 'book_librarian2') {
+    $block = array(
+      'subject' => t(''),
+      'content' => theme('jcpl_book_librarian2'),
+    );
+	
+    return $block;
+  } 
 }
