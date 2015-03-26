@@ -40,6 +40,12 @@ function form_embed_blks_theme() {
 	  'jcpl_advocates' => array(
       'template' => 'jcpl-advocates',
     ) + $base,
+	  'jcpl_partners_lit' => array(
+      'template' => 'jcpl-partners-lit',
+    ) + $base,
+	  'jcpl_partners_econ' => array(
+      'template' => 'jcpl-partners-econ',
+    ) + $base,
       'jcpl_newsletter' => array(
       'template' => 'jcpl-newsletter',
     ) + $base,
@@ -147,7 +153,23 @@ function form_embed_blks_block_info() {
     'visibility' => BLOCK_VISIBILITY_LISTED,
     'pages' => 'directors-blog',
    );    
-   
+
+     $blocks['partners_lit'] = array(
+    'info' => t('Community Partners Literacy: Email sign up'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'community-partners/early-literacy-updates',
+   );
+       
+      $blocks['partners_econ'] = array(
+    'info' => t('Community Partners Economic: Email sign up'),
+    'status' => 1,
+    'region' => 'content',
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => 'community-partners/economic-workforc-updates',
+   );    
+          
     $blocks['newsletter'] = array(
     'info' => t('Library News: Email sign up'),
     'status' => 1,
@@ -294,6 +316,24 @@ function form_embed_blks_block_view($block_name = '') {
     return $block;
   }
 
+   if ($block_name == 'partners_lit') {
+    $block = array(
+      'subject' => t('Early Literacy and Education'),
+      'content' => theme('jcpl_partners_lit'),
+    );
+	
+    return $block;
+  }
+  
+     if ($block_name == 'partners_econ') {
+    $block = array(
+      'subject' => t('Economic and Workforce Development'),
+      'content' => theme('jcpl_partners_econ'),
+    );
+	
+    return $block;
+  }
+    
    if ($block_name == 'newsletter') {
     $block = array(
       'subject' => t('Sign up for Library News'),

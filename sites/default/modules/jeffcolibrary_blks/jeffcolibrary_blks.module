@@ -423,6 +423,7 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 <ul>
   <li><a href=\"$base_url/research/research-A-Z/connect/oneclick-digital\">OneClick Digital</a></li>
   <li><a href=\"$base_url/research/research-A-Z/connect/overdrive-audiobooks\">Overdrive</a></li>
+   <li><a href=\"http://www.hoopladigital.com\">Hoopla</a></li>
 </ul>
 <h3>Find Magazines</h3>
 <ul>
@@ -430,7 +431,12 @@ function jeffcolibrary_blks_block_view($block_name = '') {
 </ul>
 <h3>Find Music</h3>
 <ul>
+   <li><a href=\"http://www.hoopladigital.com\">Hoopla</a></li>
   <li><a href=\"$base_url/research/research-A-Z/connect/overdrive-music\">Overdrive</a></li>
+</ul>
+<h3>Find Movies</h3>
+<ul>
+    <li><a href=\"http://www.hoopladigital.com\">Hoopla</a></li>
 </ul>";
 
     $block = array(
@@ -455,9 +461,6 @@ function jeffcolibrary_blks_block_view($block_name = '') {
     $content = "<span class=\"icon_with_text\"><a href=\"$base_url/ask-us/email-librarian\"><img src=\"$base_url/sites/default/files/icons/email.gif\" /> Email</a></span>
 <span class=\"icon_with_text\"><img src=\"$base_url/sites/default/files/icons/phone.gif\" /> 303-235-5275</span><br /><br />
 <div>
-<iframe src=\"http://chat.askcolorado.org/widgets/widget_askcolorado.php\"
-id=\"askcolorado_iframe\" marginheight=\"0\" marginwidth=\"0\" scrolling=\"auto\"
-frameborder=\"0\" style=\"width: 242px; height: 340px; border: none;\"> </iframe>
 </div>";
 
     $block = array(
